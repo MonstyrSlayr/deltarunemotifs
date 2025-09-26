@@ -24,10 +24,10 @@ function formatPageForSong(daSong)
         card.appendChild(imageContainer);
 
             // Cover art
-            const img = document.createElement("img");
-            img.classList.add("coverArt");
-            img.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-            imageContainer.appendChild(img);
+            const cover = document.createElement("img");
+            cover.classList.add("coverArt");
+            cover.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+            imageContainer.appendChild(cover);
 
             // Controls
             const controls = document.createElement("div");
@@ -119,8 +119,10 @@ function formatPageForSong(daSong)
                             liName.textContent = motif.name;
                             daLi.appendChild(liName);
 
-                            const liSoul = document.createElement("img");
-                            liSoul.src = "./img/soul.png";
+                            const liSoul = document.createElement("div"); // src is applied with css
+                            liSoul.classList.add("soul");
+                            liSoul.classList.add("gone");
+                            liSoul.style.backgroundColor = motif.color;
                             motif.soul = liSoul;
                             daLi.appendChild(liSoul);
 
@@ -129,6 +131,7 @@ function formatPageForSong(daSong)
                         const motifbarContainer = document.createElement("div");
                         motifbarContainer.classList.add("timebarContainer");
                         motifbarContainer.classList.add("motifTime");
+                        motifbarContainer.style.backgroundColor = motif.color2;
                         card.appendChild(motifbarContainer);
 
                         let previousMotifEndTime = 0;
@@ -155,6 +158,7 @@ function formatPageForSong(daSong)
 
                             const motifRefBar = document.createElement("div");
                             motifRefBar.classList.add("timebarProgress");
+                            motifRefBar.style.backgroundColor = motif.color;
                             motifbarContainer.appendChild(motifRefBar);
                             
                             const motifPercent = (motifDuration / duration) * 100;
@@ -172,46 +176,6 @@ function formatPageForSong(daSong)
                         motifLabel.textContent = motif.name;
                         motifLabel.classList.add("timeLabels");
                         card.appendChild(motifLabel);
-                    });
-
-                    window.addEventListener('keydown', function(keyevent)
-                    {
-                        if (['Space', 'ArrowLeft', 'ArrowRight'].includes(keyevent.code)) {
-                            keyevent.preventDefault();
-                        }
-
-                        switch (keyevent.code)
-                        {
-                            case 'Space': case 'KeyK':
-                                const playerState = players[videoId].getPlayerState();
-                                
-                                // -1 (unstarted), 0 (ended), 1 (playing), 2 (paused), 3 (buffering), 5 (video cued)
-                                if (playerState === 1)
-                                {
-                                    players[videoId].pauseVideo()
-                                }
-                                else if (playerState === 2 || playerState === 5)
-                                {
-                                    players[videoId].playVideo()
-                                }
-                                break;
-                            
-                            case 'ArrowLeft':
-                                players[videoId].seekTo(players[videoId].getCurrentTime() - 5, true);
-                                break;
-
-                            case 'ArrowRight':
-                                players[videoId].seekTo(players[videoId].getCurrentTime() + 5, true);
-                                break;
-                            
-                            case 'KeyJ':
-                                players[videoId].seekTo(players[videoId].getCurrentTime() - 10, true);
-                                break;
-
-                            case 'KeyL':    
-                                players[videoId].seekTo(players[videoId].getCurrentTime() + 10, true);
-                                break;
-                        }
                     });
                 },
                 'onStateChange': (event) =>
@@ -249,11 +213,11 @@ function formatPageForSong(daSong)
 
                                     if (playing)
                                     {
-                                        motif.soul.classList.add("playing");
+                                        motif.soul.classList.remove("gone");
                                     }
                                     else
                                     {
-                                        motif.soul.classList.remove("playing");
+                                        motif.soul.classList.add("gone");
                                     }
                                 }
                             });
@@ -280,6 +244,57 @@ function formatPageForSong(daSong)
     {
         window.onYouTubeIframeAPIReady = onReady;
     }
+
+    function playOrPause()
+    {
+        const playerState = players[videoId].getPlayerState();
+                
+        // -1 (unstarted), 0 (ended), 1 (playing), 2 (paused), 3 (buffering), 5 (video cued)
+        if (playerState === 1)
+        {
+            players[videoId].pauseVideo()
+        }
+        else if (playerState === 2 || playerState === 5)
+        {
+            players[videoId].playVideo()
+        }
+    }
+
+    cover.addEventListener("click", function()
+    {
+        playOrPause();
+    });
+
+    window.addEventListener('keydown', function(keyevent)
+    {
+        if (['Space', 'ArrowLeft', 'ArrowRight'].includes(keyevent.code))
+        {
+            keyevent.preventDefault();
+        }
+
+        switch (keyevent.code)
+        {
+            case 'Space': case 'KeyK':
+                playOrPause();
+                break;
+            
+            case 'ArrowLeft':
+                players[videoId].seekTo(players[videoId].getCurrentTime() - 5, true);
+                break;
+
+            case 'ArrowRight':
+                players[videoId].seekTo(players[videoId].getCurrentTime() + 5, true);
+                break;
+            
+            case 'KeyJ':
+                players[videoId].seekTo(players[videoId].getCurrentTime() - 10, true);
+                break;
+
+            case 'KeyL':    
+                players[videoId].seekTo(players[videoId].getCurrentTime() + 10, true);
+                break;
+        }
+    });
 
     // Button actions
     playBtn.onclick = () => players[videoId].playVideo();

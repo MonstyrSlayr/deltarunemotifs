@@ -2,13 +2,16 @@ class Motif
 {
     name;
     image;
-    color; // not gray
+    color;
+    color2; // ideally transparent
 
     soul = null; // element
 
-    constructor(name)
+    constructor(name, color = "#ffffff", color2 = "#ffffff33")
     {
         this.name = name;
+        this.color = color;
+        this.color2 = color2;
     }
 }
 
@@ -43,12 +46,12 @@ class Song
 
 const DONTFORGETMOTIF = new Motif("Don't Forget");
 const FREEDOMMOTIF = new Motif("Freedom Motif");
-const QUEENAMOTIF = new Motif("Queen (A)");
-const SPAMTONAMOTIF = new Motif("Spamton (A)");
-const SPAMTONBMOTIF = new Motif("Spamton (B)");
-const TVTIMEMOTIF = new Motif("TV Time!");
-const TENNAMOTIF = new Motif("Tenna");
-const MIKEMOTIF = new Motif("Mike");
+const QUEENAMOTIF = new Motif("Queen (A)", "#6fd1ff", "#6d86e733");
+const SPAMTONAMOTIF = new Motif("Spamton (A)", "#ffffff", "#ffaec933");
+const SPAMTONBMOTIF = new Motif("Spamton (B)", "#ffffff", "#fff30133");
+const TVTIMEMOTIF = new Motif("TV Time!", "#fbe63b", "#ff342b33");
+const TENNAMOTIF = new Motif("Tenna", "#db1f53", "#fffb5b33");
+const MIKEMOTIF = new Motif("Mike", "#69be60");
 
 const allSongs = [];
 const theWorldRevolving = new Song("THE WORLD REVOLVING",

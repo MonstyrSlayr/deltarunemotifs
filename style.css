@@ -9,11 +9,23 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 h1
 {
     font-size: 40px;
+    color: white;
+}
+
+h2
+{
+    color: white;
+}
+
+p
+{
+    color: white;
 }
 
 #musicContainer
@@ -29,8 +41,7 @@ h1
     padding: 1em;
     margin: 1em;
     border-radius: 1em;
-    /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
-    background: white;
+    background-color: black;
     display: inline-block;
     font-family: sans-serif;
     text-align: center;
@@ -45,6 +56,11 @@ h1
 {
     width: 100%;
     border-radius: 1em;
+}
+
+.coverArt:hover
+{
+    cursor: pointer;
 }
 
 .controls
@@ -63,8 +79,8 @@ h1
     margin: 0 4px;
     border: none;
     border-radius: 6px;
-    background: black;
-    color: white;
+    background-color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -73,7 +89,7 @@ h1
     margin-top: 1em;
     width: 100%;
     height: 1em;
-    background: lightgray;
+    background-color: #ffffff33;
     border-radius: 3px;
     position: relative;
     display: flex;
@@ -84,7 +100,7 @@ h1
 {
     height: 100%;
     width: 0%;
-    background: black;
+    background-color: white;
     display: inline-block;
 }
 
@@ -115,7 +131,7 @@ h1
 .timeLabels
 {
     font-size: 12px;
-    color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
 }
@@ -123,7 +139,8 @@ h1
 #motifList
 {
     list-style-type: none;
-    width: 60%;
+    width: 50%;
+    padding: 0;
 }
 
 #motifList > li
@@ -132,26 +149,34 @@ h1
     flex-direction: row;
     gap: 1em;
     align-items: center;
+    height: 3em;
 }
 
 #motifList > li > h3
 {
     margin: 0;
+    color: white;
 }
 
-#motifList > li > img
+#motifList > li > .soul
 {
     /* soul */
+    width: 2em;
     height: 2em;
-    display: none;
-}
-
-#motifList > li > img.playing
-{
     display: inline-block;
+    
+    background-color: white;
+    -webkit-mask-image: url('./img/white_soul.png');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    mask-image: url('./img/white_soul.png');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
 }
 
 .gone
 {
-    display: none;
+    display: none !important;
 }
