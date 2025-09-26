@@ -150,3 +150,8 @@ h1
 {
     display: inline-block;
 }
+
+.gone
+{
+    display: none;
+}

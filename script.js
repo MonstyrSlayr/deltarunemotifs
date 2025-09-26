@@ -1,5 +1,7 @@
 import { catswing } from "./data.js";
 
+let isDragging = false; // maus
+
 let players = {}; // store players by videoId
 let updateIntervals = {};
 
@@ -14,27 +16,28 @@ function formatPageForSong(daSong)
 
     // Create card
     const card = document.createElement("div");
-    card.className = "audioCard";
+    card.classList.add("audioCard");
     container.appendChild(card);
 
         const imageContainer = document.createElement("div");
-        imageContainer.className = "imageContainer";
+        imageContainer.classList.add("imageContainer");
         card.appendChild(imageContainer);
 
             // Cover art
             const img = document.createElement("img");
-            img.className = "coverArt";
+            img.classList.add("coverArt");
             img.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
             imageContainer.appendChild(img);
 
             // Controls
             const controls = document.createElement("div");
-            controls.className = "controls";
+            controls.classList.add("controls");
             imageContainer.appendChild(controls);
 
                 const playBtn = document.createElement("button");
                 playBtn.textContent = "▶";
                 const pauseBtn = document.createElement("button");
+                pauseBtn.classList.add("gone");
                 pauseBtn.textContent = "⏸";
 
                 controls.appendChild(playBtn);
@@ -47,12 +50,12 @@ function formatPageForSong(daSong)
         card.appendChild(timebarContainer);
 
         const timebarProgress = document.createElement("div");
-        timebarProgress.className = "timebarProgress";
+        timebarProgress.classList.add("timebarProgress");
         timebarContainer.appendChild(timebarProgress);
 
         // Time labels
         const timeLabels = document.createElement("div");
-        timeLabels.className = "timeLabels";
+        timeLabels.classList.add("timeLabels");
         card.appendChild(timeLabels);
         
             const currentTimeLabel = document.createElement("span");
@@ -141,7 +144,7 @@ function formatPageForSong(daSong)
                             if (gapDuration > 0)
                             {
                                 const barGap = document.createElement("div");
-                                barGap.className = "timebarGap";
+                                barGap.classList.add("timebarGap");
                                 motifbarContainer.appendChild(barGap);
 
                                 const gapPercent = (gapDuration / duration) * 100;
@@ -151,7 +154,7 @@ function formatPageForSong(daSong)
                             const motifDuration = motifRef.endTime - motifRef.startTime;
 
                             const motifRefBar = document.createElement("div");
-                            motifRefBar.className = "timebarProgress";
+                            motifRefBar.classList.add("timebarProgress");
                             motifbarContainer.appendChild(motifRefBar);
                             
                             const motifPercent = (motifDuration / duration) * 100;
@@ -167,20 +170,66 @@ function formatPageForSong(daSong)
 
                         const motifLabel = document.createElement("div");
                         motifLabel.textContent = motif.name;
-                        motifLabel.className = "timeLabels";
+                        motifLabel.classList.add("timeLabels");
                         card.appendChild(motifLabel);
+                    });
+
+                    window.addEventListener('keydown', function(keyevent)
+                    {
+                        if (['Space', 'ArrowLeft', 'ArrowRight'].includes(keyevent.code)) {
+                            keyevent.preventDefault();
+                        }
+
+                        switch (keyevent.code)
+                        {
+                            case 'Space': case 'KeyK':
+                                const playerState = players[videoId].getPlayerState();
+                                
+                                // -1 (unstarted), 0 (ended), 1 (playing), 2 (paused), 3 (buffering), 5 (video cued)
+                                if (playerState === 1)
+                                {
+                                    players[videoId].pauseVideo()
+                                }
+                                else if (playerState === 2 || playerState === 5)
+                                {
+                                    players[videoId].playVideo()
+                                }
+                                break;
+                            
+                            case 'ArrowLeft':
+                                players[videoId].seekTo(players[videoId].getCurrentTime() - 5, true);
+                                break;
+
+                            case 'ArrowRight':
+                                players[videoId].seekTo(players[videoId].getCurrentTime() + 5, true);
+                                break;
+                            
+                            case 'KeyJ':
+                                players[videoId].seekTo(players[videoId].getCurrentTime() - 10, true);
+                                break;
+
+                            case 'KeyL':    
+                                players[videoId].seekTo(players[videoId].getCurrentTime() + 10, true);
+                                break;
+                        }
                     });
                 },
                 'onStateChange': (event) =>
                 {
                     if (event.data === YT.PlayerState.PLAYING)
                     {
+                        playBtn.classList.add("gone");
+                        pauseBtn.classList.remove("gone");
+
                         updateIntervals[videoId] = setInterval(() =>
                         {
                             const current = players[videoId].getCurrentTime();
                             const duration = players[videoId].getDuration();
-                            const percent = (current / duration) * 100;
-                            timebarProgress.style.width = percent + "%";
+                            if (!isDragging)
+                            {
+                                const percent = (current / duration) * 100;
+                                timebarProgress.style.width = percent + "%";
+                            }
                             currentTimeLabel.textContent = formatTime(current);
 
                             allMotifs.forEach(motif =>
@@ -212,6 +261,9 @@ function formatPageForSong(daSong)
                     }
                     else
                     {
+                        pauseBtn.classList.add("gone");
+                        playBtn.classList.remove("gone");
+
                         clearInterval(updateIntervals[videoId]);
                     }
                 }
@@ -236,143 +288,50 @@ function formatPageForSong(daSong)
     // Seek when clicking timebar
     timebarContainer.addEventListener("click", (e) =>
     {
-        const rect = timebarContainer.getBoundingClientRect();
-        const clickX = e.clientX - rect.left;
-        const percent = clickX / rect.width;
-        const duration = players[videoId].getDuration();
-        players[videoId].seekTo(duration * percent, true);
+        seekVideo(e);
     });
-}
 
-function createAudioCard(videoId, containerId="musicContainer")
-{
-    const container = document.getElementById(containerId);
-
-    // Create card
-    const card = document.createElement("div");
-    card.className = "audioCard";
-
-    const imageContainer = document.createElement("div");
-    imageContainer.className = "imageContainer";
-    card.appendChild(imageContainer);
-
-    // Cover art
-    const img = document.createElement("img");
-    img.className = "coverArt";
-    img.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-    imageContainer.appendChild(img);
-
-    // Controls
-    const controls = document.createElement("div");
-    controls.className = "controls";
-
-    const playBtn = document.createElement("button");
-    playBtn.textContent = "▶";
-    const pauseBtn = document.createElement("button");
-    pauseBtn.textContent = "⏸";
-
-    controls.appendChild(playBtn);
-    controls.appendChild(pauseBtn);
-    imageContainer.appendChild(controls);
-
-    // Timebar
-    const timebarContainer = document.createElement("div");
-    timebarContainer.className = "timebarContainer";
-
-    const timebarProgress = document.createElement("div");
-    timebarProgress.className = "timebarProgress";
-    timebarContainer.appendChild(timebarProgress);
-    card.appendChild(timebarContainer);
-
-    // Time labels
-    const timeLabels = document.createElement("div");
-    timeLabels.className = "timeLabels";
-    const currentTimeLabel = document.createElement("span");
-    const durationLabel = document.createElement("span");
-    currentTimeLabel.textContent = "0:00";
-    durationLabel.textContent = "0:00";
-    timeLabels.appendChild(currentTimeLabel);
-    timeLabels.appendChild(durationLabel);
-    card.appendChild(timeLabels);
-
-    // Hidden YouTube iframe
-    const playerDiv = document.createElement("div");
-    playerDiv.id = "yt" + videoId;
-    playerDiv.style.display = "none";
-    card.appendChild(playerDiv);
-
-    container.appendChild(card);
-
-    // Helper: format seconds -> M:SS
-    function formatTime(seconds)
+    // Seek when clicking or dragging timebar
+    timebarContainer.addEventListener("mousedown", (e) =>
     {
-        seconds = Math.floor(seconds);
-        const m = Math.floor(seconds / 60);
-        const s = seconds % 60;
-        return m + ":" + (s < 10 ? "0" + s : s);
-    }
+        isDragging = true;
+        updateProgress(e); // update immediately when click starts
+    });
 
-    // Initialize YouTube player
-    function onReady()
+    window.addEventListener("mousemove", (e) =>
     {
-        players[videoId] = new YT.Player(playerDiv.id,
+        if (isDragging)
         {
-            videoId: videoId,
-            height: '0',
-            width: '0',
-            playerVars: { 'playsinline': 1 },
-            events:
-            {
-                'onReady': (event) =>
-                {
-                    const duration = event.target.getDuration();
-                    durationLabel.textContent = formatTime(duration);
-                },
-                'onStateChange': (event) =>
-                {
-                    if (event.data === YT.PlayerState.PLAYING)
-                    {
-                        updateIntervals[videoId] = setInterval(() =>
-                        {
-                            const current = players[videoId].getCurrentTime();
-                            const duration = players[videoId].getDuration();
-                            const percent = (current / duration) * 100;
-                            timebarProgress.style.width = percent + "%";
-                            currentTimeLabel.textContent = formatTime(current);
-                        }, 500);
-                    }
-                    else
-                    {
-                        clearInterval(updateIntervals[videoId]);
-                    }
-                }
-            }
-        });
-    }
+            updateProgress(e); // show preview while dragging
+        }
+    });
 
-    // If API ready, init now, else defer
-    if (window.YT && window.YT.Player)
+    window.addEventListener("mouseup", (e) =>
     {
-        onReady();
-    }
-    else
-    {
-        window.onYouTubeIframeAPIReady = onReady;
-    }
+        if (isDragging)
+        {
+            isDragging = false;
+            seekVideo(e); // finalize seek
+        }
+    });
 
-    // Button actions
-    playBtn.onclick = () => players[videoId].playVideo();
-    pauseBtn.onclick = () => players[videoId].pauseVideo();
-
-    // Seek when clicking timebar
-    timebarContainer.addEventListener("click", (e) =>
+    function updateProgress(e)
     {
         const rect = timebarContainer.getBoundingClientRect();
-        const clickX = e.clientX - rect.left;
+        const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
+        const percent = clickX / rect.width;
+        timebarProgress.style.width = (percent * 100) + "%"; // show fill as preview
+    }
+
+    function seekVideo(e)
+    {
+        const rect = timebarContainer.getBoundingClientRect();
+        const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
         const percent = clickX / rect.width;
         const duration = players[videoId].getDuration();
         players[videoId].seekTo(duration * percent, true);
-    });
+        players[videoId].playVideo();
+    }
 }
 
 formatPageForSong(catswing);
