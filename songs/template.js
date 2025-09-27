@@ -1,4 +1,4 @@
-import { catswing } from "./data.js";
+import { getSongById } from "../data.js";
 
 let isDragging = false; // maus
 
@@ -349,4 +349,14 @@ function formatPageForSong(daSong)
     }
 }
 
-formatPageForSong(catswing);
+function getLastFolder(url, num)
+{
+    const urlObj = new URL(url);
+    const pathname = urlObj.pathname;
+    const parts = pathname.split('/').filter(part => part !== '').filter(part => part !== 'index.html'); // Split and remove empty elements and index.html
+    return parts[parts.length - num]; // Return the last part
+}
+
+const daId = getLastFolder(window.location.href, 1);
+const daSong = getSongById(daId);
+if (daSong) formatPageForSong(daSong);

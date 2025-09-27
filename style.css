@@ -21,6 +21,19 @@ h1
 h2
 {
     color: white;
+    margin: 0.5em;
+}
+
+h3
+{
+    color: white;
+    margin: 0.5em;
+    text-align: center;
+}
+
+a
+{
+    color: cyan;
 }
 
 p
@@ -174,6 +187,32 @@ p
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+}
+
+.bigLink
+{
+    border: 2px solid cyan;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+
+.bigLink:hover
+{
+    scale: 1.05;
+}
+
+#songsDiv
+{
+    display: flex;
+}
+
+#songsDiv > a
+{
+    border: 2px solid cyan;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 0.5em;
 }
 
 .gone

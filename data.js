@@ -1,9 +1,19 @@
+function normalizeAndTrim(str)
+{
+    return str
+        .normalize("NFD")                  // decompose accented characters
+        .replace(/[\u0300-\u036f]/g, "")   // remove diacritical marks
+        .replace(/[^a-z0-9]/gi, "")        // remove non alphanumeric characters
+        .toLowerCase();                    // take a wild guess
+}
+
 class Motif
 {
     name;
     image;
     color;
     color2; // ideally transparent
+    id;
 
     soul = null; // element
 
@@ -12,6 +22,8 @@ class Motif
         this.name = name;
         this.color = color;
         this.color2 = color2;
+
+        this.id = normalizeAndTrim(name);
     }
 }
 
@@ -36,11 +48,14 @@ class Song
     youtubeId;
     motifs = []; // actually motif references
 
-    constructor(name, youtubeId, motifs = [])
+    constructor(name, youtubeId, motifs = [], id = "")
     {
         this.name = name;
         this.youtubeId = youtubeId;
         this.motifs = motifs.sort((a, b) => a.startTime - b.startTime);
+
+        if (id == "") this.id = normalizeAndTrim(name);
+        else this.id = id; // in case the name is the same in multiple albums
     }
 }
 
@@ -53,7 +68,38 @@ const TVTIMEMOTIF = new Motif("TV Time!", "#fbe63b", "#ff342b33");
 const TENNAMOTIF = new Motif("Tenna", "#db1f53", "#fffb5b33");
 const MIKEMOTIF = new Motif("Mike", "#69be60");
 
-const allSongs = [];
+export const allSongs = [];
+
+export function getSongById(id)
+{
+    return allSongs.find(song => id == song.id);
+}
+
+function exportIdsToTxt(data, filename = "ids.txt")
+{
+    // Extract ids from the objects
+    const ids = data.map(obj => obj.id);
+
+    // Join them with newlines
+    const text = ids.join("\n");
+
+    // Create a blob with the text
+    const blob = new Blob([text], { type: "text/plain" });
+
+    // Create a temporary download link
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+
+    // Trigger the download
+    document.body.appendChild(link);
+    link.click();
+
+    // Cleanup
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
+}
+
 const theWorldRevolving = new Song("THE WORLD REVOLVING",
     "Z01Tsgwe2dQ",
     [
@@ -61,6 +107,7 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
         new MotifReference(DONTFORGETMOTIF, 80.9, "end")
     ]
 );
+allSongs.push(theWorldRevolving);
 
 export const catswing = new Song("Catswing",
     "r-DvoCTarMQ",
@@ -83,3 +130,7 @@ export const catswing = new Song("Catswing",
         new MotifReference(QUEENAMOTIF, 96.23, 98.19),
     ]
 );
+allSongs.push(catswing);
+
+// please don't run twice
+// exportIdsToTxt(allSongs);
