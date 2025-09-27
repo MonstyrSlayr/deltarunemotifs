@@ -115,9 +115,13 @@ function formatPageForSong(daSong)
                         const daLi = document.createElement("li");
                         motifList.appendChild(daLi);
 
-                            const liName = document.createElement("h3");
-                            liName.textContent = motif.name;
-                            daLi.appendChild(liName);
+                            const liAnchor = document.createElement("a");
+                            liAnchor.href = "../../motifs/" + motif.id;
+                            daLi.appendChild(liAnchor);
+
+                                const liName = document.createElement("h3");
+                                liName.textContent = motif.name;
+                                liAnchor.appendChild(liName);
 
                             const liSoul = document.createElement("div"); // src is applied with css
                             liSoul.classList.add("soul");

@@ -12,6 +12,25 @@ body
     background-color: black;
 }
 
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.antiButton
+{
+    opacity: 0;
+}
+
+.antiButton
+{
+    cursor: default;
+}
+
 h1
 {
     font-size: 40px;
@@ -39,6 +58,7 @@ a
 p
 {
     color: white;
+    margin: 0.5em;
 }
 
 #musicContainer
@@ -171,11 +191,11 @@ p
     color: white;
 }
 
-#motifList > li > .soul
+.soul
 {
-    /* soul */
     width: 2em;
     height: 2em;
+    margin: 0.5em 0;
     display: inline-block;
     
     background-color: white;
@@ -202,17 +222,9 @@ p
     scale: 1.05;
 }
 
-#songsDiv
+#songsDiv, #motifsDiv
 {
     display: flex;
-}
-
-#songsDiv > a
-{
-    border: 2px solid cyan;
-    padding: 1em;
-    border-radius: 0.5em;
-    margin: 0.5em;
 }
 
 .gone

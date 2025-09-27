@@ -5,6 +5,7 @@ const allSongsDiv = document.getElementById("songsDiv");
 allSongs.forEach(song =>
 {
     const anchor = document.createElement("a");
+    anchor.classList.add("bigLink");
     anchor.href = "./" + song.id;
     allSongsDiv.appendChild(anchor);
 

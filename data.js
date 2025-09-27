@@ -7,6 +7,9 @@ function normalizeAndTrim(str)
         .toLowerCase();                    // take a wild guess
 }
 
+export const allMotifs = [];
+export const allSongs = [];
+
 class Motif
 {
     name;
@@ -24,6 +27,7 @@ class Motif
         this.color2 = color2;
 
         this.id = normalizeAndTrim(name);
+        allMotifs.push(this);
     }
 }
 
@@ -56,23 +60,33 @@ class Song
 
         if (id == "") this.id = normalizeAndTrim(name);
         else this.id = id; // in case the name is the same in multiple albums
+
+        allSongs.push(this);
     }
 }
 
 const DONTFORGETMOTIF = new Motif("Don't Forget");
 const FREEDOMMOTIF = new Motif("Freedom Motif");
-const QUEENAMOTIF = new Motif("Queen (A)", "#6fd1ff", "#6d86e733");
+export const QUEENAMOTIF = new Motif("Queen (A)", "#6fd1ff", "#6d86e733");
 const SPAMTONAMOTIF = new Motif("Spamton (A)", "#ffffff", "#ffaec933");
 const SPAMTONBMOTIF = new Motif("Spamton (B)", "#ffffff", "#fff30133");
 const TVTIMEMOTIF = new Motif("TV Time!", "#fbe63b", "#ff342b33");
 const TENNAMOTIF = new Motif("Tenna", "#db1f53", "#fffb5b33");
 const MIKEMOTIF = new Motif("Mike", "#69be60");
 
-export const allSongs = [];
+export function getMotifById(id)
+{
+    return allMotifs.find(motif => id == motif.id);
+}
 
 export function getSongById(id)
 {
     return allSongs.find(song => id == song.id);
+}
+
+export function getSongsWithMotif(motif)
+{
+    return allSongs.filter(song => song.motifs.some(ref => ref.motif == motif));
 }
 
 function exportIdsToTxt(data, filename = "ids.txt")
@@ -107,9 +121,8 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
         new MotifReference(DONTFORGETMOTIF, 80.9, "end")
     ]
 );
-allSongs.push(theWorldRevolving);
 
-export const catswing = new Song("Catswing",
+const catswing = new Song("Catswing",
     "r-DvoCTarMQ",
     [
         new MotifReference(MIKEMOTIF, 7.12, 9.67), new MotifReference(MIKEMOTIF, 10.81, 17.02), new MotifReference(MIKEMOTIF, 18.14, 22.16),
@@ -130,7 +143,7 @@ export const catswing = new Song("Catswing",
         new MotifReference(QUEENAMOTIF, 96.23, 98.19),
     ]
 );
-allSongs.push(catswing);
 
 // please don't run twice
-// exportIdsToTxt(allSongs);
+// exportIdsToTxt(allMotifs, "motifids.txt");
+// exportIdsToTxt(allSongs, "songids.txt");
