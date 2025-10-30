@@ -10,7 +10,7 @@ function getLastFolder(url, num)
 
 const daId = getLastFolder(window.location.href, 1);
 const daMotif = getMotifById(daId);
-if (!daMotif) /* cry */ ;
+if (!daMotif) /* cry */;
 
 const header = document.getElementById("motifName");
 header.textContent = daMotif.name;

@@ -191,6 +191,14 @@ p
     color: white;
 }
 
+.soulDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .soul
 {
     width: 2em;
@@ -225,6 +233,10 @@ p
 #songsDiv, #motifsDiv
 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .gone

@@ -66,7 +66,7 @@ function formatPageForSong(daSong)
             timeLabels.appendChild(durationLabel);
 
         const allMotifs = new Set();
-        for (const motifRef of daSong.motifs)
+        for (const motifRef of daSong.motifRefs)
         {
             allMotifs.add(motifRef.motif);
         }
@@ -120,15 +120,27 @@ function formatPageForSong(daSong)
                             daLi.appendChild(liAnchor);
 
                                 const liName = document.createElement("h3");
-                                liName.textContent = motif.name;
+                                liName.textContent = motif.toString();
                                 liAnchor.appendChild(liName);
 
-                            const liSoul = document.createElement("div"); // src is applied with css
-                            liSoul.classList.add("soul");
-                            liSoul.classList.add("gone");
-                            liSoul.style.backgroundColor = motif.color;
-                            motif.soul = liSoul;
-                            daLi.appendChild(liSoul);
+                            const liSoulDiv = document.createElement("div");
+                            liSoulDiv.classList.add("soulDiv");
+                            liSoulDiv.classList.add("gone");
+                            motif.soul = liSoulDiv;
+                            daLi.appendChild(liSoulDiv);
+
+                                const liSoulHeart = document.createElement("div"); // src is applied with css
+                                liSoulHeart.classList.add("soul");
+                                liSoulHeart.style.backgroundColor = motif.color;
+                                liSoulDiv.appendChild(liSoulHeart);
+
+                                const liSoulVariation = document.createElement("p");
+                                liSoulVariation.textContent = "(variation)";
+                                liSoulVariation.classList.add("variation");
+                                liSoulVariation.classList.add("gone");
+                                motif.variation = liSoulVariation;
+                                liSoulVariation.style.color = motif.color;
+                                liSoulDiv.appendChild(liSoulVariation);
 
                         // add motif to bars
 
@@ -140,7 +152,7 @@ function formatPageForSong(daSong)
 
                         let previousMotifEndTime = 0;
 
-                        for (const motifRef of daSong.motifs.filter(ref => ref.motif == motif))
+                        for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
                         {
                             // each individual reference
 
@@ -177,7 +189,7 @@ function formatPageForSong(daSong)
                         }
 
                         const motifLabel = document.createElement("div");
-                        motifLabel.textContent = motif.name;
+                        motifLabel.textContent = motif.toString();
                         motifLabel.classList.add("timeLabels");
                         card.appendChild(motifLabel);
                     });
@@ -202,15 +214,17 @@ function formatPageForSong(daSong)
 
                             allMotifs.forEach(motif =>
                             {
-                                if (motif.soul != null)
+                                if (motif.soul != null && motif.variation != null)
                                 {
                                     let playing = false;
+                                    let variation = false;
 
-                                    for (const motifRef of daSong.motifs.filter(ref => ref.motif == motif))
+                                    for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
                                     {
                                         if (current >= motifRef.startTime && current < motifRef.endTime)
                                         {
                                             playing = true;
+                                            variation = motifRef.isVariation;
                                             break;
                                         }
                                     }
@@ -218,6 +232,15 @@ function formatPageForSong(daSong)
                                     if (playing)
                                     {
                                         motif.soul.classList.remove("gone");
+
+                                        if (variation)
+                                        {
+                                            motif.variation.classList.remove("gone");
+                                        }
+                                        else
+                                        {
+                                            motif.variation.classList.add("gone");
+                                        }
                                     }
                                     else
                                     {
