@@ -61,8 +61,9 @@ class Song
     name;
     youtubeId;
     motifRefs = [];
+    loopPoint = null;
 
-    constructor(name, youtubeId, motifRefs = [], id = "")
+    constructor(name, youtubeId = "", motifRefs = [], id = "", loopPoint = null)
     {
         this.name = name;
         this.youtubeId = youtubeId;
@@ -71,25 +72,48 @@ class Song
         if (id == "") this.id = normalizeAndTrim(name);
         else this.id = id; // in case the name is the same in multiple albums
 
+        this.loopPoint = loopPoint;
+
         allSongs.push(this);
     }
 }
 
+const UNDYNEMOTIF = new Motif("Undyne");
+const NIGHTMAREMOTIF = new Motif("Your Best Nightmare");
+NIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
+
+const SUSIEMOTIF = new Motif("Susie");
 const DONTFORGETMOTIF = new Motif("Don't Forget");
+const THEDOORMOTIF = new Motif("The Door", "");
 const THELEGENDAMOTIF = new Motif("The Legend", "A");
 const THELEGENDBMOTIF = new Motif("The Legend", "B");
 const THELEGENDCMOTIF = new Motif("The Legend", "C");
 const LANCERMOTIF = new Motif("Lancer", "");
 const KINGMOTIF = new Motif("King", "");
-const FREEDOMMOTIF = new Motif("Freedom Motif", "");
-const LOSTGIRLMOTIF = new Motif("Lost Girl", "");
+const HIPSHOPMOTIF = new Motif("Hip Shop", "");
+const FREEDOMMOTIF = new Motif("Freedom", "");
+
 const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733");
+const QUEENBMOTIF = new Motif("Queen", "B", "#6fd1ff", "#6d86e733");
+const QUEENCMOTIF = new Motif("Queen", "C", "#6fd1ff", "#6d86e733");
+const QUEENDMOTIF = new Motif("Queen", "D", "#6fd1ff", "#6d86e733");
+const SWEETCAPNCAKESA = new Motif("Sweet Cap'n Cakes", "A");
+const SWEETCAPNCAKESB = new Motif("Sweet Cap'n Cakes", "B");
+const BERDLYAMOTIF = new Motif("Berdly", "A");
+const BERDLYBMOTIF = new Motif("Berdly", "B");
 const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933");
 const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
+const LOSTGIRLMOTIF = new Motif("Lost Girl", "");
+const POWERSCOMBINEDMOTIF = new Motif("Powers Combined", "");
+
 const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33");
 const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33");
+const DOOMBOARDMOTIF = new Motif("Doom Board", "");
+
 const MIKEMOTIF = new Motif("Mike", "", "#69be60");
 const SANCTUARYMOTIF = new Motif("Dark Sanctuary");
+const SUBSANCMOTIF = new Motif("Subsequent Sanctuary");
+const GERSONMOTIF = new Motif("Gerson");
 const TITANMOTIF = new Motif("Titan");
 
 export function getMotifById(id)
@@ -151,6 +175,8 @@ function quickSec(bpm, numberOfBeats)
     return totalSeconds;
 }
 
+//#region CHAPTER 1
+
 const theLegendBPM = 110;
 const theLegend = new Song("The Legend",
     "PibYmujLubI",
@@ -164,7 +190,8 @@ const theLegend = new Song("The Legend",
         new MotifReference(THELEGENDBMOTIF, quickSec(theLegendBPM, 36 + 80), quickSec(theLegendBPM, 36 + 96)),
         new MotifReference(THELEGENDAMOTIF, quickSec(theLegendBPM, 36 + 96), quickSec(theLegendBPM, 36 + 96 + 7)),
         new MotifReference(THELEGENDCMOTIF, quickSec(theLegendBPM, 36 + 128), quickSec(theLegendBPM, 36 + 128 + 34)),
-    ]
+    ],
+    "", quickSec(theLegendBPM, 36 + 128 + 35)
 );
 
 const lancerBPM = 125;
@@ -173,16 +200,18 @@ const lancer = new Song("Lancer",
     [
         new MotifReference(LANCERMOTIF, 0, quickSec(lancerBPM, 24.66)),
         new MotifReference(LANCERMOTIF, quickSec(lancerBPM, 24.66), quickSec(lancerBPM, 48.66)),
-    ]
+    ],
+    "", quickSec(lancerBPM, 99)
 );
 
 const vsLancerBPM = 177;
 const vsLancer = new Song("Vs. Lancer",
     "Ce-gU8G6Vik",
     [
-        new MotifReference(LANCERMOTIF, 0, quickSec(vsLancerBPM, 33.5)),
+        new MotifReference(LANCERMOTIF, quickSec(vsLancerBPM, 2.5), quickSec(vsLancerBPM, 33.5)),
         new MotifReference(LANCERMOTIF, quickSec(vsLancerBPM, 33.5), quickSec(vsLancerBPM, 64.5)),
-    ]
+    ],
+    "", quickSec(vsLancerBPM, 123)
 );
 
 const cardCastleBPM = 125;
@@ -193,7 +222,8 @@ const cardCastle = new Song("Card Castle",
         new MotifReference(KINGMOTIF, quickSec(cardCastleBPM, 32), quickSec(cardCastleBPM, 62.5)),
         new MotifReference(LANCERMOTIF, quickSec(cardCastleBPM, 62.5), quickSec(cardCastleBPM, 96)),
         new MotifReference(LANCERMOTIF, quickSec(cardCastleBPM, 96), quickSec(cardCastleBPM, 128)),
-    ]
+    ],
+    "", quickSec(cardCastleBPM, 128)
 );
 
 const chaosKingBPM = 147;
@@ -208,10 +238,11 @@ const chaosKing = new Song("Chaos King",
         new MotifReference(THELEGENDCMOTIF, quickSec(chaosKingBPM, 40 + 96 + 32), quickSec(chaosKingBPM, 40 + 96 + 64)),
         new MotifReference(THELEGENDCMOTIF, quickSec(chaosKingBPM, 40 + 96 + 64), quickSec(chaosKingBPM, 40 + 96 + 92)),
         new MotifReference(THELEGENDCMOTIF, quickSec(chaosKingBPM, 40 + 96 + 92), quickSec(chaosKingBPM, 40 + 96 + 92 + 32), true),
-    ]
+    ],
+    "", quickSec(chaosKingBPM, 40 + 96 + 92 + 32)
 );
 
-const theWorldRevolvingBPM = 190.1;
+const theWorldRevolvingBPM = 190;
 const theWorldRevolving = new Song("THE WORLD REVOLVING",
     "Z01Tsgwe2dQ",
     [
@@ -227,30 +258,223 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
         new MotifReference(DONTFORGETMOTIF, quickSec(theWorldRevolvingBPM, 259 + 40), quickSec(theWorldRevolvingBPM, 267 + 40)),
         new MotifReference(DONTFORGETMOTIF, quickSec(theWorldRevolvingBPM, 259 + 48), quickSec(theWorldRevolvingBPM, 267 + 48)),
         new MotifReference(DONTFORGETMOTIF, quickSec(theWorldRevolvingBPM, 259 + 56), quickSec(theWorldRevolvingBPM, 264 + 56)),
+    ],
+    "", quickSec(theWorldRevolvingBPM, 264 + 56)
+);
+
+//#endregion
+
+//#region CHAPTER 2
+
+const queen = new Song("Queen",
+    "6XQv5CHmITA",
+    [
+
     ]
 );
 
-// TODO: fix with new bpm method
-const catswing = new Song("Catswing",
-    "r-DvoCTarMQ",
+const aSimpleDiversionBPM = 130;
+const aSimpleDiversion = new Song("A Simple Diversion",
+    "p1U5FjgwDhA",
     [
-        new MotifReference(MIKEMOTIF, 7.12, 9.67), new MotifReference(MIKEMOTIF, 10.81, 17.02), new MotifReference(MIKEMOTIF, 18.14, 22.16),
-        new MotifReference(SPAMTONAMOTIF, 22.16, 27.70), new MotifReference(SPAMTONAMOTIF, 29.59, 35.09),
+        new MotifReference(QUEENAMOTIF, 0, quickSec(aSimpleDiversionBPM, 16)),
+        new MotifReference(QUEENCMOTIF, quickSec(aSimpleDiversionBPM, 16), quickSec(aSimpleDiversionBPM, 32)),
+        new MotifReference(QUEENAMOTIF, quickSec(aSimpleDiversionBPM, 32), quickSec(aSimpleDiversionBPM, 48)),
+        new MotifReference(QUEENCMOTIF, quickSec(aSimpleDiversionBPM, 48), quickSec(aSimpleDiversionBPM, 60))
+    ],
+    "", quickSec(aSimpleDiversionBPM, 64)
+);
 
-        new MotifReference(SPAMTONBMOTIF, 36.92, 66.47),
-        new MotifReference(TVTIMEMOTIF, 36.92, 37.85), new MotifReference(TVTIMEMOTIF, 51.70, 52.64),
-        new MotifReference(QUEENAMOTIF, 44.56, 46.50),
+const berdlyBPM = 98;
+const berdly = new Song("Berdly",
+    "2S8I1h-wNzc",
+    [
+        new MotifReference(BERDLYAMOTIF, 0, quickSec(berdlyBPM, 24)),
+        new MotifReference(BERDLYAMOTIF, quickSec(berdlyBPM, 24), quickSec(berdlyBPM, 48.5)),
+        new MotifReference(BERDLYBMOTIF, quickSec(berdlyBPM, 48.5), quickSec(berdlyBPM, 72.5)),
+    ],
+    "", quickSec(berdlyBPM, 72.5)
+);
 
-        new MotifReference(TVTIMEMOTIF, 66.48, 69.24), new MotifReference(TVTIMEMOTIF, 70.17, 72.92),
-        new MotifReference(TVTIMEMOTIF, 73.85, 76.61), new MotifReference(TVTIMEMOTIF, 77.53, 80.28),
-        new MotifReference(TENNAMOTIF, 74.08, 77.23),
-        new MotifReference(TVTIMEMOTIF, 81.21, 83.98), new MotifReference(TVTIMEMOTIF, 84.89, 87.66),
-        new MotifReference(TENNAMOTIF, 81.45, 84.61),
+const smartRaceBPM = 150;
+const smartRace = new Song("Smart Race",
+    "HZO3xw91eHw",
+    [
+        new MotifReference(QUEENAMOTIF, quickSec(smartRaceBPM, 4), quickSec(smartRaceBPM, 8)),
+        new MotifReference(QUEENAMOTIF, quickSec(smartRaceBPM, 12), quickSec(smartRaceBPM, 16)),
+        new MotifReference(QUEENAMOTIF, quickSec(smartRaceBPM, 20), quickSec(smartRaceBPM, 24)),
+        new MotifReference(QUEENAMOTIF, quickSec(smartRaceBPM, 25), quickSec(smartRaceBPM, 32)),
+        new MotifReference(BERDLYAMOTIF, quickSec(smartRaceBPM, 32), quickSec(smartRaceBPM, 64)),
+        new MotifReference(BERDLYAMOTIF, quickSec(smartRaceBPM, 64), quickSec(smartRaceBPM, 96)),
+        new MotifReference(BERDLYBMOTIF, quickSec(smartRaceBPM, 96), quickSec(smartRaceBPM, 128)),
+        new MotifReference(BERDLYBMOTIF, quickSec(smartRaceBPM, 128), quickSec(smartRaceBPM, 128 + 32)),
+    ],
+    "", quickSec(smartRaceBPM, 128 + 32)
+);
 
-        new MotifReference(SPAMTONBMOTIF, 88.63, 66.47 - 36.92 + 88.63),
-        new MotifReference(TVTIMEMOTIF, 88.63, 89.57), new MotifReference(TVTIMEMOTIF, 103.40, 104.34),
-        new MotifReference(QUEENAMOTIF, 96.23, 98.19),
-    ]
+const coolMixtapeBPM = 144;
+const coolMixtape = new Song("Cool Mixtape",
+    "EeVEyBGPgLY",
+    [
+        new MotifReference(QUEENAMOTIF, 0, quickSec(coolMixtapeBPM, 16)),
+        new MotifReference(QUEENCMOTIF, quickSec(coolMixtapeBPM, 16), quickSec(coolMixtapeBPM, 32)),
+        new MotifReference(QUEENDMOTIF, quickSec(coolMixtapeBPM, 32), quickSec(coolMixtapeBPM, 64)),
+    ],
+    "", quickSec(coolMixtapeBPM, 64)
+);
+
+const elegantEntranceBPM = 100;
+const elegantEntrance = new Song("Elegant Entrance",
+    "j6baKyF2Ksc",
+    [
+        new MotifReference(QUEENAMOTIF, 0, quickSec(elegantEntranceBPM, 32)),
+        new MotifReference(QUEENAMOTIF, quickSec(elegantEntranceBPM, 32), quickSec(elegantEntranceBPM, 64), true),
+        new MotifReference(QUEENBMOTIF, quickSec(elegantEntranceBPM, 64), quickSec(elegantEntranceBPM, 96)),
+        new MotifReference(QUEENBMOTIF, quickSec(elegantEntranceBPM, 96), quickSec(elegantEntranceBPM, 128), true),
+    ],
+    "", quickSec(elegantEntranceBPM, 128)
+);
+
+const bluebirdOfMisfortuneBPM = 120;
+const bluebirdOfMisfortune = new Song("Bluebird of Misfortune",
+    "yud5H-vnbJw",
+    [
+        new MotifReference(BERDLYAMOTIF, 0, quickSec(bluebirdOfMisfortuneBPM, 49)),
+        new MotifReference(BERDLYBMOTIF, quickSec(bluebirdOfMisfortuneBPM, 49), quickSec(bluebirdOfMisfortuneBPM, 97)),
+    ],
+    "", quickSec(bluebirdOfMisfortuneBPM, 97)
+)
+
+const pandoraPalaceBPM = 100;
+const pandoraPalace = new Song("Pandora Palace",
+    "q-5cXVcCOUs",
+    [
+        new MotifReference(QUEENAMOTIF, quickSec(pandoraPalaceBPM, 34), quickSec(pandoraPalaceBPM, 34 + 16)),
+        new MotifReference(QUEENAMOTIF, quickSec(pandoraPalaceBPM, 34 + 16), quickSec(pandoraPalaceBPM, 34 + 32), true),
+        new MotifReference(QUEENBMOTIF, quickSec(pandoraPalaceBPM, 34 + 64), quickSec(pandoraPalaceBPM, 34 + 80)),
+        new MotifReference(QUEENBMOTIF, quickSec(pandoraPalaceBPM, 34 + 80), quickSec(pandoraPalaceBPM, 34 + 96), true),
+        new MotifReference(QUEENBMOTIF, quickSec(pandoraPalaceBPM, 34 + 64 + 32), quickSec(pandoraPalaceBPM, 34 + 80 + 32)),
+        new MotifReference(QUEENBMOTIF, quickSec(pandoraPalaceBPM, 34 + 80 + 32), quickSec(pandoraPalaceBPM, 34 + 96 + 32), true),
+    ],
+    "", quickSec(pandoraPalaceBPM, 34 + 96 + 32)
+);
+
+const attackOfTheKillerQueenBPM = 144;
+const attackOfTheKillerQueen = new Song("Attack of the Killer Queen",
+    "vBjscyFC3jo",
+    [
+        new MotifReference(QUEENAMOTIF, 0, quickSec(attackOfTheKillerQueenBPM, 16)),
+        new MotifReference(QUEENCMOTIF, quickSec(attackOfTheKillerQueenBPM, 16), quickSec(attackOfTheKillerQueenBPM, 32), true),
+        new MotifReference(QUEENAMOTIF, quickSec(attackOfTheKillerQueenBPM, 32), quickSec(attackOfTheKillerQueenBPM, 48)),
+        new MotifReference(QUEENCMOTIF, quickSec(attackOfTheKillerQueenBPM, 48), quickSec(attackOfTheKillerQueenBPM, 64)),
+        new MotifReference(QUEENDMOTIF, quickSec(attackOfTheKillerQueenBPM, 64), quickSec(attackOfTheKillerQueenBPM, 96)),
+        new MotifReference(BERDLYBMOTIF, quickSec(attackOfTheKillerQueenBPM, 96), quickSec(attackOfTheKillerQueenBPM, 128)),
+        new MotifReference(BERDLYBMOTIF, quickSec(attackOfTheKillerQueenBPM, 128), quickSec(attackOfTheKillerQueenBPM, 128 + 32)),
+        new MotifReference(BERDLYAMOTIF, quickSec(attackOfTheKillerQueenBPM, 128 + 31.5), quickSec(attackOfTheKillerQueenBPM, 128 + 63.5)),
+        new MotifReference(BERDLYAMOTIF, quickSec(attackOfTheKillerQueenBPM, 128 + 63.5), quickSec(attackOfTheKillerQueenBPM, 128 + 95.5)),
+        new MotifReference(BERDLYBMOTIF, quickSec(attackOfTheKillerQueenBPM, 128 + 96), quickSec(attackOfTheKillerQueenBPM, 128 + 120)),
+        new MotifReference(BERDLYBMOTIF, quickSec(attackOfTheKillerQueenBPM, 128 + 120), quickSec(attackOfTheKillerQueenBPM, 128 + 128 + 16), true),
+        new MotifReference(QUEENAMOTIF, quickSec(attackOfTheKillerQueenBPM, 128 + 128 + 16), quickSec(attackOfTheKillerQueenBPM, 128 + 128 + 28), true),
+    ],
+    "", quickSec(attackOfTheKillerQueenBPM, 128 + 128 + 32)
+);
+
+const gigaSizeBPM = 125;
+const gigaSize = new Song("Giga Size",
+    "_bVl2e-Wxzg",
+    [
+        new MotifReference(QUEENAMOTIF, quickSec(gigaSizeBPM, 64), quickSec(gigaSizeBPM, 80)),
+        new MotifReference(QUEENAMOTIF, quickSec(gigaSizeBPM, 96), quickSec(gigaSizeBPM, 112), true),
+        new MotifReference(QUEENCMOTIF, quickSec(gigaSizeBPM, 112), quickSec(gigaSizeBPM, 128)),
+        new MotifReference(QUEENCMOTIF, quickSec(gigaSizeBPM, 128), quickSec(gigaSizeBPM, 128 + 8), true),
+        new MotifReference(QUEENCMOTIF, quickSec(gigaSizeBPM, 128 + 8), quickSec(gigaSizeBPM, 128 + 16), true),
+        new MotifReference(QUEENCMOTIF, quickSec(gigaSizeBPM, 128 + 16), quickSec(gigaSizeBPM, 128 + 24), true),
+        new MotifReference(QUEENCMOTIF, quickSec(gigaSizeBPM, 128 + 32), quickSec(gigaSizeBPM, 128 + 40), true),
+        new MotifReference(QUEENCMOTIF, quickSec(gigaSizeBPM, 128 + 40), quickSec(gigaSizeBPM, 128 + 48), true),
+        new MotifReference(QUEENCMOTIF, quickSec(gigaSizeBPM, 128 + 48), quickSec(gigaSizeBPM, 128 + 56), true),
+    ],
+    "", quickSec(gigaSizeBPM, 128 + 96)
+);
+
+const knockYouDownBPM = 195;
+const knockYouDown = new Song("Knock You Down !!",
+    "L9qRYVZLets",
+    [
+        new MotifReference(POWERSCOMBINEDMOTIF, 0, quickSec(knockYouDownBPM, 16)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 16), quickSec(knockYouDownBPM, 32)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 32), quickSec(knockYouDownBPM, 48)), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 32), quickSec(knockYouDownBPM, 48), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 48), quickSec(knockYouDownBPM, 64)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 64), quickSec(knockYouDownBPM, 80), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 68), quickSec(knockYouDownBPM, 80), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 80), quickSec(knockYouDownBPM, 96)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 96), quickSec(knockYouDownBPM, 112)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 112), quickSec(knockYouDownBPM, 128)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128), quickSec(knockYouDownBPM, 128 + 16), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 68 + 64), quickSec(knockYouDownBPM, 80 + 64), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 16), quickSec(knockYouDownBPM, 128 + 32), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 68 + 80), quickSec(knockYouDownBPM, 80 + 80), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 32), quickSec(knockYouDownBPM, 128 + 48)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 48), quickSec(knockYouDownBPM, 128 + 64)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 64), quickSec(knockYouDownBPM, 128 + 80)), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 64), quickSec(knockYouDownBPM, 128 + 80), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 80), quickSec(knockYouDownBPM, 128 + 96)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 96), quickSec(knockYouDownBPM, 128 + 112), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 100), quickSec(knockYouDownBPM, 128 + 112), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 112), quickSec(knockYouDownBPM, 128 + 128)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128), quickSec(knockYouDownBPM, 128 + 128 + 16)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 16), quickSec(knockYouDownBPM, 128 + 128 + 32)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 32), quickSec(knockYouDownBPM, 128 + 128 + 48), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 36), quickSec(knockYouDownBPM, 128 + 128 + 48), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 48), quickSec(knockYouDownBPM, 128 + 128 + 64), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 52), quickSec(knockYouDownBPM, 128 + 128 + 64), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 64), quickSec(knockYouDownBPM, 128 + 128 + 80)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 80), quickSec(knockYouDownBPM, 128 + 128 + 96)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 96), quickSec(knockYouDownBPM, 128 + 128 + 112)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 112), quickSec(knockYouDownBPM, 128 + 128 + 128)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128), quickSec(knockYouDownBPM, 128 + 128 + 128 + 16)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 16), quickSec(knockYouDownBPM, 128 + 128 + 128 + 32)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 32), quickSec(knockYouDownBPM, 128 + 128 + 128 + 48)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 48), quickSec(knockYouDownBPM, 128 + 128 + 128 + 64)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 64), quickSec(knockYouDownBPM, 128 + 128 + 128 + 80), true),
+    ],
+    "", quickSec(knockYouDownBPM, 128 + 128 + 128 + 80)
+);
+
+//#endregion
+
+//#region CHAPTER 3
+
+//#endregion
+
+//#region CHAPTER 4
+
+// TODO: fix with new bpm method
+
+const knockYouDownRhythmVer = new Song("Knock You Down!! (Rhythm Ver.)",
+    "27oficnsQPo",
+    [
+        new MotifReference(POWERSCOMBINEDMOTIF, 0, quickSec(knockYouDownBPM, 16)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 16), quickSec(knockYouDownBPM, 32)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 32), quickSec(knockYouDownBPM, 48)), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 32), quickSec(knockYouDownBPM, 48), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 48), quickSec(knockYouDownBPM, 64)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 64), quickSec(knockYouDownBPM, 80), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 68), quickSec(knockYouDownBPM, 80), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 80), quickSec(knockYouDownBPM, 96)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 96), quickSec(knockYouDownBPM, 112)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 112), quickSec(knockYouDownBPM, 128)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128), quickSec(knockYouDownBPM, 128 + 16), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 68 + 64), quickSec(knockYouDownBPM, 80 + 64), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 16), quickSec(knockYouDownBPM, 128 + 32), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 68 + 80), quickSec(knockYouDownBPM, 80 + 80), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 32), quickSec(knockYouDownBPM, 128 + 48)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 48), quickSec(knockYouDownBPM, 128 + 64)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 64), quickSec(knockYouDownBPM, 128 + 80)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 80), quickSec(knockYouDownBPM, 128 + 96)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 96), quickSec(knockYouDownBPM, 128 + 112)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 112), quickSec(knockYouDownBPM, 128 + 128)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128), quickSec(knockYouDownBPM, 128 + 128 + 16)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 16), quickSec(knockYouDownBPM, 128 + 128 + 32)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 32), quickSec(knockYouDownBPM, 128 + 128 + 48), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 48), quickSec(knockYouDownBPM, 128 + 128 + 64)), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 48), quickSec(knockYouDownBPM, 128 + 128 + 64), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 64), quickSec(knockYouDownBPM, 128 + 128 + 80)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 80), quickSec(knockYouDownBPM, 128 + 128 + 96), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 84), quickSec(knockYouDownBPM, 128 + 128 + 96), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 96), quickSec(knockYouDownBPM, 128 + 128 + 112)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 112), quickSec(knockYouDownBPM, 128 + 128 + 128)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128), quickSec(knockYouDownBPM, 128 + 128 + 128 + 16)),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 16), quickSec(knockYouDownBPM, 128 + 128 + 128 + 32), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 20), quickSec(knockYouDownBPM, 128 + 128 + 128 + 32), true),
+        new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 32), quickSec(knockYouDownBPM, 128 + 128 + 128 + 48), true), new MotifReference(QUEENAMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 36), quickSec(knockYouDownBPM, 128 + 128 + 128 + 48), true),
+    ],
+    "", quickSec(knockYouDownBPM, 128 + 128 + 128 + 56)
 );
 
 const spawnBPM = 135;
@@ -263,7 +487,8 @@ const spawn = new Song("SPAWN",
         new MotifReference(SANCTUARYMOTIF, quickSec(spawnBPM, 48), quickSec(spawnBPM, 56)), new MotifReference(SANCTUARYMOTIF, quickSec(spawnBPM, 56), quickSec(spawnBPM, 64)),
         new MotifReference(TITANMOTIF, quickSec(spawnBPM, 64), quickSec(spawnBPM, 80)), new MotifReference(SANCTUARYMOTIF, quickSec(spawnBPM, 64), quickSec(spawnBPM, 72)),
         new MotifReference(TITANMOTIF, quickSec(spawnBPM, 80), quickSec(spawnBPM, 96)), new MotifReference(SANCTUARYMOTIF, quickSec(spawnBPM, 80), quickSec(spawnBPM, 88)),
-    ]
+    ],
+    "", quickSec(spawnBPM, 128 + 32)
 );
 
 const guardianBPM = 140;
@@ -294,8 +519,33 @@ const guardian = new Song("GUARDIAN",
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 88 + 200), quickSec(guardianBPM, 128 + 88 + 16 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 104 + 200), quickSec(guardianBPM, 128 + 104 + 16 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 120 + 200), quickSec(guardianBPM, 128 + 120 + 16 + 200)),
+    ],
+    "", quickSec(guardianBPM, 128 + 120 + 16 + 200 + 64)
+);
+
+const catswing = new Song("Catswing",
+    "r-DvoCTarMQ",
+    [
+        new MotifReference(MIKEMOTIF, 7.12, 9.67), new MotifReference(MIKEMOTIF, 10.81, 17.02), new MotifReference(MIKEMOTIF, 18.14, 22.16),
+        new MotifReference(SPAMTONAMOTIF, 22.16, 27.70), new MotifReference(SPAMTONAMOTIF, 29.59, 35.09),
+
+        new MotifReference(SPAMTONBMOTIF, 36.92, 66.47),
+        new MotifReference(TVTIMEMOTIF, 36.92, 37.85), new MotifReference(TVTIMEMOTIF, 51.70, 52.64),
+        new MotifReference(QUEENAMOTIF, 44.56, 46.50),
+
+        new MotifReference(TVTIMEMOTIF, 66.48, 69.24), new MotifReference(TVTIMEMOTIF, 70.17, 72.92),
+        new MotifReference(TVTIMEMOTIF, 73.85, 76.61), new MotifReference(TVTIMEMOTIF, 77.53, 80.28),
+        new MotifReference(TENNAMOTIF, 74.08, 77.23),
+        new MotifReference(TVTIMEMOTIF, 81.21, 83.98), new MotifReference(TVTIMEMOTIF, 84.89, 87.66),
+        new MotifReference(TENNAMOTIF, 81.45, 84.61),
+
+        new MotifReference(SPAMTONBMOTIF, 88.63, 66.47 - 36.92 + 88.63),
+        new MotifReference(TVTIMEMOTIF, 88.63, 89.57), new MotifReference(TVTIMEMOTIF, 103.40, 104.34),
+        new MotifReference(QUEENAMOTIF, 96.23, 98.19),
     ]
 );
+
+//#endregion
 
 // please don't run twice
 // exportIdsToTxt(allMotifs, "motifids.txt");

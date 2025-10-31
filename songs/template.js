@@ -103,7 +103,7 @@ function formatPageForSong(daSong)
             {
                 'onReady': (event) =>
                 {
-                    const duration = event.target.getDuration();
+                    const duration = daSong.loopPoint == null ? event.target.getDuration() : daSong.loopPoint;
                     durationLabel.textContent = formatTime(duration);
 
                     const motifList = document.getElementById("motifList");
@@ -204,7 +204,17 @@ function formatPageForSong(daSong)
                         updateIntervals[videoId] = setInterval(() =>
                         {
                             const current = players[videoId].getCurrentTime();
-                            const duration = players[videoId].getDuration();
+                            const duration = daSong.loopPoint == null ? players[videoId].getDuration() : daSong.loopPoint;
+
+                            if (daSong.loopPoint != null)
+                            {
+                                if (current >= daSong.loopPoint)
+                                {
+                                    players[videoId].seekTo(0, true);
+                                    players[videoId].playVideo();
+                                }
+                            }
+
                             if (!isDragging)
                             {
                                 const percent = (current / duration) * 100;
@@ -370,7 +380,7 @@ function formatPageForSong(daSong)
         const rect = timebarContainer.getBoundingClientRect();
         const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
         const percent = clickX / rect.width;
-        const duration = players[videoId].getDuration();
+        const duration = daSong.loopPoint == null ? players[videoId].getDuration() : daSong.loopPoint;
         players[videoId].seekTo(duration * percent, true);
         players[videoId].playVideo();
     }
