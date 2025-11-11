@@ -114,13 +114,13 @@ const LOSTGIRLMOTIF = new Motif("Lost Girl", "", "#331d0a", "#332a3b33", LINK + 
 const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
 
 const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", LINK + "tvtime.webp");
-const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33");
-const DOOMBOARDMOTIF = new Motif("Doom Board", "");
+const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", LINK + "tenna.webp");
+const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", LINK + "doomboard.png");
 
-const MIKEMOTIF = new Motif("Mike", "", "#69be60");
-const SANCTUARYMOTIF = new Motif("Dark Sanctuary");
-const SUBSANCMOTIF = new Motif("Subsequent Sanctuary");
-const GERSONMOTIF = new Motif("Gerson");
+const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", LINK + "mike.webp");
+const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", LINK + "darksanctuary.png");
+const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33", LINK + "subsequentsanctuary.jpg");
+const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe", LINK + "gerson.png");
 const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", LINK + "titan.gif");
 
 export function getMotifById(id)
