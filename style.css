@@ -208,6 +208,9 @@ p
 {
     height: 100%;
     width: auto;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .motifMainDiv > div:last-child

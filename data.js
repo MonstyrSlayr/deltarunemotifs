@@ -85,13 +85,13 @@ class Song
 const LINK = "https://monstyrslayr.github.io/deltarunemotifs/img/";
 
 const RUINSMOTIF = new Motif("The Ruins");
-const UNDYNEMOTIF = new Motif("Undyne");
+const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e", LINK + "undyne.png");
 const NIGHTMAREMOTIF = new Motif("Your Best Nightmare");
 NIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
 
-const SUSIEMOTIF = new Motif("Susie");
-const DONTFORGETMOTIF = new Motif("Don't Forget");
-const THEDOORMOTIF = new Motif("The Door", "");
+const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", LINK + "susiegaster.webp");
+const DONTFORGETMOTIF = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", LINK + "ralsei.png");
+const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", LINK + "thedoor.png");
 const THELEGENDAMOTIF = new Motif("The Legend", "A");
 const THELEGENDBMOTIF = new Motif("The Legend", "B");
 const THELEGENDCMOTIF = new Motif("The Legend", "C");
@@ -108,12 +108,12 @@ const SWEETCAPNCAKESA = new Motif("Sweet Cap'n Cakes", "A");
 const SWEETCAPNCAKESB = new Motif("Sweet Cap'n Cakes", "B");
 const BERDLYAMOTIF = new Motif("Berdly", "A", "#46b3fc", "#30b18133", LINK + "berdly.webp");
 const BERDLYBMOTIF = new Motif("Berdly", "B", "#46b3fc", "#30b18133");
-const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933");
+const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933", LINK + "spamton.webp");
 const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
-const LOSTGIRLMOTIF = new Motif("Lost Girl", "");
+const LOSTGIRLMOTIF = new Motif("Lost Girl", "", "#331d0a", "#332a3b33", LINK + "lostgirl.png");
 const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
 
-const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33");
+const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", LINK + "tvtime.webp");
 const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33");
 const DOOMBOARDMOTIF = new Motif("Doom Board", "");
 

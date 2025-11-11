@@ -130,6 +130,7 @@ function formatPageForSong(daSong)
                                 const notTempImg = document.createElement("img");
                                 notTempImg.src = motifsWithId[0].image;
                                 notTempImg.alt = motifId + " image";
+                                notTempImg.color = motifsWithId[0].color;
                                 leftTime.appendChild(notTempImg);
                             }
 
