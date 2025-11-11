@@ -121,7 +121,7 @@ const MIKEMOTIF = new Motif("Mike", "", "#69be60");
 const SANCTUARYMOTIF = new Motif("Dark Sanctuary");
 const SUBSANCMOTIF = new Motif("Subsequent Sanctuary");
 const GERSONMOTIF = new Motif("Gerson");
-const TITANMOTIF = new Motif("Titan");
+const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", LINK + "titan.gif");
 
 export function getMotifById(id)
 {
@@ -510,18 +510,56 @@ const hammerOfJustice = new Song("Hammer of Justice",
     ]
 );
 
+const heavyFootstepsBPM = 100;
 const heavyFootsteps = new Song("Heavy Footsteps",
     "4f5XPpd3oiU",
     [
-
-    ]
+        new MotifReference(TITANMOTIF, 0, quickSec(heavyFootstepsBPM, 16)),
+        new MotifReference(TITANMOTIF, quickSec(heavyFootstepsBPM, 16), quickSec(heavyFootstepsBPM, 32)),
+        new MotifReference(TITANMOTIF, quickSec(heavyFootstepsBPM, 32), quickSec(heavyFootstepsBPM, 48)),
+        new MotifReference(TITANMOTIF, quickSec(heavyFootstepsBPM, 48), quickSec(heavyFootstepsBPM, 64)),
+    ],
+    "", quickSec(heavyFootstepsBPM, 64)
 );
 
+const crumblingTowerBPM = 115;
 const crumblingTower = new Song("Crumbling Tower",
     "z2IT2YzscSE",
     [
-        
-    ]
+        new MotifReference(TITANMOTIF, 0, quickSec(crumblingTowerBPM, 16)),
+        new MotifReference(TITANMOTIF, quickSec(crumblingTowerBPM, 16), quickSec(crumblingTowerBPM, 32)),
+        new MotifReference(TITANMOTIF, quickSec(crumblingTowerBPM, 32), quickSec(crumblingTowerBPM, 48)),
+        new MotifReference(TITANMOTIF, quickSec(crumblingTowerBPM, 48), quickSec(crumblingTowerBPM, 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 64), quickSec(crumblingTowerBPM, 72)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 72), quickSec(crumblingTowerBPM, 80)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 80), quickSec(crumblingTowerBPM, 88)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 88), quickSec(crumblingTowerBPM, 96)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 96), quickSec(crumblingTowerBPM, 104)),
+        new MotifReference(TITANMOTIF, quickSec(crumblingTowerBPM, 96), quickSec(crumblingTowerBPM, 112)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 112), quickSec(crumblingTowerBPM, 120)),
+        new MotifReference(TITANMOTIF, quickSec(crumblingTowerBPM, 112), quickSec(crumblingTowerBPM, 128)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 64 + 64), quickSec(crumblingTowerBPM, 72 + 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 72 + 64), quickSec(crumblingTowerBPM, 80 + 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 80 + 64), quickSec(crumblingTowerBPM, 88 + 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 88 + 64), quickSec(crumblingTowerBPM, 96 + 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 96 + 64), quickSec(crumblingTowerBPM, 104 + 64)),
+        new MotifReference(TITANMOTIF, quickSec(crumblingTowerBPM, 96 + 64), quickSec(crumblingTowerBPM, 112 + 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 112 + 64), quickSec(crumblingTowerBPM, 120 + 64)),
+        new MotifReference(TITANMOTIF, quickSec(crumblingTowerBPM, 112 + 64), quickSec(crumblingTowerBPM, 128 + 64), true),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 64 + 128), quickSec(crumblingTowerBPM, 80 + 128)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(crumblingTowerBPM, 64 + 13 + 128), quickSec(crumblingTowerBPM, 80 + 128)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 80 + 128), quickSec(crumblingTowerBPM, 96 + 128)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(crumblingTowerBPM, 80 + 13 + 128), quickSec(crumblingTowerBPM, 96 + 128)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 96 + 128), quickSec(crumblingTowerBPM, 112 + 128)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(crumblingTowerBPM, 96 + 13 + 128), quickSec(crumblingTowerBPM, 112 + 128)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 112 + 128), quickSec(crumblingTowerBPM, 128 + 128)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(crumblingTowerBPM, 112 + 13 + 128), quickSec(crumblingTowerBPM, 128 + 128)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 112 + 128 + 48), quickSec(crumblingTowerBPM, 128 + 128 + 48), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(crumblingTowerBPM, 112 + 13 + 128 + 48), quickSec(crumblingTowerBPM, 128 + 128 + 48)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(crumblingTowerBPM, 112 + 128 + 64), quickSec(crumblingTowerBPM, 128 + 128 + 64), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(crumblingTowerBPM, 112 + 13 + 128 + 64), quickSec(crumblingTowerBPM, 128 + 128 + 64)),
+    ],
+    "", quickSec(crumblingTowerBPM, 128 + 128 + 64 + 4)
 );
 
 const spawnBPM = 135;
@@ -563,9 +601,13 @@ const guardian = new Song("GUARDIAN",
         new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 56 + 7 + 200), quickSec(guardianBPM, 128 + 56 + 16 + 200)),
 
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 72 + 200), quickSec(guardianBPM, 128 + 72 + 16 + 200)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 72 + 13 + 200), quickSec(guardianBPM, 128 + 72 + 16 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 88 + 200), quickSec(guardianBPM, 128 + 88 + 16 + 200)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 88 + 13 + 200), quickSec(guardianBPM, 128 + 88 + 16 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 104 + 200), quickSec(guardianBPM, 128 + 104 + 16 + 200)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 104 + 13 + 200), quickSec(guardianBPM, 128 + 104 + 16 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 120 + 200), quickSec(guardianBPM, 128 + 120 + 16 + 200)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 120 + 13 + 200), quickSec(guardianBPM, 128 + 120 + 16 + 200)),
     ],
     "", quickSec(guardianBPM, 128 + 120 + 16 + 200 + 64)
 );

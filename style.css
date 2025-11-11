@@ -311,7 +311,7 @@ p
     }
     50%
     {
-        box-shadow: 0 0 40px #6d6ebf;
+        box-shadow: 0 0 80px #6d6ebf;
     }
     100%
     {
@@ -321,5 +321,40 @@ p
 
 .mFreedom.playing
 {
-    animation: freedomGlow 2s infinite normal ease-in-out;
+    position: relative;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
+
+    &::after
+    {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(0.9) translateZ(0);
+        filter: blur(15px);
+        background: linear-gradient(
+            to left,
+            #e0e555,
+            #6d6ebf,
+            #e0e555
+        );
+        background-size: 200% 200%;
+        animation: animateGlow 1.25s linear infinite;
+    }
+}
+
+@keyframes animateGlow
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    100%
+    {
+        background-position: 200% 50%;
+    }
 }

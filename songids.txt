@@ -17,5 +17,7 @@ gigasize
 knockyoudown
 knockyoudownrhythmver
 catswing
+heavyfootsteps
+crumblingtower
 spawn
 guardian
