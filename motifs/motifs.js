@@ -1,34 +1,15 @@
-import { allMotifs } from "../data.js";
+import { allMotifs, createMotifDiv } from "../data.js";
 
-const allMotifsDiv = document.getElementById("motifsDiv");
+const allMotifsDiv = document.getElementById("motifList");
 
-const uniqueMotifs = [];
-
-allMotifs.forEach(motif =>
+const allMotifIds = new Set();
+for (const motif of allMotifs)
 {
-    let isUnique = true;
-    uniqueMotifs.forEach(uMotif =>
-    {
-        if (uMotif.id == motif.id)
-        {
-            isUnique = false;
-        }
-    });
+    allMotifIds.add(motif.id);
+}
 
-    if (isUnique)
-    {
-        uniqueMotifs.push(motif);
-    }
-});
-
-uniqueMotifs.forEach(motif =>
+allMotifIds.forEach(motifId =>
 {
-    const anchor = document.createElement("a");
-    anchor.classList.add("bigLink");
-    anchor.href = "./" + motif.id;
-    allMotifsDiv.appendChild(anchor);
-
-        const motifName = document.createElement("h2");
-        motifName.textContent = motif.name;
-        anchor.appendChild(motifName);
+    const motifDiv = createMotifDiv(motifId, true, true);
+    allMotifsDiv.appendChild(motifDiv);
 });

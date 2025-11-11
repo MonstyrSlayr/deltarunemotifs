@@ -85,7 +85,7 @@ class Song
 const LINK = "https://monstyrslayr.github.io/deltarunemotifs/img/";
 
 const RUINSMOTIF = new Motif("The Ruins");
-const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e", LINK + "undyne.png");
+const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", LINK + "undyne.png");
 const NIGHTMAREMOTIF = new Motif("Your Best Nightmare");
 NIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
 
@@ -120,7 +120,7 @@ const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", LINK 
 const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", LINK + "mike.webp");
 const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", LINK + "darksanctuary.png");
 const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33", LINK + "subsequentsanctuary.jpg");
-const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe", LINK + "gerson.png");
+const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", LINK + "gerson.png");
 const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", LINK + "titan.gif");
 
 export function getMotifById(id)
@@ -131,6 +131,87 @@ export function getMotifById(id)
 export function getMotifsById(id)
 {
     return allMotifs.filter(motif => id == motif.id);
+}
+
+export function createMotifDiv(motifId, isLink = true, isPlaying = false)
+{
+    const motifsWithId = getMotifsById(motifId);
+
+    const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");
+    motifMainDiv.classList.add("motifMainDiv");
+    if (isLink) motifMainDiv.href = "../../motifs/" + motifId;
+    if (isPlaying) motifMainDiv.classList.add("playing");
+    motifMainDiv.classList.add("m" + motifId);
+    motifMainDiv.style.borderColor = motifsWithId[0].color;
+    motifList.appendChild(motifMainDiv);
+    motifsWithId.forEach(motif => {
+        motif.mainDiv = motifMainDiv;
+    });
+
+        const leftTime = document.createElement("div");
+        leftTime.style.backgroundColor = motifsWithId[0].color2;
+        motifMainDiv.appendChild(leftTime);
+
+        if (motifsWithId[0].image != null)
+        {
+            const notTempImg = document.createElement("img");
+            notTempImg.src = motifsWithId[0].image;
+            notTempImg.alt = motifId + " image";
+            notTempImg.color = motifsWithId[0].color;
+            leftTime.appendChild(notTempImg);
+        }
+
+            const motifText = document.createElement("h3");
+            motifText.textContent = motifsWithId[0].name;
+            motifText.style.color = motifsWithId[0].color;
+            leftTime.appendChild(motifText);
+
+        const rightSide = document.createElement("div");
+        motifMainDiv.appendChild(rightSide);
+
+        if (motifsWithId.length > 1)
+        {
+            motifsWithId.forEach(motif =>
+            {
+                const lilGuyDiv = document.createElement("div");
+                motif.letterDiv = lilGuyDiv;
+                if (isPlaying) lilGuyDiv.classList.add("playing");
+                lilGuyDiv.style.borderColor = motif.color;
+                lilGuyDiv.style.backgroundColor = motif.color2;
+                rightSide.appendChild(lilGuyDiv);
+
+                    const hisLetter = document.createElement("p");
+                    hisLetter.textContent = motif.letter;
+                    hisLetter.style.color = motif.color;
+                    lilGuyDiv.appendChild(hisLetter);
+
+                    const daVariation = document.createElement("div");
+                    motif.variationDiv = daVariation;
+                    daVariation.classList.add("variationDiv");
+                    lilGuyDiv.appendChild(daVariation);
+
+                        const variationText = document.createElement("p");
+                        variationText.textContent = "(variation)";
+                        variationText.style.color = motif.color;
+                        daVariation.appendChild(variationText);
+            });
+        }
+        else
+        {
+            const daVariation = document.createElement("div");
+            motifsWithId.forEach(motif => {
+                motif.variationDiv = daVariation;
+            });
+            daVariation.classList.add("variationDiv");
+            leftTime.appendChild(daVariation);
+
+                const variationText = document.createElement("p");
+                variationText.textContent = "(variation)";
+                variationText.style.color = motifsWithId[0].color;
+                daVariation.appendChild(variationText);
+        }
+
+    return motifMainDiv;
 }
 
 export function getSongById(id)

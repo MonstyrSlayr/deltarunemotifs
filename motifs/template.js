@@ -1,4 +1,4 @@
-import { getMotifById, getSongsWithMotif } from "../data.js";
+import { createMotifDiv, getMotifById, getSongsWithMotif } from "../data.js";
 
 function getLastFolder(url, num)
 {
@@ -15,8 +15,9 @@ if (!daMotif) /* cry */;
 const header = document.getElementById("motifName");
 header.textContent = daMotif.name;
 
-const daSoul = document.getElementById("soul");
-daSoul.style.backgroundColor = daMotif.color;
+const motifList = document.getElementById("motifList");
+const motifDiv = createMotifDiv(daId, false, true);
+motifList.appendChild(motifDiv);
 
 const daSongsDiv = document.getElementById("songsDiv");
 getSongsWithMotif(daMotif).forEach(song => {

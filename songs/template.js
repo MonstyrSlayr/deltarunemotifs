@@ -1,4 +1,4 @@
-import { getMotifsById, getSongById } from "../data.js";
+import { createMotifDiv, getMotifsById, getSongById } from "../data.js";
 
 let isDragging = false; // maus
 
@@ -113,79 +113,8 @@ function formatPageForSong(daSong)
 
                     allMotifIds.forEach(motifId =>
                     {
-                        const motifsWithId = getMotifsById(motifId);
-
-                        const motifMainDiv = document.createElement("a");
-                        motifMainDiv.classList.add("motifMainDiv");
-                        motifMainDiv.href = "../../motifs/" + motifId;
-                        motifMainDiv.classList.add("m" + motifId);
-                        motifMainDiv.style.borderColor = motifsWithId[0].color;
-                        motifList.appendChild(motifMainDiv);
-                        motifsWithId.forEach(motif => {
-                            motif.mainDiv = motifMainDiv;
-                        });
-
-                            const leftTime = document.createElement("div");
-                            leftTime.style.backgroundColor = motifsWithId[0].color2;
-                            motifMainDiv.appendChild(leftTime);
-
-                            if (motifsWithId[0].image != null)
-                            {
-                                const notTempImg = document.createElement("img");
-                                notTempImg.src = motifsWithId[0].image;
-                                notTempImg.alt = motifId + " image";
-                                notTempImg.color = motifsWithId[0].color;
-                                leftTime.appendChild(notTempImg);
-                            }
-
-                                const motifText = document.createElement("h3");
-                                motifText.textContent = motifsWithId[0].name;
-                                motifText.style.color = motifsWithId[0].color;
-                                leftTime.appendChild(motifText);
-
-                            const rightSide = document.createElement("div");
-                            motifMainDiv.appendChild(rightSide);
-
-                            if (motifsWithId.length > 1)
-                            {
-                                motifsWithId.forEach(motif =>
-                                {
-                                    const lilGuyDiv = document.createElement("div");
-                                    motif.letterDiv = lilGuyDiv;
-                                    lilGuyDiv.style.borderColor = motif.color;
-                                    lilGuyDiv.style.backgroundColor = motif.color2;
-                                    rightSide.appendChild(lilGuyDiv);
-
-                                        const hisLetter = document.createElement("p");
-                                        hisLetter.textContent = motif.letter;
-                                        hisLetter.style.color = motif.color;
-                                        lilGuyDiv.appendChild(hisLetter);
-
-                                        const daVariation = document.createElement("div");
-                                        motif.variationDiv = daVariation;
-                                        daVariation.classList.add("variationDiv");
-                                        lilGuyDiv.appendChild(daVariation);
-
-                                            const variationText = document.createElement("p");
-                                            variationText.textContent = "(variation)";
-                                            variationText.style.color = motif.color;
-                                            daVariation.appendChild(variationText);
-                                });
-                            }
-                            else
-                            {
-                                const daVariation = document.createElement("div");
-                                motifsWithId.forEach(motif => {
-                                    motif.variationDiv = daVariation;
-                                });
-                                daVariation.classList.add("variationDiv");
-                                leftTime.appendChild(daVariation);
-
-                                    const variationText = document.createElement("p");
-                                    variationText.textContent = "(variation)";
-                                    variationText.style.color = motifsWithId[0].color;
-                                    daVariation.appendChild(variationText);
-                            }
+                        const motifDiv = createMotifDiv(motifId);
+                        motifList.appendChild(motifDiv);
                     });
 
                     allMotifs.forEach(motif =>
