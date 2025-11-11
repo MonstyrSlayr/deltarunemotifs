@@ -82,7 +82,7 @@ class Song
     }
 }
 
-const LINK = "https://monstyrslayr.github.io/deltarunemotifs/img/"
+const LINK = "https://monstyrslayr.github.io/deltarunemotifs/img/";
 
 const RUINSMOTIF = new Motif("The Ruins");
 const UNDYNEMOTIF = new Motif("Undyne");
@@ -111,7 +111,7 @@ const BERDLYBMOTIF = new Motif("Berdly", "B", "#46b3fc", "#30b18133");
 const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933");
 const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
 const LOSTGIRLMOTIF = new Motif("Lost Girl", "");
-const POWERSCOMBINEDMOTIF = new Motif("Powers Combined", "");
+const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
 
 const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33");
 const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33");

@@ -14,7 +14,7 @@ function formatPageForSong(daSong)
 
     const container = document.getElementById("musicContainer");
 
-    // Create card
+    // create card
     const card = document.createElement("div");
     card.classList.add("audioCard");
     container.appendChild(card);
@@ -23,13 +23,13 @@ function formatPageForSong(daSong)
         imageContainer.classList.add("imageContainer");
         card.appendChild(imageContainer);
 
-            // Cover art
+            // cover art
             const cover = document.createElement("img");
             cover.classList.add("coverArt");
             cover.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
             imageContainer.appendChild(cover);
 
-            // Controls
+            // controls
             const controls = document.createElement("div");
             controls.classList.add("controls");
             imageContainer.appendChild(controls);
@@ -43,7 +43,7 @@ function formatPageForSong(daSong)
                 controls.appendChild(playBtn);
                 controls.appendChild(pauseBtn);
 
-        // Timebar
+        // timebar
         const timebarContainer = document.createElement("div");
         timebarContainer.classList.add("timebarContainer");
         timebarContainer.classList.add("mainTime");
@@ -53,7 +53,7 @@ function formatPageForSong(daSong)
         timebarProgress.classList.add("timebarProgress");
         timebarContainer.appendChild(timebarProgress);
 
-        // Time labels
+        // time labels
         const timeLabels = document.createElement("div");
         timeLabels.classList.add("timeLabels");
         card.appendChild(timeLabels);
@@ -73,13 +73,12 @@ function formatPageForSong(daSong)
             allMotifIds.add(motifRef.motif.id);
         }
 
-        // Hidden YouTube iframe
+        // hidden YouTube iframe
         const playerDiv = document.createElement("div");
         playerDiv.id = "yt" + videoId;
         playerDiv.style.display = "none";
         card.appendChild(playerDiv);
 
-    // Helper: format seconds -> M:SS
     function formatTime(seconds)
     {
         seconds = Math.floor(seconds);
@@ -88,7 +87,7 @@ function formatPageForSong(daSong)
         return m + ":" + (s < 10 ? "0" + s : s);
     }
 
-    // Initialize YouTube player
+    // initialize YouTube player
     function onReady()
     {
         players[videoId] = new YT.Player(playerDiv.id,
@@ -116,27 +115,28 @@ function formatPageForSong(daSong)
 
                         const motifMainDiv = document.createElement("div");
                         motifMainDiv.classList.add("motifMainDiv");
+                        motifMainDiv.style.borderColor = motifsWithId[0].color;
                         motifList.appendChild(motifMainDiv);
                         motifsWithId.forEach(motif => {
                             motif.mainDiv = motifMainDiv;
                         });
 
                             const leftTime = document.createElement("div");
+                            leftTime.style.backgroundColor = motifsWithId[0].color2;
                             motifMainDiv.appendChild(leftTime);
 
-                            if (motifsWithId[0].image == null)
-                            {
-                                const tempText = document.createElement("p");
-                                tempText.textContent = motifId;
-                                leftTime.appendChild(tempText);
-                            }
-                            else
+                            if (motifsWithId[0].image != null)
                             {
                                 const notTempImg = document.createElement("img");
                                 notTempImg.src = motifsWithId[0].image;
-                                notTempImg.alt = motifId;
+                                notTempImg.alt = motifId + " image";
                                 leftTime.appendChild(notTempImg);
                             }
+
+                                const motifText = document.createElement("h3");
+                                motifText.textContent = motifsWithId[0].name;
+                                motifText.style.color = motifsWithId[0].color;
+                                leftTime.appendChild(motifText);
 
                             const rightSide = document.createElement("div");
                             motifMainDiv.appendChild(rightSide);
@@ -147,10 +147,13 @@ function formatPageForSong(daSong)
                                 {
                                     const lilGuyDiv = document.createElement("div");
                                     motif.letterDiv = lilGuyDiv;
+                                    lilGuyDiv.style.borderColor = motif.color;
+                                    lilGuyDiv.style.backgroundColor = motif.color2;
                                     rightSide.appendChild(lilGuyDiv);
 
                                         const hisLetter = document.createElement("p");
                                         hisLetter.textContent = motif.letter;
+                                        hisLetter.style.color = motif.color;
                                         lilGuyDiv.appendChild(hisLetter);
 
                                         const daVariation = document.createElement("div");
@@ -160,8 +163,23 @@ function formatPageForSong(daSong)
 
                                             const variationText = document.createElement("p");
                                             variationText.textContent = "(variation)";
+                                            variationText.style.color = motif.color;
                                             daVariation.appendChild(variationText);
                                 });
+                            }
+                            else
+                            {
+                                const daVariation = document.createElement("div");
+                                motifsWithId.forEach(motif => {
+                                    motif.variationDiv = daVariation;
+                                });
+                                daVariation.classList.add("variationDiv");
+                                leftTime.appendChild(daVariation);
+
+                                    const variationText = document.createElement("p");
+                                    variationText.textContent = "(variation)";
+                                    variationText.style.color = motifsWithId[0].color;
+                                    daVariation.appendChild(variationText);
                             }
                     });
 
@@ -269,13 +287,16 @@ function formatPageForSong(daSong)
                                         }
                                     }
 
-                                    if (playing)
+                                    if (motif.letterDiv)
                                     {
-                                        motif.letterDiv.classList.add("playing");
-                                    }
-                                    else
-                                    {
-                                        motif.letterDiv.classList.remove("playing");
+                                        if (playing)
+                                        {
+                                            motif.letterDiv.classList.add("playing");
+                                        }
+                                        else
+                                        {
+                                            motif.letterDiv.classList.remove("playing");
+                                        }
                                     }
 
                                     if (variation)

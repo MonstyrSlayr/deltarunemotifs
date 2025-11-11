@@ -199,9 +199,15 @@ p
     padding: 3em;
     width: 15em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.motifMainDiv > div:first-child > img
+{
+    height: 100%;
+    width: auto;
 }
 
 .motifMainDiv > div:last-child
@@ -210,6 +216,11 @@ p
     grid-template-rows: repeat(1fr);
     height: 100%;
     width: 7em;
+}
+
+.motifMainDiv > div:last-child:not(:has(> div))
+{
+    display: none;
 }
 
 .motifMainDiv > div:last-child > div
