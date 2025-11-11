@@ -98,7 +98,7 @@ const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
 const LANCERMOTIF = new Motif("Lancer", "", "#5585bd", "#32323233", LINK + "lancer.png");
 const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", LINK + "king.webp");
 const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", LINK + "hipshop.png");
-const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd01", LINK + "jevil.webp");
+const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", LINK + "jevil.webp");
 
 const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", LINK + "queen.webp");
 const QUEENBMOTIF = new Motif("Queen", "B", "#6fd1ff", "#6d86e733");

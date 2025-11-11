@@ -113,8 +113,10 @@ function formatPageForSong(daSong)
                     {
                         const motifsWithId = getMotifsById(motifId);
 
-                        const motifMainDiv = document.createElement("div");
+                        const motifMainDiv = document.createElement("a");
                         motifMainDiv.classList.add("motifMainDiv");
+                        motifMainDiv.href = "../../motifs/" + motifId;
+                        motifMainDiv.classList.add("m" + motifId);
                         motifMainDiv.style.borderColor = motifsWithId[0].color;
                         motifList.appendChild(motifMainDiv);
                         motifsWithId.forEach(motif => {
