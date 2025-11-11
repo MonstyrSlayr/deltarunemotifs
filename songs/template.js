@@ -1,4 +1,4 @@
-import { getSongById } from "../data.js";
+import { getMotifsById, getSongById } from "../data.js";
 
 let isDragging = false; // maus
 
@@ -66,9 +66,11 @@ function formatPageForSong(daSong)
             timeLabels.appendChild(durationLabel);
 
         const allMotifs = new Set();
+        const allMotifIds = new Set();
         for (const motifRef of daSong.motifRefs)
         {
             allMotifs.add(motifRef.motif);
+            allMotifIds.add(motifRef.motif.id);
         }
 
         // Hidden YouTube iframe
@@ -108,40 +110,63 @@ function formatPageForSong(daSong)
 
                     const motifList = document.getElementById("motifList");
 
+                    allMotifIds.forEach(motifId =>
+                    {
+                        const motifsWithId = getMotifsById(motifId);
+
+                        const motifMainDiv = document.createElement("div");
+                        motifMainDiv.classList.add("motifMainDiv");
+                        motifList.appendChild(motifMainDiv);
+                        motifsWithId.forEach(motif => {
+                            motif.mainDiv = motifMainDiv;
+                        });
+
+                            const leftTime = document.createElement("div");
+                            motifMainDiv.appendChild(leftTime);
+
+                            if (motifsWithId[0].image == null)
+                            {
+                                const tempText = document.createElement("p");
+                                tempText.textContent = motifId;
+                                leftTime.appendChild(tempText);
+                            }
+                            else
+                            {
+                                const notTempImg = document.createElement("img");
+                                notTempImg.src = motifsWithId[0].image;
+                                notTempImg.alt = motifId;
+                                leftTime.appendChild(notTempImg);
+                            }
+
+                            const rightSide = document.createElement("div");
+                            motifMainDiv.appendChild(rightSide);
+
+                            if (motifsWithId.length > 1)
+                            {
+                                motifsWithId.forEach(motif =>
+                                {
+                                    const lilGuyDiv = document.createElement("div");
+                                    motif.letterDiv = lilGuyDiv;
+                                    rightSide.appendChild(lilGuyDiv);
+
+                                        const hisLetter = document.createElement("p");
+                                        hisLetter.textContent = motif.letter;
+                                        lilGuyDiv.appendChild(hisLetter);
+
+                                        const daVariation = document.createElement("div");
+                                        motif.variationDiv = daVariation;
+                                        daVariation.classList.add("variationDiv");
+                                        lilGuyDiv.appendChild(daVariation);
+
+                                            const variationText = document.createElement("p");
+                                            variationText.textContent = "(variation)";
+                                            daVariation.appendChild(variationText);
+                                });
+                            }
+                    });
+
                     allMotifs.forEach(motif =>
                     {
-                        // add motif to list
-
-                        const daLi = document.createElement("li");
-                        motifList.appendChild(daLi);
-
-                            const liAnchor = document.createElement("a");
-                            liAnchor.href = "../../motifs/" + motif.id;
-                            daLi.appendChild(liAnchor);
-
-                                const liName = document.createElement("h3");
-                                liName.textContent = motif.toString();
-                                liAnchor.appendChild(liName);
-
-                            const liSoulDiv = document.createElement("div");
-                            liSoulDiv.classList.add("soulDiv");
-                            liSoulDiv.classList.add("gone");
-                            motif.soul = liSoulDiv;
-                            daLi.appendChild(liSoulDiv);
-
-                                const liSoulHeart = document.createElement("div"); // src is applied with css
-                                liSoulHeart.classList.add("soul");
-                                liSoulHeart.style.backgroundColor = motif.color;
-                                liSoulDiv.appendChild(liSoulHeart);
-
-                                const liSoulVariation = document.createElement("p");
-                                liSoulVariation.textContent = "(variation)";
-                                liSoulVariation.classList.add("variation");
-                                liSoulVariation.classList.add("gone");
-                                motif.variation = liSoulVariation;
-                                liSoulVariation.style.color = motif.color;
-                                liSoulDiv.appendChild(liSoulVariation);
-
                         // add motif to bars
 
                         const motifbarContainer = document.createElement("div");
@@ -222,9 +247,13 @@ function formatPageForSong(daSong)
                             }
                             currentTimeLabel.textContent = formatTime(current);
 
-                            allMotifs.forEach(motif =>
+                            allMotifIds.forEach(motifId =>
                             {
-                                if (motif.soul != null && motif.variation != null)
+                                let bigPlaying = false;
+
+                                const motifsWithId = getMotifsById(motifId);
+
+                                motifsWithId.forEach(motif =>
                                 {
                                     let playing = false;
                                     let variation = false;
@@ -233,6 +262,7 @@ function formatPageForSong(daSong)
                                     {
                                         if (current >= motifRef.startTime && current < motifRef.endTime)
                                         {
+                                            bigPlaying = true;
                                             playing = true;
                                             variation = motifRef.isVariation;
                                             break;
@@ -241,21 +271,30 @@ function formatPageForSong(daSong)
 
                                     if (playing)
                                     {
-                                        motif.soul.classList.remove("gone");
-
-                                        if (variation)
-                                        {
-                                            motif.variation.classList.remove("gone");
-                                        }
-                                        else
-                                        {
-                                            motif.variation.classList.add("gone");
-                                        }
+                                        motif.letterDiv.classList.add("playing");
                                     }
                                     else
                                     {
-                                        motif.soul.classList.add("gone");
+                                        motif.letterDiv.classList.remove("playing");
                                     }
+
+                                    if (variation)
+                                    {
+                                        motif.variationDiv.classList.add("playing");
+                                    }
+                                    else
+                                    {
+                                        motif.variationDiv.classList.remove("playing");
+                                    }
+                                });
+
+                                if (bigPlaying)
+                                {
+                                    motifsWithId[0].mainDiv.classList.add("playing");
+                                }
+                                else
+                                {
+                                    motifsWithId[0].mainDiv.classList.remove("playing");
                                 }
                             });
                         }, 15);

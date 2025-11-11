@@ -19,10 +19,12 @@ class Motif
     id;
     letter = "";
 
-    soul = null; // element
-    variation = null; // element
+    // elements
+    mainDiv = null;
+    letterDiv = null;
+    variationDiv = null;
 
-    constructor(name, letter = "", color = "#ffffff", color2 = "#ffffff33")
+    constructor(name, letter = "", color = "#ffffff", color2 = "#ffffff33", image = null)
     {
         this.name = name;
         this.color = color;
@@ -31,6 +33,8 @@ class Motif
 
         this.id = normalizeAndTrim(name);
         allMotifs.push(this);
+
+        this.image = image;
     }
 
     toString()
@@ -78,6 +82,9 @@ class Song
     }
 }
 
+const LINK = "https://monstyrslayr.github.io/deltarunemotifs/img/"
+
+const RUINSMOTIF = new Motif("The Ruins");
 const UNDYNEMOTIF = new Motif("Undyne");
 const NIGHTMAREMOTIF = new Motif("Your Best Nightmare");
 NIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
@@ -93,14 +100,14 @@ const KINGMOTIF = new Motif("King", "");
 const HIPSHOPMOTIF = new Motif("Hip Shop", "");
 const FREEDOMMOTIF = new Motif("Freedom", "");
 
-const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733");
+const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", LINK + "queen.webp");
 const QUEENBMOTIF = new Motif("Queen", "B", "#6fd1ff", "#6d86e733");
 const QUEENCMOTIF = new Motif("Queen", "C", "#6fd1ff", "#6d86e733");
 const QUEENDMOTIF = new Motif("Queen", "D", "#6fd1ff", "#6d86e733");
 const SWEETCAPNCAKESA = new Motif("Sweet Cap'n Cakes", "A");
 const SWEETCAPNCAKESB = new Motif("Sweet Cap'n Cakes", "B");
-const BERDLYAMOTIF = new Motif("Berdly", "A");
-const BERDLYBMOTIF = new Motif("Berdly", "B");
+const BERDLYAMOTIF = new Motif("Berdly", "A", "#46b3fc", "#30b18133", LINK + "berdly.webp");
+const BERDLYBMOTIF = new Motif("Berdly", "B", "#46b3fc", "#30b18133");
 const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933");
 const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
 const LOSTGIRLMOTIF = new Motif("Lost Girl", "");
@@ -119,6 +126,11 @@ const TITANMOTIF = new Motif("Titan");
 export function getMotifById(id)
 {
     return allMotifs.find(motif => id == motif.id);
+}
+
+export function getMotifsById(id)
+{
+    return allMotifs.filter(motif => id == motif.id);
 }
 
 export function getSongById(id)
@@ -477,6 +489,41 @@ const knockYouDownRhythmVer = new Song("Knock You Down!! (Rhythm Ver.)",
     "", quickSec(knockYouDownBPM, 128 + 128 + 128 + 56)
 );
 
+const gyaaHaHa = new Song("Gyaa Ha ha!",
+    "HeAXR0UKRxY",
+    [
+
+    ]
+);
+
+const wiseWords = new Song("Wise words",
+    "YYl_CuHvVRs",
+    [
+        
+    ]
+);
+
+const hammerOfJustice = new Song("Hammer of Justice",
+    "tBdLO8u-0L8",
+    [
+        
+    ]
+);
+
+const heavyFootsteps = new Song("Heavy Footsteps",
+    "4f5XPpd3oiU",
+    [
+
+    ]
+);
+
+const crumblingTower = new Song("Crumbling Tower",
+    "z2IT2YzscSE",
+    [
+        
+    ]
+);
+
 const spawnBPM = 135;
 const spawn = new Song("SPAWN",
     "oZywM_ZwvJQ",
@@ -521,6 +568,13 @@ const guardian = new Song("GUARDIAN",
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 120 + 200), quickSec(guardianBPM, 128 + 120 + 16 + 200)),
     ],
     "", quickSec(guardianBPM, 128 + 120 + 16 + 200 + 64)
+);
+
+const needAHand = new Song("Need a hand!?",
+    "C135xMeF4jk",
+    [
+        
+    ]
 );
 
 const catswing = new Song("Catswing",

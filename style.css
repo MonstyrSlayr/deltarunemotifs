@@ -171,50 +171,94 @@ p
 
 #motifList
 {
-    list-style-type: none;
     width: 50%;
     padding: 0;
-}
-
-#motifList > li
-{
     display: flex;
-    flex-direction: row;
-    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    height: 3em;
+    gap: 1em;
 }
 
-#motifList > li > h3
+.motifMainDiv
 {
-    margin: 0;
-    color: white;
-}
-
-.soulDiv
-{
+    border: white 8px solid;
     display: flex;
     flex-direction: row;
+    opacity: 50%;
+    height: 20em;
+}
+
+.motifMainDiv.playing
+{
+    opacity: 100%;
+}
+
+.motifMainDiv > div:first-child
+{
+    padding: 3em;
+    width: 15em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.motifMainDiv > div:last-child
+{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    height: 100%;
+    width: 7em;
+}
+
+.motifMainDiv > div:last-child > div
+{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    border: solid white 8px;
+    border-right: none;
+    height: 100%;
+    width: 100%;
 }
 
-.soul
+.motifMainDiv > div:last-child > div > *
 {
-    width: 2em;
-    height: 2em;
-    margin: 0.5em 0;
-    display: inline-block;
-    
-    background-color: white;
-    -webkit-mask-image: url('./img/white_soul.png');
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    -webkit-mask-position: center;
-    mask-image: url('./img/white_soul.png');
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+.motifMainDiv.playing > div:last-child > div
+{
+    opacity: 50%;
+}
+
+.motifMainDiv.playing > div:last-child > div.playing
+{
+    opacity: 100%;
+}
+
+.motifMainDiv > div:last-child > div:first-child
+{
+    border-top: none;
+}
+
+.motifMainDiv > div:last-child > div:last-child
+{
+    border-bottom: none;
+}
+
+.variationDiv
+{
+    display: none;
+}
+
+.variationDiv.playing
+{
+    display: inline;
 }
 
 .bigLink
