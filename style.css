@@ -188,6 +188,7 @@ p
     opacity: 50%;
     height: 20em;
     width: 21em;
+    border-radius: 8px;
 }
 
 .motifMainDiv.playing

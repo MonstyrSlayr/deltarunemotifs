@@ -5,6 +5,8 @@ let isDragging = false; // maus
 let players = {}; // store players by videoId
 let updateIntervals = {};
 
+const SONG_OFFSET = 0.15 / 2; // account for css bullshit
+
 function formatPageForSong(daSong)
 {
     const videoId = daSong.youtubeId;
@@ -281,7 +283,7 @@ function formatPageForSong(daSong)
 
                                     for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
                                     {
-                                        if (current >= motifRef.startTime && current < motifRef.endTime)
+                                        if (current >= motifRef.startTime - SONG_OFFSET && current < motifRef.endTime - SONG_OFFSET)
                                         {
                                             bigPlaying = true;
                                             playing = true;

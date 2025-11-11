@@ -619,25 +619,40 @@ const needAHand = new Song("Need a hand!?",
     ]
 );
 
+const catswingBPM = 130;
 const catswing = new Song("Catswing",
     "r-DvoCTarMQ",
     [
-        new MotifReference(MIKEMOTIF, 7.12, 9.67), new MotifReference(MIKEMOTIF, 10.81, 17.02), new MotifReference(MIKEMOTIF, 18.14, 22.16),
-        new MotifReference(SPAMTONAMOTIF, 22.16, 27.70), new MotifReference(SPAMTONAMOTIF, 29.59, 35.09),
+        new MotifReference(MIKEMOTIF, quickSec(catswingBPM, 15), quickSec(catswingBPM, 31)),
+        new MotifReference(MIKEMOTIF, quickSec(catswingBPM, 31), quickSec(catswingBPM, 47)),
 
-        new MotifReference(SPAMTONBMOTIF, 36.92, 66.47),
-        new MotifReference(TVTIMEMOTIF, 36.92, 37.85), new MotifReference(TVTIMEMOTIF, 51.70, 52.64),
-        new MotifReference(QUEENAMOTIF, 44.56, 46.50),
+        new MotifReference(SPAMTONAMOTIF, quickSec(catswingBPM, 48), quickSec(catswingBPM, 60)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(catswingBPM, 64), quickSec(catswingBPM, 76)),
 
-        new MotifReference(TVTIMEMOTIF, 66.48, 69.24), new MotifReference(TVTIMEMOTIF, 70.17, 72.92),
-        new MotifReference(TVTIMEMOTIF, 73.85, 76.61), new MotifReference(TVTIMEMOTIF, 77.53, 80.28),
-        new MotifReference(TENNAMOTIF, 74.08, 77.23),
-        new MotifReference(TVTIMEMOTIF, 81.21, 83.98), new MotifReference(TVTIMEMOTIF, 84.89, 87.66),
-        new MotifReference(TENNAMOTIF, 81.45, 84.61),
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 80), quickSec(catswingBPM, 96)),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 80), quickSec(catswingBPM, 82)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 96), quickSec(catswingBPM, 112)),
+        new MotifReference(QUEENAMOTIF, quickSec(catswingBPM, 96), quickSec(catswingBPM, 101)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 112), quickSec(catswingBPM, 128)),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 112), quickSec(catswingBPM, 114)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 128), quickSec(catswingBPM, 144)),
 
-        new MotifReference(SPAMTONBMOTIF, 88.63, 66.47 - 36.92 + 88.63),
-        new MotifReference(TVTIMEMOTIF, 88.63, 89.57), new MotifReference(TVTIMEMOTIF, 103.40, 104.34),
-        new MotifReference(QUEENAMOTIF, 96.23, 98.19),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 144), quickSec(catswingBPM, 144 + 6)),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 144 + 8), quickSec(catswingBPM, 144 + 8 + 6)),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 144 + 16), quickSec(catswingBPM, 144 + 16 + 6)),
+        new MotifReference(TENNAMOTIF, quickSec(catswingBPM, 144 + 16.5), quickSec(catswingBPM, 144 + 16 + 7), true),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 144 + 24), quickSec(catswingBPM, 144 + 24 + 6)),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 144 + 32), quickSec(catswingBPM, 144 + 32 + 6)),
+        new MotifReference(TENNAMOTIF, quickSec(catswingBPM, 144 + 32.5), quickSec(catswingBPM, 144 + 32 + 7), true),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 144 + 40), quickSec(catswingBPM, 144 + 40 + 6)),
+
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 80 + 112), quickSec(catswingBPM, 96 + 112)),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 80 + 112), quickSec(catswingBPM, 82 + 112)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 96 + 112), quickSec(catswingBPM, 112 + 112)),
+        new MotifReference(QUEENAMOTIF, quickSec(catswingBPM, 96 + 112), quickSec(catswingBPM, 101 + 112)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 112 + 112), quickSec(catswingBPM, 128 + 112)),
+        new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 112 + 112), quickSec(catswingBPM, 114 + 112)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 128 + 112), quickSec(catswingBPM, 144 + 112)),
     ]
 );
 
