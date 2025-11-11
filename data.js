@@ -139,7 +139,7 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
 
     const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");
     motifMainDiv.classList.add("motifMainDiv");
-    if (isLink) motifMainDiv.href = "../../motifs/" + motifId;
+    if (isLink) motifMainDiv.href = "https://monstyrslayr.github.io/deltarunemotifs/motifs/" + motifId;
     if (isPlaying) motifMainDiv.classList.add("playing");
     motifMainDiv.classList.add("m" + motifId);
     motifMainDiv.style.borderColor = motifsWithId[0].color;
