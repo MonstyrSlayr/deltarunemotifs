@@ -1,15 +1,9 @@
-import { allSongs } from "../data.js";
+import { allSongs, createSongDiv } from "../data.js";
 
-const allSongsDiv = document.getElementById("songsDiv");
+const allSongsDiv = document.getElementById("songList");
 
 allSongs.forEach(song =>
 {
-    const anchor = document.createElement("a");
-    anchor.classList.add("bigLink");
-    anchor.href = "./" + song.id;
-    allSongsDiv.appendChild(anchor);
-
-        const songName = document.createElement("h2");
-        songName.textContent = song.name;
-        anchor.appendChild(songName);
+    const songDiv = createSongDiv(song, true);
+    allSongsDiv.appendChild(songDiv);
 });

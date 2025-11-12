@@ -66,10 +66,12 @@ class Song
     youtubeId;
     motifRefs = [];
     loopPoint = null;
+    mainMotifs = null;
 
-    constructor(name, youtubeId = "", motifRefs = [], id = "", loopPoint = null)
+    constructor(name, mainMotifs, youtubeId = "", motifRefs = [], id = "", loopPoint = null)
     {
         this.name = name;
+        this.mainMotifs = mainMotifs;
         this.youtubeId = youtubeId;
         this.motifRefs = motifRefs.sort((a, b) => a.startTime - b.startTime);
 
@@ -143,7 +145,6 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
     if (isPlaying) motifMainDiv.classList.add("playing");
     motifMainDiv.classList.add("m" + motifId);
     motifMainDiv.style.borderColor = motifsWithId[0].color;
-    motifList.appendChild(motifMainDiv);
     motifsWithId.forEach(motif => {
         motif.mainDiv = motifMainDiv;
     });
@@ -224,6 +225,47 @@ export function getSongsWithMotif(motif)
     return allSongs.filter(song => song.motifRefs.some(ref => ref.motif.id == motif.id));
 }
 
+export function createSongDiv(daSong, isLink = true)
+{
+    const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");
+    motifMainDiv.classList.add("songDiv");
+    if (daSong.motifRefs.length == 0) motifMainDiv.classList.add("noMotifs");
+    if (isLink) motifMainDiv.href = "https://monstyrslayr.github.io/deltarunemotifs/songs/" + daSong.id;
+    motifMainDiv.classList.add("s" + daSong.id);
+
+    switch (daSong.mainMotifs.length)
+    {
+        case 0: default:
+            break;
+
+        case 1:
+            motifMainDiv.style.borderColor = daSong.mainMotifs[0].color;
+            motifMainDiv.style.backgroundColor = daSong.mainMotifs[0].color2;
+            break;
+
+        case 2:
+            motifMainDiv.style.borderTopColor = daSong.mainMotifs[0].color;
+            motifMainDiv.style.borderLeftColor = daSong.mainMotifs[0].color;
+            motifMainDiv.style.borderBottomColor = daSong.mainMotifs[1].color;
+            motifMainDiv.style.borderRightColor = daSong.mainMotifs[1].color;
+
+            motifMainDiv.style.background = `
+                linear-gradient(
+                    to bottom right,
+                    ${daSong.mainMotifs[0].color2},
+                    ${daSong.mainMotifs[1].color2}
+                )
+            `;
+            break;
+    }
+
+        const motifText = document.createElement("h3");
+        motifText.textContent = daSong.name;
+        motifMainDiv.appendChild(motifText);
+
+    return motifMainDiv;
+}
+
 function exportIdsToTxt(data, filename = "ids.txt")
 {
     // Extract ids from the objects
@@ -272,6 +314,7 @@ function quickSec(bpm, numberOfBeats)
 
 const theLegendBPM = 110;
 const theLegend = new Song("The Legend",
+    [THELEGENDAMOTIF],
     "PibYmujLubI",
     [
         new MotifReference(THELEGENDAMOTIF, 0, quickSec(theLegendBPM, 8)),
@@ -289,6 +332,7 @@ const theLegend = new Song("The Legend",
 
 const lancerBPM = 125;
 const lancer = new Song("Lancer",
+    [LANCERMOTIF],
     "GAhBQH0Kf1I",
     [
         new MotifReference(LANCERMOTIF, 0, quickSec(lancerBPM, 24.66)),
@@ -299,6 +343,7 @@ const lancer = new Song("Lancer",
 
 const vsLancerBPM = 177;
 const vsLancer = new Song("Vs. Lancer",
+    [LANCERMOTIF],
     "Ce-gU8G6Vik",
     [
         new MotifReference(LANCERMOTIF, quickSec(vsLancerBPM, 2.5), quickSec(vsLancerBPM, 33.5)),
@@ -309,6 +354,7 @@ const vsLancer = new Song("Vs. Lancer",
 
 const cardCastleBPM = 125;
 const cardCastle = new Song("Card Castle",
+    [KINGMOTIF],
     "tvjuTn9LZwY",
     [
         new MotifReference(KINGMOTIF, 0, quickSec(cardCastleBPM, 32)),
@@ -321,6 +367,7 @@ const cardCastle = new Song("Card Castle",
 
 const chaosKingBPM = 147;
 const chaosKing = new Song("Chaos King",
+    [KINGMOTIF],
     "tPwzoZ-e664",
     [
         new MotifReference(KINGMOTIF, quickSec(chaosKingBPM, 8), quickSec(chaosKingBPM, 40)),
@@ -337,6 +384,7 @@ const chaosKing = new Song("Chaos King",
 
 const theWorldRevolvingBPM = 190;
 const theWorldRevolving = new Song("THE WORLD REVOLVING",
+    [FREEDOMMOTIF],
     "Z01Tsgwe2dQ",
     [
         new MotifReference(FREEDOMMOTIF, quickSec(theWorldRevolvingBPM, 64), quickSec(theWorldRevolvingBPM, 96)), 
@@ -360,6 +408,7 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
 //#region CHAPTER 2
 
 const queen = new Song("Queen",
+    [QUEENAMOTIF],
     "6XQv5CHmITA",
     [
 
@@ -368,6 +417,7 @@ const queen = new Song("Queen",
 
 const aSimpleDiversionBPM = 130;
 const aSimpleDiversion = new Song("A Simple Diversion",
+    [QUEENAMOTIF],
     "p1U5FjgwDhA",
     [
         new MotifReference(QUEENAMOTIF, 0, quickSec(aSimpleDiversionBPM, 16)),
@@ -380,6 +430,7 @@ const aSimpleDiversion = new Song("A Simple Diversion",
 
 const berdlyBPM = 98;
 const berdly = new Song("Berdly",
+    [BERDLYAMOTIF],
     "2S8I1h-wNzc",
     [
         new MotifReference(BERDLYAMOTIF, 0, quickSec(berdlyBPM, 24)),
@@ -391,6 +442,7 @@ const berdly = new Song("Berdly",
 
 const smartRaceBPM = 150;
 const smartRace = new Song("Smart Race",
+    [BERDLYAMOTIF],
     "HZO3xw91eHw",
     [
         new MotifReference(QUEENAMOTIF, quickSec(smartRaceBPM, 4), quickSec(smartRaceBPM, 8)),
@@ -407,6 +459,7 @@ const smartRace = new Song("Smart Race",
 
 const coolMixtapeBPM = 144;
 const coolMixtape = new Song("Cool Mixtape",
+    [QUEENAMOTIF],
     "EeVEyBGPgLY",
     [
         new MotifReference(QUEENAMOTIF, 0, quickSec(coolMixtapeBPM, 16)),
@@ -418,6 +471,7 @@ const coolMixtape = new Song("Cool Mixtape",
 
 const elegantEntranceBPM = 100;
 const elegantEntrance = new Song("Elegant Entrance",
+    [QUEENAMOTIF],
     "j6baKyF2Ksc",
     [
         new MotifReference(QUEENAMOTIF, 0, quickSec(elegantEntranceBPM, 32)),
@@ -430,6 +484,7 @@ const elegantEntrance = new Song("Elegant Entrance",
 
 const bluebirdOfMisfortuneBPM = 120;
 const bluebirdOfMisfortune = new Song("Bluebird of Misfortune",
+    [BERDLYAMOTIF],
     "yud5H-vnbJw",
     [
         new MotifReference(BERDLYAMOTIF, 0, quickSec(bluebirdOfMisfortuneBPM, 49)),
@@ -440,6 +495,7 @@ const bluebirdOfMisfortune = new Song("Bluebird of Misfortune",
 
 const pandoraPalaceBPM = 100;
 const pandoraPalace = new Song("Pandora Palace",
+    [QUEENAMOTIF],
     "q-5cXVcCOUs",
     [
         new MotifReference(QUEENAMOTIF, quickSec(pandoraPalaceBPM, 34), quickSec(pandoraPalaceBPM, 34 + 16)),
@@ -454,6 +510,7 @@ const pandoraPalace = new Song("Pandora Palace",
 
 const attackOfTheKillerQueenBPM = 144;
 const attackOfTheKillerQueen = new Song("Attack of the Killer Queen",
+    [QUEENAMOTIF, BERDLYAMOTIF],
     "vBjscyFC3jo",
     [
         new MotifReference(QUEENAMOTIF, 0, quickSec(attackOfTheKillerQueenBPM, 16)),
@@ -474,6 +531,7 @@ const attackOfTheKillerQueen = new Song("Attack of the Killer Queen",
 
 const gigaSizeBPM = 125;
 const gigaSize = new Song("Giga Size",
+    [QUEENAMOTIF],
     "_bVl2e-Wxzg",
     [
         new MotifReference(QUEENAMOTIF, quickSec(gigaSizeBPM, 64), quickSec(gigaSizeBPM, 80)),
@@ -491,6 +549,7 @@ const gigaSize = new Song("Giga Size",
 
 const knockYouDownBPM = 195;
 const knockYouDown = new Song("Knock You Down !!",
+    [POWERSCOMBINEDMOTIF],
     "L9qRYVZLets",
     [
         new MotifReference(POWERSCOMBINEDMOTIF, 0, quickSec(knockYouDownBPM, 16)),
@@ -530,42 +589,118 @@ const knockYouDown = new Song("Knock You Down !!",
 
 //#region CHAPTER 3
 
+const raiseUpYourBatBPM = 115;
 const raiseUpYourBat = new Song("Raise Up Your Bat",
+    [LOSTGIRLMOTIF],
     "85WD93lz5GU",
     [
-
-    ]
+        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144 - 32), quickSec(raiseUpYourBatBPM, 144 - 24)),
+        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144 - 16), quickSec(raiseUpYourBatBPM, 144 - 8)),
+        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144), quickSec(raiseUpYourBatBPM, 144 + 8)),
+        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144 + 16), quickSec(raiseUpYourBatBPM, 144 + 24)),
+    ],
+    "", quickSec(raiseUpYourBatBPM, 144 + 110)
 );
 
+const doomBoardBPM = 129 / 2;
 const doomBoard = new Song("Doom Board",
+    [DOOMBOARDMOTIF, TENNAMOTIF],
     "ZQ4AZI9dirA",
     [
-
-    ]
+        new MotifReference(DOOMBOARDMOTIF, 0, quickSec(doomBoardBPM, 4)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 4), quickSec(doomBoardBPM, 8)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 8), quickSec(doomBoardBPM, 12)),
+        new MotifReference(TENNAMOTIF, quickSec(doomBoardBPM, 8.25), quickSec(doomBoardBPM, 11.5), true),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 12), quickSec(doomBoardBPM, 16)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 16), quickSec(doomBoardBPM, 20)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 20), quickSec(doomBoardBPM, 24)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 24), quickSec(doomBoardBPM, 28)),
+        new MotifReference(TENNAMOTIF, quickSec(doomBoardBPM, 24.25), quickSec(doomBoardBPM, 27.5), true),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 28), quickSec(doomBoardBPM, 32)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 32), quickSec(doomBoardBPM, 36)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 36), quickSec(doomBoardBPM, 40)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 40), quickSec(doomBoardBPM, 44), true),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 44), quickSec(doomBoardBPM, 48), true),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 48), quickSec(doomBoardBPM, 52)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(doomBoardBPM, 52), quickSec(doomBoardBPM, 56)),
+    ],
+    "", quickSec(doomBoardBPM, 56)
 );
 
 const metaphysicalChallenge = new Song("Metaphysical Challenge",
+    [DOOMBOARDMOTIF, TENNAMOTIF],
     "nqxdUy5hoLc",
-    [
-
-    ]
+    doomBoard.motifRefs,
+    "", doomBoard.loopPoint
 );
 
+const tvWorldBPM = 145;
 const tvWorld = new Song("TV WORLD",
+    [TENNAMOTIF],
     "DstO9slC_5U",
     [
+        new MotifReference(HIPSHOPMOTIF, quickSec(tvWorldBPM, 148), quickSec(tvWorldBPM, 148 + 16), true),
+        new MotifReference(HIPSHOPMOTIF, quickSec(tvWorldBPM, 148 + 16), quickSec(tvWorldBPM, 148 + 32), true),
+        new MotifReference(HIPSHOPMOTIF, quickSec(tvWorldBPM, 148 + 32), quickSec(tvWorldBPM, 148 + 48), true),
+        new MotifReference(TENNAMOTIF, quickSec(tvWorldBPM, 148 + 33), quickSec(tvWorldBPM, 148 + 42)),
+        new MotifReference(HIPSHOPMOTIF, quickSec(tvWorldBPM, 148 + 48), quickSec(tvWorldBPM, 148 + 64), true),
+        new MotifReference(TENNAMOTIF, quickSec(tvWorldBPM, 148 + 49), quickSec(tvWorldBPM, 148 + 58), true),
+        new MotifReference(HIPSHOPMOTIF, quickSec(tvWorldBPM, 148 + 64), quickSec(tvWorldBPM, 148 + 80), true),
+        new MotifReference(TENNAMOTIF, quickSec(tvWorldBPM, 148 + 65), quickSec(tvWorldBPM, 148 + 74)),
+        new MotifReference(HIPSHOPMOTIF, quickSec(tvWorldBPM, 148 + 80), quickSec(tvWorldBPM, 148 + 96), true),
+        new MotifReference(TENNAMOTIF, quickSec(tvWorldBPM, 148 + 81), quickSec(tvWorldBPM, 148 + 90), true),
 
-    ]
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 96), quickSec(tvWorldBPM, 148 + 100)),
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 104), quickSec(tvWorldBPM, 148 + 108)),
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 112), quickSec(tvWorldBPM, 148 + 116)),
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 120), quickSec(tvWorldBPM, 148 + 124)),
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 128), quickSec(tvWorldBPM, 148 + 132)),
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 136), quickSec(tvWorldBPM, 148 + 140)),
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 144), quickSec(tvWorldBPM, 148 + 148)),
+        new MotifReference(TVTIMEMOTIF, quickSec(tvWorldBPM, 148 + 152), quickSec(tvWorldBPM, 148 + 156)),
+    ],
+    "", quickSec(tvWorldBPM, 156 + 156)
 );
 
+const itsTvTimeBPM = 148;
 const itsTvTime = new Song("It's TV Time!",
+    [TENNAMOTIF, TVTIMEMOTIF],
     "F2PJbTuZlTU",
     [
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 48.5), quickSec(itsTvTimeBPM, 52)),
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 56.5), quickSec(itsTvTimeBPM, 60)),
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 80.5), quickSec(itsTvTimeBPM, 84)),
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 88.5), quickSec(itsTvTimeBPM, 92)),
 
-    ]
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 - 8), quickSec(itsTvTimeBPM, 128 + 64)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64), quickSec(itsTvTimeBPM, 128 + 64 + 8)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 8), quickSec(itsTvTimeBPM, 128 + 64 + 16)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 16), quickSec(itsTvTimeBPM, 128 + 64 + 24)),
+
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 24), quickSec(itsTvTimeBPM, 128 + 64 + 32)),
+        new MotifReference(TVTIMEMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 24), quickSec(itsTvTimeBPM, 128 + 64 + 28)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 32), quickSec(itsTvTimeBPM, 128 + 64 + 40)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 40), quickSec(itsTvTimeBPM, 128 + 64 + 48)),
+        new MotifReference(TVTIMEMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 40), quickSec(itsTvTimeBPM, 128 + 64 + 44)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 48), quickSec(itsTvTimeBPM, 128 + 64 + 56)),
+
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 56), quickSec(itsTvTimeBPM, 128 + 64 + 64)),
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 56.5), quickSec(itsTvTimeBPM, 128 + 64 + 63)),
+        new MotifReference(TVTIMEMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 56), quickSec(itsTvTimeBPM, 128 + 64 + 60)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 64), quickSec(itsTvTimeBPM, 128 + 64 + 72)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 72), quickSec(itsTvTimeBPM, 128 + 64 + 80)),
+        new MotifReference(TVTIMEMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 72), quickSec(itsTvTimeBPM, 128 + 64 + 76)),
+        new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 80), quickSec(itsTvTimeBPM, 128 + 64 + 88)),
+
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 89), quickSec(itsTvTimeBPM, 128 + 64 + 88 + 12)),
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 89 + 32), quickSec(itsTvTimeBPM, 128 + 64 + 88 + 12 + 32)),
+        new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 89 + 64), quickSec(itsTvTimeBPM, 128 + 64 + 88 + 12 + 64)),
+    ],
+    "", quickSec(itsTvTimeBPM, 128 + 64 + 88 + 16 + 112)
 );
 
 const blackKnife = new Song("Black Knife",
+    [THEDOORMOTIF],
     "B8Us0DZgexw",
     [
 
@@ -577,6 +712,7 @@ const blackKnife = new Song("Black Knife",
 //#region CHAPTER 4
 
 const knockYouDownRhythmVer = new Song("Knock You Down!! (Rhythm Ver.)",
+    [POWERSCOMBINEDMOTIF],
     "27oficnsQPo",
     [
         new MotifReference(POWERSCOMBINEDMOTIF, 0, quickSec(knockYouDownBPM, 16)),
@@ -611,6 +747,7 @@ const knockYouDownRhythmVer = new Song("Knock You Down!! (Rhythm Ver.)",
 );
 
 const gyaaHaHa = new Song("Gyaa Ha ha!",
+    [GERSONMOTIF],
     "HeAXR0UKRxY",
     [
 
@@ -618,6 +755,7 @@ const gyaaHaHa = new Song("Gyaa Ha ha!",
 );
 
 const wiseWords = new Song("Wise words",
+    [GERSONMOTIF],
     "YYl_CuHvVRs",
     [
         
@@ -625,6 +763,7 @@ const wiseWords = new Song("Wise words",
 );
 
 const hammerOfJustice = new Song("Hammer of Justice",
+    [GERSONMOTIF, FREEDOMMOTIF],
     "tBdLO8u-0L8",
     [
         
@@ -633,6 +772,7 @@ const hammerOfJustice = new Song("Hammer of Justice",
 
 const heavyFootstepsBPM = 100;
 const heavyFootsteps = new Song("Heavy Footsteps",
+    [TITANMOTIF],
     "4f5XPpd3oiU",
     [
         new MotifReference(TITANMOTIF, 0, quickSec(heavyFootstepsBPM, 16)),
@@ -645,6 +785,7 @@ const heavyFootsteps = new Song("Heavy Footsteps",
 
 const crumblingTowerBPM = 115;
 const crumblingTower = new Song("Crumbling Tower",
+    [TITANMOTIF, SANCTUARYMOTIF],
     "z2IT2YzscSE",
     [
         new MotifReference(TITANMOTIF, 0, quickSec(crumblingTowerBPM, 16)),
@@ -685,6 +826,7 @@ const crumblingTower = new Song("Crumbling Tower",
 
 const spawnBPM = 135;
 const spawn = new Song("SPAWN",
+    [TITANMOTIF],
     "oZywM_ZwvJQ",
     [
         new MotifReference(TITANMOTIF, 0, quickSec(spawnBPM, 16)),
@@ -699,6 +841,7 @@ const spawn = new Song("SPAWN",
 
 const guardianBPM = 140;
 const guardian = new Song("GUARDIAN",
+    [TITANMOTIF, SANCTUARYMOTIF],
     "nP9mB1sVJz4",
     [
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 32), quickSec(guardianBPM, 48)),
@@ -734,6 +877,7 @@ const guardian = new Song("GUARDIAN",
 );
 
 const needAHand = new Song("Need a hand!?",
+    [GERSONMOTIF],
     "C135xMeF4jk",
     [
         
@@ -742,6 +886,7 @@ const needAHand = new Song("Need a hand!?",
 
 const catswingBPM = 130;
 const catswing = new Song("Catswing",
+    [MIKEMOTIF],
     "r-DvoCTarMQ",
     [
         new MotifReference(MIKEMOTIF, quickSec(catswingBPM, 15), quickSec(catswingBPM, 31)),

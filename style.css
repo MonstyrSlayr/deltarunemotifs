@@ -1,6 +1,7 @@
 *
 {
     transition: all 0.15s;
+    --cool-border: 8px solid white;
 }
 
 body
@@ -15,15 +16,19 @@ body
 header
 {
     width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 1em;
 }
 
 .antiButton
 {
     opacity: 0;
+    min-width: 0;
+    flex-shrink: 2;
 }
 
 .antiButton
@@ -35,12 +40,15 @@ h1
 {
     font-size: 40px;
     color: white;
+    text-align: center;
 }
 
 h2
 {
     color: white;
     margin: 0.5em;
+    text-align: center;
+    font-size: 34px;
 }
 
 h3
@@ -48,6 +56,7 @@ h3
     color: white;
     margin: 0.5em;
     text-align: center;
+    font-size: 28px;
 }
 
 a
@@ -59,6 +68,8 @@ p
 {
     color: white;
     margin: 0.5em;
+    text-align: center;
+    font-size: 16px;
 }
 
 #musicContainer
@@ -89,6 +100,7 @@ p
 {
     width: 100%;
     border-radius: 1em;
+    border: var(--cool-border);
 }
 
 .coverArt:hover
@@ -103,7 +115,7 @@ p
     position: absolute;
     bottom: 0;
     left: 0;
-    margin: 1em;
+    margin: 2em;
 }
 
 .controls button
@@ -135,6 +147,11 @@ p
     width: 0%;
     background-color: white;
     display: inline-block;
+}
+
+.timebarProgress.variation
+{
+    opacity: 85%;
 }
 
 .timebarGap
@@ -169,7 +186,7 @@ p
     justify-content: space-between;
 }
 
-#motifList
+#motifList, #songList
 {
     width: 50%;
     padding: 0;
@@ -178,15 +195,32 @@ p
     justify-content: space-around;
     align-items: center;
     gap: 1em;
+    margin: 1em;
+}
+
+.songDiv
+{
+    border: var(--cool-border);
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.songDiv.noMotifs
+{
+    opacity: 50%;
 }
 
 .motifMainDiv
 {
-    border: white 8px solid;
+    border: var(--cool-border);
     display: flex;
     flex-direction: row;
     opacity: 50%;
-    height: 20em;
+    height: 21em;
     width: 21em;
     border-radius: 8px;
 }
@@ -198,7 +232,7 @@ p
 
 .motifMainDiv > div:first-child
 {
-    padding: 3em;
+    padding: 1em;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -208,8 +242,13 @@ p
 
 .motifMainDiv > div:first-child > img
 {
-    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
     max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    flex-shrink: 2;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
@@ -217,8 +256,8 @@ p
 
 .motifMainDiv > div:last-child
 {
-    display: grid;
-    grid-template-rows: repeat(1fr);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
 }
@@ -235,7 +274,7 @@ p
     justify-content: center;
     align-items: center;
     padding: 0;
-    border: solid white 8px;
+    border: var(--cool-border);
     border-right: none;
     height: 100%;
     width: 100%;
@@ -288,15 +327,6 @@ p
 .bigLink:hover
 {
     scale: 1.05;
-}
-
-#songsDiv, #motifsDiv
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .gone
@@ -357,5 +387,83 @@ p
     100%
     {
         background-position: 200% 50%;
+    }
+}
+
+@media screen and (max-width: 1440px)
+{
+    #motifList, #songList
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    header
+    {
+        flex-direction: column;
+        gap: 0;
+        padding: 1em;
+    }
+
+    .antiButton
+    {
+        display: none;
+    }
+
+    h1
+    {
+        font-size: 36px;
+    }
+
+    h2
+    {
+        font-size: 30px;
+    }
+
+    h3
+    {
+        font-size: 24px;
+    }
+
+    .audioCard
+    {
+        width: 90%;
+    }
+
+    .motifMainDiv
+    {
+        flex-direction: column;
+        height: 16em;
+    }
+
+    .motifMainDiv > div:first-child
+    {
+        flex-direction: row;
+        height: 75%;
+    }
+
+    .motifMainDiv > div:last-child
+    {
+        flex-direction: row;
+    }
+
+    .motifMainDiv > div:last-child > div
+    {
+        flex-direction: row;
+        border-right: auto;
+        border-bottom: none;
+    }
+
+    .motifMainDiv > div:last-child > div:first-child
+    {
+        border-top: var(--cool-border);
+        border-left: none;
+    }
+
+    .motifMainDiv > div:last-child > div:last-child
+    {
+        border-right: none;
     }
 }

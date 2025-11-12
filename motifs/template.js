@@ -1,4 +1,4 @@
-import { createMotifDiv, getMotifById, getSongsWithMotif } from "../data.js";
+import { createMotifDiv, createSongDiv, getMotifById, getSongsWithMotif } from "../data.js";
 
 function getLastFolder(url, num)
 {
@@ -19,15 +19,9 @@ const motifList = document.getElementById("motifList");
 const motifDiv = createMotifDiv(daId, false, true);
 motifList.appendChild(motifDiv);
 
-const daSongsDiv = document.getElementById("songsDiv");
+const daSongsDiv = document.getElementById("songList");
 getSongsWithMotif(daMotif).forEach(song => {
     
-    const anchor = document.createElement("a");
-    anchor.classList.add("bigLink");
-    anchor.href = "../../songs/" + song.id;
-    daSongsDiv.appendChild(anchor);
-
-        const songName = document.createElement("h2");
-        songName.textContent = song.name;
-        anchor.appendChild(songName);
+    const songDiv = createSongDiv(song, true);
+    daSongsDiv.appendChild(songDiv);
 });

@@ -1,4 +1,4 @@
-import { createMotifDiv, getMotifsById, getSongById } from "../data.js";
+import { createMotifDiv, createSongDiv, getMotifsById, getSongById } from "../data.js";
 
 let isDragging = false; // maus
 
@@ -13,6 +13,10 @@ function formatPageForSong(daSong)
 
     const header = document.getElementById("songName");
     header.textContent = daSong.name;
+
+    const songList = document.getElementById("songList");
+    const songDiv = createSongDiv(daSong, false);
+    songList.appendChild(songDiv);
 
     const container = document.getElementById("musicContainer");
 
@@ -44,7 +48,7 @@ function formatPageForSong(daSong)
 
                 controls.appendChild(playBtn);
                 controls.appendChild(pauseBtn);
-
+        
         // timebar
         const timebarContainer = document.createElement("div");
         timebarContainer.classList.add("timebarContainer");
@@ -54,6 +58,36 @@ function formatPageForSong(daSong)
         const timebarProgress = document.createElement("div");
         timebarProgress.classList.add("timebarProgress");
         timebarContainer.appendChild(timebarProgress);
+
+        switch (daSong.mainMotifs.length)
+        {
+            case 0: default:
+                break;
+
+            case 1:
+                cover.style.borderColor = daSong.mainMotifs[0].color;
+                cover.style.backgroundColor = daSong.mainMotifs[0].color2;
+                playBtn.style.backgroundColor = daSong.mainMotifs[0].color;
+                pauseBtn.style.backgroundColor = daSong.mainMotifs[0].color;
+                break;
+
+            case 2:
+                cover.style.borderTopColor = daSong.mainMotifs[0].color;
+                cover.style.borderLeftColor = daSong.mainMotifs[0].color;
+                cover.style.borderBottomColor = daSong.mainMotifs[1].color;
+                cover.style.borderRightColor = daSong.mainMotifs[1].color;
+
+                cover.style.background = `
+                    linear-gradient(
+                        to bottom right,
+                        ${daSong.mainMotifs[0].color2},
+                        ${daSong.mainMotifs[1].color2}
+                    )
+                `;
+                playBtn.style.backgroundColor = daSong.mainMotifs[0].color;
+                pauseBtn.style.backgroundColor = daSong.mainMotifs[0].color;
+                break;
+        }
 
         // time labels
         const timeLabels = document.createElement("div");
@@ -151,6 +185,7 @@ function formatPageForSong(daSong)
 
                             const motifRefBar = document.createElement("div");
                             motifRefBar.classList.add("timebarProgress");
+                            if (motifRef.isVariation) motifRefBar.classList.add("variation");
                             motifRefBar.style.backgroundColor = motif.color;
                             motifbarContainer.appendChild(motifRefBar);
                             
