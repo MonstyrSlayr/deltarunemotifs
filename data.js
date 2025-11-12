@@ -96,8 +96,8 @@ const ONCEUPONATIMEMOTIF = new Motif("Once Upon a Time");
 const RUINSMOTIF = new Motif("The Ruins");
 const UWAAMOTIF = new Motif("Uwa!!");
 const HOMEMOTIF = new Motif("Home");
-const ENEMYAPPROACHINGMOTIF = new Motif("Enemy Approaching");
-const DOGSONGMOTIF = new Motif("Enemy Approaching", "Dogsong");
+const ENEMYAPPROACHINGMOTIF = new Motif("Enemy Approaching", "A");
+const DOGSONGMOTIF = new Motif("Enemy Approaching", "D");
 const GHOSTFIGHTAMOTIF = new Motif("Ghost Fight", "A");
 const GHOSTFIGHTBMOTIF = new Motif("Ghost Fight", "B");
 const DETERMINATIONMOTIF = new Motif("Determination");
@@ -139,13 +139,13 @@ const DARKNESSFALLSMOTIF = new Motif("Darkness Falls", "");
 const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", IMGLINK + "hipshop.png");
 const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", IMGLINK + "jevil.webp");
 const THEHOLYMOTIF = new Motif("THE HOLY", "");
-const MANMOTIF = new Motif("man", "");
 
 const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", IMGLINK + "susiegaster.webp");
 const LANCERAMOTIF = new Motif("Lancer", "A", "#5585bd", "#32323233", IMGLINK + "lancer.png");
 const LANCERBMOTIF = new Motif("Lancer", "B", "#5585bd", "#ffffff33");
 const ROUXLSKAARDMOTIF = new Motif("Rouxls Kaard", "");
 const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", IMGLINK + "king.webp");
+const MANMOTIF = new Motif("man", "");
 
 const CYBERWORLDMOTIF = new Motif("Cyber World", "");
 const ROOTSMOTIF = new Motif("Roots", "");
