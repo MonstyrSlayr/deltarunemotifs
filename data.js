@@ -138,11 +138,18 @@ export function getMotifsById(id)
 export function createMotifDiv(motifId, isLink = true, isPlaying = false)
 {
     const motifsWithId = getMotifsById(motifId);
+    let hasSongs = false;
+    motifsWithId.forEach(motif => {
+        if (getSongsWithMotif(motif).length > 0)
+        {
+            hasSongs = true;
+        }
+    });
 
     const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");
     motifMainDiv.classList.add("motifMainDiv");
     if (isLink) motifMainDiv.href = "https://monstyrslayr.github.io/deltarunemotifs/motifs/" + motifId;
-    if (isPlaying) motifMainDiv.classList.add("playing");
+    if (isPlaying && hasSongs) motifMainDiv.classList.add("playing");
     motifMainDiv.classList.add("m" + motifId);
     motifMainDiv.style.borderColor = motifsWithId[0].color;
     motifsWithId.forEach(motif => {
