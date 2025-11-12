@@ -530,11 +530,51 @@ const knockYouDown = new Song("Knock You Down !!",
 
 //#region CHAPTER 3
 
+const raiseUpYourBat = new Song("Raise Up Your Bat",
+    "85WD93lz5GU",
+    [
+
+    ]
+);
+
+const doomBoard = new Song("Doom Board",
+    "ZQ4AZI9dirA",
+    [
+
+    ]
+);
+
+const metaphysicalChallenge = new Song("Metaphysical Challenge",
+    "nqxdUy5hoLc",
+    [
+
+    ]
+);
+
+const tvWorld = new Song("TV WORLD",
+    "DstO9slC_5U",
+    [
+
+    ]
+);
+
+const itsTvTime = new Song("It's TV Time!",
+    "F2PJbTuZlTU",
+    [
+
+    ]
+);
+
+const blackKnife = new Song("Black Knife",
+    "B8Us0DZgexw",
+    [
+
+    ]
+);
+
 //#endregion
 
 //#region CHAPTER 4
-
-// TODO: fix with new bpm method
 
 const knockYouDownRhythmVer = new Song("Knock You Down!! (Rhythm Ver.)",
     "27oficnsQPo",
