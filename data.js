@@ -84,46 +84,53 @@ class Song
     }
 }
 
-const LINK = "https://monstyrslayr.github.io/deltarunemotifs/img/";
+function isLiveServer()
+{
+    return location.hostname === "127.0.0.1" || location.hostname === "localhost";
+}
+
+const LINK = isLiveServer() ? "http://127.0.0.1:5500/" : "https://monstyrslayr.github.io/deltarunemotifs/";
+const IMGLINK = LINK + "img/";
 
 const RUINSMOTIF = new Motif("The Ruins");
-const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", LINK + "undyne.png");
+const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", IMGLINK + "undyne.png");
 const NIGHTMAREMOTIF = new Motif("Your Best Nightmare");
 NIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
 
-const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", LINK + "susiegaster.webp");
-const DONTFORGETMOTIF = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", LINK + "ralsei.png");
-const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", LINK + "thedoor.png");
-const THELEGENDAMOTIF = new Motif("The Legend", "A", "#c08226", "#00000033", LINK + "thelegend.png");
+const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", IMGLINK + "susiegaster.webp");
+const DONTFORGETMOTIF = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", IMGLINK + "ralsei.png");
+const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK + "thedoor.png");
+const THELEGENDAMOTIF = new Motif("The Legend", "A", "#c08226", "#00000033", IMGLINK + "thelegend.png");
 const THELEGENDBMOTIF = new Motif("The Legend", "B", "#c08226", "#00000033");
 const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
-const LANCERMOTIF = new Motif("Lancer", "", "#5585bd", "#32323233", LINK + "lancer.png");
-const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", LINK + "king.webp");
-const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", LINK + "hipshop.png");
-const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", LINK + "jevil.webp");
+const LANCERMOTIF = new Motif("Lancer", "", "#5585bd", "#32323233", IMGLINK + "lancer.png");
+const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", IMGLINK + "king.webp");
+const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", IMGLINK + "hipshop.png");
+const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", IMGLINK + "jevil.webp");
 
-const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", LINK + "queen.webp");
+const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", IMGLINK + "queen.webp");
 const QUEENBMOTIF = new Motif("Queen", "B", "#6fd1ff", "#6d86e733");
 const QUEENCMOTIF = new Motif("Queen", "C", "#6fd1ff", "#6d86e733");
 const QUEENDMOTIF = new Motif("Queen", "D", "#6fd1ff", "#6d86e733");
-const SWEETCAPNCAKESA = new Motif("Sweet Cap'n Cakes", "A");
-const SWEETCAPNCAKESB = new Motif("Sweet Cap'n Cakes", "B");
-const BERDLYAMOTIF = new Motif("Berdly", "A", "#46b3fc", "#30b18133", LINK + "berdly.webp");
+const SWEETCAPNCAKESAMOTIF = new Motif("Sweet Cap'n Cakes", "A");
+const SWEETCAPNCAKESBMOTIF = new Motif("Sweet Cap'n Cakes", "B");
+const BERDLYAMOTIF = new Motif("Berdly", "A", "#46b3fc", "#30b18133", IMGLINK + "berdly.webp");
 const BERDLYBMOTIF = new Motif("Berdly", "B", "#46b3fc", "#30b18133");
-const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933", LINK + "spamton.webp");
+const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933", IMGLINK + "spamton.webp");
 const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
-const LOSTGIRLMOTIF = new Motif("Lost Girl", "", "#331d0a", "#332a3b33", LINK + "lostgirl.png");
+const LOSTGIRLAMOTIF = new Motif("Lost Girl", "A", "#331d0a", "#332a3b33", IMGLINK + "lostgirl.png");
+const LOSTGIRLBMOTIF = new Motif("Lost Girl", "B", "#331d0a", "#332a3b33");
 const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
 
-const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", LINK + "tvtime.webp");
-const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", LINK + "tenna.webp");
-const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", LINK + "doomboard.png");
+const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", IMGLINK + "tvtime.webp");
+const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", IMGLINK + "tenna.webp");
+const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", IMGLINK + "doomboard.png");
 
-const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", LINK + "mike.webp");
-const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", LINK + "darksanctuary.png");
-const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33", LINK + "subsequentsanctuary.jpg");
-const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", LINK + "gerson.png");
-const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", LINK + "titan.gif");
+const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", IMGLINK + "mike.webp");
+const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", IMGLINK + "darksanctuary.png");
+const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33", IMGLINK + "subsequentsanctuary.jpg");
+const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", IMGLINK + "gerson.png");
+const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", IMGLINK + "titan.gif");
 
 export function getMotifById(id)
 {
@@ -148,7 +155,7 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
 
     const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");
     motifMainDiv.classList.add("motifMainDiv");
-    if (isLink) motifMainDiv.href = "https://monstyrslayr.github.io/deltarunemotifs/motifs/" + motifId;
+    if (isLink) motifMainDiv.href = LINK + "motifs/" + motifId;
     if (isPlaying && hasSongs) motifMainDiv.classList.add("playing");
     motifMainDiv.classList.add("m" + motifId);
     motifMainDiv.style.borderColor = motifsWithId[0].color;
@@ -169,10 +176,13 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
             leftTime.appendChild(notTempImg);
         }
 
+        const otherChide = document.createElement("div");
+        leftTime.appendChild(otherChide);
+
             const motifText = document.createElement("h3");
             motifText.textContent = motifsWithId[0].name;
             motifText.style.color = motifsWithId[0].color;
-            leftTime.appendChild(motifText);
+            otherChide.appendChild(motifText);
 
         const rightSide = document.createElement("div");
         motifMainDiv.appendChild(rightSide);
@@ -211,7 +221,7 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
                 motif.variationDiv = daVariation;
             });
             daVariation.classList.add("variationDiv");
-            leftTime.appendChild(daVariation);
+            otherChide.appendChild(daVariation);
 
                 const variationText = document.createElement("p");
                 variationText.textContent = "(variation)";
@@ -237,7 +247,7 @@ export function createSongDiv(daSong, isLink = true)
     const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");
     motifMainDiv.classList.add("songDiv");
     if (daSong.motifRefs.length == 0) motifMainDiv.classList.add("noMotifs");
-    if (isLink) motifMainDiv.href = "https://monstyrslayr.github.io/deltarunemotifs/songs/" + daSong.id;
+    if (isLink) motifMainDiv.href = LINK + "songs/" + daSong.id;
     motifMainDiv.classList.add("s" + daSong.id);
 
     switch (daSong.mainMotifs.length)
@@ -598,13 +608,13 @@ const knockYouDown = new Song("Knock You Down !!",
 
 const raiseUpYourBatBPM = 115;
 const raiseUpYourBat = new Song("Raise Up Your Bat",
-    [LOSTGIRLMOTIF],
+    [LOSTGIRLAMOTIF],
     "85WD93lz5GU",
     [
-        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144 - 32), quickSec(raiseUpYourBatBPM, 144 - 24)),
-        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144 - 16), quickSec(raiseUpYourBatBPM, 144 - 8)),
-        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144), quickSec(raiseUpYourBatBPM, 144 + 8)),
-        new MotifReference(LOSTGIRLMOTIF, quickSec(raiseUpYourBatBPM, 144 + 16), quickSec(raiseUpYourBatBPM, 144 + 24)),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(raiseUpYourBatBPM, 144 - 32), quickSec(raiseUpYourBatBPM, 144 - 24)),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(raiseUpYourBatBPM, 144 - 16), quickSec(raiseUpYourBatBPM, 144 - 8)),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(raiseUpYourBatBPM, 144), quickSec(raiseUpYourBatBPM, 144 + 8)),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(raiseUpYourBatBPM, 144 + 16), quickSec(raiseUpYourBatBPM, 144 + 24)),
     ],
     "", quickSec(raiseUpYourBatBPM, 144 + 110)
 );

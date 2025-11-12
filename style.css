@@ -207,11 +207,19 @@ p
     justify-content: center;
     align-items: center;
     padding: 2em;
+    height: 8em;
+    width: 21em;
 }
 
 .songDiv.noMotifs
 {
     opacity: 50%;
+}
+
+a.songDiv:hover
+{
+    text-decoration: none;
+    border-width: 16px;
 }
 
 .motifMainDiv
@@ -230,6 +238,13 @@ p
     opacity: 100%;
 }
 
+a.motifMainDiv:hover
+{
+    text-decoration: none;
+    border-width: 16px;
+}
+
+/* left time */
 .motifMainDiv > div:first-child
 {
     padding: 1em;
@@ -254,6 +269,7 @@ p
     image-rendering: -webkit-optimize-contrast;
 }
 
+/* right side */
 .motifMainDiv > div:last-child
 {
     display: flex;
@@ -267,6 +283,7 @@ p
     display: none;
 }
 
+/* letter div */
 .motifMainDiv > div:last-child > div
 {
     display: flex;
@@ -276,8 +293,20 @@ p
     padding: 0;
     border: var(--cool-border);
     border-right: none;
+    border-top: none;
     height: 100%;
     width: 100%;
+    transition: border 0s;
+}
+
+.motifMainDiv > div:last-child > div.playing:not(:first-child)
+{
+    border-top: var(--cool-border);
+}
+
+.motifMainDiv > div:last-child > div:has(+ div.playing)
+{
+    border-bottom: none;
 }
 
 .motifMainDiv > div:last-child > div > *
@@ -314,6 +343,11 @@ p
 .variationDiv.playing
 {
     display: inline;
+}
+
+.variationDiv > p
+{
+    margin: 0;
 }
 
 .bigLink
@@ -441,7 +475,7 @@ p
     .motifMainDiv > div:first-child
     {
         flex-direction: row;
-        height: 75%;
+        height: 60%;
     }
 
     .motifMainDiv > div:last-child
@@ -451,8 +485,9 @@ p
 
     .motifMainDiv > div:last-child > div
     {
-        flex-direction: row;
-        border-right: auto;
+        border-top: var(--cool-border);
+        border-right: var(--cool-border);
+        border-left: none;
         border-bottom: none;
     }
 
@@ -463,6 +498,16 @@ p
     }
 
     .motifMainDiv > div:last-child > div:last-child
+    {
+        border-right: none;
+    }
+
+    .motifMainDiv > div:last-child > div.playing:not(:first-child)
+    {
+        border-left: var(--cool-border);
+    }
+
+    .motifMainDiv > div:last-child > div:has(+ div.playing)
     {
         border-right: none;
     }
