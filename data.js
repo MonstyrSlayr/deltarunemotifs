@@ -92,22 +92,66 @@ function isLiveServer()
 const LINK = isLiveServer() ? "http://127.0.0.1:5500/" : "https://monstyrslayr.github.io/deltarunemotifs/";
 const IMGLINK = LINK + "img/";
 
+const ONCEUPONATIMEMOTIF = new Motif("Once Upon a Time");
 const RUINSMOTIF = new Motif("The Ruins");
-const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", IMGLINK + "undyne.png");
-const NIGHTMAREMOTIF = new Motif("Your Best Nightmare");
-NIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
+const UWAAMOTIF = new Motif("Uwa!!");
+const HOMEMOTIF = new Motif("Home");
+const ENEMYAPPROACHINGMOTIF = new Motif("Enemy Approaching");
+const DOGSONGMOTIF = new Motif("Enemy Approaching", "Dogsong");
+const GHOSTFIGHTAMOTIF = new Motif("Ghost Fight", "A");
+const GHOSTFIGHTBMOTIF = new Motif("Ghost Fight", "B");
+const DETERMINATIONMOTIF = new Motif("Determination");
+const HEARTACHEMOTIF = new Motif("Heartache");
+const SNOWDINAMOTIF = new Motif("Snowdin", "A");
+const SNOWDINBMOTIF = new Motif("Snowdin", "B");
+const ANOTHERMEDIUMMOTIF = new Motif("Another Medium");
+const SHOWTIMEMOTIF = new Motif("Showtime!");
+const HOTELMOTIF = new Motif("Hotel");
+const OHMOTIF = new Motif("Oh!");
+const SPOOKTUNEMOTIF = new Motif("Spooktune");
+const JINGLEBELLSMOTIF = new Motif("Jingle Bells");
+const YOURBESTNIGHTMAREMOTIF = new Motif("Your Best Nightmare");
+YOURBESTNIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
+const POWEROFNEOMOTIF = new Motif("Power of NEO");
+const MEGALOVANIAMOTIF = new Motif("MEGALOVANIA");
 
-const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", IMGLINK + "susiegaster.webp");
+const FLOWEYMOTIF = new Motif("Flowey");
+const TORIELMOTIF = new Motif("Toriel");
+const SANSMOTIF = new Motif("Sans");
+const PAPYRUSMOTIF = new Motif("Papyrus");
+const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", IMGLINK + "undyne.png");
+const ALPHYSMOTIF = new Motif("Alphys");
+const METTATONMOTIF = new Motif("Mettaton");
+const ASRIELMOTIF = new Motif("Asriel");
+const ASGOREMOTIF = new Motif("Asgore");
+const GASTERMOTIF = new Motif("Gaster");
+
 const DONTFORGETMOTIF = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", IMGLINK + "ralsei.png");
-const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK + "thedoor.png");
+const HOMETOWNMOTIF = new Motif("Hometown", "");
 const THELEGENDAMOTIF = new Motif("The Legend", "A", "#c08226", "#00000033", IMGLINK + "thelegend.png");
 const THELEGENDBMOTIF = new Motif("The Legend", "B", "#c08226", "#00000033");
 const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
-const LANCERMOTIF = new Motif("Lancer", "", "#5585bd", "#32323233", IMGLINK + "lancer.png");
-const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", IMGLINK + "king.webp");
+const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK + "thedoor.png");
+const SCARLETFORESTMOTIF = new Motif("Scarlet Forest", "");
+const FANFAREMOTIF = new Motif("Fanfare", "");
+const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "");
+const DARKNESSFALLSMOTIF = new Motif("Darkness Falls", "");
 const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", IMGLINK + "hipshop.png");
 const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", IMGLINK + "jevil.webp");
+const THEHOLYMOTIF = new Motif("THE HOLY", "");
+const MANMOTIF = new Motif("man", "");
 
+const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", IMGLINK + "susiegaster.webp");
+const LANCERAMOTIF = new Motif("Lancer", "A", "#5585bd", "#32323233", IMGLINK + "lancer.png");
+const LANCERBMOTIF = new Motif("Lancer", "B", "#5585bd", "#ffffff33");
+const ROUXLSKAARDMOTIF = new Motif("Rouxls Kaard", "");
+const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", IMGLINK + "king.webp");
+
+const CYBERWORLDMOTIF = new Motif("Cyber World", "");
+const ROOTSMOTIF = new Motif("Roots", "");
+const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
+
+const GIRLNEXTDOORMOTIF = new Motif("Girl Next Door", "");
 const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", IMGLINK + "queen.webp");
 const QUEENBMOTIF = new Motif("Queen", "B", "#6fd1ff", "#6d86e733");
 const QUEENCMOTIF = new Motif("Queen", "C", "#6fd1ff", "#6d86e733");
@@ -120,15 +164,16 @@ const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933", IMGLINK 
 const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
 const LOSTGIRLAMOTIF = new Motif("Lost Girl", "A", "#331d0a", "#332a3b33", IMGLINK + "lostgirl.png");
 const LOSTGIRLBMOTIF = new Motif("Lost Girl", "B", "#331d0a", "#332a3b33");
-const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
 
 const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", IMGLINK + "tvtime.webp");
-const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", IMGLINK + "tenna.webp");
 const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", IMGLINK + "doomboard.png");
 
-const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", IMGLINK + "mike.webp");
+const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", IMGLINK + "tenna.webp");
+
 const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", IMGLINK + "darksanctuary.png");
 const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33", IMGLINK + "subsequentsanctuary.jpg");
+
+const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", IMGLINK + "mike.webp");
 const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", IMGLINK + "gerson.png");
 const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", IMGLINK + "titan.gif");
 
@@ -349,22 +394,26 @@ const theLegend = new Song("The Legend",
 
 const lancerBPM = 125;
 const lancer = new Song("Lancer",
-    [LANCERMOTIF],
+    [LANCERAMOTIF],
     "GAhBQH0Kf1I",
     [
-        new MotifReference(LANCERMOTIF, 0, quickSec(lancerBPM, 24.66)),
-        new MotifReference(LANCERMOTIF, quickSec(lancerBPM, 24.66), quickSec(lancerBPM, 48.66)),
+        new MotifReference(LANCERAMOTIF, 0, quickSec(lancerBPM, 24.66)),
+        new MotifReference(LANCERAMOTIF, quickSec(lancerBPM, 24.66), quickSec(lancerBPM, 48.66)),
+        new MotifReference(LANCERBMOTIF, quickSec(lancerBPM, 49), quickSec(lancerBPM, 73.33)),
+        new MotifReference(LANCERBMOTIF, quickSec(lancerBPM, 73.33), quickSec(lancerBPM, 73 + 22)),
     ],
     "", quickSec(lancerBPM, 99)
 );
 
 const vsLancerBPM = 177;
 const vsLancer = new Song("Vs. Lancer",
-    [LANCERMOTIF],
+    [LANCERAMOTIF],
     "Ce-gU8G6Vik",
     [
-        new MotifReference(LANCERMOTIF, quickSec(vsLancerBPM, 2.5), quickSec(vsLancerBPM, 33.5)),
-        new MotifReference(LANCERMOTIF, quickSec(vsLancerBPM, 33.5), quickSec(vsLancerBPM, 64.5)),
+        new MotifReference(LANCERAMOTIF, quickSec(vsLancerBPM, 2.5), quickSec(vsLancerBPM, 33.5)),
+        new MotifReference(LANCERAMOTIF, quickSec(vsLancerBPM, 33.5), quickSec(vsLancerBPM, 64.75)),
+        new MotifReference(LANCERBMOTIF, quickSec(vsLancerBPM, 64.75), quickSec(vsLancerBPM, 64.25 + 32)),
+        new MotifReference(LANCERBMOTIF, quickSec(vsLancerBPM, 64.25 + 32), quickSec(vsLancerBPM, 123)),
     ],
     "", quickSec(vsLancerBPM, 123)
 );
@@ -376,8 +425,8 @@ const cardCastle = new Song("Card Castle",
     [
         new MotifReference(KINGMOTIF, 0, quickSec(cardCastleBPM, 32)),
         new MotifReference(KINGMOTIF, quickSec(cardCastleBPM, 32), quickSec(cardCastleBPM, 62.5)),
-        new MotifReference(LANCERMOTIF, quickSec(cardCastleBPM, 62.5), quickSec(cardCastleBPM, 96)),
-        new MotifReference(LANCERMOTIF, quickSec(cardCastleBPM, 96), quickSec(cardCastleBPM, 128)),
+        new MotifReference(LANCERAMOTIF, quickSec(cardCastleBPM, 62.5), quickSec(cardCastleBPM, 96)),
+        new MotifReference(LANCERAMOTIF, quickSec(cardCastleBPM, 96), quickSec(cardCastleBPM, 128)),
     ],
     "", quickSec(cardCastleBPM, 128)
 );
@@ -390,8 +439,8 @@ const chaosKing = new Song("Chaos King",
         new MotifReference(KINGMOTIF, quickSec(chaosKingBPM, 8), quickSec(chaosKingBPM, 40)),
         new MotifReference(KINGMOTIF, quickSec(chaosKingBPM, 40), quickSec(chaosKingBPM, 40 + 32)),
         new MotifReference(KINGMOTIF, quickSec(chaosKingBPM, 40 + 32), quickSec(chaosKingBPM, 40 + 64)),
-        new MotifReference(LANCERMOTIF, quickSec(chaosKingBPM, 38.5 + 64), quickSec(chaosKingBPM, 40 + 96)),
-        new MotifReference(LANCERMOTIF, quickSec(chaosKingBPM, 40 + 96), quickSec(chaosKingBPM, 40 + 96 + 32)),
+        new MotifReference(LANCERAMOTIF, quickSec(chaosKingBPM, 38.5 + 64), quickSec(chaosKingBPM, 40 + 96)),
+        new MotifReference(LANCERAMOTIF, quickSec(chaosKingBPM, 40 + 96), quickSec(chaosKingBPM, 40 + 96 + 32)),
         new MotifReference(THELEGENDCMOTIF, quickSec(chaosKingBPM, 40 + 96 + 32), quickSec(chaosKingBPM, 40 + 96 + 64)),
         new MotifReference(THELEGENDCMOTIF, quickSec(chaosKingBPM, 40 + 96 + 64), quickSec(chaosKingBPM, 40 + 96 + 92)),
         new MotifReference(THELEGENDCMOTIF, quickSec(chaosKingBPM, 40 + 96 + 92), quickSec(chaosKingBPM, 40 + 96 + 92 + 32), true),
