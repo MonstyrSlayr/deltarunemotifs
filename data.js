@@ -132,6 +132,7 @@ const THELEGENDAMOTIF = new Motif("The Legend", "A", "#c08226", "#00000033", IMG
 const THELEGENDBMOTIF = new Motif("The Legend", "B", "#c08226", "#00000033");
 const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
 const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK + "thedoor.png");
+const RUDEBUSTERMOTIF = new Motif("Rude Buster", "");
 const SCARLETFORESTMOTIF = new Motif("Scarlet Forest", "");
 const FANFAREMOTIF = new Motif("Fanfare", "");
 const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "");
@@ -765,11 +766,13 @@ const itsTvTime = new Song("It's TV Time!",
     "", quickSec(itsTvTimeBPM, 128 + 64 + 88 + 16 + 112)
 );
 
+const blackKnifeBPM = 147.5;
 const blackKnife = new Song("Black Knife",
     [THEDOORMOTIF],
     "B8Us0DZgexw",
     [
-
+        new MotifReference(THEDOORMOTIF, quickSec(blackKnifeBPM, 64), quickSec(blackKnifeBPM, 96)),
+        new MotifReference(THEDOORMOTIF, quickSec(blackKnifeBPM, 96), quickSec(blackKnifeBPM, 128)),
     ]
 );
 
@@ -812,11 +815,14 @@ const knockYouDownRhythmVer = new Song("Knock You Down!! (Rhythm Ver.)",
     "", quickSec(knockYouDownBPM, 128 + 128 + 128 + 56)
 );
 
+const gyaaHaHaBPM = 125;
 const gyaaHaHa = new Song("Gyaa Ha ha!",
     [GERSONMOTIF],
     "HeAXR0UKRxY",
     [
-
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 1.66), quickSec(gyaaHaHaBPM, 5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 5.66), quickSec(gyaaHaHaBPM, 9)),
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 9.66), quickSec(gyaaHaHaBPM, 13)),
     ]
 );
 
