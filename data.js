@@ -14,6 +14,7 @@ class Motif
 {
     name;
     image;
+    imagePlaying = null;
     color;
     color2; // ideally transparent
     id;
@@ -176,7 +177,8 @@ const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33
 
 const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", IMGLINK + "mike.webp");
 const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", IMGLINK + "gerson.png");
-const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", IMGLINK + "titan.gif");
+const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", IMGLINK + "titan.png");
+TITANMOTIF.imagePlaying = IMGLINK + "titan.gif";
 
 export function getMotifById(id)
 {
@@ -213,6 +215,7 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
         leftTime.style.backgroundColor = motifsWithId[0].color2;
         motifMainDiv.appendChild(leftTime);
 
+        motifMainDiv.image = null;
         if (motifsWithId[0].image != null)
         {
             const notTempImg = document.createElement("img");
@@ -220,6 +223,13 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
             notTempImg.alt = motifId + " image";
             notTempImg.color = motifsWithId[0].color;
             leftTime.appendChild(notTempImg);
+
+            if (motifsWithId[0].imagePlaying != null && isPlaying)
+            {
+                notTempImg.src = motifsWithId[0].imagePlaying;
+            }
+
+            motifMainDiv.image = notTempImg; // stupid
         }
 
         const otherChide = document.createElement("div");

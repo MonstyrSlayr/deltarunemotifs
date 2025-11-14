@@ -281,10 +281,20 @@ function formatPageForSong(daSong)
                                 if (bigPlaying)
                                 {
                                     motifsWithId[0].mainDiv.classList.add("playing");
+
+                                    if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
+                                    {
+                                        motifsWithId[0].mainDiv.image.src = motifsWithId[0].imagePlaying;
+                                    }
                                 }
                                 else
                                 {
                                     motifsWithId[0].mainDiv.classList.remove("playing");
+
+                                    if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
+                                    {
+                                        motifsWithId[0].mainDiv.image.src = motifsWithId[0].image;
+                                    }
                                 }
                             });
                         }, 15);

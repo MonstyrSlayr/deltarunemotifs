@@ -16,8 +16,10 @@ const header = document.getElementById("motifName");
 header.textContent = daMotif.name;
 
 const motifList = document.getElementById("motifList");
-const motifDiv = createMotifDiv(daId, false, true);
-motifList.appendChild(motifDiv);
+const offMotifDiv = createMotifDiv(daId, false, false);
+motifList.appendChild(offMotifDiv);
+const onMotifDiv = createMotifDiv(daId, false, true);
+motifList.appendChild(onMotifDiv);
 
 const daSongsDiv = document.getElementById("songList");
 getSongsWithMotif(daMotif).forEach(song => {
