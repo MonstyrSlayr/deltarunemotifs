@@ -1,4 +1,4 @@
-import { createMotifDiv, createSongDiv, getMotifsById, getSongById } from "../data.js";
+import { createMotifDiv, createSongDiv, getMotifsById, getSongById, isLiveServer } from "../data.js";
 
 let isDragging = false; // maus
 
@@ -295,7 +295,8 @@ function formatPageForSong(daSong)
 
                                     if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
                                     {
-                                        motifsWithId[0].mainDiv.image.src = motifsWithId[0].imagePlaying;
+                                        motifsWithId[0].mainDiv.image.classList.add("gone");
+                                        motifsWithId[0].mainDiv.imagePlaying.classList.remove("gone");
                                     }
                                 }
                                 else
@@ -304,7 +305,8 @@ function formatPageForSong(daSong)
 
                                     if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
                                     {
-                                        motifsWithId[0].mainDiv.image.src = motifsWithId[0].image;
+                                        motifsWithId[0].mainDiv.image.classList.remove("gone");
+                                        motifsWithId[0].mainDiv.imagePlaying.classList.add("gone");
                                     }
                                 }
                             });
@@ -484,3 +486,11 @@ function getLastFolder(url, num)
 const daId = getLastFolder(window.location.href, 1);
 const daSong = getSongById(daId);
 if (daSong) formatPageForSong(daSong);
+
+if (isLiveServer())
+{
+    document.getElementsByTagName("footer")[0].classList.add("gone");
+    const spaceDiv = document.createElement("div");
+    spaceDiv.style.margin = "5em";
+    document.body.appendChild(spaceDiv);
+}

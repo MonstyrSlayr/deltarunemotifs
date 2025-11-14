@@ -372,14 +372,22 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
             notTempImg.src = motifsWithId[0].image;
             notTempImg.alt = motifId + " image";
             notTempImg.color = motifsWithId[0].color;
+            if (isPlaying && motifsWithId[0].imagePlaying != null) notTempImg.classList.add("gone");
             leftTime.appendChild(notTempImg);
 
-            if (motifsWithId[0].imagePlaying != null && isPlaying)
-            {
-                notTempImg.src = motifsWithId[0].imagePlaying;
-            }
-
             motifMainDiv.image = notTempImg; // stupid
+        }
+
+        if (motifsWithId[0].imagePlaying != null)
+        {
+            const notTempImgPlaying = document.createElement("img");
+            notTempImgPlaying.src = motifsWithId[0].imagePlaying;
+            notTempImgPlaying.alt = motifId + " image";
+            notTempImgPlaying.color = motifsWithId[0].color;
+            if (!isPlaying) notTempImgPlaying.classList.add("gone");
+            leftTime.appendChild(notTempImgPlaying);
+
+            motifMainDiv.imagePlaying = notTempImgPlaying; // stupid
         }
 
         const otherChide = document.createElement("div");
