@@ -302,7 +302,7 @@ a.motifMainDiv:hover
     border-top: none;
     height: 100%;
     width: 100%;
-    transition: border 0s;
+    transition: border-style 0s;
 }
 
 .motifMainDiv > div:last-child > div.playing:not(:first-child)
