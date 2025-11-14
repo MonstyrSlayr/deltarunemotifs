@@ -85,7 +85,7 @@ class Song
     }
 }
 
-function isLiveServer()
+export function isLiveServer()
 {
     return location.hostname === "127.0.0.1" || location.hostname === "localhost";
 }
@@ -339,7 +339,7 @@ export function createSongDiv(daSong, isLink = true)
     return motifMainDiv;
 }
 
-function exportIdsToTxt(data, filename = "ids.txt")
+export function exportIdsToTxt(data, filename = "ids.txt")
 {
     // Extract ids from the objects
     const idsArr = data.map(obj => obj.id);
@@ -1006,7 +1006,3 @@ const catswing = new Song("Catswing",
 );
 
 //#endregion
-
-// please don't run twice
-// exportIdsToTxt(allMotifs, "motifids.txt");
-// exportIdsToTxt(allSongs, "songids.txt");
