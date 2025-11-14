@@ -243,7 +243,7 @@ const LINK = isLiveServer() ? "http://127.0.0.1:5500/" : "https://monstyrslayr.g
 const IMGLINK = LINK + "img/";
 
 const ONCEUPONATIMEMOTIF = new Motif("Once Upon a Time");
-const RUINSMOTIF = new Motif("The Ruins");
+const RUINSMOTIF = new Motif("The Ruins", "", "#815a98", "#42498833", IMGLINK + "ruins.png");
 const UWAAMOTIF = new Motif("Uwa!!");
 const HOMEMOTIF = new Motif("Home");
 const ENEMYAPPROACHINGMOTIF = new Motif("Enemy Approaching", "A");
@@ -282,6 +282,7 @@ const THELEGENDAMOTIF = new Motif("The Legend", "A", "#c08226", "#00000033", IMG
 const THELEGENDBMOTIF = new Motif("The Legend", "B", "#c08226", "#00000033");
 const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
 const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK + "thedoor.png");
+const THECHASEMOTIF = new Motif("The Chase", "", "#ffffff", "#00000033", IMGLINK + "rudinnranger.webp");
 const RUDEBUSTERMOTIF = new Motif("Rude Buster", "");
 const SCARLETFORESTMOTIF = new Motif("Scarlet Forest", "");
 const FANFAREMOTIF = new Motif("Fanfare", "");
@@ -932,6 +933,8 @@ const blackKnife = new Song("Black Knife",
     [
         new MotifReference(THEDOORMOTIF, quickSec(blackKnifeBPM, 64), quickSec(blackKnifeBPM, 96)),
         new MotifReference(THEDOORMOTIF, quickSec(blackKnifeBPM, 96), quickSec(blackKnifeBPM, 128)),
+        new MotifReference(THECHASEMOTIF, quickSec(blackKnifeBPM, 132), quickSec(blackKnifeBPM, 128 + 32)),
+        new MotifReference(THECHASEMOTIF, quickSec(blackKnifeBPM, 132 + 32), quickSec(blackKnifeBPM, 128 + 64)),
     ],
     "", quickSec(blackKnifeBPM, 144 + 144)
 );
@@ -983,16 +986,40 @@ const gyaaHaHa = new Song("Gyaa Ha ha!",
         new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 1.66), quickSec(gyaaHaHaBPM, 5)),
         new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 5.66), quickSec(gyaaHaHaBPM, 9)),
         new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 9.66), quickSec(gyaaHaHaBPM, 13)),
-    ]
-    // TODO: add loop point
+
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 17.66), quickSec(gyaaHaHaBPM, 21)),
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 21.66), quickSec(gyaaHaHaBPM, 25)),
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 25.66), quickSec(gyaaHaHaBPM, 29)),
+
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 33.66), quickSec(gyaaHaHaBPM, 37)),
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 37.66), quickSec(gyaaHaHaBPM, 41)),
+        new MotifReference(UNDYNEMOTIF, quickSec(gyaaHaHaBPM, 41.66), quickSec(gyaaHaHaBPM, 45)),
+
+        new MotifReference(RUINSMOTIF, quickSec(gyaaHaHaBPM, 57), quickSec(gyaaHaHaBPM, 57 + 16)),
+        new MotifReference(RUINSMOTIF, quickSec(gyaaHaHaBPM, 57 + 16), quickSec(gyaaHaHaBPM, 57 + 32)),
+        new MotifReference(RUINSMOTIF, quickSec(gyaaHaHaBPM, 57 + 32), quickSec(gyaaHaHaBPM, 57 + 48)),
+        new MotifReference(RUINSMOTIF, quickSec(gyaaHaHaBPM, 57 + 48), quickSec(gyaaHaHaBPM, 57 + 63)),
+
+        new MotifReference(GERSONMOTIF, quickSec(gyaaHaHaBPM, 57 + 63), quickSec(gyaaHaHaBPM, 57 + 63 + 8)),
+        new MotifReference(GERSONMOTIF, quickSec(gyaaHaHaBPM, 57 + 63 + 8), quickSec(gyaaHaHaBPM, 57 + 63 + 16), true),
+        new MotifReference(GERSONMOTIF, quickSec(gyaaHaHaBPM, 57 + 63 + 16), quickSec(gyaaHaHaBPM, 57 + 63 + 24)),
+        new MotifReference(GERSONMOTIF, quickSec(gyaaHaHaBPM, 57 + 63 + 24), quickSec(gyaaHaHaBPM, 57 + 63 + 33), true),
+    ],
+    "", quickSec(gyaaHaHaBPM, 57 + 63 + 33 + 4)
 );
 
+const wiseWordsBPM = 90;
 const wiseWords = new Song("Wise words",
     [GERSONMOTIF],
     "YYl_CuHvVRs",
     [
-        
-    ]
+        new MotifReference(GERSONMOTIF, 0, quickSec(wiseWordsBPM, 14 + 16)),
+        new MotifReference(UNDYNEMOTIF, quickSec(wiseWordsBPM, 8), quickSec(wiseWordsBPM, 14)),
+        new MotifReference(GERSONMOTIF, quickSec(wiseWordsBPM, 14 + 16), quickSec(wiseWordsBPM, 14 + 48)),
+        new MotifReference(UNDYNEMOTIF, quickSec(wiseWordsBPM, 8 + 32), quickSec(wiseWordsBPM, 14 + 32)),
+        new MotifReference(GERSONMOTIF, quickSec(wiseWordsBPM, 14 + 48), quickSec(wiseWordsBPM, 14 + 48 + 2)),
+    ],
+    "", quickSec(wiseWordsBPM, 14 + 48 + 2)
 );
 
 const hammerOfJustice = new Song("Hammer of Justice",
@@ -1143,12 +1170,36 @@ const guardian = new Song("GUARDIAN",
     ]
 );
 
+const needAHandBPM = 165;
 const needAHand = new Song("Need a hand!?",
     [GERSONMOTIF],
     "C135xMeF4jk",
     [
-        
-    ]
+        new MotifReference(GERSONMOTIF, 0, quickSec(needAHandBPM, 14)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 8), quickSec(needAHandBPM, 14)),
+        new MotifReference(GERSONMOTIF, quickSec(needAHandBPM, 14), quickSec(needAHandBPM, 14 + 16)),
+        new MotifReference(GERSONMOTIF, quickSec(needAHandBPM, 14 + 16), quickSec(needAHandBPM, 14 + 32)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 8 + 32), quickSec(needAHandBPM, 14 + 32)),
+        new MotifReference(GERSONMOTIF, quickSec(needAHandBPM, 14 + 32), quickSec(needAHandBPM, 14 + 48)),
+
+        new MotifReference(RUINSMOTIF, quickSec(needAHandBPM, 64), quickSec(needAHandBPM, 83)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 64.5), quickSec(needAHandBPM, 64.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 68.5), quickSec(needAHandBPM, 68.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 72.5), quickSec(needAHandBPM, 72.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 80.5), quickSec(needAHandBPM, 80.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 84.5), quickSec(needAHandBPM, 84.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 88.5), quickSec(needAHandBPM, 88.5 + 3.5)),
+        new MotifReference(RUINSMOTIF, quickSec(needAHandBPM, 64 + 32), quickSec(needAHandBPM, 83 + 32)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 96.5), quickSec(needAHandBPM, 96.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 100.5), quickSec(needAHandBPM, 100.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 104.5), quickSec(needAHandBPM, 104.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 112.5), quickSec(needAHandBPM, 112.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 116.5), quickSec(needAHandBPM, 116.5 + 3.5)),
+        new MotifReference(UNDYNEMOTIF, quickSec(needAHandBPM, 120.5), quickSec(needAHandBPM, 120.5 + 3.5)),
+
+        new MotifReference(GERSONMOTIF, quickSec(needAHandBPM, 64 + 62), quickSec(needAHandBPM, 64 + 64)),
+    ],
+    "", quickSec(needAHandBPM, 64 + 64)
 );
 
 const catswingBPM = 130;
