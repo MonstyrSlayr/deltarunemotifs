@@ -61,6 +61,153 @@ class MotifReference
     }
 }
 
+class SongEffect
+{
+    onLoad;
+    onActive;
+    onDeactive;
+    deactivateOnPause = true;
+    onIntermediate = null;
+
+    constructor(onLoad, onActive, onDeactive, deactivateOnPause = true, onIntermediate = null)
+    {
+        this.onLoad = onLoad;
+        this.onActive = onActive;
+        this.onDeactive = onDeactive;
+        this.deactivateOnPause = deactivateOnPause;
+        this.onIntermediate = onIntermediate;
+    }
+}
+
+function easeOutCubic(x)
+{
+    return 1 - Math.pow(1 - x, 3);
+}
+
+const BLACKSCREENEFFECT = new SongEffect(
+    () =>
+    {
+        const blackScreen = document.createElement("div");
+        blackScreen.id = "blackScreen";
+        blackScreen.classList.add("gone");
+        document.body.appendChild(blackScreen);
+    },
+    () =>
+    {
+        const blackScreen = document.getElementById("blackScreen");
+        blackScreen.classList.remove("gone");
+    },
+    () =>
+    {
+        const blackScreen = document.getElementById("blackScreen");
+        blackScreen.classList.add("gone");
+    },
+    true
+);
+
+const HEROEFFECT = new SongEffect(
+    () => {},
+    () =>
+    {
+        document.body.classList.add("hero");
+    },
+    () =>
+    {
+        document.body.classList.remove("hero");
+
+        const motifDivs = document.getElementsByClassName("motifMainDiv");
+
+        for (const motifDiv of motifDivs)
+        {
+            motifDiv.style.top = `0px`;
+        }
+    },
+    false,
+    (t) =>
+    {
+        const motifDivs = document.getElementsByClassName("motifMainDiv");
+        let i = 0;
+        
+        const oscillations = 12;
+        const amplitude = 16;
+        const offset = 1;
+
+        for (const motifDiv of motifDivs)
+        {
+            const y = amplitude * Math.sin((t * Math.PI * 2 * oscillations) + (offset * i));
+            motifDiv.style.top = `${y}px`;
+            i++;
+        }
+    }
+);
+
+const FLASHEFFECT = new SongEffect(
+    () =>
+    {
+        const flashScreen = document.createElement("div");
+        flashScreen.id = "flash";
+        flashScreen.classList.add("gone");
+        document.body.appendChild(flashScreen);
+    },
+    () =>
+    {
+        const flashScreen = document.getElementById("flash");
+        flashScreen.classList.remove("gone");
+    },
+    () =>
+    {
+        const flashScreen = document.getElementById("flash");
+        flashScreen.classList.add("gone");
+    },
+    false,
+    (t) =>
+    {
+        const flashScreen = document.getElementById("flash");
+        flashScreen.style.opacity = `${50 - (easeOutCubic(t) * 50)}%`;
+    }
+);
+
+const BLACKFLASHEFFECT = new SongEffect(
+    () =>
+    {
+        const flashScreen = document.createElement("div");
+        flashScreen.id = "blackFlash";
+        flashScreen.classList.add("gone");
+        document.body.appendChild(flashScreen);
+    },
+    () =>
+    {
+        const flashScreen = document.getElementById("blackFlash");
+        flashScreen.classList.remove("gone");
+    },
+    () =>
+    {
+        const flashScreen = document.getElementById("blackFlash");
+        flashScreen.classList.add("gone");
+    },
+    false,
+    (t) =>
+    {
+        const flashScreen = document.getElementById("blackFlash");
+        flashScreen.style.opacity = `${100 - (easeOutCubic(t) * 100)}%`;
+    }
+);
+
+class EffectRef
+{
+    // fun stuff
+    type;
+    startTime = 0; // seconds
+    endTime = 0; // seconds
+
+    constructor(type, startTime, endTime)
+    {
+        this.type = type;
+        this.startTime = startTime;
+        this.endTime = endTime;
+    }
+}
+
 class Song
 {
     name;
@@ -68,8 +215,9 @@ class Song
     motifRefs = [];
     loopPoint = null;
     mainMotifs = null;
+    effectRefs = [];
 
-    constructor(name, mainMotifs, youtubeId = "", motifRefs = [], id = "", loopPoint = null)
+    constructor(name, mainMotifs, youtubeId = "", motifRefs = [], id = "", loopPoint = null, effectRefs = [])
     {
         this.name = name;
         this.mainMotifs = mainMotifs;
@@ -80,6 +228,7 @@ class Song
         else this.id = id; // in case the name is the same in multiple albums
 
         this.loopPoint = loopPoint;
+        this.effectRefs = effectRefs;
 
         allSongs.push(this);
     }
@@ -928,8 +1077,19 @@ const guardian = new Song("GUARDIAN",
     [TITANMOTIF, SANCTUARYMOTIF],
     "nP9mB1sVJz4",
     [
+        new MotifReference(TITANMOTIF, 0, quickSec(guardianBPM, 16)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 16), quickSec(guardianBPM, 32)),
+
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 32), quickSec(guardianBPM, 48)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 32), quickSec(guardianBPM, 48)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 48), quickSec(guardianBPM, 64)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 48), quickSec(guardianBPM, 64)),
+
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64), quickSec(guardianBPM, 80)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 80), quickSec(guardianBPM, 96)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 96), quickSec(guardianBPM, 96 + 16)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 96 + 16), quickSec(guardianBPM, 96 + 32)),
+
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 8), quickSec(guardianBPM, 128 + 8 + 16)),
         new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 8 + 13), quickSec(guardianBPM, 128 + 8 + 16)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 24), quickSec(guardianBPM, 128 + 24 + 16)),
@@ -938,8 +1098,19 @@ const guardian = new Song("GUARDIAN",
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 56), quickSec(guardianBPM, 128 + 56 + 16)),
         new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 56 + 7), quickSec(guardianBPM, 128 + 56 + 16)),
 
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 128 + 56 + 16), quickSec(guardianBPM, 128 + 56 + 32)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 128 + 56 + 32), quickSec(guardianBPM, 128 + 56 + 48)),
+
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 32 + 200), quickSec(guardianBPM, 48 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 32 + 200), quickSec(guardianBPM, 48 + 200)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 48 + 200), quickSec(guardianBPM, 64 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 48 + 200), quickSec(guardianBPM, 64 + 200)),
+
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64 + 200), quickSec(guardianBPM, 64 + 200 + 16)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64 + 200 + 16), quickSec(guardianBPM, 64 + 200 + 32)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64 + 200 + 32), quickSec(guardianBPM, 64 + 200 + 48)),
+        new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64 + 200 + 48), quickSec(guardianBPM, 64 + 200 + 64)),
+
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 8 + 200), quickSec(guardianBPM, 128 + 8 + 16 + 200)),
         new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 8 + 13 + 200), quickSec(guardianBPM, 128 + 8 + 16 + 200)),
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 24 + 200), quickSec(guardianBPM, 128 + 24 + 16 + 200)),
@@ -957,7 +1128,19 @@ const guardian = new Song("GUARDIAN",
         new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 128 + 120 + 200), quickSec(guardianBPM, 128 + 120 + 16 + 200)),
         new MotifReference(DONTFORGETMOTIF, quickSec(guardianBPM, 128 + 120 + 13 + 200), quickSec(guardianBPM, 128 + 120 + 16 + 200)),
     ],
-    "", quickSec(guardianBPM, 128 + 120 + 16 + 200 + 64)
+    "", quickSec(guardianBPM, 128 + 120 + 16 + 200 + 64),
+    [
+        new EffectRef(BLACKSCREENEFFECT, quickSec(guardianBPM, 96 + 32), quickSec(guardianBPM, 96 + 32 + 8)),
+        new EffectRef(FLASHEFFECT, quickSec(guardianBPM, 96 + 32 + 8), quickSec(guardianBPM, 96 + 32 + 8 + 4)),
+        new EffectRef(BLACKSCREENEFFECT, quickSec(guardianBPM, 64 + 200 + 64), quickSec(guardianBPM, 64 + 200 + 64 + 8)),
+        new EffectRef(FLASHEFFECT, quickSec(guardianBPM, 64 + 200 + 64 + 8), quickSec(guardianBPM, 64 + 200 + 64 + 8 + 4)),
+
+        new EffectRef(BLACKFLASHEFFECT, 0, quickSec(guardianBPM, 8)),
+        new EffectRef(HEROEFFECT, quickSec(guardianBPM, 128 + 8), quickSec(guardianBPM, 128 + 56 + 16)),
+        new EffectRef(BLACKFLASHEFFECT, quickSec(guardianBPM, 128 + 56 + 16), quickSec(guardianBPM, 128 + 56 + 16 + 8)),
+        new EffectRef(HEROEFFECT, quickSec(guardianBPM, 128 + 8 + 200), quickSec(guardianBPM, 128 + 56 + 16 + 200)),
+        new EffectRef(BLACKFLASHEFFECT, quickSec(guardianBPM, 128 + 56 + 16 + 200), quickSec(guardianBPM, 128 + 56 + 16 + 200 + 8)),
+    ]
 );
 
 const needAHand = new Song("Need a hand!?",

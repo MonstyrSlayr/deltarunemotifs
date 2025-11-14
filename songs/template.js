@@ -5,7 +5,7 @@ let isDragging = false; // maus
 let players = {}; // store players by videoId
 let updateIntervals = {};
 
-const SONG_OFFSET = 0.15 / 2; // account for css bullshit
+const SONG_OFFSET = 0.15; // account for css bullshit
 
 function formatPageForSong(daSong)
 {
@@ -109,6 +109,12 @@ function formatPageForSong(daSong)
             allMotifIds.add(motifRef.motif.id);
         }
 
+        const allEffects = new Set();
+        for (const effect of daSong.effectRefs)
+        {
+            allEffects.add(effect.type);
+        }
+
         // hidden YouTube iframe
         const playerDiv = document.createElement("div");
         playerDiv.id = "yt" + videoId;
@@ -205,6 +211,11 @@ function formatPageForSong(daSong)
                         motifLabel.classList.add("timeLabels");
                         card.appendChild(motifLabel);
                     });
+
+                    allEffects.forEach(effect =>
+                    {
+                        effect.onLoad();
+                    })
                 },
                 'onStateChange': (event) =>
                 {
@@ -297,6 +308,33 @@ function formatPageForSong(daSong)
                                     }
                                 }
                             });
+
+                            allEffects.forEach(effect =>
+                            {
+                                let playing = false;
+
+                                for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
+                                {
+                                    if (current >= effectRef.startTime && current < effectRef.endTime)
+                                    {
+                                        playing = true;
+
+                                        if (effect.onIntermediate != null)
+                                        {
+                                            effect.onIntermediate((current - effectRef.startTime) / (effectRef.endTime - effectRef.startTime));
+                                        }
+                                    }
+                                }
+
+                                if (playing)
+                                {
+                                    effect.onActive();
+                                }
+                                else
+                                {
+                                    effect.onDeactive();
+                                }
+                            });
                         }, 15);
                     }
                     else
@@ -329,6 +367,16 @@ function formatPageForSong(daSong)
         if (playerState === 1)
         {
             players[videoId].pauseVideo()
+
+            allEffects.forEach(effect =>
+            {
+                if (effect.deactivateOnPause)
+                {
+                    setTimeout(() => {
+                        effect.onDeactive()
+                    }, 20);
+                }
+            });
         }
         else if (playerState === 2 || playerState === 5)
         {

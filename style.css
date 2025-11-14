@@ -11,6 +11,12 @@ body
     justify-content: center;
     align-items: center;
     background-color: black;
+    position: relative;
+}
+
+body.hero
+{
+    background-color: rgb(14, 25, 28);
 }
 
 header
@@ -85,7 +91,6 @@ p
     padding: 1em;
     margin: 1em;
     border-radius: 1em;
-    background-color: black;
     display: inline-block;
     font-family: sans-serif;
     text-align: center;
@@ -196,6 +201,7 @@ p
     align-items: center;
     gap: 1em;
     margin: 1em;
+    position: relative;
 }
 
 .songDiv
@@ -230,6 +236,7 @@ a.songDiv:hover
     height: 21em;
     width: 21em;
     border-radius: 8px;
+    position: relative;
 }
 
 .motifMainDiv.playing
@@ -362,9 +369,42 @@ a.motifMainDiv:hover
     scale: 1.05;
 }
 
-.gone
+#blackScreen
 {
-    display: none !important;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all 0s;
+}
+
+#blackFlash
+{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    pointer-events: none;
+    transition: all 0s;
+}
+
+#flash
+{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    pointer-events: none;
+    transition: all 0s;
 }
 
 @keyframes freedomGlow
@@ -421,6 +461,11 @@ a.motifMainDiv:hover
     {
         background-position: 200% 50%;
     }
+}
+
+.gone
+{
+    display: none !important;
 }
 
 @media screen and (max-width: 1440px)
