@@ -783,7 +783,8 @@ const blackKnife = new Song("Black Knife",
     [
         new MotifReference(THEDOORMOTIF, quickSec(blackKnifeBPM, 64), quickSec(blackKnifeBPM, 96)),
         new MotifReference(THEDOORMOTIF, quickSec(blackKnifeBPM, 96), quickSec(blackKnifeBPM, 128)),
-    ]
+    ],
+    "", quickSec(blackKnifeBPM, 144 + 144)
 );
 
 //#endregion
