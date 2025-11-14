@@ -192,7 +192,7 @@ p
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1em;
     margin: 1em;
@@ -207,8 +207,6 @@ p
     justify-content: center;
     align-items: center;
     padding: 2em;
-    height: 8em;
-    width: 21em;
 }
 
 .songDiv.noMotifs
@@ -220,6 +218,7 @@ a.songDiv:hover
 {
     text-decoration: none;
     border-width: 16px;
+    padding: calc(2em - 8px);
 }
 
 .motifMainDiv
