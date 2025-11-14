@@ -134,7 +134,7 @@ const HEROEFFECT = new SongEffect(
 
         for (const motifDiv of motifDivs)
         {
-            const y = amplitude * Math.sin((t * Math.PI * 2 * oscillations) + (offset * i));
+            const y = amplitude * Math.sin((t * Math.PI * 2 * oscillations) - (offset * i));
             motifDiv.style.top = `${y}px`;
             i++;
         }
