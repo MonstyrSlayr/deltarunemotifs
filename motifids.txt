@@ -30,6 +30,7 @@ dontforget
 hometown
 thelegend
 thedoor
+thechase
 rudebuster
 scarletforest
 fanfare
