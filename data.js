@@ -1081,9 +1081,9 @@ const guardian = new Song("GUARDIAN",
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 16), quickSec(guardianBPM, 32)),
 
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 32), quickSec(guardianBPM, 48)),
-        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 32), quickSec(guardianBPM, 48)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 32), quickSec(guardianBPM, 48), true),
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 48), quickSec(guardianBPM, 64)),
-        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 48), quickSec(guardianBPM, 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 48), quickSec(guardianBPM, 64), true),
 
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64), quickSec(guardianBPM, 80)),
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 80), quickSec(guardianBPM, 96)),
@@ -1102,9 +1102,9 @@ const guardian = new Song("GUARDIAN",
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 128 + 56 + 32), quickSec(guardianBPM, 128 + 56 + 48)),
 
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 32 + 200), quickSec(guardianBPM, 48 + 200)),
-        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 32 + 200), quickSec(guardianBPM, 48 + 200)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 32 + 200), quickSec(guardianBPM, 48 + 200), true),
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 48 + 200), quickSec(guardianBPM, 64 + 200)),
-        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 48 + 200), quickSec(guardianBPM, 64 + 200)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(guardianBPM, 48 + 200), quickSec(guardianBPM, 64 + 200), true),
 
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64 + 200), quickSec(guardianBPM, 64 + 200 + 16)),
         new MotifReference(TITANMOTIF, quickSec(guardianBPM, 64 + 200 + 16), quickSec(guardianBPM, 64 + 200 + 32)),
