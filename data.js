@@ -290,7 +290,7 @@ const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "");
 const DARKNESSFALLSMOTIF = new Motif("Darkness Falls", "");
 const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", IMGLINK + "hipshop.png");
 const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", IMGLINK + "jevil.webp");
-const THEHOLYMOTIF = new Motif("THE HOLY", "");
+const THEHOLYMOTIF = new Motif("THE HOLY", "", "#5496cd", "#00000033", IMGLINK + "theholy.webp");
 
 const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", IMGLINK + "susiegaster.webp");
 const LANCERAMOTIF = new Motif("Lancer", "A", "#5585bd", "#32323233", IMGLINK + "lancer.png");
@@ -1109,6 +1109,47 @@ const gyaaHaHa = new Song("Gyaa Ha ha!",
     "", quickSec(gyaaHaHaBPM, 57 + 63 + 33 + 4)
 );
 
+const everHigherBPM = 110;
+const everHigher = new Song("Ever Higher",
+    [SANCTUARYMOTIF, EVERHIGHERMOTIF],
+    "DxPHMcpuYeA",
+    [
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 8), quickSec(everHigherBPM, 10)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 16), quickSec(everHigherBPM, 18)),
+        
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 24), quickSec(everHigherBPM, 24 + 16)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(everHigherBPM, 24 + 13.5), quickSec(everHigherBPM, 24 + 16)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 24 + 16), quickSec(everHigherBPM, 24 + 19.5), true),
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24), quickSec(everHigherBPM, 24 + 24 + 4)),
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24 + 4), quickSec(everHigherBPM, 24 + 24 + 8), true),
+
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 24 + 32), quickSec(everHigherBPM, 24 + 16 + 32)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(everHigherBPM, 24 + 13.5 + 32), quickSec(everHigherBPM, 24 + 16 + 32)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 24 + 16 + 32), quickSec(everHigherBPM, 24 + 19.5 + 32), true),
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24 + 32), quickSec(everHigherBPM, 24 + 24 + 4 + 32)),
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24 + 4 + 32), quickSec(everHigherBPM, 24 + 24 + 8 + 32), true),
+
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 24 + 64), quickSec(everHigherBPM, 24 + 16 + 64)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(everHigherBPM, 24 + 13.5 + 64), quickSec(everHigherBPM, 24 + 16 + 64)),
+        new MotifReference(SANCTUARYMOTIF, quickSec(everHigherBPM, 24 + 16 + 64), quickSec(everHigherBPM, 24 + 19.5 + 64), true),
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24 + 64), quickSec(everHigherBPM, 24 + 24 + 4 + 64)),
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24 + 4 + 64), quickSec(everHigherBPM, 24 + 24 + 8 + 64), true),
+
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4)),
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 4)),
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 8), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 8), true),
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 12), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 12), true),
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 16), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 16)),
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 20), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 20)),
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 24), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 24)),
+        new MotifReference(THEHOLYMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 28), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28), true),
+
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28 + 4)),
+        new MotifReference(EVERHIGHERMOTIF, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28 + 4), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28 + 8), true),
+    ],
+    "", quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28 + 8)
+);
+
 const wiseWordsBPM = 90;
 const wiseWords = new Song("Wise words",
     [GERSONMOTIF],
@@ -1122,14 +1163,6 @@ const wiseWords = new Song("Wise words",
     ],
     "", quickSec(wiseWordsBPM, 14 + 48 + 2)
 );
-
-const everHigher = new Song("Ever Higher",
-    [SANCTUARYMOTIF, EVERHIGHERMOTIF],
-    "DxPHMcpuYeA",
-    [
-
-    ]
-)
 
 const hammerOfJustice = new Song("Hammer of Justice",
     [GERSONMOTIF, FREEDOMMOTIF],
