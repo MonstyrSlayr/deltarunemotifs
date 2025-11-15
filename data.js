@@ -10,6 +10,9 @@ function normalizeAndTrim(str)
 export const allMotifs = [];
 export const allSongs = [];
 
+const LINK = isLiveServer() ? "http://127.0.0.1:5500/" : "https://monstyrslayr.github.io/deltarunemotifs/";
+const IMGLINK = LINK + "img/";
+
 class Motif
 {
     name;
@@ -193,6 +196,30 @@ const BLACKFLASHEFFECT = new SongEffect(
     }
 );
 
+const STATICEFFECT = new SongEffect(
+    () =>
+    {
+        const staticWrapper = document.createElement("div");
+        staticWrapper.id = "staticWrapper";
+        staticWrapper.classList.add("gone");
+        document.body.appendChild(staticWrapper);
+
+            const staticNoise = document.createElement("img");
+            staticNoise.src = IMGLINK + "staticNoise.gif";
+            staticWrapper.appendChild(staticNoise);
+    },
+    () =>
+    {
+        const staticWrapper = document.getElementById("staticWrapper");
+        staticWrapper.classList.remove("gone");
+    },
+    () =>
+    {
+        const staticWrapper = document.getElementById("staticWrapper");
+        staticWrapper.classList.add("gone");
+    }
+)
+
 class EffectRef
 {
     // fun stuff
@@ -238,9 +265,6 @@ export function isLiveServer()
 {
     return location.hostname === "127.0.0.1" || location.hostname === "localhost";
 }
-
-const LINK = isLiveServer() ? "http://127.0.0.1:5500/" : "https://monstyrslayr.github.io/deltarunemotifs/";
-const IMGLINK = LINK + "img/";
 
 const ONCEUPONATIMEMOTIF = new Motif("Once Upon a Time");
 const RUINSMOTIF = new Motif("The Ruins", "", "#815a98", "#42498833", IMGLINK + "ruins.png");
@@ -1564,7 +1588,10 @@ const crumblingTower = new Song("Crumbling Tower",
         new MotifReference(EVERHIGHERMOTIF, quickSec(crumblingTowerBPM, 99.5 + 128 + 24 + 64), quickSec(crumblingTowerBPM, 104 + 128 + 24 + 64), true),
         new MotifReference(DONTFORGETMOTIF, quickSec(crumblingTowerBPM, 112 + 13 + 128 + 64), quickSec(crumblingTowerBPM, 128 + 128 + 64)),
     ],
-    "", quickSec(crumblingTowerBPM, 128 + 128 + 64 + 4)
+    "", quickSec(crumblingTowerBPM, 128 + 128 + 64 + 4),
+    [
+        new EffectRef(STATICEFFECT, quickSec(crumblingTowerBPM, 128 + 128 + 11), quickSec(crumblingTowerBPM, 128 + 128 + 11 + 1.5))
+    ]
 );
 
 const spawnBPM = 135;
