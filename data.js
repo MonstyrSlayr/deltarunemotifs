@@ -347,7 +347,8 @@ const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", IMGLI
 const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", IMGLINK + "tenna.webp");
 
 const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", IMGLINK + "darksanctuary.png");
-const FROMNOWONMOTIF = new Motif("From Now On", "", "#6ad4f5", "#ffffff33", IMGLINK + "mizzle.png");
+const FROMNOWONMOTIF = new Motif("From Now On", "", "#6ad4f5", "#ffffff33", IMGLINK + "mizzleTired.gif");
+FROMNOWONMOTIF.imagePlaying = IMGLINK + "mizzleIdle.gif";
 const EVERHIGHERMOTIF = new Motif("Ever Higher", "", "#ff3651", "#f8c85133", IMGLINK + "cuptain.png");
 const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33", IMGLINK + "subsequentsanctuary.jpg");
 
@@ -1765,7 +1766,8 @@ const catswing = new Song("Catswing",
         new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 112 + 112), quickSec(catswingBPM, 128 + 112)),
         new MotifReference(TVTIMEMOTIF, quickSec(catswingBPM, 112 + 112), quickSec(catswingBPM, 114 + 112)),
         new MotifReference(SPAMTONBMOTIF, quickSec(catswingBPM, 128 + 112), quickSec(catswingBPM, 144 + 112)),
-    ]
+    ],
+    "", quickSec(catswingBPM, 144 + 112)
 );
 
 //#endregion

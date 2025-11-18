@@ -475,6 +475,21 @@ a.motifMainDiv:hover
     }
 }
 
+.mFromnowon.playing
+{
+    position: relative;
+
+    &::after
+    {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
 @keyframes animateGlow
 {
     0%
