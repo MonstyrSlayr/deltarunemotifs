@@ -431,22 +431,6 @@ a.motifMainDiv:hover
     image-rendering: -webkit-optimize-contrast;
 }
 
-@keyframes freedomGlow
-{
-    0%
-    {
-        box-shadow: 0 0 10px #6d6ebf88;
-    }
-    50%
-    {
-        box-shadow: 0 0 80px #6d6ebf;
-    }
-    100%
-    {
-        box-shadow: 0 0 10px #6d6ebf88;
-    }
-}
-
 .mFreedom.playing
 {
     position: relative;
@@ -475,22 +459,6 @@ a.motifMainDiv:hover
     }
 }
 
-.mFromnowon.playing
-{
-    position: relative;
-
-    &::after
-    {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        /* background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png") */
-    }
-}
-
 @keyframes animateGlow
 {
     0%
@@ -500,6 +468,98 @@ a.motifMainDiv:hover
     100%
     {
         background-position: 200% 50%;
+    }
+}
+
+.mFromnowon
+{
+    position: relative;
+
+    &::after
+    {
+        position: absolute;
+        content: "";
+        z-index: 1;
+        width: 83px;
+        height: 20px;
+    }
+
+    &.playing::after
+    {
+        animation: awakeEffect 1.6s forwards;
+    }
+
+    &:not(.playing)::after
+    {
+        animation: tiredEffect 1.6s forwards;
+    }
+}
+
+@keyframes tiredEffect
+{
+    0%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+        left: calc(50% - 41.5px);
+        top: calc(43% - 10px);
+        opacity: 100%;
+        animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    }
+
+    40%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+        left: calc(80% - 41.5px);
+    }
+
+    75%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+        left: calc(80% - 41.5px);
+        top: calc(43% - 10px);
+        opacity: 100%;
+    }
+
+    100%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+        left: calc(80% - 41.5px);
+        top: calc(25% - 10px);
+        opacity: 0%;
+    }
+}
+
+@keyframes awakeEffect
+{
+    0%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+        left: calc(50% - 41.5px);
+        top: calc(43% - 10px);
+        opacity: 100%;
+        animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    }
+
+    40%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+        left: calc(80% - 41.5px);
+    }
+
+    75%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+        left: calc(80% - 41.5px);
+        top: calc(43% - 10px);
+        opacity: 100%;
+    }
+
+    100%
+    {
+        background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+        left: calc(80% - 41.5px);
+        top: calc(25% - 10px);
+        opacity: 0%;
     }
 }
 
