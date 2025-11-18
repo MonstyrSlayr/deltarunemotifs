@@ -36,3 +36,4 @@ spawn
 guardian
 needahand
 catswing
+halloffame

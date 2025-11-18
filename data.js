@@ -961,6 +961,19 @@ const itsTvTime = new Song("It's TV Time!",
     "", quickSec(itsTvTimeBPM, 128 + 64 + 88 + 16 + 112)
 );
 
+const hallOfFameBPM = 71.2;
+const hallOfFame = new Song("Hall of Fame",
+    [TVTIMEMOTIF, FANFAREMOTIF],
+    "rHUNnF0u7dg",
+    [
+        new MotifReference(TVTIMEMOTIF, 0, quickSec(hallOfFameBPM, 4)),
+        new MotifReference(FANFAREMOTIF, quickSec(hallOfFameBPM, 4.5), quickSec(hallOfFameBPM, 11)),
+        new MotifReference(TVTIMEMOTIF, quickSec(hallOfFameBPM, 16), quickSec(hallOfFameBPM, 16 + 4)),
+        new MotifReference(FANFAREMOTIF, quickSec(hallOfFameBPM, 16 + 4.5), quickSec(hallOfFameBPM, 16 + 11)),
+    ],
+    "", quickSec(hallOfFameBPM, 33)
+)
+
 const blackKnifeBPM = 147.5;
 const blackKnife = new Song("Black Knife",
     [THEDOORMOTIF],
