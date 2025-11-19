@@ -37,3 +37,4 @@ guardian
 needahand
 catswing
 halloffame
+fanfare

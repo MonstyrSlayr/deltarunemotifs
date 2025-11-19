@@ -309,7 +309,7 @@ const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK +
 const THECHASEMOTIF = new Motif("The Chase", "", "#ffffff", "#00000033", IMGLINK + "rudinnranger.webp");
 const RUDEBUSTERMOTIF = new Motif("Rude Buster", "");
 const SCARLETFORESTMOTIF = new Motif("Scarlet Forest", "");
-const FANFAREMOTIF = new Motif("Fanfare", "");
+const FANFAREMOTIF = new Motif("Fanfare", "", "#fadf39", "#4de3e333", IMGLINK + "torielDarkWorld.png");
 const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "");
 const DARKNESSFALLSMOTIF = new Motif("Darkness Falls", "");
 const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", IMGLINK + "hipshop.png");
@@ -600,6 +600,15 @@ const lancer = new Song("Lancer",
     ],
     "", quickSec(lancerBPM, 99)
 );
+
+const fanfareBPM = 123;
+const fanfare = new Song("Fanfare",
+    [FANFAREMOTIF],
+    "OmMdXpuscRY",
+    [
+        new MotifReference(FANFAREMOTIF, quickSec(fanfareBPM, 1), quickSec(fanfareBPM, 12))
+    ]
+)
 
 const vsLancerBPM = 177;
 const vsLancer = new Song("Vs. Lancer",
