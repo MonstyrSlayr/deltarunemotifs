@@ -655,4 +655,72 @@ a.motifMainDiv:hover
     {
         border-right: none;
     }
+
+    @keyframes tiredEffect
+    {
+        0%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+            left: calc(25% - 41.5px);
+            top: calc(50% - 10px);
+            opacity: 100%;
+            animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+        }
+
+        40%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+            left: calc(55% - 41.5px);
+        }
+
+        75%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+            left: calc(55% - 41.5px);
+            top: calc(50% - 10px);
+            opacity: 100%;
+        }
+
+        100%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/tired.png");
+            left: calc(55% - 41.5px);
+            top: calc(25% - 10px);
+            opacity: 0%;
+        }
+    }
+
+    @keyframes awakeEffect
+    {
+        0%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+            left: calc(25% - 41.5px);
+            top: calc(50% - 10px);
+            opacity: 100%;
+            animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+        }
+
+        40%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+            left: calc(55% - 41.5px);
+        }
+
+        75%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+            left: calc(55% - 41.5px);
+            top: calc(50% - 10px);
+            opacity: 100%;
+        }
+
+        100%
+        {
+            background: url("https://monstyrslayr.github.io/deltarunemotifs/img/awake.png");
+            left: calc(55% - 41.5px);
+            top: calc(25% - 10px);
+            opacity: 0%;
+        }
+    }
 }
