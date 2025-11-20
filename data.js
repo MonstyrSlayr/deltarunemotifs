@@ -1203,21 +1203,60 @@ const wiseWords = new Song("Wise words",
     [GERSONMOTIF],
     "YYl_CuHvVRs",
     [
-        new MotifReference(GERSONMOTIF, 0, quickSec(wiseWordsBPM, 14 + 16)),
+        new MotifReference(GERSONMOTIF, 0, quickSec(wiseWordsBPM, 8)),
         new MotifReference(UNDYNEMOTIF, quickSec(wiseWordsBPM, 8), quickSec(wiseWordsBPM, 14)),
-        new MotifReference(GERSONMOTIF, quickSec(wiseWordsBPM, 14 + 16), quickSec(wiseWordsBPM, 14 + 48)),
+        new MotifReference(GERSONMOTIF, quickSec(wiseWordsBPM, 14), quickSec(wiseWordsBPM, 24)),
+        new MotifReference(GERSONMOTIF, quickSec(wiseWordsBPM, 14 + 16), quickSec(wiseWordsBPM, 8 + 32)),
         new MotifReference(UNDYNEMOTIF, quickSec(wiseWordsBPM, 8 + 32), quickSec(wiseWordsBPM, 14 + 32)),
+        new MotifReference(GERSONMOTIF, quickSec(wiseWordsBPM, 14 + 32), quickSec(wiseWordsBPM, 24 + 32)),
         new MotifReference(GERSONMOTIF, quickSec(wiseWordsBPM, 14 + 48), quickSec(wiseWordsBPM, 14 + 48 + 2)),
     ],
     "", quickSec(wiseWordsBPM, 14 + 48 + 2)
 );
 
+const hammerOfJusticeBPM = 160;
+const hojOffset = -0.12; // for the after tempo change
 const hammerOfJustice = new Song("Hammer of Justice",
     [GERSONMOTIF, FREEDOMMOTIF],
     "tBdLO8u-0L8",
     [
-        
-    ]
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 0.5), quickSec(hammerOfJusticeBPM, 4)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 4.5), quickSec(hammerOfJusticeBPM, 8)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 8.5), quickSec(hammerOfJusticeBPM, 12)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 16.5), quickSec(hammerOfJusticeBPM, 20)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 20.5), quickSec(hammerOfJusticeBPM, 24)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 24.5), quickSec(hammerOfJusticeBPM, 28)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 32.5), quickSec(hammerOfJusticeBPM, 36)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 36.5), quickSec(hammerOfJusticeBPM, 40)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 40.5), quickSec(hammerOfJusticeBPM, 44)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 48.5), quickSec(hammerOfJusticeBPM, 52)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 52.5), quickSec(hammerOfJusticeBPM, 56)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 56.5), quickSec(hammerOfJusticeBPM, 60)),
+
+        new MotifReference(RUINSMOTIF, quickSec(hammerOfJusticeBPM, 64), quickSec(hammerOfJusticeBPM, 64 + 10)),
+        new MotifReference(RUINSMOTIF, quickSec(hammerOfJusticeBPM, 64 + 32), quickSec(hammerOfJusticeBPM, 64 + 10 + 32)),
+        new MotifReference(RUINSMOTIF, quickSec(hammerOfJusticeBPM, 64 + 64), quickSec(hammerOfJusticeBPM, 64 + 10 + 64)),
+
+        new MotifReference(GERSONMOTIF, quickSec(hammerOfJusticeBPM, 64 + 96 - 2), quickSec(hammerOfJusticeBPM, 64 + 96 + 8.35)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 64 + 96 + 8.35), quickSec(hammerOfJusticeBPM, 64 + 96 + 14.35), true),
+        new MotifReference(GERSONMOTIF, quickSec(hammerOfJusticeBPM, 64 + 96 - 2 + 16.35), quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 16.5)),
+        new MotifReference(GERSONMOTIF, quickSec(hammerOfJusticeBPM, 64 + 96 - 2 + 32 + 1), quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 32 + 1.55)),
+        new MotifReference(UNDYNEMOTIF, quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 32 + 1.55), quickSec(hammerOfJusticeBPM, 64 + 96 + 14 + 32 + 1.6), true),
+        new MotifReference(GERSONMOTIF, quickSec(hammerOfJusticeBPM, 64 + 96 - 2 + 48 + 1.6), quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 48 + 2)),
+
+        new MotifReference(GERSONMOTIF, quickSec(hammerOfJusticeBPM, 64 + 96 + 64 + 4 - 3), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4)),
+        new MotifReference(UNDYNEMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 6)),
+        new MotifReference(GERSONMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 6), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16)),
+        new MotifReference(GERSONMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 22), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 32)),
+        new MotifReference(UNDYNEMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 32), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 6 + 32)),
+        new MotifReference(GERSONMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 6 + 32), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32)),
+
+        new MotifReference(FREEDOMMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 15.5), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 20.5)),
+        new MotifReference(FREEDOMMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 32), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 40)),
+        new MotifReference(FREEDOMMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 15.5 + 32), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 20.5 + 32)),
+        new MotifReference(FREEDOMMOTIF, hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 32 + 32), hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 40 + 32)),
+    ],
+    "", hojOffset + quickSec(hammerOfJusticeBPM, 64 + 96 + 8 + 64 + 4 + 16 + 32 + 40 + 32)
 );
 
 const secondSanctuaryBPM = 170;
