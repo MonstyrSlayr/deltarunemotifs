@@ -5,6 +5,8 @@ let isDragging = false; // maus
 let players = {}; // store players by videoId
 let updateIntervals = {};
 
+let prev = null;
+
 const SONG_OFFSET = 0.15; // account for css bullshit
 
 function formatPageForSong(daSong)
@@ -109,11 +111,13 @@ function formatPageForSong(daSong)
             allMotifIds.add(motifRef.motif.id);
         }
 
-        const allEffects = new Set();
+        const allEffectsSet = new Set();
         for (const effect of daSong.effectRefs)
         {
-            allEffects.add(effect.type);
+            allEffectsSet.add(effect.type);
         }
+
+        const allEffects = [...allEffectsSet];
 
         // hidden YouTube iframe
         const playerDiv = document.createElement("div");
@@ -311,7 +315,7 @@ function formatPageForSong(daSong)
                                 }
                             });
 
-                            allEffects.forEach(effect =>
+                            allEffects.filter(effect => !effect.isOneshot).forEach(effect =>
                             {
                                 let playing = false;
 
@@ -337,12 +341,27 @@ function formatPageForSong(daSong)
                                     effect.onDeactive();
                                 }
                             });
+
+                            [...allEffects].filter(effect => effect.isOneshot).forEach(effect =>
+                            {
+                                for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
+                                {
+                                    if (prev != null && current > effectRef.startTime && prev <= effectRef.startTime)
+                                    {
+                                        effect.onDeactive();
+                                        effect.onActive();
+                                    }
+                                }
+                            });
+
+                            prev = current;
                         }, 15);
                     }
                     else
                     {
                         pauseBtn.classList.add("gone");
                         playBtn.classList.remove("gone");
+                        prev = null;
 
                         clearInterval(updateIntervals[videoId]);
                     }
@@ -370,7 +389,7 @@ function formatPageForSong(daSong)
         {
             players[videoId].pauseVideo()
 
-            allEffects.forEach(effect =>
+            allEffects.filter(effect => effect.isOneshot).forEach(effect =>
             {
                 if (effect.deactivateOnPause)
                 {

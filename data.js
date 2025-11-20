@@ -71,14 +71,17 @@ class SongEffect
     onDeactive;
     deactivateOnPause = true;
     onIntermediate = null;
+    isOneshot = false;
+    interval = null;
 
-    constructor(onLoad, onActive, onDeactive, deactivateOnPause = true, onIntermediate = null)
+    constructor(onLoad, onActive, onDeactive = null, deactivateOnPause = true, onIntermediate = null, isOneshot = false)
     {
         this.onLoad = onLoad;
         this.onActive = onActive;
         this.onDeactive = onDeactive;
         this.deactivateOnPause = deactivateOnPause;
         this.onIntermediate = onIntermediate;
+        this.isOneshot = isOneshot;
     }
 }
 
@@ -150,24 +153,40 @@ const FLASHEFFECT = new SongEffect(
         const flashScreen = document.createElement("div");
         flashScreen.id = "flash";
         flashScreen.classList.add("gone");
+        flashScreen.style.opacity = `50%`;
         document.body.appendChild(flashScreen);
     },
     () =>
     {
         const flashScreen = document.getElementById("flash");
         flashScreen.classList.remove("gone");
+
+        const duration = 3000;
+        const elf = 15;
+        const startTime = new Date();
+
+        FLASHEFFECT.interval = setInterval(() =>
+        {
+            const t = (new Date() - startTime) / duration;
+            flashScreen.style.opacity = `${50 - (easeOutCubic(t) * 50)}%`;
+
+            if (t >= 1)
+            {
+                FLASHEFFECT.onDeactive();
+            }
+        }, elf);
     },
     () =>
     {
         const flashScreen = document.getElementById("flash");
         flashScreen.classList.add("gone");
+        
+        clearInterval(FLASHEFFECT.interval);
+        FLASHEFFECT.interval = null;
     },
     false,
-    (t) =>
-    {
-        const flashScreen = document.getElementById("flash");
-        flashScreen.style.opacity = `${50 - (easeOutCubic(t) * 50)}%`;
-    }
+    null,
+    true
 );
 
 const BLACKFLASHEFFECT = new SongEffect(
@@ -182,18 +201,33 @@ const BLACKFLASHEFFECT = new SongEffect(
     {
         const flashScreen = document.getElementById("blackFlash");
         flashScreen.classList.remove("gone");
+
+        const duration = 9000;
+        const elf = 15;
+        const startTime = new Date();
+
+        BLACKFLASHEFFECT.interval = setInterval(() =>
+        {
+            const t = (new Date() - startTime) / duration;
+            flashScreen.style.opacity = `${100 - (easeOutCubic(t) * 100)}%`;
+
+            if (t >= 1)
+            {
+                BLACKFLASHEFFECT.onDeactive();
+            }
+        }, elf);
     },
     () =>
     {
         const flashScreen = document.getElementById("blackFlash");
         flashScreen.classList.add("gone");
+                
+        clearInterval(BLACKFLASHEFFECT.interval);
+        BLACKFLASHEFFECT.interval = null;
     },
     false,
-    (t) =>
-    {
-        const flashScreen = document.getElementById("blackFlash");
-        flashScreen.style.opacity = `${100 - (easeOutCubic(t) * 100)}%`;
-    }
+    null,
+    true
 );
 
 const STATICEFFECT = new SongEffect(
@@ -226,6 +260,7 @@ class EffectRef
     type;
     startTime = 0; // seconds
     endTime = 0; // seconds
+    t = 0; // for intermediate oneshots
 
     constructor(type, startTime, endTime)
     {
