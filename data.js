@@ -320,7 +320,8 @@ const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", IMGLINK + "sus
 const LANCERAMOTIF = new Motif("Lancer", "A", "#5585bd", "#32323233", IMGLINK + "lancer.png");
 const LANCERBMOTIF = new Motif("Lancer", "B", "#5585bd", "#ffffff33");
 const ROUXLSKAARDMOTIF = new Motif("Rouxls Kaard", "");
-const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", IMGLINK + "king.webp");
+const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", IMGLINK + "king.png");
+KINGMOTIF.imagePlaying = IMGLINK + "kingIdle.gif";
 const MANMOTIF = new Motif("man", "");
 
 const CYBERWORLDMOTIF = new Motif("Cyber World", "");
