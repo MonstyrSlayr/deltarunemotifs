@@ -377,6 +377,7 @@ const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
 const LOSTGIRLAMOTIF = new Motif("Lost Girl", "A", "#331d0a", "#332a3b33", IMGLINK + "lostgirl.png");
 const LOSTGIRLBMOTIF = new Motif("Lost Girl", "B", "#331d0a", "#332a3b33");
 
+const FEATUREPRESENTATIONMOTIF = new Motif("Feature Presentation", "", "#500d52", "#cac2b533", IMGLINK + "featurePresentation.png");
 const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", IMGLINK + "tvtime.webp");
 const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", IMGLINK + "doomboard.png");
 
@@ -915,6 +916,14 @@ const knockYouDown = new Song("Knock You Down !!",
 
 //#region CHAPTER 3
 
+const featurePresentation = new Song("Feature Presentation",
+    [FEATUREPRESENTATIONMOTIF, TVTIMEMOTIF],
+    "cUxGD-aNcsY",
+    [
+        
+    ]
+)
+
 const raiseUpYourBatBPM = 115;
 const raiseUpYourBat = new Song("Raise Up Your Bat",
     [LOSTGIRLAMOTIF],
@@ -995,8 +1004,11 @@ const itsTvTime = new Song("It's TV Time!",
     [
         new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 48.5), quickSec(itsTvTimeBPM, 52)),
         new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 56.5), quickSec(itsTvTimeBPM, 60)),
+        new MotifReference(FEATUREPRESENTATIONMOTIF, quickSec(itsTvTimeBPM, 63.75), quickSec(itsTvTimeBPM, 72)),
+
         new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 80.5), quickSec(itsTvTimeBPM, 84)),
         new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 88.5), quickSec(itsTvTimeBPM, 92)),
+        new MotifReference(FEATUREPRESENTATIONMOTIF, quickSec(itsTvTimeBPM, 95.75), quickSec(itsTvTimeBPM, 104)),
 
         new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64 - 8), quickSec(itsTvTimeBPM, 128 + 64)),
         new MotifReference(DOOMBOARDMOTIF, quickSec(itsTvTimeBPM, 128 + 64), quickSec(itsTvTimeBPM, 128 + 64 + 8)),
@@ -1021,6 +1033,9 @@ const itsTvTime = new Song("It's TV Time!",
         new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 89), quickSec(itsTvTimeBPM, 128 + 64 + 88 + 12)),
         new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 89 + 32), quickSec(itsTvTimeBPM, 128 + 64 + 88 + 12 + 32)),
         new MotifReference(TENNAMOTIF, quickSec(itsTvTimeBPM, 128 + 64 + 89 + 64), quickSec(itsTvTimeBPM, 128 + 64 + 88 + 12 + 64)),
+
+        new MotifReference(FEATUREPRESENTATIONMOTIF, quickSec(itsTvTimeBPM, 128 + 128 + 128 - 8), quickSec(itsTvTimeBPM, 128 + 128 + 128)),
+        new MotifReference(FEATUREPRESENTATIONMOTIF, quickSec(itsTvTimeBPM, 128 + 128 + 128), quickSec(itsTvTimeBPM, 128 + 128 + 128 + 8), true),
     ],
     "", quickSec(itsTvTimeBPM, 128 + 64 + 88 + 16 + 112)
 );
