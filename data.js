@@ -519,6 +519,24 @@ export function getSongsWithMotif(motif)
     return allSongs.filter(song => song.motifRefs.some(ref => ref.motif.id == motif.id));
 }
 
+export function getSongsWithMotifId(motifId)
+{
+    return allSongs.filter(song => song.motifRefs.some(ref => ref.motif.id == motifId));
+}
+
+export function getMotifRefCount(motifId)
+{
+    let count = 0;
+    allSongs.forEach(song =>
+    {
+        song.motifRefs.forEach(motifRef =>
+        {
+            if (motifRef.motif.id == motifId) count++;
+        });
+    });
+    return count;
+}
+
 export function createSongDiv(daSong, isLink = true)
 {
     const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");

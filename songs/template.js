@@ -346,7 +346,8 @@ function formatPageForSong(daSong)
                             {
                                 for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
                                 {
-                                    if (prev != null && current > effectRef.startTime && prev <= effectRef.startTime)
+                                    if ((prev != null && current > effectRef.startTime + SONG_OFFSET && prev <= effectRef.startTime + SONG_OFFSET)
+                                    || (prev == null && current == effectRef.startTime + SONG_OFFSET))
                                     {
                                         effect.onDeactive();
                                         effect.onActive();

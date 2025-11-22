@@ -20,7 +20,19 @@
             </div>
         </a>
     </header>
+
     <p>Every motif currently in the motif database</p>
+
+    <div id="sortOptions">
+        <select id="sortInput">
+            <option value="soundtrack" selected="selected">Sort by Soundtrack</option>
+            <option value="alphabetical">Sort Alphabetically</option>
+            <option value="song">Sort by Song Count</option>
+            <option value="ref">Sort by Reference Count</option>
+        </select>
+        <input type="checkbox" id="isDescending">
+        <label for="isDescending">Descending</label>
+    </div>
 
     <div id="motifList">
 

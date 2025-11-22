@@ -78,6 +78,42 @@ p
     font-size: 16px;
 }
 
+label
+{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+select
+{
+    background: black;
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+}
+
+input[type="checkbox"]
+{
+    margin: 0px;
+    padding: 0px;
+    scale: 200%;
+}
+
+#sortOptions
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin: 1em;
+}
+
 #musicContainer
 {
     display: flex;
@@ -213,6 +249,7 @@ p
     justify-content: center;
     align-items: center;
     padding: 2em;
+    margin: 0.25em;
 }
 
 .songDiv.noMotifs
