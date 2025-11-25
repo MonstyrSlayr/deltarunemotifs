@@ -387,7 +387,7 @@ const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", I
 const FROMNOWONMOTIF = new Motif("From Now On", "", "#6ad4f5", "#ffffff33", IMGLINK + "mizzleTired.gif");
 FROMNOWONMOTIF.imagePlaying = IMGLINK + "mizzleIdle.gif";
 const EVERHIGHERMOTIF = new Motif("Ever Higher", "", "#ff3651", "#f8c85133", IMGLINK + "cuptain.png");
-const SUBSANCMOTIF = new Motif("Subsequent Sanctuary", "", "#4f378f", "#2d193e33", IMGLINK + "subsequentsanctuary.jpg");
+const SUBSANCMOTIF = new Motif("Second Sanctuary", "", "#4f378f", "#2d193e33", IMGLINK + "subsequentsanctuary.jpg");
 
 const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", IMGLINK + "mike.webp");
 const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", IMGLINK + "gerson.png");
@@ -579,36 +579,26 @@ export function createSongDiv(daSong, isLink = true)
     return motifMainDiv;
 }
 
-export function exportIdsToTxt(data, filename = "ids.txt")
+export function exportIdsToJson(data, filename = "ids.json")
 {
-    // Extract ids from the objects
-    const idsArr = data.map(obj => obj.id);
-    const idsSet = new Set();
-    for (const id of idsArr)
-    {
-        idsSet.add(id);
-    }
-    const ids = [...idsSet];
+    const ids = [...new Set(data.map(obj => obj.id))];
 
-    // Join them with newlines
-    const text = ids.join("\n");
+    const blob = new Blob(
+        [JSON.stringify(ids, null, 2)],
+        { type: "application/json" }
+    );
 
-    // Create a blob with the text
-    const blob = new Blob([text], { type: "text/plain" });
-
-    // Create a temporary download link
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
     link.download = filename;
 
-    // Trigger the download
     document.body.appendChild(link);
     link.click();
 
-    // Cleanup
     document.body.removeChild(link);
     URL.revokeObjectURL(link.href);
 }
+
 
 function quickSec(bpm, numberOfBeats)
 {
