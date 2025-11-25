@@ -517,7 +517,7 @@ export function getSongById(id)
 
 export function getSongsWithMotif(motif)
 {
-    return allSongs.filter(song => song.motifRefs.some(ref => ref.motif.id == motif.id));
+    return allSongs.filter(song => song.motifRefs.some(ref => ref.motif == motif));
 }
 
 export function getSongsWithMotifId(motifId)

@@ -233,7 +233,25 @@ input[type="checkbox"]
     justify-content: space-between;
 }
 
-#motifList, #songList
+#motifSep
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#motifSep > div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.motifList, .songList, #motifList, #songList
 {
     width: 50%;
     padding: 0;
@@ -244,6 +262,11 @@ input[type="checkbox"]
     gap: 1em;
     margin: 1em;
     position: relative;
+}
+
+.motifList, .songList
+{
+    width: 100%;
 }
 
 .songDiv
