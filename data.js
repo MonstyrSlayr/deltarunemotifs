@@ -579,12 +579,10 @@ export function createSongDiv(daSong, isLink = true)
     return motifMainDiv;
 }
 
-export function exportIdsToJson(data, filename = "ids.json")
+export function exportObjectsToJson(data, filename = "data.json")
 {
-    const ids = [...new Set(data.map(obj => obj.id))];
-
     const blob = new Blob(
-        [JSON.stringify(ids, null, 2)],
+        [JSON.stringify(data, null, 2)],
         { type: "application/json" }
     );
 

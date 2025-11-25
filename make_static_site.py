@@ -14,7 +14,9 @@ def clean_subdirectories(directory):
 
 def build_from_json(json_path, base_dir, template_file):
     with open(json_path, "r", encoding="utf-8") as f:
-        ids = json.load(f)
+        objects = json.load(f)
+
+    ids = {obj["id"] for obj in objects}
 
     clean_subdirectories(base_dir)
 

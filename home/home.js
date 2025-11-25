@@ -1,4 +1,4 @@
-import { exportIdsToJson, isLiveServer, allMotifs, allSongs } from "../data.js";
+import { exportObjectsToJson, isLiveServer, allMotifs, allSongs } from "../data.js";
 
 if (isLiveServer())
 {
@@ -7,6 +7,6 @@ if (isLiveServer())
 
 document.getElementById("downloadIds").addEventListener("click", () =>
 {
-    exportIdsToJson(allMotifs, "motifs.json");
-    exportIdsToJson(allSongs, "songs.json");
+    exportObjectsToJson(allMotifs, "motifs.json");
+    exportObjectsToJson(allSongs, "songs.json");
 });
