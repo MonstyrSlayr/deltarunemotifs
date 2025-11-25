@@ -1,4 +1,4 @@
-import { createMotifDiv, createSongDiv, getMotifsById, getSongById, isLiveServer } from "../data.js";
+import { createMotifDiv, createSongDiv, getMotifsById, getSongById, isLiveServer, formatTime } from "../data.js";
 
 let isDragging = false; // maus
 
@@ -134,14 +134,6 @@ container.appendChild(card);
     playerDiv.id = "yt" + videoId;
     playerDiv.style.display = "none";
     card.appendChild(playerDiv);
-
-function formatTime(seconds)
-{
-    seconds = Math.floor(seconds);
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return m + ":" + (s < 10 ? "0" + s : s);
-}
 
 // initialize YouTube player
 function onReady()
@@ -398,21 +390,21 @@ function playOrPause()
     // -1 (unstarted), 0 (ended), 1 (playing), 2 (paused), 3 (buffering), 5 (video cued)
     if (playerState === 1)
     {
-        players[videoId].pauseVideo()
+        players[videoId].pauseVideo();
 
         allEffects.filter(effect => effect.isOneshot).forEach(effect =>
         {
             if (effect.deactivateOnPause)
             {
                 setTimeout(() => {
-                    effect.onDeactive()
+                    effect.onDeactive();
                 }, 20);
             }
         });
     }
     else if (playerState === 2 || playerState === 5)
     {
-        players[videoId].playVideo()
+        players[videoId].playVideo();
     }
 }
 

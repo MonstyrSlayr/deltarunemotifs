@@ -7,6 +7,14 @@ function normalizeAndTrim(str)
         .toLowerCase();                    // take a wild guess
 }
 
+export function formatTime(seconds)
+{
+    seconds = Math.floor(seconds);
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return m + ":" + (s < 10 ? "0" + s : s);
+}
+
 export const allMotifs = [];
 export const allSongs = [];
 

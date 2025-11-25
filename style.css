@@ -165,7 +165,7 @@ input[type="checkbox"]
     margin: 2em;
 }
 
-.controls button
+.controls button, .controlsSmall button
 {
     padding: 1em 2em;
     margin: 0 4px;
@@ -231,6 +231,7 @@ input[type="checkbox"]
     color: white;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 #motifSep
@@ -249,6 +250,37 @@ input[type="checkbox"]
     align-items: center;
     justify-content: center;
     width: 90%;
+}
+
+.motifRefDiv
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.motifRefPlayDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardSmall
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.controlsSmall
+{
+    display: flex;
+    justify-content: center;
+    margin: 4em 1em;
 }
 
 .motifList, .songList, #motifList, #songList
@@ -639,6 +671,19 @@ a.motifMainDiv:hover
     #motifList, #songList
     {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .motifRefDiv
+    {
+        flex-direction: column;
+    }
+
+    .controlsSmall
+    {
+        margin: 1em;
     }
 }
 
