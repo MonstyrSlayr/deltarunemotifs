@@ -1058,7 +1058,7 @@ const blackKnife = new Song("Black Knife",
 
 //#region CHAPTER 4
 
-const knockYouDownRhythmVer = new Song("Knock You Down!! (Rhythm Ver.)",
+const knockYouDownRhythmVer = new Song("Knock You Down !! (Rhythm Ver.)",
     [POWERSCOMBINEDMOTIF],
     "27oficnsQPo",
     [
