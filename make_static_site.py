@@ -168,7 +168,7 @@ def generate_song_embed(song_obj, output_path):
         y_img = (((EMBED_HEIGHT - BORDER_THICKNESS) + y_text) // 2) - (IMAGE_SIZE // 2)
         for img in images:
             embed.alpha_composite(img, (x_start, y_img))
-            x_start += (img.width + PADDING) * 2
+            x_start += (IMAGE_SIZE + PADDING) * 2
 
     embed.save(output_path)
 
