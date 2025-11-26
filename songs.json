@@ -1073,6 +1073,18 @@
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null
+      },
+      {
+        "name": "Berdly",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#46b3fc",
+        "color2": "#30b18133",
+        "id": "berdly",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
       }
     ],
     "effectRefs": [],
@@ -1229,6 +1241,18 @@
         "color2": "#30b18133",
         "id": "berdly",
         "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Berdly",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#46b3fc",
+        "color2": "#30b18133",
+        "id": "berdly",
+        "letter": "B",
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null
@@ -1473,8 +1497,43 @@
   {
     "name": "Spamton",
     "youtubeId": "cSm5gKlmw2M",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 10.105263157894736
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 10.105263157894736,
+        "endTime": 20.210526315789473
+      }
+    ],
+    "loopPoint": 40.421052631578945,
     "mainMotifs": [
       {
         "name": "Spamton",
@@ -1495,8 +1554,145 @@
   {
     "name": "NOW'S YOUR CHANCE TO BE A",
     "youtubeId": "2GbBD_7AsGA",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 7.2727272727272725
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 7.2727272727272725,
+        "endTime": 14.545454545454545
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 14.545454545454545,
+        "endTime": 21.818181818181817
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 21.818181818181817,
+        "endTime": 29.09090909090909
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 29.09090909090909,
+        "endTime": 36.36363636363636
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 43.63636363636363,
+        "endTime": 50.90909090909091
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 50.90909090909091,
+        "endTime": 58.18181818181818
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 58.18181818181818,
+        "endTime": 65.45454545454545
+      }
+    ],
+    "loopPoint": 65.45454545454545,
     "mainMotifs": [
       {
         "name": "Spamton",
@@ -1669,6 +1865,18 @@
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null
+      },
+      {
+        "name": "Berdly",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#46b3fc",
+        "color2": "#30b18133",
+        "id": "berdly",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
       }
     ],
     "effectRefs": [],
@@ -1802,8 +2010,162 @@
   {
     "name": "Lost Girl",
     "youtubeId": "P89rxnT7lKw",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 6.4
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 6.4,
+        "endTime": 12.8
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 12.8,
+        "endTime": 19.200000000000003
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 25.6,
+        "endTime": 32
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 32,
+        "endTime": 38.400000000000006
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 38.400000000000006,
+        "endTime": 44.800000000000004
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 51.2,
+        "endTime": 57.6
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 57.6,
+        "endTime": 64
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 64,
+        "endTime": 70.4
+      }
+    ],
+    "loopPoint": 76.80000000000001,
     "mainMotifs": [
       {
         "name": "Lost Girl",
@@ -2903,15 +3265,118 @@
   {
     "name": "The Dark Truth",
     "youtubeId": "o3UNWAT81f0",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 14.399999999999999
+      },
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 14.399999999999999,
+        "endTime": 28.799999999999997
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 35.4,
+        "endTime": 39.6
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 39.6,
+        "endTime": 50.4
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 54.6,
+        "endTime": 58.8
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 58.8,
+        "endTime": 67.2
+      }
+    ],
+    "loopPoint": 67.2,
     "mainMotifs": [
       {
         "name": "Your Best Nightmare",
-        "image": null,
+        "image": "http://127.0.0.1:5500/img/yourBestNightmare.png",
         "imagePlaying": null,
         "color": "#ffffff",
-        "color2": "#ffffff33",
+        "color2": "#2c180833",
         "id": "yourbestnightmare",
         "letter": "",
         "mainDiv": null,

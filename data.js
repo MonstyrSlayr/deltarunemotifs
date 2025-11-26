@@ -327,7 +327,7 @@ const HOTELMOTIF = new Motif("Hotel");
 const OHMOTIF = new Motif("Oh!");
 const SPOOKTUNEMOTIF = new Motif("Spooktune");
 const JINGLEBELLSMOTIF = new Motif("Jingle Bells");
-const YOURBESTNIGHTMAREMOTIF = new Motif("Your Best Nightmare");
+const YOURBESTNIGHTMAREMOTIF = new Motif("Your Best Nightmare", "", "#ffffff", "#2c180833", IMGLINK + "yourBestNightmare.png");
 YOURBESTNIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
 const POWEROFNEOMOTIF = new Motif("Power of NEO");
 const MEGALOVANIAMOTIF = new Motif("MEGALOVANIA");
@@ -973,12 +973,19 @@ const knockYouDown = new Song("Knock You Down !!",
     "", quickSec(knockYouDownBPM, 128 + 128 + 128 + 80)
 );
 
+const theDarkTruthBPM = 50;
 const theDarkTruth = new Song("The Dark Truth",
     [YOURBESTNIGHTMAREMOTIF],
     "o3UNWAT81f0",
     [
-
-    ]
+        new MotifReference(YOURBESTNIGHTMAREMOTIF, 0, quickSec(theDarkTruthBPM, 12)),
+        new MotifReference(YOURBESTNIGHTMAREMOTIF, quickSec(theDarkTruthBPM, 12), quickSec(theDarkTruthBPM, 24)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(theDarkTruthBPM, 29.5), quickSec(theDarkTruthBPM, 33), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(theDarkTruthBPM, 33), quickSec(theDarkTruthBPM, 42), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(theDarkTruthBPM, 29.5 + 16), quickSec(theDarkTruthBPM, 33 + 16), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(theDarkTruthBPM, 33 + 16), quickSec(theDarkTruthBPM, 40 + 16), true),
+    ],
+    "", quickSec(theDarkTruthBPM, 40 + 16)
 );
 
 const dealGoneWrong = new Song("Deal Gone Wrong",

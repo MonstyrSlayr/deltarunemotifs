@@ -217,10 +217,10 @@
   },
   {
     "name": "Your Best Nightmare",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/yourBestNightmare.png",
     "imagePlaying": null,
     "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color2": "#2c180833",
     "id": "yourbestnightmare",
     "letter": "",
     "mainDiv": null,
