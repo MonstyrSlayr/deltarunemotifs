@@ -809,12 +809,15 @@ const heyEvery = new Song("HEY EVERY !",
     "", quickSec(heyEveryBPM, 32)
 );
 
+const spamtonBPM = 95;
 const spamton = new Song("Spamton",
     [SPAMTONAMOTIF],
     "cSm5gKlmw2M",
     [
-
-    ]
+        new MotifReference(SPAMTONAMOTIF, 0, quickSec(spamtonBPM, 16)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(spamtonBPM, 16), quickSec(spamtonBPM, 32)),
+    ],
+    "", quickSec(spamtonBPM, 64)
 );
 
 const nowsYourChanceToBeA = new Song("NOW'S YOUR CHANCE TO BE A",
