@@ -1314,8 +1314,145 @@
   {
     "name": "HEY EVERY !",
     "youtubeId": "DZKnVQL3r2I",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 2.3645320197044337
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 2.3645320197044337,
+        "endTime": 4.729064039408867
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 4.729064039408867,
+        "endTime": 7.093596059113301
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 7.093596059113301,
+        "endTime": 9.458128078817735
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 9.458128078817735,
+        "endTime": 11.822660098522169
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 11.822660098522169,
+        "endTime": 14.187192118226601
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 14.187192118226601,
+        "endTime": 16.551724137931036
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 16.551724137931036,
+        "endTime": 18.91625615763547
+      }
+    ],
+    "loopPoint": 18.91625615763547,
     "mainMotifs": [
       {
         "name": "TV Time!",

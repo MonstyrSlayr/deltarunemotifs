@@ -792,12 +792,21 @@ const coolMixtape = new Song("Cool Mixtape",
     "", quickSec(coolMixtapeBPM, 64)
 );
 
+const heyEveryBPM = 101.5;
 const heyEvery = new Song("HEY EVERY !",
     [TVTIMEMOTIF],
     "DZKnVQL3r2I",
     [
-
-    ]
+        new MotifReference(TVTIMEMOTIF, 0, quickSec(heyEveryBPM, 4)),
+        new MotifReference(TVTIMEMOTIF, quickSec(heyEveryBPM, 4), quickSec(heyEveryBPM, 8)),
+        new MotifReference(TVTIMEMOTIF, quickSec(heyEveryBPM, 8), quickSec(heyEveryBPM, 12)),
+        new MotifReference(TVTIMEMOTIF, quickSec(heyEveryBPM, 12), quickSec(heyEveryBPM, 16)),
+        new MotifReference(TVTIMEMOTIF, quickSec(heyEveryBPM, 16), quickSec(heyEveryBPM, 20)),
+        new MotifReference(TVTIMEMOTIF, quickSec(heyEveryBPM, 20), quickSec(heyEveryBPM, 24)),
+        new MotifReference(TVTIMEMOTIF, quickSec(heyEveryBPM, 24), quickSec(heyEveryBPM, 28)),
+        new MotifReference(TVTIMEMOTIF, quickSec(heyEveryBPM, 28), quickSec(heyEveryBPM, 32)),
+    ],
+    "", quickSec(heyEveryBPM, 32)
 );
 
 const spamton = new Song("Spamton",
