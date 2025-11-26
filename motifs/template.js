@@ -25,7 +25,7 @@ let players = {}; // store players by videoId
 let updateIntervals = {};
 const SONG_OFFSET = 0.15;
 const readyCallbacks = [];
-let isDragging = false;
+let isDragging = null;
 let activePlayer = null;
 
 function addYouTubeReadyCallback(fn)
@@ -169,6 +169,8 @@ function createMotifRefDiv(daSong, daMotifs)
                                 {
                                     players[daId].seekTo(motifRef.startTime, true);
                                     players[daId].playVideo();
+                                    activePlayer = daId;
+                                    pauseAllExcept(daId);
                                 });
                             }
 
@@ -196,6 +198,7 @@ function createMotifRefDiv(daSong, daMotifs)
                                     {
                                         players[daId].seekTo(0, true);
                                         players[daId].playVideo();
+                                        pauseAllExcept(daId);
                                     }
                                 }
 
@@ -256,25 +259,26 @@ function createMotifRefDiv(daSong, daMotifs)
         addYouTubeReadyCallback(onReady);
 
         // Button actions
-        playBtn.onclick = () => {players[daId].playVideo(); activePlayer = daId;};
+        playBtn.onclick = () => {players[daId].playVideo(); pauseAllExcept(daId); activePlayer = daId;};
         pauseBtn.onclick = () => {players[daId].pauseVideo(); activePlayer = daId;};
 
         // Seek when clicking timebar
         timebarContainer.addEventListener("click", (e) =>
         {
             seekVideo(e);
+            pauseAllExcept(daId);
         });
 
         // Seek when clicking or dragging timebar
         timebarContainer.addEventListener("mousedown", (e) =>
         {
-            isDragging = true;
+            isDragging = daId;
             updateProgress(e); // update immediately when click starts
         });
 
         window.addEventListener("mousemove", (e) =>
         {
-            if (isDragging)
+            if (isDragging == daId)
             {
                 updateProgress(e); // show preview while dragging
             }
@@ -282,9 +286,9 @@ function createMotifRefDiv(daSong, daMotifs)
 
         window.addEventListener("mouseup", (e) =>
         {
-            if (isDragging)
+            if (isDragging == daId)
             {
-                isDragging = false;
+                isDragging = null;
                 seekVideo(e); // finalize seek
             }
         });
@@ -305,10 +309,20 @@ function createMotifRefDiv(daSong, daMotifs)
             const duration = daSong.loopPoint == null ? players[daId].getDuration() : daSong.loopPoint;
             players[daId].seekTo(duration * percent, true);
             players[daId].playVideo();
+            pauseAllExcept(daId);
             activePlayer = daId;
         }
     
     return bigDiv;
+}
+
+function pauseAllExcept(daPlayerId)
+{
+    for (const playerId of Object.keys(players))
+    {
+        if (playerId == daPlayerId) continue;
+        players[playerId].pauseVideo();
+    }
 }
 
 function playOrPause(playerId)
