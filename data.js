@@ -876,12 +876,24 @@ const pandoraPalace = new Song("Pandora Palace",
     "", quickSec(pandoraPalaceBPM, 34 + 96 + 32)
 );
 
+const lostGirlBPM = 75;
 const lostGirl = new Song("Lost Girl",
     [LOSTGIRLAMOTIF, LOSTGIRLBMOTIF],
     "P89rxnT7lKw",
     [
+        new MotifReference(LOSTGIRLAMOTIF, 0, quickSec(lostGirlBPM, 8)),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(lostGirlBPM, 8), quickSec(lostGirlBPM, 16), true),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(lostGirlBPM, 16), quickSec(lostGirlBPM, 24)),
 
-    ]
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(lostGirlBPM, 32), quickSec(lostGirlBPM, 40)),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(lostGirlBPM, 40), quickSec(lostGirlBPM, 48), true),
+        new MotifReference(LOSTGIRLAMOTIF, quickSec(lostGirlBPM, 48), quickSec(lostGirlBPM, 56)),
+
+        new MotifReference(LOSTGIRLBMOTIF, quickSec(lostGirlBPM, 64), quickSec(lostGirlBPM, 72)),
+        new MotifReference(LOSTGIRLBMOTIF, quickSec(lostGirlBPM, 72), quickSec(lostGirlBPM, 80), true),
+        new MotifReference(LOSTGIRLBMOTIF, quickSec(lostGirlBPM, 80), quickSec(lostGirlBPM, 88)),
+    ],
+    "", quickSec(lostGirlBPM, 96)
 )
 
 const attackOfTheKillerQueenBPM = 144;
