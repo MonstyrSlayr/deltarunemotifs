@@ -1312,6 +1312,84 @@
     "id": "coolmixtape"
   },
   {
+    "name": "HEY EVERY !",
+    "youtubeId": "DZKnVQL3r2I",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "TV Time!",
+        "image": "http://127.0.0.1:5500/img/tvtime.webp",
+        "imagePlaying": null,
+        "color": "#fbe63b",
+        "color2": "#ff342b33",
+        "id": "tvtime",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "heyevery"
+  },
+  {
+    "name": "Spamton",
+    "youtubeId": "cSm5gKlmw2M",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Spamton",
+        "image": "http://127.0.0.1:5500/img/spamton.webp",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffaec933",
+        "id": "spamton",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "spamton"
+  },
+  {
+    "name": "NOW'S YOUR CHANCE TO BE A",
+    "youtubeId": "2GbBD_7AsGA",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Spamton",
+        "image": "http://127.0.0.1:5500/img/spamton.webp",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffaec933",
+        "id": "spamton",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Spamton",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#fff30133",
+        "id": "spamton",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "nowsyourchancetobea"
+  },
+  {
     "name": "Elegant Entrance",
     "youtubeId": "j6baKyF2Ksc",
     "motifRefs": [
@@ -1583,6 +1661,40 @@
     ],
     "effectRefs": [],
     "id": "pandorapalace"
+  },
+  {
+    "name": "Lost Girl",
+    "youtubeId": "P89rxnT7lKw",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Lost Girl",
+        "image": "http://127.0.0.1:5500/img/lostgirl.png",
+        "imagePlaying": null,
+        "color": "#331d0a",
+        "color2": "#332a3b33",
+        "id": "lostgirl",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Lost Girl",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#331d0a",
+        "color2": "#332a3b33",
+        "id": "lostgirl",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "lostgirl"
   },
   {
     "name": "Attack of the Killer Queen",
@@ -2650,6 +2762,128 @@
     ],
     "effectRefs": [],
     "id": "knockyoudown"
+  },
+  {
+    "name": "The Dark Truth",
+    "youtubeId": "o3UNWAT81f0",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Your Best Nightmare",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffffff33",
+        "id": "yourbestnightmare",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "thedarktruth"
+  },
+  {
+    "name": "Deal Gone Wrong",
+    "youtubeId": "cfvB-bVpH7Y",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Spamton",
+        "image": "http://127.0.0.1:5500/img/spamton.webp",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffaec933",
+        "id": "spamton",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "dealgonewrong"
+  },
+  {
+    "name": "BIG SHOT",
+    "youtubeId": "V31PVkwzpEY",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Spamton",
+        "image": "http://127.0.0.1:5500/img/spamton.webp",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffaec933",
+        "id": "spamton",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Freedom",
+        "image": "http://127.0.0.1:5500/img/jevil.webp",
+        "imagePlaying": null,
+        "color": "#6d6ebf",
+        "color2": "#fbfd0133",
+        "id": "freedom",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "bigshot"
+  },
+  {
+    "name": "A Real Boy!",
+    "youtubeId": "rSXxltE8mQE",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "TV Time!",
+        "image": "http://127.0.0.1:5500/img/tvtime.webp",
+        "imagePlaying": null,
+        "color": "#fbe63b",
+        "color2": "#ff342b33",
+        "id": "tvtime",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "arealboy"
+  },
+  {
+    "name": "Dialtone",
+    "youtubeId": "Cki-mnHhNtY",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Freedom",
+        "image": "http://127.0.0.1:5500/img/jevil.webp",
+        "imagePlaying": null,
+        "color": "#6d6ebf",
+        "color2": "#fbfd0133",
+        "id": "freedom",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "dialtone"
   },
   {
     "name": "Feature Presentation",

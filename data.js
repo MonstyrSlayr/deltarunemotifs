@@ -792,6 +792,30 @@ const coolMixtape = new Song("Cool Mixtape",
     "", quickSec(coolMixtapeBPM, 64)
 );
 
+const heyEvery = new Song("HEY EVERY !",
+    [TVTIMEMOTIF],
+    "DZKnVQL3r2I",
+    [
+
+    ]
+);
+
+const spamton = new Song("Spamton",
+    [SPAMTONAMOTIF],
+    "cSm5gKlmw2M",
+    [
+
+    ]
+);
+
+const nowsYourChanceToBeA = new Song("NOW'S YOUR CHANCE TO BE A",
+    [SPAMTONAMOTIF, SPAMTONBMOTIF],
+    "2GbBD_7AsGA",
+    [
+
+    ]
+)
+
 const elegantEntranceBPM = 100;
 const elegantEntrance = new Song("Elegant Entrance",
     [QUEENAMOTIF],
@@ -830,6 +854,14 @@ const pandoraPalace = new Song("Pandora Palace",
     ],
     "", quickSec(pandoraPalaceBPM, 34 + 96 + 32)
 );
+
+const lostGirl = new Song("Lost Girl",
+    [LOSTGIRLAMOTIF, LOSTGIRLBMOTIF],
+    "P89rxnT7lKw",
+    [
+
+    ]
+)
 
 const attackOfTheKillerQueenBPM = 144;
 const attackOfTheKillerQueen = new Song("Attack of the Killer Queen",
@@ -906,6 +938,46 @@ const knockYouDown = new Song("Knock You Down !!",
         new MotifReference(POWERSCOMBINEDMOTIF, quickSec(knockYouDownBPM, 128 + 128 + 128 + 64), quickSec(knockYouDownBPM, 128 + 128 + 128 + 80), true),
     ],
     "", quickSec(knockYouDownBPM, 128 + 128 + 128 + 80)
+);
+
+const theDarkTruth = new Song("The Dark Truth",
+    [YOURBESTNIGHTMAREMOTIF],
+    "o3UNWAT81f0",
+    [
+
+    ]
+);
+
+const dealGoneWrong = new Song("Deal Gone Wrong",
+    [SPAMTONAMOTIF],
+    "cfvB-bVpH7Y",
+    [
+
+    ]
+);
+
+const bigShot = new Song("BIG SHOT",
+    [SPAMTONAMOTIF, FREEDOMMOTIF],
+    "V31PVkwzpEY",
+    [
+
+    ]
+);
+
+const aRealBoy = new Song("A Real Boy!",
+    [TVTIMEMOTIF],
+    "rSXxltE8mQE",
+    [
+
+    ]
+);
+
+const dialtone = new Song("Dialtone",
+    [FREEDOMMOTIF],
+    "Cki-mnHhNtY",
+    [
+
+    ]
 );
 
 //#endregion
