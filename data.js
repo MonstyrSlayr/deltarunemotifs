@@ -820,12 +820,21 @@ const spamton = new Song("Spamton",
     "", quickSec(spamtonBPM, 64)
 );
 
+const nowsYourChanceToBeABPM = 132;
 const nowsYourChanceToBeA = new Song("NOW'S YOUR CHANCE TO BE A",
     [SPAMTONAMOTIF, SPAMTONBMOTIF],
     "2GbBD_7AsGA",
     [
-
-    ]
+        new MotifReference(SPAMTONAMOTIF, 0, quickSec(nowsYourChanceToBeABPM, 16)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(nowsYourChanceToBeABPM, 16), quickSec(nowsYourChanceToBeABPM, 32)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(nowsYourChanceToBeABPM, 32), quickSec(nowsYourChanceToBeABPM, 48)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(nowsYourChanceToBeABPM, 48), quickSec(nowsYourChanceToBeABPM, 64)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(nowsYourChanceToBeABPM, 64), quickSec(nowsYourChanceToBeABPM, 80)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(nowsYourChanceToBeABPM, 96), quickSec(nowsYourChanceToBeABPM, 112)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(nowsYourChanceToBeABPM, 112), quickSec(nowsYourChanceToBeABPM, 112 + 16)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(nowsYourChanceToBeABPM, 112 + 16), quickSec(nowsYourChanceToBeABPM, 112 + 32)),
+    ],
+    "", quickSec(nowsYourChanceToBeABPM, 112 + 32)
 )
 
 const elegantEntranceBPM = 100;
