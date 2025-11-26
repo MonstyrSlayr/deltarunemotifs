@@ -97,15 +97,11 @@ def gradient_diagonal(width, height, c1, c2):
     return img
 
 def generate_song_embed(song_obj, output_path):
-    name = song_obj.get("name", "")
-    motif_ids = song_obj.get("mainMotifs", [])
+    name = song_obj.get("name")
+    motifs = song_obj.get("mainMotifs")
 
-    first = motif_ids[0] if motif_ids else None
-    second = motif_ids[1] if len(motif_ids) > 1 else first
-
-    # If first and second are the same, treat as single motif
-    if first and second and first["id"] == second["id"]:
-        second = None
+    first = motifs[0] if len(motifs) > 0 else None
+    second = motifs[1] if len(motifs) > 1 else None
 
     embed = Image.new("RGBA", (EMBED_WIDTH, EMBED_HEIGHT), BACKGROUND_COLOR)
     draw = ImageDraw.Draw(embed)
@@ -163,12 +159,12 @@ def generate_song_embed(song_obj, output_path):
 
     # Center motif images under song name
     if images:
-        total_width = IMAGE_SIZE if len(images) == 1 else (IMAGE_SIZE * (len(images) + 1)) + PADDING * (len(images))
+        total_width = images[0].size[0] if len(images) == 1 else sum(img.size[0] for img in images) + PADDING * (len(images)) + IMAGE_SIZE * (len(images) - 1)
         x_start = (EMBED_WIDTH - total_width) // 2
         y_img = (((EMBED_HEIGHT - BORDER_THICKNESS) + y_text) // 2) - (IMAGE_SIZE // 2)
         for img in images:
             embed.alpha_composite(img, (x_start, y_img))
-            x_start += (IMAGE_SIZE + PADDING) * 2
+            x_start += (PADDING * 2) + img.size[0] + IMAGE_SIZE
 
     embed.save(output_path)
 

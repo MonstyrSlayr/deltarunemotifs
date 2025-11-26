@@ -753,7 +753,7 @@ const aSimpleDiversion = new Song("A Simple Diversion",
 
 const berdlyBPM = 98;
 const berdly = new Song("Berdly",
-    [BERDLYAMOTIF],
+    [BERDLYAMOTIF, BERDLYBMOTIF],
     "2S8I1h-wNzc",
     [
         new MotifReference(BERDLYAMOTIF, 0, quickSec(berdlyBPM, 24)),
@@ -765,7 +765,7 @@ const berdly = new Song("Berdly",
 
 const smartRaceBPM = 150;
 const smartRace = new Song("Smart Race",
-    [BERDLYAMOTIF],
+    [BERDLYAMOTIF, BERDLYBMOTIF],
     "HZO3xw91eHw",
     [
         new MotifReference(QUEENAMOTIF, quickSec(smartRaceBPM, 4), quickSec(smartRaceBPM, 8)),
@@ -843,7 +843,7 @@ const elegantEntrance = new Song("Elegant Entrance",
 
 const bluebirdOfMisfortuneBPM = 120;
 const bluebirdOfMisfortune = new Song("Bluebird of Misfortune",
-    [BERDLYAMOTIF],
+    [BERDLYAMOTIF, BERDLYBMOTIF],
     "yud5H-vnbJw",
     [
         new MotifReference(BERDLYAMOTIF, 0, quickSec(bluebirdOfMisfortuneBPM, 49)),
