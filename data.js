@@ -996,12 +996,26 @@ const dealGoneWrong = new Song("Deal Gone Wrong",
     ]
 );
 
+const bigShotBPM = 140;
 const bigShot = new Song("BIG SHOT",
     [SPAMTONAMOTIF, FREEDOMMOTIF],
     "V31PVkwzpEY",
     [
-
-    ]
+        new MotifReference(SPAMTONBMOTIF, 0, quickSec(bigShotBPM, 32)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(bigShotBPM, 32), quickSec(bigShotBPM, 64)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 64), quickSec(bigShotBPM, 96)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(bigShotBPM, 96), quickSec(bigShotBPM, 104), true),
+        new MotifReference(SPAMTONAMOTIF, quickSec(bigShotBPM, 112), quickSec(bigShotBPM, 120), true),
+     
+        new MotifReference(FREEDOMMOTIF, quickSec(bigShotBPM, 128), quickSec(bigShotBPM, 192)),
+        new MotifReference(POWEROFNEOMOTIF, quickSec(bigShotBPM, 128), quickSec(bigShotBPM, 192), true),
+        new MotifReference(SPAMTONAMOTIF, quickSec(bigShotBPM, 192), quickSec(bigShotBPM, 204)),
+        new MotifReference(SPAMTONAMOTIF, quickSec(bigShotBPM, 208), quickSec(bigShotBPM, 212)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 256), quickSec(bigShotBPM, 300)),
+        new MotifReference(POWEROFNEOMOTIF, quickSec(bigShotBPM, 300), quickSec(bigShotBPM, 304)),
+        new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 304), quickSec(bigShotBPM, 320)),
+    ],
+    "", quickSec(bigShotBPM, 144 + 144 + 40)
 );
 
 const aRealBoy = new Song("A Real Boy!",
