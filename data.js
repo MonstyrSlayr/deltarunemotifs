@@ -730,12 +730,19 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
 
 //#region CHAPTER 2
 
+const QueenBPM = 109;
 const queen = new Song("Queen",
     [QUEENAMOTIF],
     "6XQv5CHmITA",
     [
-
-    ]
+        new MotifReference(QUEENAMOTIF, 0, quickSec(QueenBPM, 17.5)),
+        new MotifReference(QUEENAMOTIF, quickSec(QueenBPM, 17.5), quickSec(QueenBPM, 42.5), true),
+        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 42.5), quickSec(QueenBPM, 59)),
+        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 59), quickSec(QueenBPM, 74.5), true),
+        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 74.5), quickSec(QueenBPM, 88)),
+        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 88), quickSec(QueenBPM, 102), true),
+    ],
+    "", quickSec(QueenBPM, 102)
 );
 
 const aSimpleDiversionBPM = 130;
@@ -988,12 +995,14 @@ const theDarkTruth = new Song("The Dark Truth",
     "", quickSec(theDarkTruthBPM, 40 + 16)
 );
 
+const dealGoneWrongBPM = 145.5;
 const dealGoneWrong = new Song("Deal Gone Wrong",
     [SPAMTONAMOTIF],
     "cfvB-bVpH7Y",
     [
-
-    ]
+        new MotifReference(SPAMTONAMOTIF, 0, quickSec(dealGoneWrongBPM, 76))
+    ],
+    "", quickSec(dealGoneWrongBPM, 76)
 );
 
 const bigShotBPM = 140;
@@ -1027,12 +1036,21 @@ const bigShot = new Song("BIG SHOT",
     "", quickSec(bigShotBPM, 144 + 144 + 40)
 );
 
+const aRealBoyBPM = 122.5;
 const aRealBoy = new Song("A Real Boy!",
     [TVTIMEMOTIF],
     "rSXxltE8mQE",
     [
-
-    ]
+        new MotifReference(TVTIMEMOTIF, 0, quickSec(aRealBoyBPM, 4)),
+        new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 4), quickSec(aRealBoyBPM, 8), true),
+        new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 8), quickSec(aRealBoyBPM, 12), true),
+        new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 12), quickSec(aRealBoyBPM, 16), true),
+        new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 16), quickSec(aRealBoyBPM, 20)),
+        new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 20), quickSec(aRealBoyBPM, 24), true),
+        new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 24), quickSec(aRealBoyBPM, 28), true),
+        new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 28), quickSec(aRealBoyBPM, 32), true)
+    ],
+    "", quickSec(aRealBoyBPM, 32)
 );
 
 const dialtone = new Song("Dialtone",
@@ -1064,6 +1082,16 @@ const raiseUpYourBat = new Song("Raise Up Your Bat",
         new MotifReference(LOSTGIRLAMOTIF, quickSec(raiseUpYourBatBPM, 144 - 16), quickSec(raiseUpYourBatBPM, 144 - 8)),
         new MotifReference(LOSTGIRLAMOTIF, quickSec(raiseUpYourBatBPM, 144), quickSec(raiseUpYourBatBPM, 144 + 8)),
         new MotifReference(LOSTGIRLAMOTIF, quickSec(raiseUpYourBatBPM, 144 + 16), quickSec(raiseUpYourBatBPM, 144 + 24)),
+        
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 71), quickSec(raiseUpYourBatBPM, 144 - 68)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 66.5), quickSec(raiseUpYourBatBPM, 144 - 64)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 62.5), quickSec(raiseUpYourBatBPM, 144 - 57)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 57), quickSec(raiseUpYourBatBPM, 144 - 55.5)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 54.5), quickSec(raiseUpYourBatBPM, 144 - 52)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 50.5), quickSec(raiseUpYourBatBPM, 144 - 48)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 46.5), quickSec(raiseUpYourBatBPM, 144 - 40.75)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 40.75), quickSec(raiseUpYourBatBPM, 144 - 39.5)),
+        new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 38.5), quickSec(raiseUpYourBatBPM, 144 - 33.5))
     ],
     "", quickSec(raiseUpYourBatBPM, 144 + 110)
 );
@@ -1282,6 +1310,9 @@ const darkSanctuary = new Song("Dark Sanctuary",
         new MotifReference(THELEGENDAMOTIF, quickSec(darkSanctuaryBPM, 120 + 0.5), quickSec(darkSanctuaryBPM, 120 + 2.5)),
 
         new MotifReference(THELEGENDBMOTIF, quickSec(darkSanctuaryBPM, 144), quickSec(darkSanctuaryBPM, 154.5)),
+
+        new MotifReference(DONTFORGETMOTIF, quickSec(darkSanctuaryBPM, 68.5), quickSec(darkSanctuaryBPM, 72)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(darkSanctuaryBPM, 92.5), quickSec(darkSanctuaryBPM, 96))
     ],
     "", quickSec(darkSanctuaryBPM, 168)
 );
