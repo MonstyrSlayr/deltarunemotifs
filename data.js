@@ -996,6 +996,8 @@ const dealGoneWrong = new Song("Deal Gone Wrong",
     ]
 );
 
+// credit to AKarma
+// TODO: add credit to site
 const bigShotBPM = 140;
 const bigShot = new Song("BIG SHOT",
     [SPAMTONAMOTIF, FREEDOMMOTIF],
@@ -1021,7 +1023,7 @@ const bigShot = new Song("BIG SHOT",
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 256), quickSec(bigShotBPM, 272)),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 272), quickSec(bigShotBPM, 288)),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 288), quickSec(bigShotBPM, 300)),
-        new MotifReference(POWEROFNEOMOTIF, quickSec(bigShotBPM, 300), quickSec(bigShotBPM, 304)),
+        new MotifReference(POWEROFNEOMOTIF, quickSec(bigShotBPM, 300), quickSec(bigShotBPM, 304), true),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 304), quickSec(bigShotBPM, 320)),
     ],
     "", quickSec(bigShotBPM, 144 + 144 + 40)
