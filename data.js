@@ -17,9 +17,41 @@ export function formatTime(seconds)
 
 export const allMotifs = [];
 export const allSongs = [];
+export const allContributors = [];
 
 const LINK = isLiveServer() ? "http://127.0.0.1:5500/" : "https://monstyrslayr.github.io/deltarunemotifs/";
 const IMGLINK = LINK + "img/";
+const MOTIFIMGLINK = IMGLINK + "motifs/";
+const CONTRIBIMGLINK = IMGLINK + "contributors/";
+export const ICONSIMGLINK = IMGLINK + "icons/";
+
+class Contributor
+{
+    name;
+    image;
+    credit;
+    showSongs = true;
+    youtube = null;
+    github = null;
+    discord = null;
+
+    constructor(name, image, credit)
+    {
+        this.name = name;
+        this.image = image;
+        this.credit = credit;
+        allContributors.push(this);
+    }
+}
+
+const MONSTYRSLAYRCONTRIB = new Contributor("MonstyrSlayr", CONTRIBIMGLINK + "monstyrslayr.jpg", "Created the website and implemented most of the songs and motifs.");
+MONSTYRSLAYRCONTRIB.youtube = "https://youtube.com/@MonstyrSlayr";
+MONSTYRSLAYRCONTRIB.github = "https://github.com/MonstyrSlayr";
+MONSTYRSLAYRCONTRIB.discord = "https://discord.com/users/434840883637125121";
+MONSTYRSLAYRCONTRIB.showSongs = false;
+const KARMACONTRIB = new Contributor("Karma", null, "Made and contributed to motif guides for many songs.");
+KARMACONTRIB.github = "https://github.com/KarmFF";
+KARMACONTRIB.discord = "https://discord.com/users/315969740419891200";
 
 class Motif
 {
@@ -286,8 +318,9 @@ class Song
     loopPoint = null;
     mainMotifs = null;
     effectRefs = [];
+    contributors = [MONSTYRSLAYRCONTRIB]; // default, you egotistic
 
-    constructor(name, mainMotifs, youtubeId = "", motifRefs = [], id = "", loopPoint = null, effectRefs = [])
+    constructor(name, mainMotifs, youtubeId = "", motifRefs = [], id = "", loopPoint = null, effectRefs = [], contributors = [MONSTYRSLAYRCONTRIB])
     {
         this.name = name;
         this.mainMotifs = mainMotifs;
@@ -299,6 +332,7 @@ class Song
 
         this.loopPoint = loopPoint;
         this.effectRefs = effectRefs;
+        this.contributors = contributors;
 
         allSongs.push(this);
     }
@@ -310,7 +344,7 @@ export function isLiveServer()
 }
 
 const ONCEUPONATIMEMOTIF = new Motif("Once Upon a Time");
-const RUINSMOTIF = new Motif("The Ruins", "", "#815a98", "#42498833", IMGLINK + "ruins.png");
+const RUINSMOTIF = new Motif("The Ruins", "", "#815a98", "#42498833", MOTIFIMGLINK + "ruins.png");
 const UWAAMOTIF = new Motif("Uwa!!");
 const HOMEMOTIF = new Motif("Home");
 const ENEMYAPPROACHINGMOTIF = new Motif("Enemy Approaching", "A");
@@ -327,7 +361,7 @@ const HOTELMOTIF = new Motif("Hotel");
 const OHMOTIF = new Motif("Oh!");
 const SPOOKTUNEMOTIF = new Motif("Spooktune");
 const JINGLEBELLSMOTIF = new Motif("Jingle Bells");
-const YOURBESTNIGHTMAREMOTIF = new Motif("Your Best Nightmare", "", "#ffffff", "#2c180833", IMGLINK + "yourBestNightmare.png");
+const YOURBESTNIGHTMAREMOTIF = new Motif("Your Best Nightmare", "", "#ffffff", "#2c180833", MOTIFIMGLINK + "yourBestNightmare.png");
 YOURBESTNIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
 const POWEROFNEOMOTIF = new Motif("Power of NEO");
 const MEGALOVANIAMOTIF = new Motif("MEGALOVANIA");
@@ -336,35 +370,35 @@ const FLOWEYMOTIF = new Motif("Flowey");
 const TORIELMOTIF = new Motif("Toriel");
 const SANSMOTIF = new Motif("Sans");
 const PAPYRUSMOTIF = new Motif("Papyrus");
-const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", IMGLINK + "undyne.png");
+const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", MOTIFIMGLINK + "undyne.png");
 const ALPHYSMOTIF = new Motif("Alphys");
 const METTATONMOTIF = new Motif("Mettaton");
 const ASRIELMOTIF = new Motif("Asriel");
 const ASGOREMOTIF = new Motif("Asgore");
 const GASTERMOTIF = new Motif("Gaster");
 
-const DONTFORGETMOTIF = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", IMGLINK + "ralsei.png");
+const DONTFORGETMOTIF = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", MOTIFIMGLINK + "ralsei.png");
 const HOMETOWNMOTIF = new Motif("Hometown", "");
-const THELEGENDAMOTIF = new Motif("The Legend", "A", "#c08226", "#00000033", IMGLINK + "thelegend.png");
+const THELEGENDAMOTIF = new Motif("The Legend", "A", "#c08226", "#00000033", MOTIFIMGLINK + "thelegend.png");
 const THELEGENDBMOTIF = new Motif("The Legend", "B", "#c08226", "#00000033");
 const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
-const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK + "thedoor.png");
-const THECHASEMOTIF = new Motif("The Chase", "", "#4a2430", "#00000033", IMGLINK + "rudinnranger.webp");
+const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", MOTIFIMGLINK + "thedoor.png");
+const THECHASEMOTIF = new Motif("The Chase", "", "#4a2430", "#00000033", MOTIFIMGLINK + "rudinnranger.webp");
 const RUDEBUSTERMOTIF = new Motif("Rude Buster", "");
 const SCARLETFORESTMOTIF = new Motif("Scarlet Forest", "");
-const FANFAREMOTIF = new Motif("Fanfare", "", "#fadf39", "#4de3e333", IMGLINK + "torielDarkWorld.png");
+const FANFAREMOTIF = new Motif("Fanfare", "", "#fadf39", "#4de3e333", MOTIFIMGLINK + "torielDarkWorld.png");
 const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "");
 const DARKNESSFALLSMOTIF = new Motif("Darkness Falls", "");
-const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", IMGLINK + "hipshop.png");
-const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", IMGLINK + "jevil.webp");
-const THEHOLYMOTIF = new Motif("THE HOLY", "", "#5496cd", "#00000033", IMGLINK + "theholy.webp");
+const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", MOTIFIMGLINK + "hipshop.png");
+const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", MOTIFIMGLINK + "jevil.webp");
+const THEHOLYMOTIF = new Motif("THE HOLY", "", "#5496cd", "#00000033", MOTIFIMGLINK + "theholy.webp");
 
-const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", IMGLINK + "susiegaster.webp");
-const LANCERAMOTIF = new Motif("Lancer", "A", "#5585bd", "#32323233", IMGLINK + "lancer.png");
+const SUSIEMOTIF = new Motif("Susie", "", "#ae67af", "#54468f33", MOTIFIMGLINK + "susiegaster.webp");
+const LANCERAMOTIF = new Motif("Lancer", "A", "#5585bd", "#32323233", MOTIFIMGLINK + "lancer.png");
 const LANCERBMOTIF = new Motif("Lancer", "B", "#5585bd", "#ffffff33");
 const ROUXLSKAARDMOTIF = new Motif("Rouxls Kaard", "");
-const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", IMGLINK + "king.png");
-KINGMOTIF.imagePlaying = IMGLINK + "kingIdle.gif";
+const KINGMOTIF = new Motif("King", "", "#004876", "#32323233", MOTIFIMGLINK + "king.png");
+KINGMOTIF.imagePlaying = MOTIFIMGLINK + "kingIdle.gif";
 const MANMOTIF = new Motif("man", "");
 
 const CYBERWORLDMOTIF = new Motif("Cyber World", "");
@@ -372,35 +406,35 @@ const ROOTSMOTIF = new Motif("Roots", "");
 const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
 
 const GIRLNEXTDOORMOTIF = new Motif("Girl Next Door", "");
-const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", IMGLINK + "queen.webp");
+const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", MOTIFIMGLINK + "queen.webp");
 const QUEENBMOTIF = new Motif("Queen", "B", "#6fd1ff", "#6d86e733");
 const QUEENCMOTIF = new Motif("Queen", "C", "#6fd1ff", "#6d86e733");
 const QUEENDMOTIF = new Motif("Queen", "D", "#6fd1ff", "#6d86e733");
 const SWEETCAPNCAKESAMOTIF = new Motif("Sweet Cap'n Cakes", "A");
 const SWEETCAPNCAKESBMOTIF = new Motif("Sweet Cap'n Cakes", "B");
-const BERDLYAMOTIF = new Motif("Berdly", "A", "#46b3fc", "#30b18133", IMGLINK + "berdly.webp");
+const BERDLYAMOTIF = new Motif("Berdly", "A", "#46b3fc", "#30b18133", MOTIFIMGLINK + "berdly.webp");
 const BERDLYBMOTIF = new Motif("Berdly", "B", "#46b3fc", "#30b18133");
-const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933", IMGLINK + "spamton.webp");
+const SPAMTONAMOTIF = new Motif("Spamton", "A", "#ffffff", "#ffaec933", MOTIFIMGLINK + "spamton.webp");
 const SPAMTONBMOTIF = new Motif("Spamton", "B", "#ffffff", "#fff30133");
-const LOSTGIRLAMOTIF = new Motif("Lost Girl", "A", "#331d0a", "#332a3b33", IMGLINK + "lostgirl.png");
+const LOSTGIRLAMOTIF = new Motif("Lost Girl", "A", "#331d0a", "#332a3b33", MOTIFIMGLINK + "lostgirl.png");
 const LOSTGIRLBMOTIF = new Motif("Lost Girl", "B", "#331d0a", "#332a3b33");
 
-const FEATUREPRESENTATIONMOTIF = new Motif("Feature Presentation", "", "#500d52", "#cac2b533", IMGLINK + "featurePresentation.png");
-const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", IMGLINK + "tvtime.webp");
-const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", IMGLINK + "doomboard.png");
+const FEATUREPRESENTATIONMOTIF = new Motif("Feature Presentation", "", "#500d52", "#cac2b533", MOTIFIMGLINK + "featurePresentation.png");
+const TVTIMEMOTIF = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", MOTIFIMGLINK + "tvtime.webp");
+const DOOMBOARDMOTIF = new Motif("Doom Board", "", "#d02d86", "#511a8633", MOTIFIMGLINK + "doomboard.png");
 
-const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", IMGLINK + "tenna.webp");
+const TENNAMOTIF = new Motif("Tenna", "", "#db1f53", "#fffb5b33", MOTIFIMGLINK + "tenna.webp");
 
-const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", IMGLINK + "darksanctuary.png");
-const FROMNOWONMOTIF = new Motif("From Now On", "", "#6ad4f5", "#ffffff33", IMGLINK + "mizzleTired.gif");
-FROMNOWONMOTIF.imagePlaying = IMGLINK + "mizzleIdle.gif";
-const EVERHIGHERMOTIF = new Motif("Ever Higher", "", "#ff3651", "#f8c85133", IMGLINK + "cuptain.png");
-const SUBSANCMOTIF = new Motif("Second Sanctuary", "", "#4f378f", "#2d193e33", IMGLINK + "subsequentsanctuary.jpg");
+const SANCTUARYMOTIF = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", MOTIFIMGLINK + "darksanctuary.png");
+const FROMNOWONMOTIF = new Motif("From Now On", "", "#6ad4f5", "#ffffff33", MOTIFIMGLINK + "mizzleTired.gif");
+FROMNOWONMOTIF.imagePlaying = MOTIFIMGLINK + "mizzleIdle.gif";
+const EVERHIGHERMOTIF = new Motif("Ever Higher", "", "#ff3651", "#f8c85133", MOTIFIMGLINK + "cuptain.png");
+const SUBSANCMOTIF = new Motif("Second Sanctuary", "", "#4f378f", "#2d193e33", MOTIFIMGLINK + "subsequentsanctuary.jpg");
 
-const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", IMGLINK + "mike.webp");
-const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", IMGLINK + "gerson.png");
-const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", IMGLINK + "titan.png");
-TITANMOTIF.imagePlaying = IMGLINK + "titan.gif";
+const MIKEMOTIF = new Motif("Mike", "", "#69be60", "#ff0e0033", MOTIFIMGLINK + "mike.webp");
+const GERSONMOTIF = new Motif("Gerson", "", "#64a926", "#fe73fe33", MOTIFIMGLINK + "gerson.png");
+const TITANMOTIF = new Motif("Titan", "", "#ffffff", "#00000033", MOTIFIMGLINK + "titan.png");
+TITANMOTIF.imagePlaying = MOTIFIMGLINK + "titan.gif";
 
 export function getMotifById(id)
 {
@@ -531,6 +565,11 @@ export function getSongsWithMotif(motif)
 export function getSongsWithMotifId(motifId)
 {
     return allSongs.filter(song => song.motifRefs.some(ref => ref.motif.id == motifId));
+}
+
+export function getSongsWithContributor(contrib)
+{
+    return allSongs.filter(song => song.contributors.some(c => c == contrib));
 }
 
 export function getMotifRefCount(motifId)
@@ -742,7 +781,9 @@ const queen = new Song("Queen",
         new MotifReference(QUEENBMOTIF, quickSec(queenBPM, 74.5), quickSec(queenBPM, 88)),
         new MotifReference(QUEENBMOTIF, quickSec(queenBPM, 88), quickSec(queenBPM, 102), true),
     ],
-    "", quickSec(queenBPM, 102)
+    "", quickSec(queenBPM, 102),
+    [],
+    [KARMACONTRIB]
 );
 
 const aSimpleDiversionBPM = 130;
@@ -1002,7 +1043,9 @@ const dealGoneWrong = new Song("Deal Gone Wrong",
     [
         new MotifReference(SPAMTONAMOTIF, 0, quickSec(dealGoneWrongBPM, 76))
     ],
-    "", quickSec(dealGoneWrongBPM, 76)
+    "", quickSec(dealGoneWrongBPM, 76),
+    [],
+    [KARMACONTRIB]
 );
 
 // credit to AKarma
@@ -1035,7 +1078,9 @@ const bigShot = new Song("BIG SHOT",
         new MotifReference(POWEROFNEOMOTIF, quickSec(bigShotBPM, 300), quickSec(bigShotBPM, 304), true),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 304), quickSec(bigShotBPM, 320)),
     ],
-    "", quickSec(bigShotBPM, 144 + 144 + 40)
+    "", quickSec(bigShotBPM, 144 + 144 + 40),
+    [],
+    [KARMACONTRIB]
 );
 
 const aRealBoyBPM = 122.5;
@@ -1052,7 +1097,9 @@ const aRealBoy = new Song("A Real Boy!",
         new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 24), quickSec(aRealBoyBPM, 28), true),
         new MotifReference(TVTIMEMOTIF, quickSec(aRealBoyBPM, 28), quickSec(aRealBoyBPM, 32), true)
     ],
-    "", quickSec(aRealBoyBPM, 32)
+    "", quickSec(aRealBoyBPM, 32),
+    [],
+    [KARMACONTRIB]
 );
 
 const dialtone = new Song("Dialtone",
@@ -1095,7 +1142,9 @@ const raiseUpYourBat = new Song("Raise Up Your Bat",
         new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 40.75), quickSec(raiseUpYourBatBPM, 144 - 39.5)),
         new MotifReference(MIKEMOTIF, quickSec(raiseUpYourBatBPM, 144 - 38.5), quickSec(raiseUpYourBatBPM, 144 - 33.5))
     ],
-    "", quickSec(raiseUpYourBatBPM, 144 + 110)
+    "", quickSec(raiseUpYourBatBPM, 144 + 110),
+    [],
+    [MONSTYRSLAYRCONTRIB, KARMACONTRIB]
 );
 
 const doomBoardBPM = 129 / 2;
