@@ -49,9 +49,10 @@ MONSTYRSLAYRCONTRIB.youtube = "https://youtube.com/@MonstyrSlayr";
 MONSTYRSLAYRCONTRIB.github = "https://github.com/MonstyrSlayr";
 MONSTYRSLAYRCONTRIB.discord = "https://discord.com/users/434840883637125121";
 MONSTYRSLAYRCONTRIB.showSongs = false;
-const KARMACONTRIB = new Contributor("Karma", null, "Made and contributed to motif guides for many songs.");
+const KARMACONTRIB = new Contributor("Karma", CONTRIBIMGLINK + "karma.jpg", "Made and contributed to motif guides for many songs.");
 KARMACONTRIB.github = "https://github.com/KarmFF";
 KARMACONTRIB.discord = "https://discord.com/users/315969740419891200";
+KARMACONTRIB.youtube = "https://www.youtube.com/@thatkarmaguy5356";
 
 class Motif
 {
@@ -711,7 +712,9 @@ const fieldOfHopesAndDreams = new Song("Field of Hopes and Dreams",
         new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 287), quickSec(fieldOfHopesAndDreamsBPM, 301)),
         new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 319), quickSec(fieldOfHopesAndDreamsBPM, 336)),
     ],
-    "", quickSec(fieldOfHopesAndDreamsBPM, 144 + 144 + 48)
+    "", quickSec(fieldOfHopesAndDreamsBPM, 144 + 144 + 48),
+    [],
+    [KARMACONTRIB]
 );
 
 const fanfareBPM = 123;
@@ -733,7 +736,9 @@ const quietAutumn = new Song("Quiet Autumn",
         new MotifReference(QUIETAUTUMNMOTIF, quickSec(quietAutumnBPM, 80), quickSec(quietAutumnBPM, 96)),
         new MotifReference(QUIETAUTUMNMOTIF, quickSec(quietAutumnBPM, 96), quickSec(quietAutumnBPM, 112), true),
     ],
-    "", quickSec(quietAutumnBPM, 112)
+    "", quickSec(quietAutumnBPM, 112),
+    [],
+    [KARMACONTRIB]
 );
 
 const scarletForestBPM = 120;
@@ -756,7 +761,9 @@ const scarletForest = new Song("Scarlet Forest",
 
         new MotifReference(FIELDOFHOPESANDDREAMSMOTIF, quickSec(scarletForestBPM, 222), quickSec(scarletForestBPM, 239)),
     ],
-    "", quickSec(scarletForestBPM, 144 + 112)
+    "", quickSec(scarletForestBPM, 144 + 112),
+    [],
+    [KARMACONTRIB]
 );
 
 const vsLancerBPM = 177;
