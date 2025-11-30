@@ -351,6 +351,7 @@ const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
 const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", IMGLINK + "thedoor.png");
 const THECHASEMOTIF = new Motif("The Chase", "", "#ffffff", "#00000033", IMGLINK + "rudinnranger.webp");
 const RUDEBUSTERMOTIF = new Motif("Rude Buster", "");
+const FIELDOFHOPESANDDREAMSMOTIF = new Motif("Field of Hopes and Dreams", "");
 const SCARLETFORESTMOTIF = new Motif("Scarlet Forest", "");
 const FANFAREMOTIF = new Motif("Fanfare", "", "#fadf39", "#4de3e333", IMGLINK + "torielDarkWorld.png");
 const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "");
@@ -653,6 +654,27 @@ const lancer = new Song("Lancer",
     "", quickSec(lancerBPM, 99)
 );
 
+const fieldOfHopesAndDreamsBPM = 125;
+const fieldOfHopesAndDreams = new Song("Field of Hopes and Dreams",
+    [DONTFORGETMOTIF],
+    "9oDZ2vN9XF0",
+    [
+        new MotifReference(FIELDOFHOPESANDDREAMSMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 96), quickSec(fieldOfHopesAndDreamsBPM, 111)),
+        new MotifReference(FIELDOFHOPESANDDREAMSMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 270), quickSec(fieldOfHopesAndDreamsBPM, 287)),
+        new MotifReference(FIELDOFHOPESANDDREAMSMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 302), quickSec(fieldOfHopesAndDreamsBPM, 319)),
+
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 111), quickSec(fieldOfHopesAndDreamsBPM, 125)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 127), quickSec(fieldOfHopesAndDreamsBPM, 157), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 159), quickSec(fieldOfHopesAndDreamsBPM, 189.5)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 189.5), quickSec(fieldOfHopesAndDreamsBPM, 193.5)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 193.5), quickSec(fieldOfHopesAndDreamsBPM, 197.5)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 197.5), quickSec(fieldOfHopesAndDreamsBPM, 200), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 287), quickSec(fieldOfHopesAndDreamsBPM, 301)),
+        new MotifReference(DONTFORGETMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 319), quickSec(fieldOfHopesAndDreamsBPM, 336)),
+    ],
+    "", quickSec(fieldOfHopesAndDreamsBPM, 144 + 144 + 48)
+);
+
 const fanfareBPM = 123;
 const fanfare = new Song("Fanfare",
     [FANFAREMOTIF],
@@ -661,6 +683,42 @@ const fanfare = new Song("Fanfare",
         new MotifReference(FANFAREMOTIF, quickSec(fanfareBPM, 1), quickSec(fanfareBPM, 12))
     ]
 )
+
+const quietAutumnBPM = 135;
+const quietAutumn = new Song("Quiet Autumn",
+    [QUIETAUTUMNMOTIF],
+    "2PkQJeH9Ers",
+    [
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(quietAutumnBPM, 48), quickSec(quietAutumnBPM, 64)),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(quietAutumnBPM, 64), quickSec(quietAutumnBPM, 80), true),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(quietAutumnBPM, 80), quickSec(quietAutumnBPM, 96)),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(quietAutumnBPM, 96), quickSec(quietAutumnBPM, 112), true),
+    ],
+    "", quickSec(quietAutumnBPM, 112)
+);
+
+const scarletForestBPM = 120;
+const scarletForest = new Song("Scarlet Forest",
+    [QUIETAUTUMNMOTIF, DONTFORGETMOTIF],
+    "6P5iPI1FjO8",
+    [
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 32), quickSec(scarletForestBPM, 40)),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 40), quickSec(scarletForestBPM, 48), true),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 64), quickSec(scarletForestBPM, 72)),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 72), quickSec(scarletForestBPM, 80), true),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 96), quickSec(scarletForestBPM, 104)),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 104), quickSec(scarletForestBPM, 112), true),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 128), quickSec(scarletForestBPM, 136)),
+        new MotifReference(QUIETAUTUMNMOTIF, quickSec(scarletForestBPM, 136), quickSec(scarletForestBPM, 144), true),
+
+        new MotifReference(DONTFORGETMOTIF, quickSec(scarletForestBPM, 185.5), quickSec(scarletForestBPM, 190), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(scarletForestBPM, 217.5), quickSec(scarletForestBPM, 222), true),
+        new MotifReference(DONTFORGETMOTIF, quickSec(scarletForestBPM, 239), quickSec(scarletForestBPM, 256)),
+
+        new MotifReference(FIELDOFHOPESANDDREAMSMOTIF, quickSec(scarletForestBPM, 222), quickSec(scarletForestBPM, 239)),
+    ],
+    "", quickSec(scarletForestBPM, 144 + 112)
+);
 
 const vsLancerBPM = 177;
 const vsLancer = new Song("Vs. Lancer",

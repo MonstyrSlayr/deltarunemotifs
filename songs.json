@@ -284,6 +284,182 @@
     "id": "lancer"
   },
   {
+    "name": "Field of Hopes and Dreams",
+    "youtubeId": "9oDZ2vN9XF0",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Field of Hopes and Dreams",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "fieldofhopesanddreams",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 46.08,
+        "endTime": 53.28
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 53.28,
+        "endTime": 60
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 60.96,
+        "endTime": 75.36
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 76.32,
+        "endTime": 90.96
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 90.96,
+        "endTime": 92.88
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 92.88,
+        "endTime": 94.8
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 94.8,
+        "endTime": 96
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 137.76,
+        "endTime": 144.48
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 153.12,
+        "endTime": 161.28
+      }
+    ],
+    "loopPoint": 161.28,
+    "mainMotifs": [
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/ralsei.png",
+        "imagePlaying": null,
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "fieldofhopesanddreams"
+  },
+  {
     "name": "Fanfare",
     "youtubeId": "OmMdXpuscRY",
     "motifRefs": [
@@ -322,6 +498,319 @@
     ],
     "effectRefs": [],
     "id": "fanfare"
+  },
+  {
+    "name": "Quiet Autumn",
+    "youtubeId": "2PkQJeH9Ers",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 21.333333333333332,
+        "endTime": 28.444444444444443
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 28.444444444444443,
+        "endTime": 35.55555555555556
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 35.55555555555556,
+        "endTime": 42.666666666666664
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 42.666666666666664,
+        "endTime": 49.77777777777777
+      }
+    ],
+    "loopPoint": 49.77777777777777,
+    "mainMotifs": [
+      {
+        "name": "Quiet Autumn",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffffff33",
+        "id": "quietautumn",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "quietautumn"
+  },
+  {
+    "name": "Scarlet Forest",
+    "youtubeId": "6P5iPI1FjO8",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 16,
+        "endTime": 20
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 20,
+        "endTime": 24
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 32,
+        "endTime": 36
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 36,
+        "endTime": 40
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 48,
+        "endTime": 52
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 52,
+        "endTime": 56
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 64,
+        "endTime": 68
+      },
+      {
+        "motif": {
+          "name": "Quiet Autumn",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "quietautumn",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 68,
+        "endTime": 72
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 92.75,
+        "endTime": 96
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 108.75,
+        "endTime": 112
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 119.5,
+        "endTime": 128
+      }
+    ],
+    "loopPoint": 128,
+    "mainMotifs": [
+      {
+        "name": "Quiet Autumn",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffffff33",
+        "id": "quietautumn",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/ralsei.png",
+        "imagePlaying": null,
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "id": "scarletforest"
   },
   {
     "name": "Vs. Lancer",
@@ -894,8 +1383,111 @@
   {
     "name": "Queen",
     "youtubeId": "6XQv5CHmITA",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Queen",
+          "image": "http://127.0.0.1:5500/img/queen.webp",
+          "imagePlaying": null,
+          "color": "#6fd1ff",
+          "color2": "#6d86e733",
+          "id": "queen",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 9.63302752293578
+      },
+      {
+        "motif": {
+          "name": "Queen",
+          "image": "http://127.0.0.1:5500/img/queen.webp",
+          "imagePlaying": null,
+          "color": "#6fd1ff",
+          "color2": "#6d86e733",
+          "id": "queen",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 9.63302752293578,
+        "endTime": 23.394495412844037
+      },
+      {
+        "motif": {
+          "name": "Queen",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#6fd1ff",
+          "color2": "#6d86e733",
+          "id": "queen",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 23.394495412844037,
+        "endTime": 32.477064220183486
+      },
+      {
+        "motif": {
+          "name": "Queen",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#6fd1ff",
+          "color2": "#6d86e733",
+          "id": "queen",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 32.477064220183486,
+        "endTime": 41.00917431192661
+      },
+      {
+        "motif": {
+          "name": "Queen",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#6fd1ff",
+          "color2": "#6d86e733",
+          "id": "queen",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 41.00917431192661,
+        "endTime": 48.440366972477065
+      },
+      {
+        "motif": {
+          "name": "Queen",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#6fd1ff",
+          "color2": "#6d86e733",
+          "id": "queen",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 48.440366972477065,
+        "endTime": 56.14678899082569
+      }
+    ],
+    "loopPoint": 56.14678899082569,
     "mainMotifs": [
       {
         "name": "Queen",
@@ -3390,8 +3982,26 @@
   {
     "name": "Deal Gone Wrong",
     "youtubeId": "cfvB-bVpH7Y",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 31.34020618556701
+      }
+    ],
+    "loopPoint": 31.34020618556701,
     "mainMotifs": [
       {
         "name": "Spamton",
@@ -3412,8 +4022,366 @@
   {
     "name": "BIG SHOT",
     "youtubeId": "V31PVkwzpEY",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 6.857142857142857
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 6.857142857142857,
+        "endTime": 13.714285714285714
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 13.714285714285714,
+        "endTime": 20.57142857142857
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 20.57142857142857,
+        "endTime": 27.428571428571427
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 27.428571428571427,
+        "endTime": 34.285714285714285
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 34.285714285714285,
+        "endTime": 41.14285714285714
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 41.14285714285714,
+        "endTime": 44.57142857142857
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 48,
+        "endTime": 51.42857142857142
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/jevil.webp",
+          "imagePlaying": null,
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 54.857142857142854,
+        "endTime": 68.57142857142857
+      },
+      {
+        "motif": {
+          "name": "Power of NEO",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "powerofneo",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 54.857142857142854,
+        "endTime": 61.71428571428571
+      },
+      {
+        "motif": {
+          "name": "Power of NEO",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "powerofneo",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 61.71428571428571,
+        "endTime": 68.57142857142857
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/jevil.webp",
+          "imagePlaying": null,
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 68.57142857142857,
+        "endTime": 82.28571428571428
+      },
+      {
+        "motif": {
+          "name": "Power of NEO",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "powerofneo",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 68.57142857142857,
+        "endTime": 75.42857142857143
+      },
+      {
+        "motif": {
+          "name": "Power of NEO",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "powerofneo",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 75.42857142857143,
+        "endTime": 82.28571428571428
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 82.28571428571428,
+        "endTime": 87.42857142857143
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": "http://127.0.0.1:5500/img/spamton.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffaec933",
+          "id": "spamton",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 89.14285714285714,
+        "endTime": 90.85714285714285
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 109.71428571428571,
+        "endTime": 116.57142857142857
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 116.57142857142857,
+        "endTime": 123.42857142857142
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 123.42857142857142,
+        "endTime": 128.57142857142856
+      },
+      {
+        "motif": {
+          "name": "Power of NEO",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "powerofneo",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 128.57142857142856,
+        "endTime": 130.28571428571428
+      },
+      {
+        "motif": {
+          "name": "Spamton",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#fff30133",
+          "id": "spamton",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 130.28571428571428,
+        "endTime": 137.14285714285714
+      }
+    ],
+    "loopPoint": 140.57142857142856,
     "mainMotifs": [
       {
         "name": "Spamton",
@@ -3446,8 +4414,145 @@
   {
     "name": "A Real Boy!",
     "youtubeId": "rSXxltE8mQE",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 1.9591836734693877
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 1.9591836734693877,
+        "endTime": 3.9183673469387754
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 3.9183673469387754,
+        "endTime": 5.877551020408163
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 5.877551020408163,
+        "endTime": 7.836734693877551
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 7.836734693877551,
+        "endTime": 9.795918367346939
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 9.795918367346939,
+        "endTime": 11.755102040816325
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 11.755102040816325,
+        "endTime": 13.714285714285714
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 13.714285714285714,
+        "endTime": 15.673469387755102
+      }
+    ],
+    "loopPoint": 15.673469387755102,
     "mainMotifs": [
       {
         "name": "TV Time!",
@@ -3525,6 +4630,159 @@
     "name": "Raise Up Your Bat",
     "youtubeId": "85WD93lz5GU",
     "motifRefs": [
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 38.08695652173913,
+        "endTime": 39.65217391304348
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 40.43478260869565,
+        "endTime": 41.73913043478261
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 42.52173913043478,
+        "endTime": 45.391304347826086
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 45.391304347826086,
+        "endTime": 46.17391304347826
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 46.69565217391304,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 48.78260869565217,
+        "endTime": 50.086956521739125
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 50.869565217391305,
+        "endTime": 53.869565217391305
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 53.869565217391305,
+        "endTime": 54.52173913043478
+      },
+      {
+        "motif": {
+          "name": "Mike",
+          "image": "http://127.0.0.1:5500/img/mike.webp",
+          "imagePlaying": null,
+          "color": "#69be60",
+          "color2": "#ff0e0033",
+          "id": "mike",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 55.04347826086956,
+        "endTime": 57.65217391304348
+      },
       {
         "motif": {
           "name": "Lost Girl",
@@ -6105,6 +7363,23 @@
       },
       {
         "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 43.26315789473684,
+        "endTime": 45.473684210526315
+      },
+      {
+        "motif": {
           "name": "Dark Sanctuary",
           "image": "http://127.0.0.1:5500/img/darksanctuary.png",
           "imagePlaying": null,
@@ -6186,6 +7461,23 @@
         },
         "isVariation": true,
         "startTime": 56.84210526315789,
+        "endTime": 60.63157894736842
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 58.421052631578945,
         "endTime": 60.63157894736842
       },
       {
