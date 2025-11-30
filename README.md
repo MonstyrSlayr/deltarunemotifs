@@ -18,6 +18,8 @@ run the site locally
 
 then just copy the format of the songs i've put i guess
 
+make sure to add yourself as a contributor (under all the other contributors)
+
 then download the objects with the bug "Download Objects" button in the middle of the home page
 
 replace motifs.json and songs.json with the downloaded files

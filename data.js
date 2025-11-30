@@ -1048,8 +1048,6 @@ const dealGoneWrong = new Song("Deal Gone Wrong",
     [KARMACONTRIB]
 );
 
-// credit to AKarma
-// TODO: add credit to site
 const bigShotBPM = 140;
 const bigShot = new Song("BIG SHOT",
     [SPAMTONAMOTIF, FREEDOMMOTIF],
