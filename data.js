@@ -730,19 +730,19 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
 
 //#region CHAPTER 2
 
-const QueenBPM = 109;
+const queenBPM = 109;
 const queen = new Song("Queen",
     [QUEENAMOTIF],
     "6XQv5CHmITA",
     [
-        new MotifReference(QUEENAMOTIF, 0, quickSec(QueenBPM, 17.5)),
-        new MotifReference(QUEENAMOTIF, quickSec(QueenBPM, 17.5), quickSec(QueenBPM, 42.5), true),
-        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 42.5), quickSec(QueenBPM, 59)),
-        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 59), quickSec(QueenBPM, 74.5), true),
-        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 74.5), quickSec(QueenBPM, 88)),
-        new MotifReference(QUEENBMOTIF, quickSec(QueenBPM, 88), quickSec(QueenBPM, 102), true),
+        new MotifReference(QUEENAMOTIF, 0, quickSec(queenBPM, 17.5)),
+        new MotifReference(QUEENAMOTIF, quickSec(queenBPM, 17.5), quickSec(queenBPM, 42.5), true),
+        new MotifReference(QUEENBMOTIF, quickSec(queenBPM, 42.5), quickSec(queenBPM, 59)),
+        new MotifReference(QUEENBMOTIF, quickSec(queenBPM, 59), quickSec(queenBPM, 74.5), true),
+        new MotifReference(QUEENBMOTIF, quickSec(queenBPM, 74.5), quickSec(queenBPM, 88)),
+        new MotifReference(QUEENBMOTIF, quickSec(queenBPM, 88), quickSec(queenBPM, 102), true),
     ],
-    "", quickSec(QueenBPM, 102)
+    "", quickSec(queenBPM, 102)
 );
 
 const aSimpleDiversionBPM = 130;
