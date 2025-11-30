@@ -283,7 +283,7 @@ input[type="checkbox"]
     margin: 4em 1em;
 }
 
-.motifList, .songList, #motifList, #songList
+.motifList, .songList, #motifList, #songList, #contribList, .contribList
 {
     width: 50%;
     padding: 0;
@@ -296,7 +296,33 @@ input[type="checkbox"]
     position: relative;
 }
 
-.motifList, .songList
+.contribDiv
+{
+    border: var(--cool-border);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 0.25em;
+}
+
+.contribImg
+{
+    width: 10em;
+    height: 10em;
+    border-radius: 5em;
+}
+
+.linksDiv
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.motifList, .songList, .contribList
 {
     width: 100%;
 }

@@ -6,6 +6,7 @@ let players = {}; // store players by videoId
 let updateIntervals = {};
 
 let prev = null;
+let trueSeek = null;
 
 const SONG_OFFSET = 0.15; // account for css bullshit
 
@@ -209,6 +210,7 @@ function onReady()
                         {
                             players[videoId].seekTo(motifRef.startTime, true);
                             players[videoId].playVideo();
+                            trueSeek = motifRef.startTime;
                         });
                     }
 
@@ -232,8 +234,9 @@ function onReady()
 
                     updateIntervals[videoId] = setInterval(() =>
                     {
-                        const current = players[videoId].getCurrentTime();
+                        const current = trueSeek == null ? players[videoId].getCurrentTime() : trueSeek;
                         const duration = daSong.loopPoint == null ? players[videoId].getDuration() : daSong.loopPoint;
+                        trueSeek = null;
 
                         if (daSong.loopPoint != null)
                         {
@@ -317,7 +320,7 @@ function onReady()
                             }
                         });
 
-                        allEffects.filter(effect => !effect.isOneshot).forEach(effect =>
+                        [...allEffects].filter(effect => !effect.isOneshot).forEach(effect =>
                         {
                             let playing = false;
 
@@ -348,8 +351,8 @@ function onReady()
                         {
                             for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
                             {
-                                if ((prev != null && current > effectRef.startTime + SONG_OFFSET && prev <= effectRef.startTime + SONG_OFFSET)
-                                || (prev == null && current == effectRef.startTime + SONG_OFFSET))
+                                if ((prev != null && current > effectRef.startTime && prev <= effectRef.startTime)
+                                || (prev == null && current == effectRef.startTime))
                                 {
                                     effect.onDeactive();
                                     effect.onActive();
