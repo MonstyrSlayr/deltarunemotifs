@@ -804,12 +804,46 @@ const featurePresentation = new Song("Feature Presentation",
     ]
 );
 
+const ruderBusterBPM = 130;
 const ruderBuster = new Song("Ruder Buster",
     [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
     "_A8SQAQ_yRo",
     [
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(ruderBusterBPM, 18.5), quickSec(ruderBusterBPM, 23.5), true),
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(ruderBusterBPM, 18.5 + 8), quickSec(ruderBusterBPM, 23.5 + 8), true),
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(ruderBusterBPM, 18.5 + 16), quickSec(ruderBusterBPM, 23.5 + 16), true),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 39.75), quickSec(ruderBusterBPM, 41.5)),
 
-    ]
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 48.75), quickSec(ruderBusterBPM, 56.75)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 56.75), quickSec(ruderBusterBPM, 60)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 60.75), quickSec(ruderBusterBPM, 64)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 64.75), quickSec(ruderBusterBPM, 72.75), true),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 72.75), quickSec(ruderBusterBPM, 76)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 76.75), quickSec(ruderBusterBPM, 80)),
+
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 48.75 + 32), quickSec(ruderBusterBPM, 56.75 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 56.75 + 32), quickSec(ruderBusterBPM, 60 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 60.75 + 32), quickSec(ruderBusterBPM, 64 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 64.75 + 32), quickSec(ruderBusterBPM, 72.75 + 32), true),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 72.75 + 32), quickSec(ruderBusterBPM, 76 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 76.75 + 32), quickSec(ruderBusterBPM, 80 + 32)),
+
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(ruderBusterBPM, 112.5), quickSec(ruderBusterBPM, 112 + 15.5), true),
+
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 135.75), quickSec(ruderBusterBPM, 137.5)),
+
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 0.75), quickSec(ruderBusterBPM, 144 + 3.75)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 3.75), quickSec(ruderBusterBPM, 144 + 5.75)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 15.75), quickSec(ruderBusterBPM, 144 + 17.5)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 17.5), quickSec(ruderBusterBPM, 144 + 19)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 19), quickSec(ruderBusterBPM, 144 + 20.5)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 0.75 + 32), quickSec(ruderBusterBPM, 144 + 3.75 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 3.75 + 32), quickSec(ruderBusterBPM, 144 + 5.75 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 15.75 + 32), quickSec(ruderBusterBPM, 144 + 17.5 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 17.5 + 32), quickSec(ruderBusterBPM, 144 + 19 + 32)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 19 + 32), quickSec(ruderBusterBPM, 144 + 20.5 + 32)),
+    ],
+    "", quickSec(ruderBusterBPM, 144 + 64 + 16.4) // genuinely how
 );
 
 const vaporBuster = new Song("Vapor Buster",
