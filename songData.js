@@ -229,12 +229,14 @@ function quickSec(bpm, numberOfBeats)
 
 //#region CHAPTER 1
 
+const theDoorBPM = 69; // nice
 const theDoor = new Song("The Door",
     [Motifs.THEDOOR],
     "iJtIX0sQn0o",
     [
-
-    ]
+        new MotifReference(Motifs.THEDOOR, quickSec(theDoorBPM, 16), quickSec(theDoorBPM, 48))
+    ],
+    "", quickSec(theDoorBPM, 48)
 );
 
 const theChase = new Song("The Chase",
