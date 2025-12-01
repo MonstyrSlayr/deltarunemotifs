@@ -239,12 +239,15 @@ const theDoor = new Song("The Door",
     "", quickSec(theDoorBPM, 48)
 );
 
+const theChaseBPM = 170;
 const theChase = new Song("The Chase",
     [Motifs.THECHASE],
     "hWWVWfQW1H4",
     [
-
-    ]
+        new MotifReference(Motifs.THEDOOR, quickSec(theChaseBPM, 32), quickSec(theChaseBPM, 64)),
+        new MotifReference(Motifs.THECHASE, quickSec(theChaseBPM, 68), quickSec(theChaseBPM, 96)),
+    ],
+    "", quickSec(theChaseBPM, 96)
 );
 
 const theLegendBPM = 110;
