@@ -327,12 +327,16 @@ const fanfare = new Song("Fanfare",
     ]
 );
 
+const lanternBPM = 136;
 const lantern = new Song("Lantern",
     [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
     "5kJ4JJSsJMQ",
     [
-
-    ]
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(lanternBPM, 2), quickSec(lanternBPM, 48)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(lanternBPM, 50), quickSec(lanternBPM, 96)),
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(lanternBPM, 98), quickSec(lanternBPM, 96 + 48)),
+    ],
+    "", quickSec(lanternBPM, 96 + 48 + 12)
 );
 
 const quietAutumnBPM = 135;
