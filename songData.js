@@ -846,12 +846,17 @@ const ruderBuster = new Song("Ruder Buster",
     "", quickSec(ruderBusterBPM, 144 + 64 + 16.4) // genuinely how
 );
 
+const vaporBusterBPM = 100;
 const vaporBuster = new Song("Vapor Buster",
     [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
     "3vh8LYSuOvA",
     [
-
-    ]
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(vaporBusterBPM, 48.75), quickSec(vaporBusterBPM, 64)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(vaporBusterBPM, 64.75), quickSec(vaporBusterBPM, 80)),
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(vaporBusterBPM, 80.75), quickSec(vaporBusterBPM, 112)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(vaporBusterBPM, 144.75 + 32), quickSec(vaporBusterBPM, 144 + 32 + 4)),
+    ],
+    "", quickSec(vaporBusterBPM, 144 + 32 + 16.4)
 );
 
 const raiseUpYourBatBPM = 115;
