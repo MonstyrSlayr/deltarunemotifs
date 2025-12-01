@@ -289,6 +289,18 @@
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null
+      },
+      {
+        "name": "Lancer",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#5585bd",
+        "color2": "#ffffff33",
+        "id": "lancer",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
       }
     ],
     "effectRefs": [],
@@ -1027,6 +1039,18 @@
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null
+      },
+      {
+        "name": "Lancer",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#5585bd",
+        "color2": "#ffffff33",
+        "id": "lancer",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
       }
     ],
     "effectRefs": [],
@@ -1670,6 +1694,18 @@
         "color2": "#6d86e733",
         "id": "queen",
         "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Queen",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#6fd1ff",
+        "color2": "#6d86e733",
+        "id": "queen",
+        "letter": "B",
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null

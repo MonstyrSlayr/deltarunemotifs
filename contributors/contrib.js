@@ -1,4 +1,5 @@
-import { allContributors, ICONSIMGLINK, createSongDiv, getSongsWithContributor } from "../data.js";
+import { allContributors, ICONSIMGLINK } from "../contribData.js";
+import { createSongDiv, getSongsWithContributor } from "../songData.js";
 
 const contribDiv = document.getElementById("contribList");
 

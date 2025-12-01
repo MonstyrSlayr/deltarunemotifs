@@ -1,4 +1,4 @@
-import { allSongs, createSongDiv } from "../data.js";
+import { allSongs, createSongDiv } from "../songData.js";
 
 const allSongsDiv = document.getElementById("songList");
 const sortInput = document.getElementById("sortInput");

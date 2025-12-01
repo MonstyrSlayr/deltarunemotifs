@@ -1,4 +1,6 @@
-import { createMotifDiv, createSongDiv, getMotifById, getMotifsById, getSongsWithMotif, formatTime } from "../data.js";
+import { formatTime } from "../data.js";
+import { getMotifById, getMotifsById } from "../motifData.js";
+import { createMotifDiv, createSongDiv, getSongsWithMotif } from "../songData.js";
 
 function getLastFolder(url, num)
 {

@@ -1,4 +1,5 @@
-import { allMotifs, allSongs, createMotifDiv, getMotifRefCount, getSongsWithMotif, getSongsWithMotifId } from "../data.js";
+import { allMotifs } from "../motifData.js";
+import { allSongs, getMotifRefCount, getSongsWithMotifId, createMotifDiv } from "../songData.js";
 
 const allMotifsDiv = document.getElementById("motifList");
 const sortInput = document.getElementById("sortInput");

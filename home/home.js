@@ -1,4 +1,6 @@
-import { exportObjectsToJson, isLiveServer, allMotifs, allSongs } from "../data.js";
+import { exportObjectsToJson, isLiveServer } from "../data.js";
+import { allMotifs } from "../motifData.js";
+import { allSongs } from "../songData.js";
 
 if (isLiveServer())
 {

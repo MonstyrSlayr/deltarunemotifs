@@ -1,4 +1,6 @@
-import { createMotifDiv, createSongDiv, getMotifsById, getSongById, isLiveServer, formatTime } from "../data.js";
+import { isLiveServer, formatTime } from "../data.js";
+import { getMotifsById } from "../motifData.js";
+import { createMotifDiv, createSongDiv, getSongById } from "../songData.js";
 
 let isDragging = false; // maus
 
