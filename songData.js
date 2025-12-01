@@ -781,12 +781,15 @@ const aRealBoy = new Song("A Real Boy!",
     [Contributors.KARMA]
 );
 
+const dialtoneBPM = 130;
 const dialtone = new Song("Dialtone",
     [Motifs.FREEDOM],
     "Cki-mnHhNtY",
     [
-
-    ]
+        new MotifReference(Motifs.FREEDOM, quickSec(dialtoneBPM, 24), quickSec(dialtoneBPM, 24 + 18)),
+        new MotifReference(Motifs.FREEDOM, quickSec(dialtoneBPM, 24 + 48), quickSec(dialtoneBPM, 24 + 18 + 48)),
+    ],
+    "", quickSec(dialtoneBPM, 96)
 );
 
 //#endregion
