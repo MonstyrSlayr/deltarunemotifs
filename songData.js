@@ -229,6 +229,22 @@ function quickSec(bpm, numberOfBeats)
 
 //#region CHAPTER 1
 
+const theDoor = new Song("The Door",
+    [Motifs.THEDOOR],
+    "iJtIX0sQn0o",
+    [
+
+    ]
+);
+
+const theChase = new Song("The Chase",
+    [Motifs.THECHASE],
+    "hWWVWfQW1H4",
+    [
+
+    ]
+);
+
 const theLegendBPM = 110;
 const theLegend = new Song("The Legend",
     [Motifs.THELEGENDA],
@@ -261,6 +277,14 @@ const lancer = new Song("Lancer",
     "", quickSec(lancerBPM, 99)
 );
 
+const rudeBuster = new Song("Rude Buster",
+    [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
+    "GPL5Hkl11IQ",
+    [
+
+    ]
+);
+
 const fieldOfHopesAndDreamsBPM = 125;
 const fieldOfHopesAndDreams = new Song("Field of Hopes and Dreams",
     [Motifs.FIELDOFHOPESANDDREAMS, Motifs.DONTFORGET],
@@ -291,7 +315,15 @@ const fanfare = new Song("Fanfare",
     [
         new MotifReference(Motifs.FANFARE, quickSec(fanfareBPM, 1), quickSec(fanfareBPM, 12))
     ]
-)
+);
+
+const lantern = new Song("Lantern",
+    [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
+    "5kJ4JJSsJMQ",
+    [
+
+    ]
+);
 
 const quietAutumnBPM = 135;
 const quietAutumn = new Song("Quiet Autumn",
@@ -753,7 +785,23 @@ const featurePresentation = new Song("Feature Presentation",
     [
         
     ]
-)
+);
+
+const ruderBuster = new Song("Ruder Buster",
+    [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
+    "_A8SQAQ_yRo",
+    [
+
+    ]
+);
+
+const vaporBuster = new Song("Vapor Buster",
+    [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
+    "3vh8LYSuOvA",
+    [
+
+    ]
+);
 
 const raiseUpYourBatBPM = 115;
 const raiseUpYourBat = new Song("Raise Up Your Bat",

@@ -1,5 +1,71 @@
 [
   {
+    "name": "The Door",
+    "youtubeId": "iJtIX0sQn0o",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "The Door",
+        "image": "http://127.0.0.1:5500/img/motifs/thedoor.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#00000033",
+        "id": "thedoor",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "thedoor"
+  },
+  {
+    "name": "The Chase",
+    "youtubeId": "hWWVWfQW1H4",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "The Chase",
+        "image": "http://127.0.0.1:5500/img/motifs/rudinnranger.webp",
+        "imagePlaying": null,
+        "color": "#4a2430",
+        "color2": "#00000033",
+        "id": "thechase",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "thechase"
+  },
+  {
     "name": "The Legend",
     "youtubeId": "PibYmujLubI",
     "motifRefs": [
@@ -318,6 +384,51 @@
     "id": "lancer"
   },
   {
+    "name": "Rude Buster",
+    "youtubeId": "GPL5Hkl11IQ",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Rude Buster",
+        "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+        "imagePlaying": null,
+        "color": "#3ee9c2",
+        "color2": "#e24dfd33",
+        "id": "rudebuster",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Rude Buster",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#e24dfd",
+        "color2": "#3ee9c233",
+        "id": "rudebuster",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "rudebuster"
+  },
+  {
     "name": "Field of Hopes and Dreams",
     "youtubeId": "9oDZ2vN9XF0",
     "motifRefs": [
@@ -600,6 +711,51 @@
       }
     ],
     "id": "fanfare"
+  },
+  {
+    "name": "Lantern",
+    "youtubeId": "5kJ4JJSsJMQ",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Rude Buster",
+        "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+        "imagePlaying": null,
+        "color": "#3ee9c2",
+        "color2": "#e24dfd33",
+        "id": "rudebuster",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Rude Buster",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#e24dfd",
+        "color2": "#3ee9c233",
+        "id": "rudebuster",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "lantern"
   },
   {
     "name": "Quiet Autumn",
@@ -5108,6 +5264,96 @@
       }
     ],
     "id": "featurepresentation"
+  },
+  {
+    "name": "Ruder Buster",
+    "youtubeId": "_A8SQAQ_yRo",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Rude Buster",
+        "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+        "imagePlaying": null,
+        "color": "#3ee9c2",
+        "color2": "#e24dfd33",
+        "id": "rudebuster",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Rude Buster",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#e24dfd",
+        "color2": "#3ee9c233",
+        "id": "rudebuster",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "ruderbuster"
+  },
+  {
+    "name": "Vapor Buster",
+    "youtubeId": "3vh8LYSuOvA",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Rude Buster",
+        "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+        "imagePlaying": null,
+        "color": "#3ee9c2",
+        "color2": "#e24dfd33",
+        "id": "rudebuster",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Rude Buster",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#e24dfd",
+        "color2": "#3ee9c233",
+        "id": "rudebuster",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "vaporbuster"
   },
   {
     "name": "Raise Up Your Bat",
