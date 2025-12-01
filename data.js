@@ -364,7 +364,7 @@ const SPOOKTUNEMOTIF = new Motif("Spooktune");
 const JINGLEBELLSMOTIF = new Motif("Jingle Bells");
 const YOURBESTNIGHTMAREMOTIF = new Motif("Your Best Nightmare", "", "#ffffff", "#2c180833", MOTIFIMGLINK + "yourBestNightmare.png");
 YOURBESTNIGHTMAREMOTIF.toString = function() { return "Your Best Nightmare / The Dark Truth"; }
-const POWEROFNEOMOTIF = new Motif("Power of NEO");
+const POWEROFNEOMOTIF = new Motif("Power of NEO", "", "#fa0ef3", "#fef10033", MOTIFIMGLINK + "mettatonNeo.png");
 const MEGALOVANIAMOTIF = new Motif("MEGALOVANIA");
 
 const FLOWEYMOTIF = new Motif("Flowey");
@@ -372,6 +372,7 @@ const TORIELMOTIF = new Motif("Toriel");
 const SANSMOTIF = new Motif("Sans");
 const PAPYRUSMOTIF = new Motif("Papyrus");
 const UNDYNEMOTIF = new Motif("Undyne", "", "#6299c1", "#c9473e33", MOTIFIMGLINK + "undyne.png");
+const DUMMYMOTIF = new Motif("Dummy!", "", "#ffbc3a", "#00000033", MOTIFIMGLINK + "madDummy.png");
 const ALPHYSMOTIF = new Motif("Alphys");
 const METTATONMOTIF = new Motif("Mettaton");
 const ASRIELMOTIF = new Motif("Asriel");
@@ -385,11 +386,11 @@ const THELEGENDBMOTIF = new Motif("The Legend", "B", "#c08226", "#00000033");
 const THELEGENDCMOTIF = new Motif("The Legend", "C", "#c08226", "#00000033");
 const THEDOORMOTIF = new Motif("The Door", "", "#ffffff", "#00000033", MOTIFIMGLINK + "thedoor.png");
 const THECHASEMOTIF = new Motif("The Chase", "", "#4a2430", "#00000033", MOTIFIMGLINK + "rudinnranger.webp");
-const RUDEBUSTERMOTIF = new Motif("Rude Buster", "");
-const FIELDOFHOPESANDDREAMSMOTIF = new Motif("Field of Hopes and Dreams", "");
-const SCARLETFORESTMOTIF = new Motif("Scarlet Forest", "");
+const RUDEBUSTERAMOTIF = new Motif("Rude Buster", "A");
+const RUDEBUSTERBMOTIF = new Motif("Rude Buster", "B");
+const FIELDOFHOPESANDDREAMSMOTIF = new Motif("Field of Hopes and Dreams", "", "#ffffff", "#234a3d33", MOTIFIMGLINK + "rudinn.webp");
 const FANFAREMOTIF = new Motif("Fanfare", "", "#fadf39", "#4de3e333", MOTIFIMGLINK + "torielDarkWorld.png");
-const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "");
+const QUIETAUTUMNMOTIF = new Motif("Quiet Autumn", "", "#f055c0", "#22b14c33", MOTIFIMGLINK + "hathyBakeSale.webp");
 const DARKNESSFALLSMOTIF = new Motif("Darkness Falls", "");
 const HIPSHOPMOTIF = new Motif("Hip Shop", "", "#ffffff", "#b6497233", MOTIFIMGLINK + "hipshop.png");
 const FREEDOMMOTIF = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", MOTIFIMGLINK + "jevil.webp");
@@ -405,7 +406,7 @@ const MANMOTIF = new Motif("man", "");
 
 const CYBERWORLDMOTIF = new Motif("Cyber World", "");
 const ROOTSMOTIF = new Motif("Roots", "");
-const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "");
+const POWERSCOMBINEDMOTIF = new Motif("Knock You Down !!", "", "#99e550", "#8eaaea33", MOTIFIMGLINK + "gigaQueen.png");
 
 const GIRLNEXTDOORMOTIF = new Motif("Girl Next Door", "");
 const QUEENAMOTIF = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", MOTIFIMGLINK + "queen.webp");
@@ -696,7 +697,7 @@ const lancer = new Song("Lancer",
 
 const fieldOfHopesAndDreamsBPM = 125;
 const fieldOfHopesAndDreams = new Song("Field of Hopes and Dreams",
-    [DONTFORGETMOTIF],
+    [FIELDOFHOPESANDDREAMSMOTIF, DONTFORGETMOTIF],
     "9oDZ2vN9XF0",
     [
         new MotifReference(FIELDOFHOPESANDDREAMSMOTIF, quickSec(fieldOfHopesAndDreamsBPM, 96), quickSec(fieldOfHopesAndDreamsBPM, 111)),
@@ -1135,15 +1136,18 @@ const bigShot = new Song("BIG SHOT",
         new MotifReference(POWEROFNEOMOTIF, quickSec(bigShotBPM, 176), quickSec(bigShotBPM, 192), true),
         new MotifReference(SPAMTONAMOTIF, quickSec(bigShotBPM, 192), quickSec(bigShotBPM, 204)),
         new MotifReference(SPAMTONAMOTIF, quickSec(bigShotBPM, 208), quickSec(bigShotBPM, 212)),
+
+        new MotifReference(DUMMYMOTIF, quickSec(bigShotBPM, 256 - 4), quickSec(bigShotBPM, 256)),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 256), quickSec(bigShotBPM, 272)),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 272), quickSec(bigShotBPM, 288)),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 288), quickSec(bigShotBPM, 300)),
         new MotifReference(POWEROFNEOMOTIF, quickSec(bigShotBPM, 300), quickSec(bigShotBPM, 304), true),
         new MotifReference(SPAMTONBMOTIF, quickSec(bigShotBPM, 304), quickSec(bigShotBPM, 320)),
+        new MotifReference(DUMMYMOTIF, quickSec(bigShotBPM, 144 + 144 + 40 - 8), quickSec(bigShotBPM, 144 + 144 + 40)),
     ],
     "", quickSec(bigShotBPM, 144 + 144 + 40),
     [],
-    [KARMACONTRIB]
+    [MONSTYRSLAYRCONTRIB, KARMACONTRIB]
 );
 
 const aRealBoyBPM = 122.5;
