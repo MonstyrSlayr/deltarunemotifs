@@ -282,12 +282,17 @@ const lancer = new Song("Lancer",
     "", quickSec(lancerBPM, 99)
 );
 
+const rudeBusterBPM = 140;
 const rudeBuster = new Song("Rude Buster",
     [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
     "GPL5Hkl11IQ",
     [
-
-    ]
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(rudeBusterBPM, 32.75), quickSec(rudeBusterBPM, 48)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(rudeBusterBPM, 48.75), quickSec(rudeBusterBPM, 64)),
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(rudeBusterBPM, 64.75), quickSec(rudeBusterBPM, 96)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(rudeBusterBPM, 144.75 + 16), quickSec(rudeBusterBPM, 144 + 16 + 4)),
+    ],
+    "", quickSec(rudeBusterBPM, 144 + 32)
 );
 
 const fieldOfHopesAndDreamsBPM = 125;
