@@ -2,8 +2,26 @@
   {
     "name": "The Door",
     "youtubeId": "iJtIX0sQn0o",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "The Door",
+          "image": "http://127.0.0.1:5500/img/motifs/thedoor.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "thedoor",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 13.91304347826087,
+        "endTime": 41.73913043478261
+      }
+    ],
+    "loopPoint": 41.73913043478261,
     "mainMotifs": [
       {
         "name": "The Door",
@@ -35,8 +53,43 @@
   {
     "name": "The Chase",
     "youtubeId": "hWWVWfQW1H4",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "The Door",
+          "image": "http://127.0.0.1:5500/img/motifs/thedoor.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "thedoor",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 11.294117647058824,
+        "endTime": 22.58823529411765
+      },
+      {
+        "motif": {
+          "name": "The Chase",
+          "image": "http://127.0.0.1:5500/img/motifs/rudinnranger.webp",
+          "imagePlaying": null,
+          "color": "#4a2430",
+          "color2": "#00000033",
+          "id": "thechase",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 24,
+        "endTime": 33.88235294117647
+      }
+    ],
+    "loopPoint": 33.88235294117647,
     "mainMotifs": [
       {
         "name": "The Chase",
@@ -386,8 +439,77 @@
   {
     "name": "Rude Buster",
     "youtubeId": "GPL5Hkl11IQ",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 14.035714285714285,
+        "endTime": 20.57142857142857
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 20.892857142857142,
+        "endTime": 27.428571428571427
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 27.75,
+        "endTime": 41.14285714285714
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 68.89285714285714,
+        "endTime": 70.28571428571428
+      }
+    ],
+    "loopPoint": 75.42857142857143,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -715,8 +837,60 @@
   {
     "name": "Lantern",
     "youtubeId": "5kJ4JJSsJMQ",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 0.8823529411764706,
+        "endTime": 21.176470588235293
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 22.058823529411764,
+        "endTime": 42.35294117647059
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 43.23529411764706,
+        "endTime": 63.529411764705884
+      }
+    ],
+    "loopPoint": 68.82352941176471,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -1503,7 +1677,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -1520,7 +1694,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -1537,7 +1711,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -1554,7 +1728,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -1709,7 +1883,7 @@
       {
         "name": "Freedom",
         "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-        "imagePlaying": null,
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
         "color": "#6d6ebf",
         "color2": "#fbfd0133",
         "id": "freedom",
@@ -1880,6 +2054,290 @@
       }
     ],
     "id": "queen"
+  },
+  {
+    "name": "A CYBER'S WORLD?",
+    "youtubeId": "EM8WM9hUFO8",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 32.82051282051282,
+        "endTime": 49.230769230769226
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 49.230769230769226,
+        "endTime": 65.64102564102564
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 71.7948717948718,
+        "endTime": 73.84615384615384
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 80,
+        "endTime": 82.05128205128204
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 88.2051282051282,
+        "endTime": 90.25641025641025
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 96.41025641025641,
+        "endTime": 98.46153846153845
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 98.46153846153845,
+        "endTime": 106.66666666666666
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 106.66666666666666,
+        "endTime": 114.87179487179486
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 114.87179487179486,
+        "endTime": 123.07692307692307
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 123.07692307692307,
+        "endTime": 131.28205128205127
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 131.28205128205127,
+        "endTime": 139.48717948717947
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 139.48717948717947,
+        "endTime": 147.69230769230768
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 147.69230769230768,
+        "endTime": 155.89743589743588
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 155.89743589743588,
+        "endTime": 164.1025641025641
+      }
+    ],
+    "loopPoint": 164.1025641025641,
+    "mainMotifs": [
+      {
+        "name": "Cyber World",
+        "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+        "imagePlaying": null,
+        "color": "#62ffba",
+        "color2": "#313131",
+        "id": "cyberworld",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Cyber World",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#62ffba",
+        "color2": "#313131",
+        "id": "cyberworld",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "acybersworld"
   },
   {
     "name": "A Simple Diversion",
@@ -2261,6 +2719,222 @@
       }
     ],
     "id": "smartrace"
+  },
+  {
+    "name": "WELCOME TO THE CITY",
+    "youtubeId": "XIPgJJyiTEY",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 12.842809364548495,
+        "endTime": 25.68561872909699
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 25.68561872909699,
+        "endTime": 38.52842809364549
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 38.52842809364549,
+        "endTime": 51.37123745819398
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 55.986622073578594,
+        "endTime": 57.79264214046823
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 68.82943143812709,
+        "endTime": 70.63545150501672
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 77.05685618729098,
+        "endTime": 83.47826086956522
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 83.47826086956522,
+        "endTime": 89.89966555183946
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 89.89966555183946,
+        "endTime": 96.32107023411372
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 96.32107023411372,
+        "endTime": 102.74247491638796
+      },
+      {
+        "motif": {
+          "name": "Cyber World",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#62ffba",
+          "color2": "#313131",
+          "id": "cyberworld",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 102.74247491638796,
+        "endTime": 110.36789297658864
+      }
+    ],
+    "loopPoint": 112.37458193979933,
+    "mainMotifs": [
+      {
+        "name": "Cyber World",
+        "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+        "imagePlaying": null,
+        "color": "#62ffba",
+        "color2": "#313131",
+        "id": "cyberworld",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Cyber World",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#62ffba",
+        "color2": "#313131",
+        "id": "cyberworld",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "welcometothecity"
   },
   {
     "name": "Cool Mixtape",
@@ -4715,7 +5389,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -4766,7 +5440,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -4984,7 +5658,7 @@
       {
         "name": "Freedom",
         "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-        "imagePlaying": null,
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
         "color": "#6d6ebf",
         "color2": "#fbfd0133",
         "id": "freedom",
@@ -5190,13 +5864,48 @@
   {
     "name": "Dialtone",
     "youtubeId": "Cki-mnHhNtY",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 11.076923076923077,
+        "endTime": 19.384615384615387
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 33.23076923076923,
+        "endTime": 41.53846153846154
+      }
+    ],
+    "loopPoint": 44.30769230769231,
     "mainMotifs": [
       {
         "name": "Freedom",
         "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-        "imagePlaying": null,
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
         "color": "#6d6ebf",
         "color2": "#fbfd0133",
         "id": "freedom",
@@ -5268,8 +5977,485 @@
   {
     "name": "Ruder Buster",
     "youtubeId": "_A8SQAQ_yRo",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 8.538461538461538,
+        "endTime": 10.846153846153847
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 12.230769230769232,
+        "endTime": 14.53846153846154
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 15.923076923076923,
+        "endTime": 18.230769230769234
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 18.346153846153847,
+        "endTime": 19.153846153846153
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 22.5,
+        "endTime": 26.192307692307693
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 26.192307692307693,
+        "endTime": 27.692307692307693
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 28.03846153846154,
+        "endTime": 29.53846153846154
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 29.884615384615387,
+        "endTime": 33.57692307692308
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 33.57692307692308,
+        "endTime": 35.07692307692308
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 35.42307692307693,
+        "endTime": 36.92307692307693
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 37.269230769230774,
+        "endTime": 40.96153846153847
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 40.96153846153847,
+        "endTime": 42.46153846153847
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 42.80769230769231,
+        "endTime": 44.30769230769231
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 44.65384615384615,
+        "endTime": 48.34615384615385
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 48.34615384615385,
+        "endTime": 49.84615384615385
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 50.19230769230769,
+        "endTime": 51.69230769230769
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": true,
+        "startTime": 51.92307692307693,
+        "endTime": 58.84615384615385
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 62.65384615384616,
+        "endTime": 63.46153846153847
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 66.8076923076923,
+        "endTime": 68.1923076923077
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 68.1923076923077,
+        "endTime": 69.11538461538461
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 73.73076923076924,
+        "endTime": 74.53846153846155
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 74.53846153846155,
+        "endTime": 75.23076923076924
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 75.23076923076924,
+        "endTime": 75.92307692307693
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 81.57692307692308,
+        "endTime": 82.96153846153847
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 82.96153846153847,
+        "endTime": 83.88461538461539
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 88.5,
+        "endTime": 89.3076923076923
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 89.3076923076923,
+        "endTime": 90
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 90,
+        "endTime": 90.6923076923077
+      }
+    ],
+    "loopPoint": 103.56923076923077,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -5313,8 +6499,77 @@
   {
     "name": "Vapor Buster",
     "youtubeId": "3vh8LYSuOvA",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 29.25,
+        "endTime": 38.4
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 38.85,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 48.449999999999996,
+        "endTime": 67.2
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null
+        },
+        "isVariation": false,
+        "startTime": 106.05,
+        "endTime": 108
+      }
+    ],
+    "loopPoint": 115.44,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -10896,7 +12151,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -10913,7 +12168,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -10930,7 +12185,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -10947,7 +12202,7 @@
         "motif": {
           "name": "Freedom",
           "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
           "color": "#6d6ebf",
           "color2": "#fbfd0133",
           "id": "freedom",
@@ -10978,7 +12233,7 @@
       {
         "name": "Freedom",
         "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-        "imagePlaying": null,
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
         "color": "#6d6ebf",
         "color2": "#fbfd0133",
         "id": "freedom",
@@ -19200,5 +20455,50 @@
       }
     ],
     "id": "catswing"
+  },
+  {
+    "name": "Air Waves",
+    "youtubeId": "jsXXKQ_nl30",
+    "motifRefs": [],
+    "loopPoint": 61.71428571428571,
+    "mainMotifs": [
+      {
+        "name": "Spamton",
+        "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ffaec933",
+        "id": "spamton",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      },
+      {
+        "name": "Freedom",
+        "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+        "color": "#6d6ebf",
+        "color2": "#fbfd0133",
+        "id": "freedom",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "airwaves"
   }
 ]

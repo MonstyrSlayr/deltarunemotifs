@@ -554,7 +554,7 @@
   {
     "name": "Freedom",
     "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
-    "imagePlaying": null,
+    "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
     "color": "#6d6ebf",
     "color2": "#fbfd0133",
     "id": "freedom",
@@ -649,12 +649,24 @@
   },
   {
     "name": "Cyber World",
+    "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
+    "imagePlaying": null,
+    "color": "#62ffba",
+    "color2": "#313131",
+    "id": "cyberworld",
+    "letter": "A",
+    "mainDiv": null,
+    "letterDiv": null,
+    "variationDiv": null
+  },
+  {
+    "name": "Cyber World",
     "image": null,
     "imagePlaying": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#62ffba",
+    "color2": "#313131",
     "id": "cyberworld",
-    "letter": "",
+    "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
     "variationDiv": null
