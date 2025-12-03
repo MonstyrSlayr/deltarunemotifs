@@ -829,7 +829,7 @@ const ruderBuster = new Song("Ruder Buster",
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 76.75 + 32), quickSec(ruderBusterBPM, 80 + 32)),
 
         new MotifReference(Motifs.RUDEBUSTERB, quickSec(ruderBusterBPM, 112.5), quickSec(ruderBusterBPM, 112 + 15.5), true),
-
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(ruderBusterBPM, 130.5), quickSec(ruderBusterBPM, 135.75), true),
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 135.75), quickSec(ruderBusterBPM, 137.5)),
 
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 0.75), quickSec(ruderBusterBPM, 144 + 3.75)),
