@@ -1,3 +1,5 @@
+import { IMGLINK } from "./data.js";
+
 class SongEffect
 {
     onLoad;

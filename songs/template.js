@@ -8,7 +8,7 @@ let players = {}; // store players by videoId
 let updateIntervals = {};
 
 let prev = null;
-let trueSeek = null;
+let trueSeek = 0;
 
 const SONG_OFFSET = 0.15; // account for css bullshit
 
@@ -236,9 +236,8 @@ function onReady()
 
                     updateIntervals[videoId] = setInterval(() =>
                     {
-                        const current = trueSeek == null ? players[videoId].getCurrentTime() : trueSeek;
+                        const current = players[videoId].getCurrentTime();
                         const duration = daSong.loopPoint == null ? players[videoId].getDuration() : daSong.loopPoint;
-                        trueSeek = null;
 
                         if (daSong.loopPoint != null)
                         {
@@ -353,8 +352,8 @@ function onReady()
                         {
                             for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
                             {
-                                if ((prev != null && current > effectRef.startTime && prev <= effectRef.startTime)
-                                || (prev == null && current == effectRef.startTime))
+                                if ((trueSeek == null && prev!= null && current > effectRef.startTime && prev <= effectRef.startTime)
+                                || trueSeek == effectRef.startTime)
                                 {
                                     effect.onDeactive();
                                     effect.onActive();
@@ -362,6 +361,7 @@ function onReady()
                             }
                         });
 
+                        trueSeek = null;
                         prev = current;
                     }, 15);
                 }
@@ -369,9 +369,9 @@ function onReady()
                 {
                     pauseBtn.classList.add("gone");
                     playBtn.classList.remove("gone");
-                    prev = null;
 
                     clearInterval(updateIntervals[videoId]);
+                    prev = null;
                 }
             }
         }
@@ -401,7 +401,8 @@ function playOrPause()
         {
             if (effect.deactivateOnPause)
             {
-                setTimeout(() => {
+                setTimeout(() =>
+                {
                     effect.onDeactive();
                 }, 20);
             }
@@ -498,6 +499,7 @@ function seekVideo(e)
     const percent = clickX / rect.width;
     const duration = daSong.loopPoint == null ? players[videoId].getDuration() : daSong.loopPoint;
     players[videoId].seekTo(duration * percent, true);
+    trueSeek = duration * percent;
     players[videoId].playVideo();
 }
 
