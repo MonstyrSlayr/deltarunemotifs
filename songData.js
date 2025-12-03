@@ -2013,7 +2013,9 @@ const airWaves = new Song("Air Waves",
         new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 270), quickSec(airWavesBPM, 272)),
         new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 272), quickSec(airWavesBPM, 276)),
     ],
-    "", quickSec(airWavesBPM, 144 + 132)
+    "", quickSec(airWavesBPM, 144 + 132),
+    [],
+    [Contributors.KARMA]
 );
 
 //#endregion
