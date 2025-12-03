@@ -107,6 +107,7 @@ Motifs.QUIETAUTUMN = new Motif("Quiet Autumn", "", "#f055c0", "#22b14c33", MOTIF
 Motifs.DARKNESSFALLS = new Motif("Darkness Falls", "");
 Motifs.HIPSHOP = new Motif("Hip Shop", "", "#ffffff", "#b6497233", MOTIFIMGLINK + "hipshop.png");
 Motifs.FREEDOM = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", MOTIFIMGLINK + "jevil.webp");
+Motifs.FREEDOM.imagePlaying = MOTIFIMGLINK + "jevilDance.webp";
 Motifs.THEHOLY = new Motif("THE HOLY", "", "#5496cd", "#00000033", MOTIFIMGLINK + "theholy.webp");
 
 Motifs.SUSIE = new Motif("Susie", "", "#ae67af", "#54468f33", MOTIFIMGLINK + "susiegaster.webp");
@@ -117,7 +118,8 @@ Motifs.KING = new Motif("King", "", "#004876", "#32323233", MOTIFIMGLINK + "king
 Motifs.KING.imagePlaying = MOTIFIMGLINK + "kingIdle.gif";
 Motifs.MAN = new Motif("man", "");
 
-Motifs.CYBERWORLD = new Motif("Cyber World", "");
+Motifs.CYBERWORLDA = new Motif("Cyber World", "A", "#62ffba","#313131", MOTIFIMGLINK + "cyberWorld.jpg");
+Motifs.CYBERWORLDB = new Motif("Cyber World", "B", "#62ffba","#313131");
 Motifs.ROOTS = new Motif("Roots", "");
 Motifs.POWERSCOMBINED = new Motif("Knock You Down !!", "", "#99e550", "#8eaaea33", MOTIFIMGLINK + "gigaQueen.png");
 

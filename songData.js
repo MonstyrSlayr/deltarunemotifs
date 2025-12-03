@@ -464,6 +464,32 @@ const queen = new Song("Queen",
     [Contributors.KARMA]
 );
 
+const aCybersWorldBPM = 117;
+const aCybersWorld = new Song("A CYBER'S WORLD?",
+    [Motifs.CYBERWORLDA, Motifs.CYBERWORLDB],
+    "EM8WM9hUFO8",
+    [
+        new MotifReference(Motifs.CYBERWORLDA, quickSec(aCybersWorldBPM, 64), quickSec(aCybersWorldBPM, 96)),
+        new MotifReference(Motifs.CYBERWORLDA, quickSec(aCybersWorldBPM, 96), quickSec(aCybersWorldBPM, 128)),
+
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 140), quickSec(aCybersWorldBPM, 144)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 156), quickSec(aCybersWorldBPM, 160)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 172), quickSec(aCybersWorldBPM, 176)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 188), quickSec(aCybersWorldBPM, 192)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 192), quickSec(aCybersWorldBPM, 208)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 208), quickSec(aCybersWorldBPM, 224)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 224), quickSec(aCybersWorldBPM, 240)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 240), quickSec(aCybersWorldBPM, 256)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 256), quickSec(aCybersWorldBPM, 272)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 272), quickSec(aCybersWorldBPM, 288)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 288), quickSec(aCybersWorldBPM, 304)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(aCybersWorldBPM, 304), quickSec(aCybersWorldBPM, 320)),
+    ],
+    "", quickSec(aCybersWorldBPM, 144 + 144 + 32),
+    [],
+    [Contributors.KARMA]
+);
+
 const aSimpleDiversionBPM = 130;
 const aSimpleDiversion = new Song("A Simple Diversion",
     [Motifs.QUEENA],
@@ -504,6 +530,28 @@ const smartRace = new Song("Smart Race",
         new MotifReference(Motifs.BERDLYB, quickSec(smartRaceBPM, 128), quickSec(smartRaceBPM, 128 + 32)),
     ],
     "", quickSec(smartRaceBPM, 128 + 32)
+);
+
+const welcomeToTheCityBPM = 149.5;
+const welcomeToTheCity = new Song("WELCOME TO THE CITY",
+    [Motifs.CYBERWORLDA, Motifs.CYBERWORLDB],
+    "XIPgJJyiTEY",
+    [
+        new MotifReference(Motifs.CYBERWORLDA, quickSec(welcomeToTheCityBPM, 32), quickSec(welcomeToTheCityBPM, 64)),
+        new MotifReference(Motifs.CYBERWORLDA, quickSec(welcomeToTheCityBPM, 64), quickSec(welcomeToTheCityBPM, 96)),
+        new MotifReference(Motifs.CYBERWORLDA, quickSec(welcomeToTheCityBPM, 96), quickSec(welcomeToTheCityBPM, 128)),
+
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(welcomeToTheCityBPM, 139.5), quickSec(welcomeToTheCityBPM, 144)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(welcomeToTheCityBPM, 171.5), quickSec(welcomeToTheCityBPM, 176)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(welcomeToTheCityBPM, 192), quickSec(welcomeToTheCityBPM, 208)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(welcomeToTheCityBPM, 208), quickSec(welcomeToTheCityBPM, 224), true),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(welcomeToTheCityBPM, 224), quickSec(welcomeToTheCityBPM, 240)),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(welcomeToTheCityBPM, 240), quickSec(welcomeToTheCityBPM, 256), true),
+        new MotifReference(Motifs.CYBERWORLDB, quickSec(welcomeToTheCityBPM, 256), quickSec(welcomeToTheCityBPM, 275), true),
+    ],
+    "", quickSec(welcomeToTheCityBPM, 144 + 136),
+    [],
+    [Contributors.KARMA]
 );
 
 const coolMixtapeBPM = 144;
@@ -1869,6 +1917,103 @@ const catswing = new Song("Catswing",
         new MotifReference(Motifs.SPAMTONB, quickSec(catswingBPM, 128 + 112), quickSec(catswingBPM, 144 + 112)),
     ],
     "", quickSec(catswingBPM, 144 + 112)
+);
+
+const airWavesBPM = 140;
+const airWaves = new Song("Air Waves",
+    [Motifs.SPAMTONA, Motifs.FREEDOM],
+    "jsXXKQ_nl30",
+    [
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 16), quickSec(airWavesBPM, 48)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 48), quickSec(airWavesBPM, 80)),
+        
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 80), quickSec(airWavesBPM, 82)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 82), quickSec(airWavesBPM, 84)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 84), quickSec(airWavesBPM, 86)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 86), quickSec(airWavesBPM, 88)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 88), quickSec(airWavesBPM, 90)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 90), quickSec(airWavesBPM, 92)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 92), quickSec(airWavesBPM, 94)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 94), quickSec(airWavesBPM, 96)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 96), quickSec(airWavesBPM, 98)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 98), quickSec(airWavesBPM, 100)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 100), quickSec(airWavesBPM, 102)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 102), quickSec(airWavesBPM, 104)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 104), quickSec(airWavesBPM, 106)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 106), quickSec(airWavesBPM, 108)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 108), quickSec(airWavesBPM, 112)),
+        
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 112), quickSec(airWavesBPM, 114)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 114), quickSec(airWavesBPM, 116)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 116), quickSec(airWavesBPM, 118)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 118), quickSec(airWavesBPM, 120)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 120), quickSec(airWavesBPM, 122)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 122), quickSec(airWavesBPM, 124)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 124), quickSec(airWavesBPM, 126)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 126), quickSec(airWavesBPM, 128)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 128), quickSec(airWavesBPM, 130)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 130), quickSec(airWavesBPM, 132)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 132), quickSec(airWavesBPM, 134)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 134), quickSec(airWavesBPM, 136)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 136), quickSec(airWavesBPM, 138)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 138), quickSec(airWavesBPM, 140)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 140), quickSec(airWavesBPM, 144)),
+
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 144), quickSec(airWavesBPM, 176)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 176), quickSec(airWavesBPM, 180), true),
+
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 180), quickSec(airWavesBPM, 182)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 182), quickSec(airWavesBPM, 184)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 184), quickSec(airWavesBPM, 186)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 186), quickSec(airWavesBPM, 188)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 188), quickSec(airWavesBPM, 190)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 190), quickSec(airWavesBPM, 192)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 192), quickSec(airWavesBPM, 194)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 194), quickSec(airWavesBPM, 196)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 196), quickSec(airWavesBPM, 198)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 198), quickSec(airWavesBPM, 200)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 200), quickSec(airWavesBPM, 202)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 202), quickSec(airWavesBPM, 204)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 204), quickSec(airWavesBPM, 206)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 206), quickSec(airWavesBPM, 208)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 208), quickSec(airWavesBPM, 212)),
+
+        new MotifReference(Motifs.FREEDOM, quickSec(airWavesBPM, 212), quickSec(airWavesBPM, 244)),
+        new MotifReference(Motifs.FREEDOM, quickSec(airWavesBPM, 244), quickSec(airWavesBPM, 276), true),
+
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 212), quickSec(airWavesBPM, 214)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 214), quickSec(airWavesBPM, 216)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 216), quickSec(airWavesBPM, 218)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 218), quickSec(airWavesBPM, 220)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 220), quickSec(airWavesBPM, 222)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 222), quickSec(airWavesBPM, 224)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 224), quickSec(airWavesBPM, 226)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 226), quickSec(airWavesBPM, 228)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 228), quickSec(airWavesBPM, 230)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 230), quickSec(airWavesBPM, 232)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 232), quickSec(airWavesBPM, 234)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 234), quickSec(airWavesBPM, 236)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 236), quickSec(airWavesBPM, 238)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 238), quickSec(airWavesBPM, 240)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 240), quickSec(airWavesBPM, 244)),
+
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 244), quickSec(airWavesBPM, 246)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 246), quickSec(airWavesBPM, 248)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 248), quickSec(airWavesBPM, 250)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 250), quickSec(airWavesBPM, 252)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 252), quickSec(airWavesBPM, 254)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 254), quickSec(airWavesBPM, 256)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 256), quickSec(airWavesBPM, 258)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 258), quickSec(airWavesBPM, 260)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 260), quickSec(airWavesBPM, 262)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 262), quickSec(airWavesBPM, 264)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 264), quickSec(airWavesBPM, 266)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 266), quickSec(airWavesBPM, 268)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 268), quickSec(airWavesBPM, 270)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 270), quickSec(airWavesBPM, 272)),
+        new MotifReference(Motifs.SPAMTONA, quickSec(airWavesBPM, 272), quickSec(airWavesBPM, 276)),
+    ],
+    "", quickSec(airWavesBPM, 144 + 132)
 );
 
 //#endregion
