@@ -118,6 +118,7 @@ input[type="checkbox"]
     gap: 1em;
     align-items: center;
     margin: 1em;
+    max-width: 100%;
 }
 
 .musicContainer
@@ -710,6 +711,11 @@ a.motifMainDiv:hover
     .controlsSmall
     {
         margin: 1em;
+    }
+
+    #sortInput
+    {
+        max-width: 51%;
     }
 }
 
