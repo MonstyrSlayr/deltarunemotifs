@@ -556,6 +556,41 @@ a.motifMainDiv:hover
     image-rendering: -webkit-optimize-contrast;
 }
 
+.mFreedom > div > img
+{
+    margin: 0 auto;
+}
+
+.mFreedom:not(.playing) > div > img
+{
+    animation-name: freedomFloat;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@keyframes freedomFloat
+{
+    0%
+    {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    50%
+    {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+    100%
+    {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+}
+
 .mFreedom.playing
 {
     position: relative;
