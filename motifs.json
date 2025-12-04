@@ -9,7 +9,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "The Ruins",
@@ -21,7 +22,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Uwa!!",
@@ -33,7 +35,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Home",
@@ -45,7 +48,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Enemy Approaching",
@@ -57,19 +61,23 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Enemy Approaching",
-    "image": null,
+    "image": "",
     "imagePlaying": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "",
+    "color2": "",
     "id": "enemyapproaching",
     "letter": "D",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": [
+      "Dogsong"
+    ]
   },
   {
     "name": "Ghost Fight",
@@ -81,7 +89,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Ghost Fight",
@@ -93,7 +102,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Determination",
@@ -105,7 +115,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Heartache",
@@ -117,7 +128,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Snowdin",
@@ -129,7 +141,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Snowdin",
@@ -141,7 +154,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Another Medium",
@@ -153,7 +167,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Showtime!",
@@ -165,7 +180,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Hotel",
@@ -177,7 +193,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Oh!",
@@ -189,7 +206,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Spooktune",
@@ -201,7 +219,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Jingle Bells",
@@ -213,7 +232,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Your Best Nightmare",
@@ -225,7 +245,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Power of NEO",
@@ -237,7 +258,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "MEGALOVANIA",
@@ -249,19 +271,23 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Flowey",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/motifs/flowey.png",
     "imagePlaying": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#fff200",
+    "color2": "#9bfd7133",
     "id": "flowey",
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": [
+      "Your Best Friend"
+    ]
   },
   {
     "name": "Toriel",
@@ -273,7 +299,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Sans",
@@ -285,7 +312,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Papyrus",
@@ -297,7 +325,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Undyne",
@@ -309,7 +338,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Dummy!",
@@ -321,19 +351,21 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Alphys",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/motifs/alphys.png",
     "imagePlaying": null,
-    "color": "#ffffff",
+    "color": "#fdc748",
     "color2": "#ffffff33",
     "id": "alphys",
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Mettaton",
@@ -345,19 +377,23 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Asriel",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/motifs/asriel.png",
     "imagePlaying": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#9bfd71",
+    "color2": "#fff20033",
     "id": "asriel",
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": [
+      "His Theme"
+    ]
   },
   {
     "name": "Asgore",
@@ -369,7 +405,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Gaster",
@@ -381,7 +418,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Don't Forget",
@@ -393,7 +431,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Hometown",
@@ -405,7 +444,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "The Legend",
@@ -417,7 +457,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "The Legend",
@@ -429,7 +470,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "The Legend",
@@ -441,7 +483,8 @@
     "letter": "C",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "The Door",
@@ -453,7 +496,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "The Chase",
@@ -465,7 +509,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Rude Buster",
@@ -477,7 +522,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Rude Buster",
@@ -489,7 +535,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Field of Hopes and Dreams",
@@ -501,7 +548,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Fanfare",
@@ -513,7 +561,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Quiet Autumn",
@@ -525,7 +574,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Darkness Falls",
@@ -537,7 +587,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Hip Shop",
@@ -549,7 +600,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Freedom",
@@ -561,7 +613,10 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": [
+      "THE WORLD REVOLVING"
+    ]
   },
   {
     "name": "THE HOLY",
@@ -573,7 +628,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Susie",
@@ -585,7 +641,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Lancer",
@@ -597,7 +654,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Lancer",
@@ -609,7 +667,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Rouxls Kaard",
@@ -621,7 +680,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "King",
@@ -633,7 +693,10 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": [
+      "Card Castle"
+    ]
   },
   {
     "name": "man",
@@ -645,7 +708,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Cyber World",
@@ -657,7 +721,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Cyber World",
@@ -669,7 +734,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Roots",
@@ -681,7 +747,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Knock You Down !!",
@@ -693,7 +760,10 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": [
+      "Powers Combined"
+    ]
   },
   {
     "name": "Girl Next Door",
@@ -705,7 +775,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Queen",
@@ -717,7 +788,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Queen",
@@ -729,7 +801,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Queen",
@@ -741,7 +814,8 @@
     "letter": "C",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Queen",
@@ -753,7 +827,8 @@
     "letter": "D",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Sweet Cap'n Cakes",
@@ -765,7 +840,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Sweet Cap'n Cakes",
@@ -777,7 +853,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Berdly",
@@ -789,7 +866,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Berdly",
@@ -801,7 +879,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Spamton",
@@ -813,7 +892,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Spamton",
@@ -825,7 +905,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Lost Girl",
@@ -837,7 +918,8 @@
     "letter": "A",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Lost Girl",
@@ -849,7 +931,8 @@
     "letter": "B",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Feature Presentation",
@@ -861,7 +944,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "TV Time!",
@@ -873,7 +957,10 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": [
+      "HEY EVERY !"
+    ]
   },
   {
     "name": "Doom Board",
@@ -885,7 +972,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Tenna",
@@ -897,7 +985,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Dark Sanctuary",
@@ -909,7 +998,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "From Now On",
@@ -921,7 +1011,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Ever Higher",
@@ -933,7 +1024,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Second Sanctuary",
@@ -945,7 +1037,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Mike",
@@ -957,7 +1050,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Gerson",
@@ -969,7 +1063,8 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   },
   {
     "name": "Titan",
@@ -981,6 +1076,7 @@
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,
-    "variationDiv": null
+    "variationDiv": null,
+    "aliases": []
   }
 ]

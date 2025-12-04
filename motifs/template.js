@@ -398,6 +398,20 @@ getMotifsById(daMotif.id).forEach(motif =>
         daHead.textContent = `Songs with ${motif.toString()}`;
         personalDiv.appendChild(daHead);
 
+        if (motif.aliases.length > 0)
+        {
+            const daAliases = document.createElement("h3");
+            daAliases.textContent = "Also Known As:";
+            personalDiv.appendChild(daAliases);
+
+            for (const alias of motif.aliases)
+            {
+                const heyEveryPacifier = document.createElement("h3");
+                heyEveryPacifier.textContent = alias;
+                personalDiv.appendChild(heyEveryPacifier);
+            }
+        }
+
         const daSongsDiv = document.createElement("div");
         daSongsDiv.classList.add("songList");
         personalDiv.appendChild(daSongsDiv);

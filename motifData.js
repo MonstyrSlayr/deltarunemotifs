@@ -18,8 +18,9 @@ class Motif
     mainDiv = null;
     letterDiv = null;
     variationDiv = null;
+    aliases = [];
 
-    constructor(name, letter = "", color = "#ffffff", color2 = "#ffffff33", image = null)
+    constructor(name, letter = "", color = "#ffffff", color2 = "#ffffff33", image = null, aliases = [])
     {
         this.name = name;
         this.color = color;
@@ -28,6 +29,7 @@ class Motif
 
         this.id = normalizeAndTrim(name);
         this.image = image;
+        this.aliases = aliases;
         
         allMotifs.push(this);
     }
@@ -62,7 +64,7 @@ Motifs.RUINS = new Motif("The Ruins", "", "#815a98", "#42498833", MOTIFIMGLINK +
 Motifs.UWAA = new Motif("Uwa!!");
 Motifs.HOME = new Motif("Home");
 Motifs.ENEMYAPPROACHING = new Motif("Enemy Approaching", "A");
-Motifs.DOGSONG = new Motif("Enemy Approaching", "D");
+Motifs.DOGSONG = new Motif("Enemy Approaching", "D", "", "", "", ["Dogsong"]);
 Motifs.GHOSTFIGHTA = new Motif("Ghost Fight", "A");
 Motifs.GHOSTFIGHTB = new Motif("Ghost Fight", "B");
 Motifs.DETERMINATION = new Motif("Determination");
@@ -80,7 +82,7 @@ Motifs.YOURBESTNIGHTMARE.toString = function() { return "Your Best Nightmare / T
 Motifs.POWEROFNEO = new Motif("Power of NEO", "", "#fa0ef3", "#fef10033", MOTIFIMGLINK + "mettatonNeo.png");
 Motifs.MEGALOVANIA = new Motif("MEGALOVANIA");
 
-Motifs.FLOWEY = new Motif("Flowey");
+Motifs.FLOWEY = new Motif("Flowey", "", "#fff200", "#9bfd7133", MOTIFIMGLINK + "flowey.png", ["Your Best Friend"]);
 Motifs.TORIEL = new Motif("Toriel");
 Motifs.SANS = new Motif("Sans");
 Motifs.PAPYRUS = new Motif("Papyrus");
@@ -88,7 +90,7 @@ Motifs.UNDYNE = new Motif("Undyne", "", "#6299c1", "#c9473e33", MOTIFIMGLINK + "
 Motifs.DUMMY = new Motif("Dummy!", "", "#ffbc3a", "#00000033", MOTIFIMGLINK + "madDummy.png");
 Motifs.ALPHYS = new Motif("Alphys", "", "#fdc748", "#ffffff33", MOTIFIMGLINK + "alphys.png");
 Motifs.METTATON = new Motif("Mettaton");
-Motifs.ASRIEL = new Motif("Asriel");
+Motifs.ASRIEL = new Motif("Asriel", "", "#9bfd71", "#fff20033", MOTIFIMGLINK + "asriel.png", ["His Theme"]);
 Motifs.ASGORE = new Motif("Asgore");
 Motifs.GASTER = new Motif("Gaster");
 
@@ -106,7 +108,7 @@ Motifs.FANFARE = new Motif("Fanfare", "", "#fadf39", "#4de3e333", MOTIFIMGLINK +
 Motifs.QUIETAUTUMN = new Motif("Quiet Autumn", "", "#f055c0", "#22b14c33", MOTIFIMGLINK + "hathyBakeSale.webp");
 Motifs.DARKNESSFALLS = new Motif("Darkness Falls", "");
 Motifs.HIPSHOP = new Motif("Hip Shop", "", "#ffffff", "#b6497233", MOTIFIMGLINK + "hipshop.png");
-Motifs.FREEDOM = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", MOTIFIMGLINK + "jevil.webp");
+Motifs.FREEDOM = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", MOTIFIMGLINK + "jevil.webp", ["THE WORLD REVOLVING"]);
 Motifs.FREEDOM.imagePlaying = MOTIFIMGLINK + "jevilDance.webp";
 Motifs.THEHOLY = new Motif("THE HOLY", "", "#5496cd", "#00000033", MOTIFIMGLINK + "theholy.webp");
 
@@ -114,14 +116,14 @@ Motifs.SUSIE = new Motif("Susie", "", "#ae67af", "#54468f33", MOTIFIMGLINK + "su
 Motifs.LANCERA = new Motif("Lancer", "A", "#5585bd", "#32323233", MOTIFIMGLINK + "lancer.png");
 Motifs.LANCERB = new Motif("Lancer", "B", "#5585bd", "#ffffff33");
 Motifs.ROUXLSKAARD = new Motif("Rouxls Kaard", "");
-Motifs.KING = new Motif("King", "", "#004876", "#32323233", MOTIFIMGLINK + "king.png");
+Motifs.KING = new Motif("King", "", "#004876", "#32323233", MOTIFIMGLINK + "king.png", ["Card Castle"]);
 Motifs.KING.imagePlaying = MOTIFIMGLINK + "kingIdle.gif";
 Motifs.MAN = new Motif("man", "");
 
 Motifs.CYBERWORLDA = new Motif("Cyber World", "A", "#62ffba","#313131", MOTIFIMGLINK + "cyberWorld.jpg");
 Motifs.CYBERWORLDB = new Motif("Cyber World", "B", "#62ffba","#313131");
 Motifs.ROOTS = new Motif("Roots", "");
-Motifs.POWERSCOMBINED = new Motif("Knock You Down !!", "", "#99e550", "#8eaaea33", MOTIFIMGLINK + "gigaQueen.png");
+Motifs.POWERSCOMBINED = new Motif("Knock You Down !!", "", "#99e550", "#8eaaea33", MOTIFIMGLINK + "gigaQueen.png", ["Powers Combined"]);
 
 Motifs.GIRLNEXTDOOR = new Motif("Girl Next Door", "");
 Motifs.QUEENA = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", MOTIFIMGLINK + "queen.webp");
@@ -138,7 +140,7 @@ Motifs.LOSTGIRLA = new Motif("Lost Girl", "A", "#331d0a", "#332a3b33", MOTIFIMGL
 Motifs.LOSTGIRLB = new Motif("Lost Girl", "B", "#331d0a", "#332a3b33");
 
 Motifs.FEATUREPRESENTATION = new Motif("Feature Presentation", "", "#500d52", "#cac2b533", MOTIFIMGLINK + "featurePresentation.png");
-Motifs.TVTIME = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", MOTIFIMGLINK + "tvtime.webp");
+Motifs.TVTIME = new Motif("TV Time!", "", "#fbe63b", "#ff342b33", MOTIFIMGLINK + "tvtime.webp", ["HEY EVERY !"]);
 Motifs.DOOMBOARD = new Motif("Doom Board", "", "#d02d86", "#511a8633", MOTIFIMGLINK + "doomboard.png");
 
 Motifs.TENNA = new Motif("Tenna", "", "#db1f53", "#fffb5b33", MOTIFIMGLINK + "tenna.webp");
