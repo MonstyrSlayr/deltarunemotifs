@@ -375,7 +375,14 @@ window.addEventListener('keydown', function(keyevent)
 
 function onYouTubeIframeAPIReady()
 {
-    readyCallbacks.forEach(fn => fn());
+    setInterval(() =>
+    {
+        while (readyCallbacks.length > 0)
+        {
+            const fn = readyCallbacks.pop();
+            fn();
+        }
+    }, 2000);
 }
 
 if (window.YT && window.YT.Player)
