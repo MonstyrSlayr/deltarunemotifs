@@ -1226,11 +1226,29 @@ const gyaaHaHa = new Song("Gyaa Ha ha!",
 
 const fireplaceBPM = 128;
 const fireplace = new Song("Fireplace",
-    [Motifs.UNDYNE],
+    [Motifs.UNDYNE, Motifs.RUINS],
     "xz61v-lss5g",
     [
-        
-    ]
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 73), quickSec(fireplaceBPM, 80)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 81), quickSec(fireplaceBPM, 88)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 89), quickSec(fireplaceBPM, 96)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 73 + 32), quickSec(fireplaceBPM, 80 + 32)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 81 + 32), quickSec(fireplaceBPM, 88 + 32)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 89 + 32), quickSec(fireplaceBPM, 96 + 32)),
+
+        new MotifReference(Motifs.RUINS, quickSec(fireplaceBPM, 96 + 32 + 8), quickSec(fireplaceBPM, 96 + 32 + 8 + 10)),
+        new MotifReference(Motifs.RUINS, quickSec(fireplaceBPM, 96 + 32 + 8 + 32), quickSec(fireplaceBPM, 96 + 32 + 8 + 10 + 32)),
+        new MotifReference(Motifs.RUINS, quickSec(fireplaceBPM, 96 + 32 + 8 + 64), quickSec(fireplaceBPM, 96 + 32 + 8 + 10 + 64)),
+        new MotifReference(Motifs.RUINS, quickSec(fireplaceBPM, 96 + 32 + 8 + 96), quickSec(fireplaceBPM, 96 + 32 + 8 + 10 + 96)),
+
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 73 + 64 + 128), quickSec(fireplaceBPM, 80 + 64 + 128)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 81 + 64 + 128), quickSec(fireplaceBPM, 88 + 64 + 128)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 89 + 64 + 128), quickSec(fireplaceBPM, 96 + 64 + 128)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 73 + 96 + 128), quickSec(fireplaceBPM, 80 + 96 + 128)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 81 + 96 + 128), quickSec(fireplaceBPM, 88 + 96 + 128)),
+        new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 89 + 96 + 128), quickSec(fireplaceBPM, 96 + 96 + 128)),
+    ],
+    "", quickSec(fireplaceBPM, 96 + 96 + 128 + 8)
 )
 
 const everHigherBPM = 110;
