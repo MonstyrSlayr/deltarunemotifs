@@ -11548,6 +11548,40 @@
     "id": "gyaahaha"
   },
   {
+    "name": "Fireplace",
+    "youtubeId": "xz61v-lss5g",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Undyne",
+        "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+        "imagePlaying": null,
+        "color": "#6299c1",
+        "color2": "#c9473e33",
+        "id": "undyne",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "fireplace"
+  },
+  {
     "name": "Ever Higher",
     "youtubeId": "DxPHMcpuYeA",
     "motifRefs": [

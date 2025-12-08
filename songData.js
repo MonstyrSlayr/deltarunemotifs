@@ -1224,6 +1224,15 @@ const gyaaHaHa = new Song("Gyaa Ha ha!",
     "", quickSec(gyaaHaHaBPM, 57 + 63 + 33 + 4)
 );
 
+const fireplaceBPM = 128;
+const fireplace = new Song("Fireplace",
+    [Motifs.UNDYNE],
+    "xz61v-lss5g",
+    [
+        
+    ]
+)
+
 const everHigherBPM = 110;
 const everHigher = new Song("Ever Higher",
     [Motifs.SANCTUARY, Motifs.EVERHIGHER],
