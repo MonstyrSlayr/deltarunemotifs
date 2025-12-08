@@ -229,6 +229,22 @@ function quickSec(bpm, numberOfBeats)
 
 //#region CHAPTER 1
 
+const beginningBPM = 138;
+const beginning = new Song("Beginning",
+    [Motifs.DONTFORGET, Motifs.ONCEUPONATIMEC],
+    "puOs1uy4t5M",
+    [
+        new MotifReference(Motifs.DONTFORGET, quickSec(beginningBPM, 15.5), quickSec(beginningBPM, 47.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(beginningBPM, 47.5), quickSec(beginningBPM, 88), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(beginningBPM, 88), quickSec(beginningBPM, 104)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(beginningBPM, 104), quickSec(beginningBPM, 128), true),
+    ],
+    "", quickSec(beginningBPM, 128),
+    [],
+    [Contributors.KARMA]
+);
+
 const theDoorBPM = 69; // nice
 const theDoor = new Song("The Door",
     [Motifs.THEDOOR],
@@ -293,6 +309,21 @@ const rudeBuster = new Song("Rude Buster",
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(rudeBusterBPM, 144.75 + 16), quickSec(rudeBusterBPM, 144 + 16 + 4)),
     ],
     "", quickSec(rudeBusterBPM, 144 + 32)
+);
+
+const emptyTownBPM = 138;
+const emptyTown = new Song("Empty Town",
+    [Motifs.THELEGENDB],
+    "4CMw_xMB8bs",
+    [
+        new MotifReference(Motifs.THELEGENDB, quickSec(emptyTownBPM, 0), quickSec(emptyTownBPM, 48)),
+        new MotifReference(Motifs.THELEGENDB, quickSec(emptyTownBPM, 48), quickSec(emptyTownBPM, 96)),
+        new MotifReference(Motifs.THELEGENDC, quickSec(emptyTownBPM, 96), quickSec(emptyTownBPM, 144)),
+        new MotifReference(Motifs.THELEGENDC, quickSec(emptyTownBPM, 144), quickSec(emptyTownBPM, 192)),
+    ],
+    "", quickSec(emptyTownBPM, 192),
+    [],
+    [Contributors.KARMA]
 );
 
 const fieldOfHopesAndDreamsBPM = 125;
@@ -441,6 +472,59 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
         new MotifReference(Motifs.DONTFORGET, quickSec(theWorldRevolvingBPM, 259 + 56), quickSec(theWorldRevolvingBPM, 264 + 56)),
     ],
     "", quickSec(theWorldRevolvingBPM, 264 + 56)
+);
+
+const youCanAlwaysComeHomeBPM = 100;
+const youCanAlwaysComeHome = new Song("You Can Always Come Home",
+    [Motifs.ONCEUPONATIMEA, Motifs.DONTFORGET],
+    "Jm3AM-sAbmA",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(youCanAlwaysComeHomeBPM, 32), quickSec(youCanAlwaysComeHomeBPM, 64)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(youCanAlwaysComeHomeBPM, 64), quickSec(youCanAlwaysComeHomeBPM, 96)),
+
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 95), quickSec(youCanAlwaysComeHomeBPM, 103)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 103), quickSec(youCanAlwaysComeHomeBPM, 111)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 111), quickSec(youCanAlwaysComeHomeBPM, 117.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 117.5), quickSec(youCanAlwaysComeHomeBPM, 123), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 131), quickSec(youCanAlwaysComeHomeBPM, 139)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 139), quickSec(youCanAlwaysComeHomeBPM, 147)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 147), quickSec(youCanAlwaysComeHomeBPM, 153.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(youCanAlwaysComeHomeBPM, 153.5), quickSec(youCanAlwaysComeHomeBPM, 159), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(youCanAlwaysComeHomeBPM, 132), quickSec(youCanAlwaysComeHomeBPM, 148)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(youCanAlwaysComeHomeBPM, 148), quickSec(youCanAlwaysComeHomeBPM, 157)),
+    ],
+    "", quickSec(youCanAlwaysComeHomeBPM, 168),
+    [],
+    [Contributors.KARMA]
+);
+
+
+const beforeTheStoryBPM = 65;
+const beforeTheStory = new Song("Before the Story",
+    [Motifs.ONCEUPONATIMEA],
+    "r9shwL1h-qA",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(beforeTheStoryBPM, 32), quickSec(beforeTheStoryBPM, 48)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(beforeTheStoryBPM, 48), quickSec(beforeTheStoryBPM, 64)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(beforeTheStoryBPM, 64), quickSec(beforeTheStoryBPM, 80)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(beforeTheStoryBPM, 80), quickSec(beforeTheStoryBPM, 96)),
+
+        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 64.5), quickSec(beforeTheStoryBPM, 67)),
+        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 68.5), quickSec(beforeTheStoryBPM, 71)),
+        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 72.5), quickSec(beforeTheStoryBPM, 75)),
+        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 76.5), quickSec(beforeTheStoryBPM, 79), true),
+        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 80.5), quickSec(beforeTheStoryBPM, 83)),
+        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 84.5), quickSec(beforeTheStoryBPM, 87)),
+        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 88.5), quickSec(beforeTheStoryBPM, 91)),
+    ],
+    "", quickSec(beforeTheStoryBPM, 96),
+    [
+        new EffectRef(Effects.BLACKFLASH, 0, quickSec(beforeTheStoryBPM, 12)),
+        new EffectRef(Effects.HERO, quickSec(beforeTheStoryBPM, 32), quickSec(beforeTheStoryBPM, 96)),
+        new EffectRef(Effects.FLASH, quickSec(beforeTheStoryBPM, 32), quickSec(beforeTheStoryBPM, 96)),
+    ],
+    [Contributors.KARMA]
 );
 
 //#endregion

@@ -59,7 +59,9 @@ export class MotifReference
 
 export const Motifs = {};
 
-Motifs.ONCEUPONATIME = new Motif("Once Upon a Time");
+Motifs.ONCEUPONATIMEA = new Motif("Once Upon a Time", "A", "#c18127","#00000033", MOTIFIMGLINK + "onceUponATime.jpg");
+Motifs.ONCEUPONATIMEB = new Motif("Once Upon a Time", "B", "#c18127","#00000033");
+Motifs.ONCEUPONATIMEC = new Motif("Once Upon a Time", "C", "#c18127","#00000033");
 Motifs.RUINS = new Motif("The Ruins", "", "#815a98", "#42498833", MOTIFIMGLINK + "ruins.png");
 Motifs.UWAA = new Motif("Uwa!!");
 Motifs.HOME = new Motif("Home");
