@@ -1,5 +1,125 @@
 [
   {
+    "name": "Beginning",
+    "youtubeId": "puOs1uy4t5M",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.739130434782608,
+        "endTime": 20.652173913043477
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 20.652173913043477,
+        "endTime": 38.26086956521739
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.26086956521739,
+        "endTime": 45.21739130434783
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 45.21739130434783,
+        "endTime": 55.65217391304348
+      }
+    ],
+    "loopPoint": 55.65217391304348,
+    "mainMotifs": [
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "imagePlaying": null,
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Once Upon a Time",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#c18127",
+        "color2": "#00000033",
+        "id": "onceuponatime",
+        "letter": "C",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "beginning"
+  },
+  {
     "name": "The Door",
     "youtubeId": "iJtIX0sQn0o",
     "motifRefs": [
@@ -577,6 +697,40 @@
       }
     ],
     "id": "rudebuster"
+  },
+  {
+    "name": "Empty Town",
+    "youtubeId": "4CMw_xMB8bs",
+    "motifRefs": [],
+    "loopPoint": 41.73913043478261,
+    "mainMotifs": [
+      {
+        "name": "The Legend",
+        "image": "http://127.0.0.1:5500/img/motifs/thelegend.png",
+        "imagePlaying": null,
+        "color": "#c08226",
+        "color2": "#00000033",
+        "id": "thelegend",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "emptytown"
   },
   {
     "name": "Field of Hopes and Dreams",
@@ -2030,6 +2184,319 @@
       }
     ],
     "id": "theworldrevolving"
+  },
+  {
+    "name": "You Can Always Come Home",
+    "youtubeId": "Jm3AM-sAbmA",
+    "motifRefs": [],
+    "loopPoint": 57.599999999999994,
+    "mainMotifs": [
+      {
+        "name": "Once Upon a Time",
+        "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+        "imagePlaying": null,
+        "color": "#c18127",
+        "color2": "#00000033",
+        "id": "onceuponatime",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "imagePlaying": null,
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "youcanalwayscomehome"
+  },
+  {
+    "name": "Before the Story",
+    "youtubeId": "r9shwL1h-qA",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 29.53846153846154,
+        "endTime": 44.30769230769231
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 44.30769230769231,
+        "endTime": 59.07692307692308
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 59.07692307692308,
+        "endTime": 73.84615384615385
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "imagePlaying": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 59.53846153846154,
+        "endTime": 61.84615384615385
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "imagePlaying": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 63.23076923076923,
+        "endTime": 65.53846153846155
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "imagePlaying": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 66.92307692307692,
+        "endTime": 69.23076923076924
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "imagePlaying": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 70.61538461538461,
+        "endTime": 72.92307692307693
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 73.84615384615385,
+        "endTime": 88.61538461538461
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "imagePlaying": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 74.3076923076923,
+        "endTime": 76.61538461538461
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "imagePlaying": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 78,
+        "endTime": 80.3076923076923
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "imagePlaying": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 81.6923076923077,
+        "endTime": 84
+      }
+    ],
+    "loopPoint": 88.61538461538461,
+    "mainMotifs": [
+      {
+        "name": "Once Upon a Time",
+        "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+        "imagePlaying": null,
+        "color": "#c18127",
+        "color2": "#00000033",
+        "id": "onceuponatime",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": false,
+          "onIntermediate": null,
+          "isOneshot": true,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 11.076923076923077,
+        "t": 0
+      },
+      {
+        "type": {
+          "deactivateOnPause": false,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 29.53846153846154,
+        "endTime": 88.61538461538461,
+        "t": 0
+      },
+      {
+        "type": {
+          "deactivateOnPause": false,
+          "onIntermediate": null,
+          "isOneshot": true,
+          "interval": null
+        },
+        "startTime": 29.53846153846154,
+        "endTime": 88.61538461538461,
+        "t": 0
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "beforethestory"
   },
   {
     "name": "Queen",
