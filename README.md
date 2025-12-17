@@ -2,16 +2,19 @@
 if you have any questions that are uncovered or unclear dm me on discord
 
 ## Running Locally
-1. Clone this repository
-2. Download Visual Studio Code and open the local repo
-3. Install the Live Server extension in VS Code
-4. Click the "Go Live" button in the bottom right
+1. Download Git on your machine
+1. Clone this repository using `git clone`
+1. Download Visual Studio Code and open the local repo
+1. Install the Live Server extension in VS Code
+1. Click the "Go Live" button in the bottom right
 
 ## Contributing
-1. Create a fork of this repository
-2. Make cool changes
-3. Push your changes to your fork
-4. Open a pull request with your changes
+1. Create a fork of this repository on GitHub
+1. Clone the fork locally using `git clone`
+1. Make cool changes to your fork
+1. Add and commit your changes locally using `git add` and `git commit`
+1. Push your changes to the remote repository with `git push`
+1. Open a pull request on github with your changes
 
 if you're a wee github supernerd, make sure to make your changes outside of the main branch
 
