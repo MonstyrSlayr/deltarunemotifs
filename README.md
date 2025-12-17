@@ -1,5 +1,5 @@
 # Welcome to Deltarune Motifs
-will work on this more later
+if you have any questions that are uncovered or unclear dm me on discord
 
 ## Running Locally
 1. Clone this repository
@@ -15,6 +15,22 @@ will work on this more later
 
 if you're a wee github supernerd, make sure to make your changes outside of the main branch
 
+### Directory and figuring stuff out
+#### Data Files
+- **data.js** - general variables and functions
+- **motifData.js** - data on leitmotifs
+- **songData.js** - data on songs
+- **effectData.js** - data on song effects, like the flashes and motif floating
+- **contribData.js** - data on contributors
+
+#### Site Building Files
+- **motifs.json** - motifs as a json file
+- **songs.json** - songs as a json file
+- **make_static_site.py** - builds the site using the json files. update the site using the "Download Objects" button on your locally running copy of the website. **the website will not add your song unless you update these json files and run this python file**
+
+#### Other
+- **dynamic.js** - updates the footer on all subsites (do not change)
+
 ### Adding Songs
 run the site locally
 
@@ -26,11 +42,13 @@ make sure to use the correct video id (use the id of the video from the official
 
 make sure to add yourself as a contributor (under all the other contributors)
 
-then download the objects with the bug "Download Objects" button in the middle of the home page
+adding the song in songData.js will add the song's button to the website, but it will lead to a page that does not exist
+
+then download the objects with the big "Download Objects" button in the middle of the home page
 
 replace motifs.json and songs.json with the downloaded files
 
-and then run make_static_site.py (this adds the song to the website, the button will work at this point)
+and then run make_static_site.py (this adds the song to the website, the song's button will work at this point)
 
 make sure all motif references are accurate. make sure to reference every motif reference (so that when you click the bar, it goes to the correct ref at the exact point it starts at)
 
