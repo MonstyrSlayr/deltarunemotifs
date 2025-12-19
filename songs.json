@@ -120,6 +120,59 @@
     "id": "beginning"
   },
   {
+    "name": "Susie",
+    "youtubeId": "mM8YTLEDJl8",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Susie",
+          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+          "imagePlaying": null,
+          "color": "#ae67af",
+          "color2": "#54468f33",
+          "id": "susie",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 27.428571428571427
+      }
+    ],
+    "loopPoint": 27.428571428571427,
+    "mainMotifs": [
+      {
+        "name": "Susie",
+        "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+        "imagePlaying": null,
+        "color": "#ae67af",
+        "color2": "#54468f33",
+        "id": "susie",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "susie"
+  },
+  {
     "name": "The Door",
     "youtubeId": "iJtIX0sQn0o",
     "motifRefs": [
@@ -701,17 +754,90 @@
   {
     "name": "Empty Town",
     "youtubeId": "4CMw_xMB8bs",
-    "motifRefs": [],
-    "loopPoint": 41.73913043478261,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "The Legend",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c08226",
+          "color2": "#00000033",
+          "id": "thelegend",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 20.869565217391305
+      },
+      {
+        "motif": {
+          "name": "The Legend",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c08226",
+          "color2": "#00000033",
+          "id": "thelegend",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 20.869565217391305,
+        "endTime": 41.73913043478261
+      },
+      {
+        "motif": {
+          "name": "The Legend",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c08226",
+          "color2": "#00000033",
+          "id": "thelegend",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 41.73913043478261,
+        "endTime": 62.608695652173914
+      },
+      {
+        "motif": {
+          "name": "The Legend",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c08226",
+          "color2": "#00000033",
+          "id": "thelegend",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 62.608695652173914,
+        "endTime": 83.47826086956522
+      }
+    ],
+    "loopPoint": 83.47826086956522,
     "mainMotifs": [
       {
         "name": "The Legend",
-        "image": "http://127.0.0.1:5500/img/motifs/thelegend.png",
+        "image": null,
         "imagePlaying": null,
         "color": "#c08226",
         "color2": "#00000033",
         "id": "thelegend",
-        "letter": "A",
+        "letter": "B",
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null,
@@ -1625,6 +1751,326 @@
     "id": "vslancer"
   },
   {
+    "name": "Basement",
+    "youtubeId": "s6UbYc2Z_Fw",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "King",
+          "image": "http://127.0.0.1:5500/img/motifs/king.png",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/kingIdle.gif",
+          "color": "#004876",
+          "color2": "#32323233",
+          "id": "king",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "Card Castle"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 27.945205479452053
+      }
+    ],
+    "loopPoint": 29.58904109589041,
+    "mainMotifs": [
+      {
+        "name": "King",
+        "image": "http://127.0.0.1:5500/img/motifs/king.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/kingIdle.gif",
+        "color": "#004876",
+        "color2": "#32323233",
+        "id": "king",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": [
+          "Card Castle"
+        ]
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "basement"
+  },
+  {
+    "name": "Imminent Death",
+    "youtubeId": "LmIgaiOhnq8",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 5,
+        "endTime": 8.75
+      },
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 12.5,
+        "endTime": 18.333333333333336
+      }
+    ],
+    "loopPoint": 20,
+    "mainMotifs": [
+      {
+        "name": "Your Best Nightmare",
+        "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#2c180833",
+        "id": "yourbestnightmare",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "imminentdeath"
+  },
+  {
+    "name": "Vs. Susie",
+    "youtubeId": "uWJJ8nywk-M",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.486486486486487,
+        "endTime": 12.972972972972974
+      },
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 12.972972972972974,
+        "endTime": 21.08108108108108
+      },
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 22.702702702702705,
+        "endTime": 29.18918918918919
+      },
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 29.18918918918919,
+        "endTime": 37.2972972972973
+      },
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.91891891891892,
+        "endTime": 45.40540540540541
+      },
+      {
+        "motif": {
+          "name": "Your Best Nightmare",
+          "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#2c180833",
+          "id": "yourbestnightmare",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 45.40540540540541,
+        "endTime": 53.513513513513516
+      },
+      {
+        "motif": {
+          "name": "Susie",
+          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+          "imagePlaying": null,
+          "color": "#ae67af",
+          "color2": "#54468f33",
+          "id": "susie",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 53.91891891891892,
+        "endTime": 66.08108108108108
+      },
+      {
+        "motif": {
+          "name": "Susie",
+          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+          "imagePlaying": null,
+          "color": "#ae67af",
+          "color2": "#54468f33",
+          "id": "susie",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 67.70270270270271,
+        "endTime": 79.05405405405406
+      }
+    ],
+    "loopPoint": 81.08108108108108,
+    "mainMotifs": [
+      {
+        "name": "Susie",
+        "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+        "imagePlaying": null,
+        "color": "#ae67af",
+        "color2": "#54468f33",
+        "id": "susie",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Your Best Nightmare",
+        "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#2c180833",
+        "id": "yourbestnightmare",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "vssusie"
+  },
+  {
     "name": "Card Castle",
     "youtubeId": "tvjuTn9LZwY",
     "motifRefs": [
@@ -2188,8 +2634,225 @@
   {
     "name": "You Can Always Come Home",
     "youtubeId": "Jm3AM-sAbmA",
-    "motifRefs": [],
-    "loopPoint": 57.599999999999994,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 19.2,
+        "endTime": 38.4
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.4,
+        "endTime": 57.599999999999994
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 57,
+        "endTime": 61.8
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 61.8,
+        "endTime": 66.6
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 66.6,
+        "endTime": 70.5
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 70.5,
+        "endTime": 73.8
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 78.6,
+        "endTime": 83.39999999999999
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 79.2,
+        "endTime": 88.8
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 83.39999999999999,
+        "endTime": 88.2
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 88.2,
+        "endTime": 92.1
+      },
+      {
+        "motif": {
+          "name": "Once Upon a Time",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 88.8,
+        "endTime": 94.2
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 92.1,
+        "endTime": 95.39999999999999
+      }
+    ],
+    "loopPoint": 100.8,
     "mainMotifs": [
       {
         "name": "Once Upon a Time",
@@ -2497,6 +3160,216 @@
       }
     ],
     "id": "beforethestory"
+  },
+  {
+    "name": "Girl Next Door",
+    "youtubeId": "KhrhhWFIwXw",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 8.930232558139535
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 8.930232558139535,
+        "endTime": 17.86046511627907
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 17.86046511627907,
+        "endTime": 26.790697674418603
+      },
+      {
+        "motif": {
+          "name": "Girl Next Door",
+          "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
+          "imagePlaying": null,
+          "color": "#d87d50",
+          "color2": "#21120c",
+          "id": "girlnextdoor",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 17.86046511627907,
+        "endTime": 35.72093023255814
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 26.790697674418603,
+        "endTime": 35.72093023255814
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 35.72093023255814,
+        "endTime": 44.651162790697676
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/motifs/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.23255813953488,
+        "endTime": 41.860465116279066
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": "http://127.0.0.1:5500/img/motifs/lostgirl.png",
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 41.860465116279066,
+        "endTime": 44.651162790697676
+      },
+      {
+        "motif": {
+          "name": "Lost Girl",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#331d0a",
+          "color2": "#332a3b33",
+          "id": "lostgirl",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 44.651162790697676,
+        "endTime": 52.46511627906977
+      }
+    ],
+    "loopPoint": 53.581395348837205,
+    "mainMotifs": [
+      {
+        "name": "Girl Next Door",
+        "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
+        "imagePlaying": null,
+        "color": "#d87d50",
+        "color2": "#21120c",
+        "id": "girlnextdoor",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Lost Girl",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#331d0a",
+        "color2": "#332a3b33",
+        "id": "lostgirl",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "girlnextdoor"
   },
   {
     "name": "Queen",
@@ -9705,6 +10578,40 @@
     "id": "blackknife"
   },
   {
+    "name": "Friends",
+    "youtubeId": "ZRo_i3hCN98",
+    "motifRefs": [],
+    "loopPoint": 64,
+    "mainMotifs": [
+      {
+        "name": "Girl Next Door",
+        "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
+        "imagePlaying": null,
+        "color": "#d87d50",
+        "color2": "#21120c",
+        "id": "girlnextdoor",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "friends"
+  },
+  {
     "name": "Knock You Down !! (Rhythm Ver.)",
     "youtubeId": "27oficnsQPo",
     "motifRefs": [
@@ -10424,6 +11331,40 @@
       }
     ],
     "id": "knockyoudownrhythmver"
+  },
+  {
+    "name": "Gingerbread House",
+    "youtubeId": "-drXtC53Kwc",
+    "motifRefs": [],
+    "loopPoint": 32.91428571428571,
+    "mainMotifs": [
+      {
+        "name": "Girl Next Door",
+        "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
+        "imagePlaying": null,
+        "color": "#d87d50",
+        "color2": "#21120c",
+        "id": "girlnextdoor",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "gingerbreadhouse"
   },
   {
     "name": "Dark Sanctuary",
@@ -12017,8 +12958,297 @@
   {
     "name": "Fireplace",
     "youtubeId": "xz61v-lss5g",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 34.21875,
+        "endTime": 37.5
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 37.96875,
+        "endTime": 41.25
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 41.71875,
+        "endTime": 45
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 49.21875,
+        "endTime": 52.5
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 52.96875,
+        "endTime": 56.25
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 56.71875,
+        "endTime": 60
+      },
+      {
+        "motif": {
+          "name": "The Ruins",
+          "image": "http://127.0.0.1:5500/img/motifs/ruins.png",
+          "imagePlaying": null,
+          "color": "#815a98",
+          "color2": "#42498833",
+          "id": "theruins",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 63.75,
+        "endTime": 68.4375
+      },
+      {
+        "motif": {
+          "name": "The Ruins",
+          "image": "http://127.0.0.1:5500/img/motifs/ruins.png",
+          "imagePlaying": null,
+          "color": "#815a98",
+          "color2": "#42498833",
+          "id": "theruins",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 78.75,
+        "endTime": 83.4375
+      },
+      {
+        "motif": {
+          "name": "The Ruins",
+          "image": "http://127.0.0.1:5500/img/motifs/ruins.png",
+          "imagePlaying": null,
+          "color": "#815a98",
+          "color2": "#42498833",
+          "id": "theruins",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 93.75,
+        "endTime": 98.4375
+      },
+      {
+        "motif": {
+          "name": "The Ruins",
+          "image": "http://127.0.0.1:5500/img/motifs/ruins.png",
+          "imagePlaying": null,
+          "color": "#815a98",
+          "color2": "#42498833",
+          "id": "theruins",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 108.75,
+        "endTime": 113.4375
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 124.21875,
+        "endTime": 127.5
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 127.96875,
+        "endTime": 131.25
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 131.71875,
+        "endTime": 135
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 139.21875,
+        "endTime": 142.5
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 142.96875,
+        "endTime": 146.25
+      },
+      {
+        "motif": {
+          "name": "Undyne",
+          "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
+          "imagePlaying": null,
+          "color": "#6299c1",
+          "color2": "#c9473e33",
+          "id": "undyne",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 146.71875,
+        "endTime": 150
+      }
+    ],
+    "loopPoint": 153.75,
     "mainMotifs": [
       {
         "name": "Undyne",
@@ -12027,6 +13257,19 @@
         "color": "#6299c1",
         "color2": "#c9473e33",
         "id": "undyne",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "The Ruins",
+        "image": "http://127.0.0.1:5500/img/motifs/ruins.png",
+        "imagePlaying": null,
+        "color": "#815a98",
+        "color2": "#42498833",
+        "id": "theruins",
         "letter": "",
         "mainDiv": null,
         "letterDiv": null,

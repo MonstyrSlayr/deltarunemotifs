@@ -245,6 +245,18 @@ const beginning = new Song("Beginning",
     [Contributors.KARMA]
 );
 
+const susieBPM = 140;
+const susie = new Song("Susie",
+    [Motifs.SUSIE],
+    "mM8YTLEDJl8",
+    [
+        new MotifReference(Motifs.SUSIE, 0, quickSec(susieBPM, 64))
+    ],
+    "", quickSec(susieBPM, 64),
+    [],
+    [Contributors.KARMA]
+);
+
 const theDoorBPM = 69; // nice
 const theDoor = new Song("The Door",
     [Motifs.THEDOOR],
@@ -423,6 +435,51 @@ const vsLancer = new Song("Vs. Lancer",
     "", quickSec(vsLancerBPM, 123)
 );
 
+const basementBPM = 73;
+const basement = new Song("Basement",
+    [Motifs.KING],
+    "s6UbYc2Z_Fw",
+    [
+        new MotifReference(Motifs.KING, 0, quickSec(basementBPM, 34))
+    ],
+    "", quickSec(basementBPM, 36),
+    [],
+    [Contributors.KARMA]
+);
+
+const imminentDeathBPM = 72;
+const imminentDeath = new Song("Imminent Death",
+    [Motifs.YOURBESTNIGHTMARE],
+    "LmIgaiOhnq8",
+    [
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(imminentDeathBPM, 6), quickSec(imminentDeathBPM, 10.5)),
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(imminentDeathBPM, 15), quickSec(imminentDeathBPM, 22))
+    ],
+    "", quickSec(imminentDeathBPM, 24),
+    [],
+    [Contributors.KARMA]
+);
+
+const vsSusieBPM = 148;
+const vsSusie = new Song("Vs. Susie",
+    [Motifs.SUSIE, Motifs.YOURBESTNIGHTMARE],
+    "uWJJ8nywk-M",
+    [
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(vsSusieBPM, 16), quickSec(vsSusieBPM, 32)),
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(vsSusieBPM, 32), quickSec(vsSusieBPM, 52), true),
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(vsSusieBPM, 56), quickSec(vsSusieBPM, 72)),
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(vsSusieBPM, 72), quickSec(vsSusieBPM, 92), true),
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(vsSusieBPM, 96), quickSec(vsSusieBPM, 112)),
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, quickSec(vsSusieBPM, 112), quickSec(vsSusieBPM, 132), true),
+
+        new MotifReference(Motifs.SUSIE, quickSec(vsSusieBPM, 133), quickSec(vsSusieBPM, 163)),
+        new MotifReference(Motifs.SUSIE, quickSec(vsSusieBPM, 167), quickSec(vsSusieBPM, 195)),
+    ],
+    "", quickSec(vsSusieBPM, 144 + 56),
+    [],
+    [Contributors.KARMA]
+);
+
 const cardCastleBPM = 125;
 const cardCastle = new Song("Card Castle",
     [Motifs.KING],
@@ -530,6 +587,28 @@ const beforeTheStory = new Song("Before the Story",
 //#endregion
 
 //#region CHAPTER 2
+
+const girlNextDoorBPM = 107.5;
+const girlNextDoor = new Song("Girl Next Door",
+    [Motifs.GIRLNEXTDOOR, Motifs.LOSTGIRLB],
+    "KhrhhWFIwXw",
+    [
+        new MotifReference(Motifs.LOSTGIRLB, 0, quickSec(girlNextDoorBPM, 16)),
+        new MotifReference(Motifs.LOSTGIRLB, quickSec(girlNextDoorBPM, 16), quickSec(girlNextDoorBPM, 32)),
+        new MotifReference(Motifs.LOSTGIRLB, quickSec(girlNextDoorBPM, 32), quickSec(girlNextDoorBPM, 48)),
+        new MotifReference(Motifs.LOSTGIRLB, quickSec(girlNextDoorBPM, 48), quickSec(girlNextDoorBPM, 64)),
+        new MotifReference(Motifs.LOSTGIRLB, quickSec(girlNextDoorBPM, 64), quickSec(girlNextDoorBPM, 80)),
+        new MotifReference(Motifs.LOSTGIRLB, quickSec(girlNextDoorBPM, 80), quickSec(girlNextDoorBPM, 94)),
+
+        new MotifReference(Motifs.GIRLNEXTDOOR, quickSec(girlNextDoorBPM, 32), quickSec(girlNextDoorBPM, 64)),
+
+        new MotifReference(Motifs.LOSTGIRLA, quickSec(girlNextDoorBPM, 68.5), quickSec(girlNextDoorBPM, 75)),
+        new MotifReference(Motifs.LOSTGIRLA, quickSec(girlNextDoorBPM, 75), quickSec(girlNextDoorBPM, 80)),
+    ],
+    "", quickSec(girlNextDoorBPM, 96),
+    [],
+    [Contributors.KARMA]
+);
 
 const queenBPM = 109;
 const queen = new Song("Queen",
@@ -1149,6 +1228,19 @@ const blackKnife = new Song("Black Knife",
 
 //#region CHAPTER 4
 
+const friendsBPM = 90;
+const friends = new Song("Friends",
+    [Motifs.GIRLNEXTDOOR],
+    "ZRo_i3hCN98",
+    [
+        new MotifReference(Motifs.GIRLNEXTDOOR, quickSec(friendsBPM, 44.5), quickSec(friendsBPM, 75)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(friendsBPM, 102), quickSec(friendsBPM, 110)),
+    ],
+    "", quickSec(friendsBPM, 128),
+    [],
+    [Contributors.KARMA]
+);
+
 const knockYouDownRhythmVer = new Song("Knock You Down !! (Rhythm Ver.)",
     [Motifs.POWERSCOMBINED],
     "27oficnsQPo",
@@ -1182,6 +1274,19 @@ const knockYouDownRhythmVer = new Song("Knock You Down !! (Rhythm Ver.)",
         new MotifReference(Motifs.POWERSCOMBINED, quickSec(knockYouDownBPM, 128 + 128 + 128 + 32), quickSec(knockYouDownBPM, 128 + 128 + 128 + 48), true), new MotifReference(Motifs.QUEENA, quickSec(knockYouDownBPM, 128 + 128 + 128 + 36), quickSec(knockYouDownBPM, 128 + 128 + 128 + 48), true),
     ],
     "", quickSec(knockYouDownBPM, 128 + 128 + 128 + 56)
+);
+
+const gingerbreadHouseBPM = 175;
+const gingerbreadHouse = new Song("Gingerbread House",
+    [Motifs.GIRLNEXTDOOR],
+    "-drXtC53Kwc",
+    [
+        new MotifReference(Motifs.GIRLNEXTDOOR, quickSec(gingerbreadHouseBPM, 32), quickSec(gingerbreadHouseBPM, 96)),
+        new MotifReference(Motifs.GIRLNEXTDOOR, quickSec(gingerbreadHouseBPM, 128), quickSec(gingerbreadHouseBPM, 192))
+    ],
+    "", quickSec(gingerbreadHouseBPM, 144 + 112),
+    [],
+    [Contributors.KARMA]
 );
 
 const darkSanctuaryBPM = 95;
