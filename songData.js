@@ -1284,7 +1284,7 @@ const gingerbreadHouse = new Song("Gingerbread House",
         new MotifReference(Motifs.GIRLNEXTDOOR, quickSec(gingerbreadHouseBPM, 32), quickSec(gingerbreadHouseBPM, 96)),
         new MotifReference(Motifs.GIRLNEXTDOOR, quickSec(gingerbreadHouseBPM, 128), quickSec(gingerbreadHouseBPM, 192))
     ],
-    "", quickSec(gingerbreadHouseBPM, 144 + 96),
+    "", quickSec(gingerbreadHouseBPM, 144 + 112),
     [],
     [Contributors.KARMA]
 );
