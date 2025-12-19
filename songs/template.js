@@ -10,6 +10,9 @@ let updateIntervals = {};
 let prev = null;
 let trueSeek = 0;
 
+let osciPlayerCount = 3;
+let activePlayer = 0; // dumb
+
 const SONG_OFFSET = 0.15; // account for css bullshit
 
 function getLastFolder(url, num)
@@ -132,250 +135,276 @@ container.appendChild(card);
 
     const allEffects = [...allEffectsSet];
 
-    // hidden YouTube iframe
-    const playerDiv = document.createElement("div");
-    playerDiv.id = "yt" + videoId;
-    playerDiv.style.display = "none";
-    card.appendChild(playerDiv);
-
 // initialize YouTube player
 function onReady()
 {
-    players[videoId] = new YT.Player(playerDiv.id,
+    for (let i = 0; i < osciPlayerCount; i++)
     {
-        videoId: videoId,
-        height: '0',
-        width: '0',
-        playerVars: {
-            'playsinline': 1,
-            'loop': 1,
-            'playlist': videoId, // why youtube why
-        },
-        events:
+        // hidden YouTube iframe
+        const playerDiv = document.createElement("div");
+        playerDiv.id = "yt" + videoId + i;
+        playerDiv.style.display = "none";
+        card.appendChild(playerDiv);
+
+        const playerNum = i;
+        const playerId = videoId + playerNum;
+
+        players[playerId] = new YT.Player(playerDiv.id,
         {
-            'onReady': (event) =>
-            {
-                const duration = daSong.loopPoint == null ? event.target.getDuration() : daSong.loopPoint;
-                durationLabel.textContent = formatTime(duration);
-
-                const motifList = document.getElementById("motifList");
-
-                allMotifIds.forEach(motifId =>
-                {
-                    const motifDiv = createMotifDiv(motifId);
-                    motifList.appendChild(motifDiv);
-                });
-
-                allMotifs.forEach(motif =>
-                {
-                    // add motif to bars
-
-                    const motifbarContainer = document.createElement("div");
-                    motifbarContainer.classList.add("timebarContainer");
-                    motifbarContainer.classList.add("motifTime");
-                    motifbarContainer.style.backgroundColor = motif.color2;
-                    card.appendChild(motifbarContainer);
-
-                    let previousMotifEndTime = 0;
-
-                    for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
-                    {
-                        // each individual reference
-
-                        if (motifRef.endTime == "end") motifRef.endTime = duration;
-
-                        const gapDuration = motifRef.startTime - previousMotifEndTime;
-
-                        if (gapDuration > 0)
-                        {
-                            const barGap = document.createElement("div");
-                            barGap.classList.add("timebarGap");
-                            motifbarContainer.appendChild(barGap);
-
-                            const gapPercent = (gapDuration / duration) * 100;
-                            barGap.style.width = gapPercent + "%";
-                        }
-
-                        const motifDuration = motifRef.endTime - motifRef.startTime;
-
-                        const motifRefBar = document.createElement("div");
-                        motifRefBar.classList.add("timebarProgress");
-                        if (motifRef.isVariation) motifRefBar.classList.add("variation");
-                        motifRefBar.style.backgroundColor = motif.color;
-                        motifbarContainer.appendChild(motifRefBar);
-                        
-                        const motifPercent = (motifDuration / duration) * 100;
-                        motifRefBar.style.width = motifPercent + "%";
-                        previousMotifEndTime = motifRef.endTime;
-
-                        motifRefBar.addEventListener("click", () =>
-                        {
-                            players[videoId].seekTo(motifRef.startTime, true);
-                            players[videoId].playVideo();
-                            trueSeek = motifRef.startTime;
-                        });
-                    }
-
-                    const motifLabel = document.createElement("div");
-                    motifLabel.textContent = motif.toString();
-                    motifLabel.classList.add("timeLabels");
-                    card.appendChild(motifLabel);
-                });
-
-                allEffects.forEach(effect =>
-                {
-                    effect.onLoad();
-                })
+            videoId: videoId,
+            height: '0',
+            width: '0',
+            playerVars: {
+                'playsinline': 1,
             },
-            'onStateChange': (event) =>
+            events:
             {
-                if (event.data === YT.PlayerState.PLAYING)
+                'onReady': (event) =>
                 {
-                    playBtn.classList.add("gone");
-                    pauseBtn.classList.remove("gone");
-
-                    updateIntervals[videoId] = setInterval(() =>
+                    if (activePlayer == playerNum)
                     {
-                        const current = players[videoId].getCurrentTime();
-                        const duration = daSong.loopPoint == null ? players[videoId].getDuration() : daSong.loopPoint;
+                        const duration = daSong.loopPoint == null ? event.target.getDuration() : daSong.loopPoint;
+                        durationLabel.textContent = formatTime(duration);
 
-                        if (daSong.loopPoint != null)
-                        {
-                            if (current >= daSong.loopPoint)
-                            {
-                                players[videoId].seekTo(0, true);
-                                players[videoId].playVideo();
-                            }
-                        }
-
-                        if (!isDragging)
-                        {
-                            const percent = (current / duration) * 100;
-                            timebarProgress.style.width = percent + "%";
-                        }
-                        currentTimeLabel.textContent = formatTime(current);
+                        const motifList = document.getElementById("motifList");
 
                         allMotifIds.forEach(motifId =>
                         {
-                            let bigPlaying = false;
+                            const motifDiv = createMotifDiv(motifId);
+                            motifList.appendChild(motifDiv);
+                        });
 
-                            const motifsWithId = getMotifsById(motifId);
+                        allMotifs.forEach(motif =>
+                        {
+                            // add motif to bars
 
-                            motifsWithId.forEach(motif =>
+                            const motifbarContainer = document.createElement("div");
+                            motifbarContainer.classList.add("timebarContainer");
+                            motifbarContainer.classList.add("motifTime");
+                            motifbarContainer.style.backgroundColor = motif.color2;
+                            card.appendChild(motifbarContainer);
+
+                            let previousMotifEndTime = 0;
+
+                            for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
                             {
-                                let playing = false;
-                                let variation = false;
+                                // each individual reference
 
-                                for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
+                                if (motifRef.endTime == "end") motifRef.endTime = duration;
+
+                                const gapDuration = motifRef.startTime - previousMotifEndTime;
+
+                                if (gapDuration > 0)
                                 {
-                                    if (current >= motifRef.startTime - SONG_OFFSET && current < motifRef.endTime - SONG_OFFSET)
+                                    const barGap = document.createElement("div");
+                                    barGap.classList.add("timebarGap");
+                                    motifbarContainer.appendChild(barGap);
+
+                                    const gapPercent = (gapDuration / duration) * 100;
+                                    barGap.style.width = gapPercent + "%";
+                                }
+
+                                const motifDuration = motifRef.endTime - motifRef.startTime;
+
+                                const motifRefBar = document.createElement("div");
+                                motifRefBar.classList.add("timebarProgress");
+                                if (motifRef.isVariation) motifRefBar.classList.add("variation");
+                                motifRefBar.style.backgroundColor = motif.color;
+                                motifbarContainer.appendChild(motifRefBar);
+                                
+                                const motifPercent = (motifDuration / duration) * 100;
+                                motifRefBar.style.width = motifPercent + "%";
+                                previousMotifEndTime = motifRef.endTime;
+
+                                motifRefBar.addEventListener("click", () =>
+                                {
+                                    const activePlayerId = videoId + activePlayer;
+                                    players[activePlayerId].seekTo(motifRef.startTime, true);
+                                    players[activePlayerId].playVideo();
+                                    trueSeek = motifRef.startTime;
+                                });
+                            }
+
+                            const motifLabel = document.createElement("div");
+                            motifLabel.textContent = motif.toString();
+                            motifLabel.classList.add("timeLabels");
+                            card.appendChild(motifLabel);
+                        });
+
+                        allEffects.forEach(effect =>
+                        {
+                            effect.onLoad();
+                        });
+                    }
+                },
+                'onStateChange': (event) =>
+                {
+                    if (activePlayer == playerNum)
+                    {
+                        if (event.data === YT.PlayerState.PLAYING)
+                        {
+                            playBtn.classList.add("gone");
+                            pauseBtn.classList.remove("gone");
+
+                            updateIntervals[playerId] = setInterval(() =>
+                            {
+                                const current = players[playerId].getCurrentTime();
+                                const duration = daSong.loopPoint == null ? players[playerId].getDuration() : daSong.loopPoint;
+
+                                if (daSong.loopPoint != null)
+                                {
+                                    const nextPlayer = (activePlayer + 1) % osciPlayerCount;
+                                    const nextPlayerId = videoId + nextPlayer;
+
+                                    // REALLY stupid
+                                    players[nextPlayerId].seekTo(0, true);
+                                    players[nextPlayerId].mute();
+
+                                    if (current >= daSong.loopPoint)
                                     {
-                                        bigPlaying = true;
-                                        playing = true;
-                                        variation = motifRef.isVariation;
-                                        break;
+                                        activePlayer = nextPlayer;
+
+                                        players[nextPlayerId].unMute();
+                                        players[nextPlayerId].playVideo();
+
+                                        clearInterval(updateIntervals[playerId]);
                                     }
                                 }
 
-                                if (motif.letterDiv)
+                                if (!isDragging)
                                 {
-                                    if (playing)
+                                    const percent = (current / duration) * 100;
+                                    timebarProgress.style.width = percent + "%";
+                                }
+                                currentTimeLabel.textContent = formatTime(current);
+
+                                allMotifIds.forEach(motifId =>
+                                {
+                                    let bigPlaying = false;
+
+                                    const motifsWithId = getMotifsById(motifId);
+
+                                    motifsWithId.forEach(motif =>
                                     {
-                                        motif.letterDiv.classList.add("playing");
+                                        let playing = false;
+                                        let variation = false;
+
+                                        for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
+                                        {
+                                            if (current >= motifRef.startTime - SONG_OFFSET && current < motifRef.endTime - SONG_OFFSET)
+                                            {
+                                                bigPlaying = true;
+                                                playing = true;
+                                                variation = motifRef.isVariation;
+                                                break;
+                                            }
+                                        }
+
+                                        if (motif.letterDiv)
+                                        {
+                                            if (playing)
+                                            {
+                                                motif.letterDiv.classList.add("playing");
+                                            }
+                                            else
+                                            {
+                                                motif.letterDiv.classList.remove("playing");
+                                            }
+                                        }
+
+                                        if (variation)
+                                        {
+                                            motif.variationDiv.classList.add("playing");
+                                        }
+                                        else
+                                        {
+                                            motif.variationDiv.classList.remove("playing");
+                                        }
+                                    });
+
+                                    if (bigPlaying)
+                                    {
+                                        motifsWithId[0].mainDiv.classList.add("playing");
+
+                                        if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
+                                        {
+                                            motifsWithId[0].mainDiv.image.classList.add("gone");
+                                            motifsWithId[0].mainDiv.imagePlaying.classList.remove("gone");
+                                        }
                                     }
                                     else
                                     {
-                                        motif.letterDiv.classList.remove("playing");
+                                        motifsWithId[0].mainDiv.classList.remove("playing");
+
+                                        if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
+                                        {
+                                            motifsWithId[0].mainDiv.image.classList.remove("gone");
+                                            motifsWithId[0].mainDiv.imagePlaying.classList.add("gone");
+                                        }
                                     }
-                                }
+                                });
 
-                                if (variation)
+                                [...allEffects].filter(effect => !effect.isOneshot).forEach(effect =>
                                 {
-                                    motif.variationDiv.classList.add("playing");
-                                }
-                                else
-                                {
-                                    motif.variationDiv.classList.remove("playing");
-                                }
-                            });
+                                    let playing = false;
 
-                            if (bigPlaying)
-                            {
-                                motifsWithId[0].mainDiv.classList.add("playing");
-
-                                if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
-                                {
-                                    motifsWithId[0].mainDiv.image.classList.add("gone");
-                                    motifsWithId[0].mainDiv.imagePlaying.classList.remove("gone");
-                                }
-                            }
-                            else
-                            {
-                                motifsWithId[0].mainDiv.classList.remove("playing");
-
-                                if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
-                                {
-                                    motifsWithId[0].mainDiv.image.classList.remove("gone");
-                                    motifsWithId[0].mainDiv.imagePlaying.classList.add("gone");
-                                }
-                            }
-                        });
-
-                        [...allEffects].filter(effect => !effect.isOneshot).forEach(effect =>
-                        {
-                            let playing = false;
-
-                            for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
-                            {
-                                if (current >= effectRef.startTime && current < effectRef.endTime)
-                                {
-                                    playing = true;
-
-                                    if (effect.onIntermediate != null)
+                                    for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
                                     {
-                                        effect.onIntermediate((current - effectRef.startTime) / (effectRef.endTime - effectRef.startTime));
+                                        if (current >= effectRef.startTime && current < effectRef.endTime)
+                                        {
+                                            playing = true;
+
+                                            if (effect.onIntermediate != null)
+                                            {
+                                                effect.onIntermediate((current - effectRef.startTime) / (effectRef.endTime - effectRef.startTime));
+                                            }
+                                        }
                                     }
-                                }
-                            }
 
-                            if (playing)
-                            {
-                                effect.onActive();
-                            }
-                            else
-                            {
-                                effect.onDeactive();
-                            }
-                        });
+                                    if (playing)
+                                    {
+                                        effect.onActive();
+                                    }
+                                    else
+                                    {
+                                        effect.onDeactive();
+                                    }
+                                });
 
-                        [...allEffects].filter(effect => effect.isOneshot).forEach(effect =>
-                        {
-                            for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
-                            {
-                                if ((trueSeek == null && prev!= null && current > effectRef.startTime && prev <= effectRef.startTime)
-                                || trueSeek == effectRef.startTime)
+                                [...allEffects].filter(effect => effect.isOneshot).forEach(effect =>
                                 {
-                                    effect.onDeactive();
-                                    effect.onActive();
-                                }
-                            }
-                        });
+                                    for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
+                                    {
+                                        if ((trueSeek == null && prev!= null && current > effectRef.startTime && prev <= effectRef.startTime)
+                                        || trueSeek == effectRef.startTime)
+                                        {
+                                            effect.onDeactive();
+                                            effect.onActive();
+                                        }
+                                    }
+                                });
 
-                        trueSeek = null;
-                        prev = current;
-                    }, 15);
-                }
-                else
-                {
-                    pauseBtn.classList.add("gone");
-                    playBtn.classList.remove("gone");
+                                trueSeek = null;
+                                prev = current;
+                            }, 15);
+                        }
+                        else
+                        {
+                            pauseBtn.classList.add("gone");
+                            playBtn.classList.remove("gone");
 
-                    clearInterval(updateIntervals[videoId]);
-                    prev = null;
+                            clearInterval(updateIntervals[playerId]);
+                            prev = null;
+                        }
+                    }
+                    else
+                    {
+                        clearInterval(updateIntervals[playerId]);
+                    }
                 }
             }
-        }
-    });
+        });
+    }
 }
 
 // If API ready, init now, else defer
@@ -390,12 +419,13 @@ else
 
 function playOrPause()
 {
-    const playerState = players[videoId].getPlayerState();
+    const activePlayerId = videoId + activePlayer;
+    const playerState = players[activePlayerId].getPlayerState();
             
     // -1 (unstarted), 0 (ended), 1 (playing), 2 (paused), 3 (buffering), 5 (video cued)
     if (playerState === 1)
     {
-        players[videoId].pauseVideo();
+        players[activePlayerId].pauseVideo();
 
         allEffects.filter(effect => effect.isOneshot).forEach(effect =>
         {
@@ -410,7 +440,7 @@ function playOrPause()
     }
     else if (playerState === 2 || playerState === 5)
     {
-        players[videoId].playVideo();
+        players[activePlayerId].playVideo();
     }
 }
 
@@ -421,6 +451,8 @@ cover.addEventListener("click", function()
 
 window.addEventListener('keydown', function(keyevent)
 {
+    const activePlayerId = videoId + activePlayer;
+
     if (['Space', 'ArrowLeft', 'ArrowRight'].includes(keyevent.code))
     {
         keyevent.preventDefault();
@@ -433,26 +465,34 @@ window.addEventListener('keydown', function(keyevent)
             break;
         
         case 'ArrowLeft':
-            players[videoId].seekTo(players[videoId].getCurrentTime() - 5, true);
+            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() - 5, true);
             break;
 
         case 'ArrowRight':
-            players[videoId].seekTo(players[videoId].getCurrentTime() + 5, true);
+            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() + 5, true);
             break;
         
         case 'KeyJ':
-            players[videoId].seekTo(players[videoId].getCurrentTime() - 10, true);
+            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() - 10, true);
             break;
 
         case 'KeyL':    
-            players[videoId].seekTo(players[videoId].getCurrentTime() + 10, true);
+            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() + 10, true);
             break;
     }
 });
 
 // Button actions
-playBtn.onclick = () => players[videoId].playVideo();
-pauseBtn.onclick = () => players[videoId].pauseVideo();
+playBtn.onclick = () =>
+{
+    const activePlayerId = videoId + activePlayer;
+    players[activePlayerId].playVideo()
+};
+pauseBtn.onclick = () =>
+{
+    const activePlayerId = videoId + activePlayer;
+    players[activePlayerId].pauseVideo();
+}
 
 // Seek when clicking timebar
 timebarContainer.addEventListener("click", (e) =>
@@ -494,13 +534,14 @@ function updateProgress(e)
 
 function seekVideo(e)
 {
+    const activePlayerId = videoId + activePlayer;
     const rect = timebarContainer.getBoundingClientRect();
     const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
     const percent = clickX / rect.width;
-    const duration = daSong.loopPoint == null ? players[videoId].getDuration() : daSong.loopPoint;
-    players[videoId].seekTo(duration * percent, true);
+    const duration = daSong.loopPoint == null ? players[activePlayerId].getDuration() : daSong.loopPoint;
+    players[activePlayerId].seekTo(duration * percent, true);
     trueSeek = duration * percent;
-    players[videoId].playVideo();
+    players[activePlayerId].playVideo();
 }
 
 // for recording
