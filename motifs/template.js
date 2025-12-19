@@ -23,12 +23,19 @@ motifList.appendChild(offMotifDiv);
 const onMotifDiv = createMotifDiv(daId, false, true);
 motifList.appendChild(onMotifDiv);
 
+class MotifPlayer
+{
+    activePlayer = 0;
+    players = [];
+}
+
 let players = {}; // store players by videoId
 let updateIntervals = {};
 const SONG_OFFSET = 0.15;
 const readyCallbacks = [];
 let isDragging = null;
 let activePlayer = null;
+let osciPlayerCount = 3;
 
 function addYouTubeReadyCallback(fn)
 {
@@ -38,6 +45,7 @@ function addYouTubeReadyCallback(fn)
 function createMotifRefDiv(daSong, daMotifs)
 {
     const daId = daSong.id + daMotifs.toString();
+    const daMotifPlayer = new MotifPlayer();
 
     const bigDiv = document.createElement("div");
     bigDiv.classList.add("motifRefDiv");
@@ -101,174 +109,214 @@ function createMotifRefDiv(daSong, daMotifs)
             durationLabel.textContent = "0:00";
             timeLabels.appendChild(currentTimeLabel);
             timeLabels.appendChild(durationLabel);
-        
-        const playerDiv = document.createElement("div");
-        playerDiv.id = "yt" + daId;
-        playerDiv.style.display = "none";
-        card.appendChild(playerDiv);
     
         function onReady()
         {
-            players[daId] = new YT.Player(playerDiv.id,
+            for (let i = 0; i < osciPlayerCount; i++)
             {
-                videoId: daSong.youtubeId,
-                height: '0',
-                width: '0',
-                playerVars: {
-                    'playsinline': 1,
-                    'loop': 1,
-                    'playlist': daSong.youtubeId, // why youtube why
-                },
-                events:
+                const playerDiv = document.createElement("div");
+                playerDiv.id = "yt" + daId + i;
+                playerDiv.style.display = "none";
+                card.appendChild(playerDiv);
+
+                const playerNum = i;
+                const playerId = daId + playerNum;
+
+                players[playerId] = new YT.Player(playerDiv.id,
                 {
-                    'onReady': (event) =>
-                    {
-                        const duration = daSong.loopPoint == null ? event.target.getDuration() : daSong.loopPoint;
-                        durationLabel.textContent = formatTime(duration);
-
-                        daMotifs.forEach(motif =>
-                        {
-                            // add motif to bars
-                            const motifbarContainer = document.createElement("div");
-                            motifbarContainer.classList.add("timebarContainer");
-                            motifbarContainer.classList.add("motifTime");
-                            motifbarContainer.style.backgroundColor = motif.color2;
-                            card.appendChild(motifbarContainer);
-
-                            let previousMotifEndTime = 0;
-
-                            for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
-                            {
-                                // each individual reference
-
-                                if (motifRef.endTime == "end") motifRef.endTime = duration;
-
-                                const gapDuration = motifRef.startTime - previousMotifEndTime;
-
-                                if (gapDuration > 0)
-                                {
-                                    const barGap = document.createElement("div");
-                                    barGap.classList.add("timebarGap");
-                                    motifbarContainer.appendChild(barGap);
-
-                                    const gapPercent = (gapDuration / duration) * 100;
-                                    barGap.style.width = gapPercent + "%";
-                                }
-
-                                const motifDuration = motifRef.endTime - motifRef.startTime;
-
-                                const motifRefBar = document.createElement("div");
-                                motifRefBar.classList.add("timebarProgress");
-                                if (motifRef.isVariation) motifRefBar.classList.add("variation");
-                                motifRefBar.style.backgroundColor = motif.color;
-                                motifbarContainer.appendChild(motifRefBar);
-                                
-                                const motifPercent = (motifDuration / duration) * 100;
-                                motifRefBar.style.width = motifPercent + "%";
-                                previousMotifEndTime = motifRef.endTime;
-
-                                motifRefBar.addEventListener("click", () =>
-                                {
-                                    players[daId].seekTo(motifRef.startTime, true);
-                                    players[daId].playVideo();
-                                    activePlayer = daId;
-                                    pauseAllExcept(daId);
-                                });
-                            }
-
-                            const motifLabel = document.createElement("div");
-                            motifLabel.textContent = motif.toString();
-                            motifLabel.classList.add("timeLabels");
-                            card.appendChild(motifLabel);
-                        });
+                    videoId: daSong.youtubeId,
+                    height: '0',
+                    width: '0',
+                    playerVars: {
+                        'playsinline': 1,
                     },
-                    'onStateChange': (event) =>
+                    events:
                     {
-                        if (event.data === YT.PlayerState.PLAYING)
+                        'onReady': (event) =>
                         {
-                            playBtn.classList.add("gone");
-                            pauseBtn.classList.remove("gone");
-
-                            updateIntervals[daId] = setInterval(() =>
+                            if (daMotifPlayer.activePlayer == playerNum)
                             {
-                                const current = players[daId].getCurrentTime();
-                                const duration = daSong.loopPoint == null ? players[daId].getDuration() : daSong.loopPoint;
-
-                                if (daSong.loopPoint != null)
-                                {
-                                    if (current >= daSong.loopPoint)
-                                    {
-                                        players[daId].seekTo(0, true);
-                                        players[daId].playVideo();
-                                        pauseAllExcept(daId);
-                                    }
-                                }
-
-                                if (!isDragging)
-                                {
-                                    const percent = (current / duration) * 100;
-                                    timebarProgress.style.width = percent + "%";
-                                }
-                                currentTimeLabel.textContent = formatTime(current);
+                                const duration = daSong.loopPoint == null ? event.target.getDuration() : daSong.loopPoint;
+                                durationLabel.textContent = formatTime(duration);
 
                                 daMotifs.forEach(motif =>
                                 {
-                                    let playing = false;
-                                    let variation = false;
+                                    // add motif to bars
+                                    const motifbarContainer = document.createElement("div");
+                                    motifbarContainer.classList.add("timebarContainer");
+                                    motifbarContainer.classList.add("motifTime");
+                                    motifbarContainer.style.backgroundColor = motif.color2;
+                                    card.appendChild(motifbarContainer);
+
+                                    let previousMotifEndTime = 0;
 
                                     for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
                                     {
-                                        if (current >= motifRef.startTime - SONG_OFFSET && current < motifRef.endTime - SONG_OFFSET)
+                                        // each individual reference
+
+                                        if (motifRef.endTime == "end") motifRef.endTime = duration;
+
+                                        const gapDuration = motifRef.startTime - previousMotifEndTime;
+
+                                        if (gapDuration > 0)
                                         {
-                                            playing = true;
-                                            variation = motifRef.isVariation;
-                                            break;
+                                            const barGap = document.createElement("div");
+                                            barGap.classList.add("timebarGap");
+                                            motifbarContainer.appendChild(barGap);
+
+                                            const gapPercent = (gapDuration / duration) * 100;
+                                            barGap.style.width = gapPercent + "%";
                                         }
+
+                                        const motifDuration = motifRef.endTime - motifRef.startTime;
+
+                                        const motifRefBar = document.createElement("div");
+                                        motifRefBar.classList.add("timebarProgress");
+                                        if (motifRef.isVariation) motifRefBar.classList.add("variation");
+                                        motifRefBar.style.backgroundColor = motif.color;
+                                        motifbarContainer.appendChild(motifRefBar);
+                                        
+                                        const motifPercent = (motifDuration / duration) * 100;
+                                        motifRefBar.style.width = motifPercent + "%";
+                                        previousMotifEndTime = motifRef.endTime;
+
+                                        motifRefBar.addEventListener("click", () =>
+                                        {
+                                            const derId = daId + daMotifPlayer.activePlayer;
+                                            players[derId].seekTo(motifRef.startTime, true);
+                                            players[derId].playVideo();
+                                            activePlayer = derId;
+                                            pauseAllExcept(daMotifPlayer);
+                                        });
                                     }
 
-                                    if (playing)
-                                    {
-                                        // motif.letterDiv.classList.add("playing");
-                                    }
-                                    else
-                                    {
-                                        // motif.letterDiv.classList.remove("playing");
-                                    }
-
-                                    if (variation)
-                                    {
-                                        // motif.variationDiv.classList.add("playing");
-                                    }
-                                    else
-                                    {
-                                        // motif.variationDiv.classList.remove("playing");
-                                    }
+                                    const motifLabel = document.createElement("div");
+                                    motifLabel.textContent = motif.toString();
+                                    motifLabel.classList.add("timeLabels");
+                                    card.appendChild(motifLabel);
                                 });
-                            }, 15);
-                        }
-                        else
+                            }
+                        },
+                        'onStateChange': (event) =>
                         {
-                            pauseBtn.classList.add("gone");
-                            playBtn.classList.remove("gone");
+                            if (daMotifPlayer.activePlayer == playerNum)
+                            {
+                                if (event.data === YT.PlayerState.PLAYING)
+                                {
+                                    playBtn.classList.add("gone");
+                                    pauseBtn.classList.remove("gone");
 
-                            clearInterval(updateIntervals[daId]);
+                                    updateIntervals[playerId] = setInterval(() =>
+                                    {
+                                        const current = players[playerId].getCurrentTime();
+                                        const duration = daSong.loopPoint == null ? players[playerId].getDuration() : daSong.loopPoint;
+
+                                        if (daSong.loopPoint != null)
+                                        {
+                                            const nextPlayer = (daMotifPlayer.activePlayer + 1) % osciPlayerCount;
+                                            const nextPlayerId = daId + nextPlayer;
+
+                                            // REALLY stupid
+                                            players[nextPlayerId].seekTo(0, true);
+                                            players[nextPlayerId].mute();
+
+                                            if (current >= daSong.loopPoint)
+                                            {
+                                                daMotifPlayer.activePlayer = nextPlayer;
+
+                                                players[nextPlayerId].unMute();
+                                                players[nextPlayerId].playVideo();
+
+                                                clearInterval(updateIntervals[playerId]);
+                                                pauseAllExcept(daMotifPlayer);
+                                                activePlayer = nextPlayerId;
+                                            }
+                                        }
+
+                                        if (!isDragging)
+                                        {
+                                            const percent = (current / duration) * 100;
+                                            timebarProgress.style.width = percent + "%";
+                                        }
+                                        currentTimeLabel.textContent = formatTime(current);
+
+                                        daMotifs.forEach(motif =>
+                                        {
+                                            let playing = false;
+                                            let variation = false;
+
+                                            for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
+                                            {
+                                                if (current >= motifRef.startTime - SONG_OFFSET && current < motifRef.endTime - SONG_OFFSET)
+                                                {
+                                                    playing = true;
+                                                    variation = motifRef.isVariation;
+                                                    break;
+                                                }
+                                            }
+
+                                            if (playing)
+                                            {
+                                                // motif.letterDiv.classList.add("playing");
+                                            }
+                                            else
+                                            {
+                                                // motif.letterDiv.classList.remove("playing");
+                                            }
+
+                                            if (variation)
+                                            {
+                                                // motif.variationDiv.classList.add("playing");
+                                            }
+                                            else
+                                            {
+                                                // motif.variationDiv.classList.remove("playing");
+                                            }
+                                        });
+                                    }, 15);
+                                }
+                                else
+                                {
+                                    pauseBtn.classList.add("gone");
+                                    playBtn.classList.remove("gone");
+
+                                    clearInterval(updateIntervals[playerId]);
+                                }
+                            }
+                            else
+                            {
+                                clearInterval(updateIntervals[playerId]);
+                            }
                         }
                     }
-                }
-            });
+                });
+
+                daMotifPlayer.players.push(players[playerId]);
+            }
         }
 
         addYouTubeReadyCallback(onReady);
 
         // Button actions
-        playBtn.onclick = () => {players[daId].playVideo(); pauseAllExcept(daId); activePlayer = daId;};
-        pauseBtn.onclick = () => {players[daId].pauseVideo(); activePlayer = daId;};
+        playBtn.onclick = () =>
+        {
+            const woienfowirfoiwner = daId + daMotifPlayer.activePlayer;
+            players[woienfowirfoiwner].playVideo();
+            pauseAllExcept(daMotifPlayer);
+            activePlayer = woienfowirfoiwner;
+        };
+        pauseBtn.onclick = () =>
+        {
+            const wornbchsknieft = daId + daMotifPlayer.activePlayer;
+            players[wornbchsknieft].pauseVideo();
+            activePlayer = wornbchsknieft;
+        };
 
         // Seek when clicking timebar
         timebarContainer.addEventListener("click", (e) =>
         {
             seekVideo(e);
-            pauseAllExcept(daId);
+            pauseAllExcept(daMotifPlayer);
         });
 
         // Seek when clicking or dragging timebar
@@ -305,24 +353,25 @@ function createMotifRefDiv(daSong, daMotifs)
 
         function seekVideo(e)
         {
+            const man = daId + daMotifPlayer.activePlayer;
             const rect = timebarContainer.getBoundingClientRect();
             const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
             const percent = clickX / rect.width;
-            const duration = daSong.loopPoint == null ? players[daId].getDuration() : daSong.loopPoint;
-            players[daId].seekTo(duration * percent, true);
-            players[daId].playVideo();
-            pauseAllExcept(daId);
-            activePlayer = daId;
+            const duration = daSong.loopPoint == null ? players[man].getDuration() : daSong.loopPoint;
+            players[man].seekTo(duration * percent, true);
+            players[man].playVideo();
+            pauseAllExcept(daMotifPlayer);
+            activePlayer = man;
         }
     
     return bigDiv;
 }
 
-function pauseAllExcept(daPlayerId)
+function pauseAllExcept(daMotifPlayer)
 {
     for (const playerId of Object.keys(players))
     {
-        if (playerId == daPlayerId) continue;
+        if (daMotifPlayer.players.includes(players[playerId])) continue;
         players[playerId].pauseVideo();
     }
 }
