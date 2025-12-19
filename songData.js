@@ -308,7 +308,7 @@ const rudeBuster = new Song("Rude Buster",
         new MotifReference(Motifs.RUDEBUSTERB, quickSec(rudeBusterBPM, 64.75), quickSec(rudeBusterBPM, 96)),
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(rudeBusterBPM, 144.75 + 16), quickSec(rudeBusterBPM, 144 + 16 + 4)),
     ],
-    "", quickSec(rudeBusterBPM, 144 + 32)
+    "", quickSec(rudeBusterBPM, 144 + 31.9)
 );
 
 const emptyTownBPM = 138;

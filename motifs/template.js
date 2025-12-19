@@ -50,8 +50,19 @@ function createMotifRefDiv(daSong, daMotifs)
     const bigDiv = document.createElement("div");
     bigDiv.classList.add("motifRefDiv");
 
+        const loadingDiv = document.createElement("div");
+        bigDiv.appendChild(loadingDiv);
+
+            const loadingText = document.createElement("h2");
+            loadingText.textContent = "Loading";
+            loadingDiv.appendChild(loadingText);
+
+            const loadingSong = createSongDiv(daSong, true);
+            loadingDiv.appendChild(loadingSong);
+
         const someDiv = document.createElement("div");
         someDiv.classList.add("motifRefPlayDiv");
+        someDiv.style.display = "none";
         bigDiv.appendChild(someDiv);
 
             const daSongDiv = createSongDiv(daSong, true);
@@ -72,6 +83,7 @@ function createMotifRefDiv(daSong, daMotifs)
 
         const card = document.createElement("div");
         card.classList.add("cardSmall");
+        card.style.display = "none";
         bigDiv.appendChild(card);
             
             const timebarContainer = document.createElement("div");
@@ -195,6 +207,10 @@ function createMotifRefDiv(daSong, daMotifs)
                                     motifLabel.classList.add("timeLabels");
                                     card.appendChild(motifLabel);
                                 });
+
+                                someDiv.style.display = "";
+                                card.style.display = "";
+                                loadingDiv.style.display = "none";
                             }
                         },
                         'onStateChange': (event) =>

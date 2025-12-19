@@ -38,9 +38,20 @@ songList.appendChild(songDiv);
 
 const container = document.getElementById("mainMusicContainer");
 
+const loadingDiv = document.createElement("div");
+container.appendChild(loadingDiv);
+
+    const loadingText = document.createElement("h2");
+    loadingText.textContent = "Loading";
+    loadingDiv.appendChild(loadingText);
+
+    const loadingSong = createSongDiv(daSong, true);
+    loadingDiv.appendChild(loadingSong);
+
 // create card
 const card = document.createElement("div");
 card.classList.add("audioCard");
+card.style.display = "none";
 container.appendChild(card);
 
     const imageContainer = document.createElement("div");
@@ -235,6 +246,9 @@ function onReady()
                         {
                             effect.onLoad();
                         });
+
+                        card.style.display = "";
+                        loadingDiv.style.display = "none";
                     }
                 },
                 'onStateChange': (event) =>
