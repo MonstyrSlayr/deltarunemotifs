@@ -127,7 +127,7 @@ Motifs.CYBERWORLDB = new Motif("Cyber World", "B", "#62ffba","#313131");
 Motifs.ROOTS = new Motif("Roots", "");
 Motifs.POWERSCOMBINED = new Motif("Knock You Down !!", "", "#99e550", "#8eaaea33", MOTIFIMGLINK + "gigaQueen.png", ["Powers Combined"]);
 
-Motifs.GIRLNEXTDOOR = new Motif("Girl Next Door", "");
+Motifs.GIRLNEXTDOOR = new Motif("Girl Next Door", "", "#d87d50","#21120c", MOTIFIMGLINK + "noelle.png");
 Motifs.QUEENA = new Motif("Queen", "A", "#6fd1ff", "#6d86e733", MOTIFIMGLINK + "queen.webp");
 Motifs.QUEENB = new Motif("Queen", "B", "#6fd1ff", "#6d86e733");
 Motifs.QUEENC = new Motif("Queen", "C", "#6fd1ff", "#6d86e733");

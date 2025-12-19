@@ -793,10 +793,10 @@
   },
   {
     "name": "Girl Next Door",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
     "imagePlaying": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#d87d50",
+    "color2": "#21120c",
     "id": "girlnextdoor",
     "letter": "",
     "mainDiv": null,
