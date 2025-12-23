@@ -1410,7 +1410,7 @@ const gyaaHaHa = new Song("Gyaa Ha ha!",
         new MotifReference(Motifs.GERSON, quickSec(gyaaHaHaBPM, 57 + 63 + 16), quickSec(gyaaHaHaBPM, 57 + 63 + 24)),
         new MotifReference(Motifs.GERSON, quickSec(gyaaHaHaBPM, 57 + 63 + 24), quickSec(gyaaHaHaBPM, 57 + 63 + 33), true),
     ],
-    "", quickSec(gyaaHaHaBPM, 57 + 63 + 33 + 4)
+    "", quickSec(gyaaHaHaBPM, 57 + 63 + 33 + 3.75)
 );
 
 const fireplaceBPM = 128;
