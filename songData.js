@@ -1208,7 +1208,7 @@ const hallOfFame = new Song("Hall of Fame",
         new MotifReference(Motifs.TVTIME, quickSec(hallOfFameBPM, 16), quickSec(hallOfFameBPM, 16 + 4)),
         new MotifReference(Motifs.FANFARE, quickSec(hallOfFameBPM, 16 + 4.5), quickSec(hallOfFameBPM, 16 + 11)),
     ],
-    "", quickSec(hallOfFameBPM, 33)
+    "", quickSec(hallOfFameBPM, 32.39)
 )
 
 const blackKnifeBPM = 147.5;
