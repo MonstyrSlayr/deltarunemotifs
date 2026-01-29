@@ -328,6 +328,17 @@ input[type="checkbox"]
     width: 100%;
 }
 
+.albumTitleDiv
+{
+    width: 100%;
+    border-bottom: solid white 2px;
+}
+
+.albumTitleDiv > h2
+{
+    text-align: left;
+}
+
 .songDiv
 {
     border: var(--cool-border);

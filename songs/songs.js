@@ -1,4 +1,4 @@
-import { allSongs, createSongDiv } from "../songData.js";
+import { allAlbums, allSongs, createSongDiv } from "../songData.js";
 
 const allSongsDiv = document.getElementById("songList");
 const sortInput = document.getElementById("sortInput");
@@ -6,11 +6,25 @@ const sortDesc = document.getElementById("isDescending");
 
 function sortBySoundtrack(desc = false)
 {
-    const daArr = desc ? [...allSongs].reverse() : allSongs;
-    daArr.forEach(song =>
+    const daAlbums = desc ? [...allAlbums].reverse() : allAlbums;
+
+    daAlbums.forEach(album =>
     {
-        const songDiv = createSongDiv(song, true);
-        allSongsDiv.appendChild(songDiv);
+        const albumTitleDiv = document.createElement("div");
+        albumTitleDiv.classList.add("albumTitleDiv");
+        allSongsDiv.appendChild(albumTitleDiv);
+
+            const albumTitle = document.createElement("h2");
+            albumTitle.textContent = album.name;
+            albumTitleDiv.appendChild(albumTitle);
+
+        const daArr = desc ? [...album.songs].reverse() : album.songs;
+
+        daArr.forEach(song =>
+        {
+            const songDiv = createSongDiv(song, true);
+            allSongsDiv.appendChild(songDiv);
+        });
     });
 }
 
@@ -30,6 +44,8 @@ function sortAlphabetically(desc = false)
 
 function sortMotifCount(desc = false)
 {
+    let currentCount = null;
+
     [...allSongs].sort((a, b) =>
     {
         const aMotifs = new Set();
@@ -46,6 +62,25 @@ function sortMotifCount(desc = false)
         return (aMotifs.size - bMotifs.size) * (desc ? -1 : 1);
     }).forEach(song =>
     {
+        const daMotifs = new Set();
+        song.motifRefs.forEach(motifRef =>
+        {
+            daMotifs.add(motifRef.motif);
+        });
+
+        if (daMotifs.size != currentCount)
+        {
+            currentCount = daMotifs.size;
+
+            const albumTitleDiv = document.createElement("div");
+            albumTitleDiv.classList.add("albumTitleDiv");
+            allSongsDiv.appendChild(albumTitleDiv);
+
+                const albumTitle = document.createElement("h2");
+                albumTitle.textContent = "Individual Motif Count: " + currentCount;
+                albumTitleDiv.appendChild(albumTitle);
+        }
+
         const songDiv = createSongDiv(song, true);
         allSongsDiv.appendChild(songDiv);
     });
@@ -53,6 +88,8 @@ function sortMotifCount(desc = false)
 
 function sortMotifIdCount(desc = false)
 {
+    let currentCount = null;
+
     [...allSongs].sort((a, b) =>
     {
         const aMotifs = new Set();
@@ -69,6 +106,25 @@ function sortMotifIdCount(desc = false)
         return (aMotifs.size - bMotifs.size) * (desc ? -1 : 1);
     }).forEach(song =>
     {
+        const daMotifs = new Set();
+        song.motifRefs.forEach(motifRef =>
+        {
+            daMotifs.add(motifRef.motif.id);
+        });
+
+        if (daMotifs.size != currentCount)
+        {
+            currentCount = daMotifs.size;
+
+            const albumTitleDiv = document.createElement("div");
+            albumTitleDiv.classList.add("albumTitleDiv");
+            allSongsDiv.appendChild(albumTitleDiv);
+
+                const albumTitle = document.createElement("h2");
+                albumTitle.textContent = "Encompassing Motif Count: " + currentCount;
+                albumTitleDiv.appendChild(albumTitle);
+        }
+
         const songDiv = createSongDiv(song, true);
         allSongsDiv.appendChild(songDiv);
     });

@@ -3,7 +3,28 @@ import { Motifs, MotifReference, getMotifsById } from "./motifData.js";
 import { Contributors } from "./contribData.js";
 import { Effects, EffectRef } from "./effectData.js";
 
+export const allAlbums = [];
 export const allSongs = [];
+
+class Album
+{
+    name;
+    songs = [];
+
+    constructor(name)
+    {
+        this.name = name;
+        allAlbums.push(this);
+    }
+}
+
+const undertaleAlbum = new Album("UNDERTALE");
+const undertale10Album = new Album("UNDERTALE 10th Anniversary");
+const deltarune1Album = new Album("DELTARUNE Chapter 1");
+const deltarune2Album = new Album("DELTARUNE Chapter 2");
+const deltarune34Album = new Album("DELTARUNE Chapters 3+4");
+
+let currentAlbum;
 
 class Song
 {
@@ -30,6 +51,7 @@ class Song
         this.contributors = contributors;
 
         allSongs.push(this);
+        currentAlbum.songs.push(this);
     }
 }
 
@@ -226,6 +248,20 @@ function quickSec(bpm, numberOfBeats)
     const totalSeconds = beatDurationInSeconds * numberOfBeats;
     return totalSeconds;
 }
+
+currentAlbum = undertaleAlbum;
+
+//#region UNDERTALE
+
+//#endregion
+
+currentAlbum = undertale10Album;
+
+//#region UNDERTALE 10th Anniversary
+
+//#endregion
+
+currentAlbum = deltarune1Album;
 
 //#region CHAPTER 1
 
@@ -585,6 +621,8 @@ const beforeTheStory = new Song("Before the Story",
 );
 
 //#endregion
+
+currentAlbum = deltarune2Album;
 
 //#region CHAPTER 2
 
@@ -1004,6 +1042,8 @@ const dialtone = new Song("Dialtone",
 );
 
 //#endregion
+
+currentAlbum = deltarune34Album;
 
 //#region CHAPTER 3
 
