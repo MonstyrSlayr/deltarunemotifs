@@ -237,10 +237,10 @@
   },
   {
     "name": "Spooktune",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
     "imagePlaying": null,
     "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color2": "#00000033",
     "id": "spooktune",
     "letter": "",
     "mainDiv": null,
@@ -250,10 +250,10 @@
   },
   {
     "name": "Jingle Bells",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/motifs/SSSSANTAAAA.png",
     "imagePlaying": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#e96142",
+    "color2": "#ccdad833",
     "id": "jinglebells",
     "letter": "",
     "mainDiv": null,
@@ -659,7 +659,7 @@
   },
   {
     "name": "Susie",
-    "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+    "image": "http://127.0.0.1:5500/img/motifs/susiegaster.png",
     "imagePlaying": null,
     "color": "#ae67af",
     "color2": "#54468f33",
@@ -910,7 +910,7 @@
   },
   {
     "name": "Spamton",
-    "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+    "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
     "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffaec933",
@@ -1068,7 +1068,7 @@
   },
   {
     "name": "Mike",
-    "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+    "image": "http://127.0.0.1:5500/img/motifs/mike.png",
     "imagePlaying": null,
     "color": "#69be60",
     "color2": "#ff0e0033",

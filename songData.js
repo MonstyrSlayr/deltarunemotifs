@@ -253,6 +253,35 @@ currentAlbum = undertaleAlbum;
 
 //#region UNDERTALE
 
+const spooktuneBPM = 122;
+const spooktune = new Song("Spooktune",
+    [Motifs.SPOOKTUNE],
+    "LMWHcTqUcco",
+    [
+        new MotifReference(Motifs.SPOOKTUNE, 0, quickSec(spooktuneBPM, 16)),
+        new MotifReference(Motifs.SPOOKTUNE, quickSec(spooktuneBPM, 16), quickSec(spooktuneBPM, 32)),
+    ],
+    "", quickSec(spooktuneBPM, 47.9)
+);
+
+// i love it when this happens
+const spookwave = new Song("Spookwave",
+    [Motifs.SPOOKTUNE],
+    "1uJ57n8PZ_o",
+    spooktune.motifRefs,
+    "", spooktune.loopPoint
+);
+
+const ghoulidayBPM = 165;
+const ghouliday = new Song("Ghouliday",
+    [Motifs.JINGLEBELLS],
+    "QDbwvVvufAw",
+    [
+        new MotifReference(Motifs.JINGLEBELLS, 0, quickSec(ghoulidayBPM, 32))
+    ],
+    "", quickSec(ghoulidayBPM, 32)
+);
+
 //#endregion
 
 currentAlbum = undertale10Album;

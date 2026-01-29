@@ -405,7 +405,8 @@ a.motifMainDiv:hover
     max-height: 100%;
     width: auto;
     height: auto;
-    flex-shrink: 2;
+    object-fit: contain;
+    flex-grow: 1;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-optimize-contrast;

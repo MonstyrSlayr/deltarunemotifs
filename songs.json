@@ -1,5 +1,200 @@
 [
   {
+    "name": "Spooktune",
+    "youtubeId": "LMWHcTqUcco",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Spooktune",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "spooktune",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 7.868852459016393
+      },
+      {
+        "motif": {
+          "name": "Spooktune",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "spooktune",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.868852459016393,
+        "endTime": 15.737704918032787
+      }
+    ],
+    "loopPoint": 23.557377049180328,
+    "mainMotifs": [
+      {
+        "name": "Spooktune",
+        "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#00000033",
+        "id": "spooktune",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "spooktune"
+  },
+  {
+    "name": "Spookwave",
+    "youtubeId": "1uJ57n8PZ_o",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Spooktune",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "spooktune",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 7.868852459016393
+      },
+      {
+        "motif": {
+          "name": "Spooktune",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "spooktune",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.868852459016393,
+        "endTime": 15.737704918032787
+      }
+    ],
+    "loopPoint": 23.557377049180328,
+    "mainMotifs": [
+      {
+        "name": "Spooktune",
+        "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#00000033",
+        "id": "spooktune",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "spookwave"
+  },
+  {
+    "name": "Ghouliday",
+    "youtubeId": "QDbwvVvufAw",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Jingle Bells",
+          "image": "http://127.0.0.1:5500/img/motifs/SSSSANTAAAA.png",
+          "imagePlaying": null,
+          "color": "#e96142",
+          "color2": "#ccdad833",
+          "id": "jinglebells",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 11.636363636363637
+      }
+    ],
+    "loopPoint": 11.636363636363637,
+    "mainMotifs": [
+      {
+        "name": "Jingle Bells",
+        "image": "http://127.0.0.1:5500/img/motifs/SSSSANTAAAA.png",
+        "imagePlaying": null,
+        "color": "#e96142",
+        "color2": "#ccdad833",
+        "id": "jinglebells",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "ghouliday"
+  },
+  {
     "name": "Beginning",
     "youtubeId": "puOs1uy4t5M",
     "motifRefs": [
@@ -126,7 +321,7 @@
       {
         "motif": {
           "name": "Susie",
-          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.png",
           "imagePlaying": null,
           "color": "#ae67af",
           "color2": "#54468f33",
@@ -146,7 +341,7 @@
     "mainMotifs": [
       {
         "name": "Susie",
-        "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/susiegaster.png",
         "imagePlaying": null,
         "color": "#ae67af",
         "color2": "#54468f33",
@@ -708,7 +903,7 @@
         "endTime": 70.28571428571428
       }
     ],
-    "loopPoint": 75.42857142857143,
+    "loopPoint": 75.38571428571429,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -1993,7 +2188,7 @@
       {
         "motif": {
           "name": "Susie",
-          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.png",
           "imagePlaying": null,
           "color": "#ae67af",
           "color2": "#54468f33",
@@ -2011,7 +2206,7 @@
       {
         "motif": {
           "name": "Susie",
-          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/susiegaster.png",
           "imagePlaying": null,
           "color": "#ae67af",
           "color2": "#54468f33",
@@ -2031,7 +2226,7 @@
     "mainMotifs": [
       {
         "name": "Susie",
-        "image": "http://127.0.0.1:5500/img/motifs/susiegaster.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/susiegaster.png",
         "imagePlaying": null,
         "color": "#ae67af",
         "color2": "#54468f33",
@@ -4749,7 +4944,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -4767,7 +4962,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -4787,7 +4982,7 @@
     "mainMotifs": [
       {
         "name": "Spamton",
-        "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
         "imagePlaying": null,
         "color": "#ffffff",
         "color2": "#ffaec933",
@@ -4820,7 +5015,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -4838,7 +5033,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -4856,7 +5051,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -4910,7 +5105,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -4966,7 +5161,7 @@
     "mainMotifs": [
       {
         "name": "Spamton",
-        "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
         "imagePlaying": null,
         "color": "#ffffff",
         "color2": "#ffaec933",
@@ -6921,7 +7116,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -6941,7 +7136,7 @@
     "mainMotifs": [
       {
         "name": "Spamton",
-        "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
         "imagePlaying": null,
         "color": "#ffffff",
         "color2": "#ffaec933",
@@ -7010,7 +7205,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -7028,7 +7223,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -7082,7 +7277,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -7100,7 +7295,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -7230,7 +7425,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -7248,7 +7443,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -7394,7 +7589,7 @@
     "mainMotifs": [
       {
         "name": "Spamton",
-        "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
         "imagePlaying": null,
         "color": "#ffffff",
         "color2": "#ffaec933",
@@ -8294,7 +8489,7 @@
         "endTime": 90.6923076923077
       }
     ],
-    "loopPoint": 103.56923076923077,
+    "loopPoint": 103.38461538461539,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -8414,7 +8609,7 @@
         "endTime": 108
       }
     ],
-    "loopPoint": 115.44,
+    "loopPoint": 115.19999999999999,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -8464,7 +8659,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8482,7 +8677,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8500,7 +8695,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8518,7 +8713,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8536,7 +8731,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8554,7 +8749,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8572,7 +8767,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8590,7 +8785,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -8608,7 +8803,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -10425,7 +10620,7 @@
         "endTime": 22.752808988764045
       }
     ],
-    "loopPoint": 27.80898876404494,
+    "loopPoint": 27.294943820224717,
     "mainMotifs": [
       {
         "name": "TV Time!",
@@ -10580,8 +10775,45 @@
   {
     "name": "Friends",
     "youtubeId": "ZRo_i3hCN98",
-    "motifRefs": [],
-    "loopPoint": 64,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Girl Next Door",
+          "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
+          "imagePlaying": null,
+          "color": "#d87d50",
+          "color2": "#21120c",
+          "id": "girlnextdoor",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 29.666666666666664,
+        "endTime": 50
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 68,
+        "endTime": 73.33333333333333
+      }
+    ],
+    "loopPoint": 85.33333333333333,
     "mainMotifs": [
       {
         "name": "Girl Next Door",
@@ -10600,13 +10832,13 @@
     "effectRefs": [],
     "contributors": [
       {
-        "name": "MonstyrSlayr",
-        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
-        "credit": "Created the website and implemented most of the songs and motifs.",
-        "showSongs": false,
-        "youtube": "https://youtube.com/@MonstyrSlayr",
-        "github": "https://github.com/MonstyrSlayr",
-        "discord": "https://discord.com/users/434840883637125121"
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
       }
     ],
     "id": "friends"
@@ -11335,8 +11567,45 @@
   {
     "name": "Gingerbread House",
     "youtubeId": "-drXtC53Kwc",
-    "motifRefs": [],
-    "loopPoint": 32.91428571428571,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Girl Next Door",
+          "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
+          "imagePlaying": null,
+          "color": "#d87d50",
+          "color2": "#21120c",
+          "id": "girlnextdoor",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 10.971428571428572,
+        "endTime": 32.91428571428571
+      },
+      {
+        "motif": {
+          "name": "Girl Next Door",
+          "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
+          "imagePlaying": null,
+          "color": "#d87d50",
+          "color2": "#21120c",
+          "id": "girlnextdoor",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 43.885714285714286,
+        "endTime": 65.82857142857142
+      }
+    ],
+    "loopPoint": 87.77142857142857,
     "mainMotifs": [
       {
         "name": "Girl Next Door",
@@ -11355,13 +11624,13 @@
     "effectRefs": [],
     "contributors": [
       {
-        "name": "MonstyrSlayr",
-        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
-        "credit": "Created the website and implemented most of the songs and motifs.",
-        "showSongs": false,
-        "youtube": "https://youtube.com/@MonstyrSlayr",
-        "github": "https://github.com/MonstyrSlayr",
-        "discord": "https://discord.com/users/434840883637125121"
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
       }
     ],
     "id": "gingerbreadhouse"
@@ -12925,7 +13194,7 @@
         "endTime": 73.44
       }
     ],
-    "loopPoint": 75.36,
+    "loopPoint": 75.24,
     "mainMotifs": [
       {
         "name": "Gerson",
@@ -23098,7 +23367,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -23116,7 +23385,7 @@
       {
         "motif": {
           "name": "Mike",
-          "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/mike.png",
           "imagePlaying": null,
           "color": "#69be60",
           "color2": "#ff0e0033",
@@ -23134,7 +23403,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23152,7 +23421,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23588,7 +23857,7 @@
     "mainMotifs": [
       {
         "name": "Mike",
-        "image": "http://127.0.0.1:5500/img/motifs/mike.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/mike.png",
         "imagePlaying": null,
         "color": "#69be60",
         "color2": "#ff0e0033",
@@ -23621,7 +23890,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23639,7 +23908,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23657,7 +23926,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23675,7 +23944,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23693,7 +23962,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23711,7 +23980,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23729,7 +23998,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23747,7 +24016,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23765,7 +24034,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23783,7 +24052,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23801,7 +24070,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23819,7 +24088,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23837,7 +24106,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23855,7 +24124,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23873,7 +24142,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23891,7 +24160,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23909,7 +24178,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23927,7 +24196,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23945,7 +24214,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23963,7 +24232,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23981,7 +24250,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -23999,7 +24268,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24017,7 +24286,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24035,7 +24304,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24053,7 +24322,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24071,7 +24340,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24089,7 +24358,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24107,7 +24376,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24125,7 +24394,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24143,7 +24412,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24161,7 +24430,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24179,7 +24448,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24197,7 +24466,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24215,7 +24484,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24233,7 +24502,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24251,7 +24520,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24269,7 +24538,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24287,7 +24556,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24305,7 +24574,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24323,7 +24592,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24341,7 +24610,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24359,7 +24628,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24377,7 +24646,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24395,7 +24664,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24413,7 +24682,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24431,7 +24700,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24449,7 +24718,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24467,7 +24736,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24485,7 +24754,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24523,7 +24792,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24541,7 +24810,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24559,7 +24828,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24577,7 +24846,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24595,7 +24864,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24613,7 +24882,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24631,7 +24900,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24649,7 +24918,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24667,7 +24936,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24685,7 +24954,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24703,7 +24972,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24721,7 +24990,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24739,7 +25008,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24757,7 +25026,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24775,7 +25044,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24813,7 +25082,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24831,7 +25100,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24849,7 +25118,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24867,7 +25136,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24885,7 +25154,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24903,7 +25172,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24921,7 +25190,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24939,7 +25208,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24957,7 +25226,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24975,7 +25244,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -24993,7 +25262,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -25011,7 +25280,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -25029,7 +25298,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -25047,7 +25316,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -25065,7 +25334,7 @@
       {
         "motif": {
           "name": "Spamton",
-          "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+          "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
           "imagePlaying": null,
           "color": "#ffffff",
           "color2": "#ffaec933",
@@ -25085,7 +25354,7 @@
     "mainMotifs": [
       {
         "name": "Spamton",
-        "image": "http://127.0.0.1:5500/img/motifs/spamton.webp",
+        "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
         "imagePlaying": null,
         "color": "#ffffff",
         "color2": "#ffaec933",
