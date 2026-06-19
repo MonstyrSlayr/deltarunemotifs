@@ -271,11 +271,19 @@ function onReady()
                                     const nextPlayerId = videoId + nextPlayer;
 
                                     // REALLY stupid
+                                    // constantly plays the video at position 0, to prevent buffering before playing
+                                    // if there is a better way, do that instead
                                     players[nextPlayerId].seekTo(0, true);
                                     players[nextPlayerId].mute();
 
                                     if (current >= daSong.loopPoint)
                                     {
+                                        if (daSong.stopsAfterLoop)
+                                        {
+                                            players[playerId].mute();
+                                            players[playerId].pauseVideo();
+                                        }
+
                                         activePlayer = nextPlayer;
 
                                         players[nextPlayerId].unMute();
@@ -474,7 +482,7 @@ window.addEventListener('keydown', function(keyevent)
 
     switch (keyevent.code)
     {
-        case 'Space': case 'KeyK':
+        case 'Space': case 'KeyK': case 'KeyP':
             playOrPause();
             break;
         

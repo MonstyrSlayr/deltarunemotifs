@@ -36,7 +36,7 @@ class Song
     effectRefs = [];
     contributors = [Contributors.MONSTYRSLAYR]; // default, you egotistic
 
-    constructor(name, mainMotifs, youtubeId = "", motifRefs = [], id = "", loopPoint = null, effectRefs = [], contributors = [Contributors.MONSTYRSLAYR])
+    constructor(name, mainMotifs, youtubeId = "", motifRefs = [], id = "", loopPoint = null, effectRefs = [], contributors = [Contributors.MONSTYRSLAYR], stopsAfterLoop = false)
     {
         this.name = name;
         this.mainMotifs = mainMotifs;
@@ -49,6 +49,7 @@ class Song
         this.loopPoint = loopPoint;
         this.effectRefs = effectRefs;
         this.contributors = contributors;
+        this.stopsAfterLoop = stopsAfterLoop; // if song does annoying fadeout, set to true
 
         allSongs.push(this);
         currentAlbum.songs.push(this);
@@ -253,6 +254,60 @@ currentAlbum = undertaleAlbum;
 
 //#region UNDERTALE
 
+const ghostFightBPM = 112.5;
+const ghostFight = new Song("Ghost Fight",
+    [Motifs.GHOSTFIGHTA, Motifs.GHOSTFIGHTB],
+    "o0tky2O8NlY",
+    [
+        new MotifReference(Motifs.GHOSTFIGHTA, 0, quickSec(ghostFightBPM, 8)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 8), quickSec(ghostFightBPM, 12)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 16), quickSec(ghostFightBPM, 24)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 24), quickSec(ghostFightBPM, 28)),
+
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(ghostFightBPM, 32), quickSec(ghostFightBPM, 64)),
+    ],
+    "", quickSec(ghostFightBPM, 96),
+    undefined, undefined, true
+);
+
+const dummyBPM = 125;
+const dummy = new Song("Dummy!",
+    [Motifs.GHOSTFIGHTA, Motifs.DUMMY],
+    "FbtgN-lqRHA",
+    [
+        new MotifReference(Motifs.GHOSTFIGHTA, 0, quickSec(dummyBPM, 8)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(dummyBPM, 8), quickSec(dummyBPM, 12)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(dummyBPM, 16), quickSec(dummyBPM, 24)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(dummyBPM, 24), quickSec(dummyBPM, 32)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(dummyBPM, 32), quickSec(dummyBPM, 40)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(dummyBPM, 40), quickSec(dummyBPM, 44)),
+
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(dummyBPM, 48), quickSec(dummyBPM, 80)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(dummyBPM, 80), quickSec(dummyBPM, 96)),
+
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(dummyBPM, 128 - 8), quickSec(dummyBPM, 128 - 4)),
+
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(dummyBPM, 128 - 8 + 32), quickSec(dummyBPM, 128 - 4 + 32)),
+
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(dummyBPM, 192 + 32), quickSec(dummyBPM, 192 + 64)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(dummyBPM, 192 + 64), quickSec(dummyBPM, 192 + 80)),
+
+        new MotifReference(Motifs.DUMMY, quickSec(dummyBPM, 192 + 80), quickSec(dummyBPM, 192 + 88)),
+        new MotifReference(Motifs.DUMMY, quickSec(dummyBPM, 192 + 96), quickSec(dummyBPM, 192 + 104)),
+    ],
+    "", quickSec(dummyBPM, 192 + 112)
+);
+
+const patheticHouseBPM = 65;
+const patheticHouse = new Song("Pathetic House",
+    [Motifs.GHOSTFIGHTB],
+    "0YlHwRyM26Q",
+    [
+        new MotifReference(Motifs.GHOSTFIGHTB, 0, quickSec(patheticHouseBPM, 40)),
+    ],
+    "", quickSec(patheticHouseBPM, 40)
+);
+
 const spooktuneBPM = 122;
 const spooktune = new Song("Spooktune",
     [Motifs.SPOOKTUNE],
@@ -280,6 +335,40 @@ const ghouliday = new Song("Ghouliday",
         new MotifReference(Motifs.JINGLEBELLS, 0, quickSec(ghoulidayBPM, 32))
     ],
     "", quickSec(ghoulidayBPM, 32)
+);
+
+const spiderDanceBPM = 115;
+const spiderDance = new Song("Spider Dance",
+    [Motifs.GHOSTFIGHTB],
+    "NH-GAwLAO30",
+    [
+        new MotifReference(Motifs.GHOSTFIGHTB, 0, quickSec(spiderDanceBPM, 16)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 16), quickSec(spiderDanceBPM, 32)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 32), quickSec(spiderDanceBPM, 48)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 48), quickSec(spiderDanceBPM, 96)),
+
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 96), quickSec(spiderDanceBPM, 128)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 16), quickSec(spiderDanceBPM, 32)),
+    ],
+    "", quickSec(spiderDanceBPM, 128 + 64),
+    undefined, undefined, true
+);
+
+const madMewMewBPM = 120;
+const madMewMew = new Song("Mad Mew Mew",
+    [Motifs.GHOSTFIGHTB],
+    "aeM0EVs1ON8",
+    [
+        new MotifReference(Motifs.GHOSTFIGHTB, 0, quickSec(madMewMewBPM, 32)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(madMewMewBPM, 32), quickSec(madMewMewBPM, 68)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(madMewMewBPM, 71.25), quickSec(madMewMewBPM, 72 + 32)),
+
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(madMewMewBPM, 68 + 68), quickSec(madMewMewBPM, 68 + 68 + 32)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(madMewMewBPM, 68 + 68 + 32), quickSec(madMewMewBPM, 68 + 68 + 68)),
+        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(madMewMewBPM, 68 + 68 + 71.25), quickSec(madMewMewBPM, 68 + 68 + 72 + 32)),
+    ],
+    "", quickSec(madMewMewBPM, 68 + 68 + 72 + 32 + 32),
+    undefined, undefined, true
 );
 
 //#endregion

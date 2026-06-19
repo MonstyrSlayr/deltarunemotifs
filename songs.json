@@ -1,15 +1,509 @@
 [
   {
+    "name": "Ghost Fight",
+    "youtubeId": "o0tky2O8NlY",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 4.266666666666667
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 4.266666666666667,
+        "endTime": 6.4
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 8.533333333333333,
+        "endTime": 12.8
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 12.8,
+        "endTime": 14.933333333333334
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 17.066666666666666,
+        "endTime": 34.13333333333333
+      }
+    ],
+    "loopPoint": 51.2,
+    "mainMotifs": [
+      {
+        "name": "Ghost Fight",
+        "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#00000033",
+        "id": "ghostfight",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Ghost Fight",
+        "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+        "imagePlaying": null,
+        "color": "#b1b7f0",
+        "color2": "#a6504d33",
+        "id": "ghostfight",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "ghostfight",
+    "stopsAfterLoop": true
+  },
+  {
+    "name": "Dummy!",
+    "youtubeId": "FbtgN-lqRHA",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 3.84
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 3.84,
+        "endTime": 5.76
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.68,
+        "endTime": 11.52
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 11.52,
+        "endTime": 15.36
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 15.36,
+        "endTime": 19.2
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 19.2,
+        "endTime": 21.119999999999997
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 23.04,
+        "endTime": 38.4
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.4,
+        "endTime": 46.08
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 57.599999999999994,
+        "endTime": 59.519999999999996
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 72.96,
+        "endTime": 74.88
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 107.52,
+        "endTime": 122.88
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 122.88,
+        "endTime": 130.56
+      },
+      {
+        "motif": {
+          "name": "Dummy!",
+          "image": "http://127.0.0.1:5500/img/motifs/madDummy.png",
+          "imagePlaying": null,
+          "color": "#ffbc3a",
+          "color2": "#00000033",
+          "id": "dummy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 130.56,
+        "endTime": 134.4
+      },
+      {
+        "motif": {
+          "name": "Dummy!",
+          "image": "http://127.0.0.1:5500/img/motifs/madDummy.png",
+          "imagePlaying": null,
+          "color": "#ffbc3a",
+          "color2": "#00000033",
+          "id": "dummy",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 138.24,
+        "endTime": 142.07999999999998
+      }
+    ],
+    "loopPoint": 145.92,
+    "mainMotifs": [
+      {
+        "name": "Ghost Fight",
+        "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#00000033",
+        "id": "ghostfight",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Dummy!",
+        "image": "http://127.0.0.1:5500/img/motifs/madDummy.png",
+        "imagePlaying": null,
+        "color": "#ffbc3a",
+        "color2": "#00000033",
+        "id": "dummy",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "dummy",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Pathetic House",
+    "youtubeId": "0YlHwRyM26Q",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 36.92307692307693
+      }
+    ],
+    "loopPoint": 36.92307692307693,
+    "mainMotifs": [
+      {
+        "name": "Ghost Fight",
+        "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+        "imagePlaying": null,
+        "color": "#b1b7f0",
+        "color2": "#a6504d33",
+        "id": "ghostfight",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "pathetichouse",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Spooktune",
     "youtubeId": "LMWHcTqUcco",
     "motifRefs": [
       {
         "motif": {
           "name": "Spooktune",
-          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
           "imagePlaying": null,
-          "color": "#ffffff",
-          "color2": "#00000033",
+          "color": "#ff9c53",
+          "color2": "#e8e6ce33",
           "id": "spooktune",
           "letter": "",
           "mainDiv": null,
@@ -24,10 +518,10 @@
       {
         "motif": {
           "name": "Spooktune",
-          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
           "imagePlaying": null,
-          "color": "#ffffff",
-          "color2": "#00000033",
+          "color": "#ff9c53",
+          "color2": "#e8e6ce33",
           "id": "spooktune",
           "letter": "",
           "mainDiv": null,
@@ -44,10 +538,10 @@
     "mainMotifs": [
       {
         "name": "Spooktune",
-        "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+        "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
         "imagePlaying": null,
-        "color": "#ffffff",
-        "color2": "#00000033",
+        "color": "#ff9c53",
+        "color2": "#e8e6ce33",
         "id": "spooktune",
         "letter": "",
         "mainDiv": null,
@@ -68,7 +562,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "spooktune"
+    "id": "spooktune",
+    "stopsAfterLoop": false
   },
   {
     "name": "Spookwave",
@@ -77,10 +572,10 @@
       {
         "motif": {
           "name": "Spooktune",
-          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
           "imagePlaying": null,
-          "color": "#ffffff",
-          "color2": "#00000033",
+          "color": "#ff9c53",
+          "color2": "#e8e6ce33",
           "id": "spooktune",
           "letter": "",
           "mainDiv": null,
@@ -95,10 +590,10 @@
       {
         "motif": {
           "name": "Spooktune",
-          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
           "imagePlaying": null,
-          "color": "#ffffff",
-          "color2": "#00000033",
+          "color": "#ff9c53",
+          "color2": "#e8e6ce33",
           "id": "spooktune",
           "letter": "",
           "mainDiv": null,
@@ -115,10 +610,10 @@
     "mainMotifs": [
       {
         "name": "Spooktune",
-        "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+        "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
         "imagePlaying": null,
-        "color": "#ffffff",
-        "color2": "#00000033",
+        "color": "#ff9c53",
+        "color2": "#e8e6ce33",
         "id": "spooktune",
         "letter": "",
         "mainDiv": null,
@@ -139,7 +634,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "spookwave"
+    "id": "spookwave",
+    "stopsAfterLoop": false
   },
   {
     "name": "Ghouliday",
@@ -192,7 +688,296 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "ghouliday"
+    "id": "ghouliday",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Spider Dance",
+    "youtubeId": "NH-GAwLAO30",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 8.347826086956522
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 8.347826086956522,
+        "endTime": 16.695652173913043
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 8.347826086956522,
+        "endTime": 16.695652173913043
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 16.695652173913043,
+        "endTime": 25.043478260869563
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 25.043478260869563,
+        "endTime": 50.086956521739125
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 50.086956521739125,
+        "endTime": 66.78260869565217
+      }
+    ],
+    "loopPoint": 100.17391304347825,
+    "mainMotifs": [
+      {
+        "name": "Ghost Fight",
+        "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+        "imagePlaying": null,
+        "color": "#b1b7f0",
+        "color2": "#a6504d33",
+        "id": "ghostfight",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "spiderdance",
+    "stopsAfterLoop": true
+  },
+  {
+    "name": "Mad Mew Mew",
+    "youtubeId": "aeM0EVs1ON8",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 16
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 16,
+        "endTime": 34
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 35.625,
+        "endTime": 52
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 68,
+        "endTime": 84
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 84,
+        "endTime": 102
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+          "imagePlaying": null,
+          "color": "#b1b7f0",
+          "color2": "#a6504d33",
+          "id": "ghostfight",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 103.625,
+        "endTime": 120
+      }
+    ],
+    "loopPoint": 136,
+    "mainMotifs": [
+      {
+        "name": "Ghost Fight",
+        "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
+        "imagePlaying": null,
+        "color": "#b1b7f0",
+        "color2": "#a6504d33",
+        "id": "ghostfight",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "madmewmew",
+    "stopsAfterLoop": true
   },
   {
     "name": "Beginning",
@@ -312,7 +1097,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "beginning"
+    "id": "beginning",
+    "stopsAfterLoop": false
   },
   {
     "name": "Susie",
@@ -365,7 +1151,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "susie"
+    "id": "susie",
+    "stopsAfterLoop": false
   },
   {
     "name": "The Door",
@@ -418,7 +1205,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "thedoor"
+    "id": "thedoor",
+    "stopsAfterLoop": false
   },
   {
     "name": "The Chase",
@@ -489,7 +1277,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "thechase"
+    "id": "thechase",
+    "stopsAfterLoop": false
   },
   {
     "name": "The Legend",
@@ -704,7 +1493,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "thelegend"
+    "id": "thelegend",
+    "stopsAfterLoop": false
   },
   {
     "name": "Lancer",
@@ -824,7 +1614,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "lancer"
+    "id": "lancer",
+    "stopsAfterLoop": false
   },
   {
     "name": "Rude Buster",
@@ -944,7 +1735,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "rudebuster"
+    "id": "rudebuster",
+    "stopsAfterLoop": false
   },
   {
     "name": "Empty Town",
@@ -1051,7 +1843,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "emptytown"
+    "id": "emptytown",
+    "stopsAfterLoop": false
   },
   {
     "name": "Field of Hopes and Dreams",
@@ -1297,7 +2090,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "fieldofhopesanddreams"
+    "id": "fieldofhopesanddreams",
+    "stopsAfterLoop": false
   },
   {
     "name": "Fanfare",
@@ -1350,7 +2144,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "fanfare"
+    "id": "fanfare",
+    "stopsAfterLoop": false
   },
   {
     "name": "Lantern",
@@ -1452,7 +2247,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "lantern"
+    "id": "lantern",
+    "stopsAfterLoop": false
   },
   {
     "name": "Quiet Autumn",
@@ -1559,7 +2355,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "quietautumn"
+    "id": "quietautumn",
+    "stopsAfterLoop": false
   },
   {
     "name": "Scarlet Forest",
@@ -1823,7 +2620,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "scarletforest"
+    "id": "scarletforest",
+    "stopsAfterLoop": false
   },
   {
     "name": "Vs. Lancer",
@@ -1943,7 +2741,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "vslancer"
+    "id": "vslancer",
+    "stopsAfterLoop": false
   },
   {
     "name": "Basement",
@@ -2000,7 +2799,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "basement"
+    "id": "basement",
+    "stopsAfterLoop": false
   },
   {
     "name": "Imminent Death",
@@ -2071,7 +2871,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "imminentdeath"
+    "id": "imminentdeath",
+    "stopsAfterLoop": false
   },
   {
     "name": "Vs. Susie",
@@ -2263,7 +3064,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "vssusie"
+    "id": "vssusie",
+    "stopsAfterLoop": false
   },
   {
     "name": "Card Castle",
@@ -2376,7 +3178,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "cardcastle"
+    "id": "cardcastle",
+    "stopsAfterLoop": false
   },
   {
     "name": "Chaos King",
@@ -2563,7 +3366,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "chaosking"
+    "id": "chaosking",
+    "stopsAfterLoop": false
   },
   {
     "name": "THE WORLD REVOLVING",
@@ -2824,7 +3628,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "theworldrevolving"
+    "id": "theworldrevolving",
+    "stopsAfterLoop": false
   },
   {
     "name": "You Can Always Come Home",
@@ -3088,7 +3893,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "youcanalwayscomehome"
+    "id": "youcanalwayscomehome",
+    "stopsAfterLoop": false
   },
   {
     "name": "Before the Story",
@@ -3354,7 +4160,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "beforethestory"
+    "id": "beforethestory",
+    "stopsAfterLoop": false
   },
   {
     "name": "Girl Next Door",
@@ -3564,7 +4371,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "girlnextdoor"
+    "id": "girlnextdoor",
+    "stopsAfterLoop": false
   },
   {
     "name": "Queen",
@@ -3720,7 +4528,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "queen"
+    "id": "queen",
+    "stopsAfterLoop": false
   },
   {
     "name": "A CYBER'S WORLD?",
@@ -4020,7 +4829,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "acybersworld"
+    "id": "acybersworld",
+    "stopsAfterLoop": false
   },
   {
     "name": "A Simple Diversion",
@@ -4127,7 +4937,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "asimplediversion"
+    "id": "asimplediversion",
+    "stopsAfterLoop": false
   },
   {
     "name": "Berdly",
@@ -4229,7 +5040,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "berdly"
+    "id": "berdly",
+    "stopsAfterLoop": false
   },
   {
     "name": "Smart Race",
@@ -4421,7 +5233,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "smartrace"
+    "id": "smartrace",
+    "stopsAfterLoop": false
   },
   {
     "name": "WELCOME TO THE CITY",
@@ -4649,7 +5462,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "welcometothecity"
+    "id": "welcometothecity",
+    "stopsAfterLoop": false
   },
   {
     "name": "Cool Mixtape",
@@ -4738,7 +5552,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "coolmixtape"
+    "id": "coolmixtape",
+    "stopsAfterLoop": false
   },
   {
     "name": "HEY EVERY !",
@@ -4935,7 +5750,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "heyevery"
+    "id": "heyevery",
+    "stopsAfterLoop": false
   },
   {
     "name": "Spamton",
@@ -5006,7 +5822,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "spamton"
+    "id": "spamton",
+    "stopsAfterLoop": false
   },
   {
     "name": "NOW'S YOUR CHANCE TO BE A",
@@ -5198,7 +6015,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "nowsyourchancetobea"
+    "id": "nowsyourchancetobea",
+    "stopsAfterLoop": false
   },
   {
     "name": "Elegant Entrance",
@@ -5305,7 +6123,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "elegantentrance"
+    "id": "elegantentrance",
+    "stopsAfterLoop": false
   },
   {
     "name": "Bluebird of Misfortune",
@@ -5389,7 +6208,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "bluebirdofmisfortune"
+    "id": "bluebirdofmisfortune",
+    "stopsAfterLoop": false
   },
   {
     "name": "Pandora Palace",
@@ -5532,7 +6352,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "pandorapalace"
+    "id": "pandorapalace",
+    "stopsAfterLoop": false
   },
   {
     "name": "Lost Girl",
@@ -5742,7 +6563,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "lostgirl"
+    "id": "lostgirl",
+    "stopsAfterLoop": false
   },
   {
     "name": "Attack of the Killer Queen",
@@ -6006,7 +6828,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "attackofthekillerqueen"
+    "id": "attackofthekillerqueen",
+    "stopsAfterLoop": false
   },
   {
     "name": "Giga Size",
@@ -6203,7 +7026,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "gigasize"
+    "id": "gigasize",
+    "stopsAfterLoop": false
   },
   {
     "name": "Knock You Down !!",
@@ -6964,7 +7788,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "knockyoudown"
+    "id": "knockyoudown",
+    "stopsAfterLoop": false
   },
   {
     "name": "The Dark Truth",
@@ -7107,7 +7932,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "thedarktruth"
+    "id": "thedarktruth",
+    "stopsAfterLoop": false
   },
   {
     "name": "Deal Gone Wrong",
@@ -7160,7 +7986,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "dealgonewrong"
+    "id": "dealgonewrong",
+    "stopsAfterLoop": false
   },
   {
     "name": "BIG SHOT",
@@ -7637,7 +8464,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "bigshot"
+    "id": "bigshot",
+    "stopsAfterLoop": false
   },
   {
     "name": "A Real Boy!",
@@ -7834,7 +8662,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "arealboy"
+    "id": "arealboy",
+    "stopsAfterLoop": false
   },
   {
     "name": "Dialtone",
@@ -7911,7 +8740,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "dialtone"
+    "id": "dialtone",
+    "stopsAfterLoop": false
   },
   {
     "name": "Feature Presentation",
@@ -7960,7 +8790,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "featurepresentation"
+    "id": "featurepresentation",
+    "stopsAfterLoop": false
   },
   {
     "name": "Ruder Buster",
@@ -8530,7 +9361,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "ruderbuster"
+    "id": "ruderbuster",
+    "stopsAfterLoop": false
   },
   {
     "name": "Vapor Buster",
@@ -8650,7 +9482,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "vaporbuster"
+    "id": "vaporbuster",
+    "stopsAfterLoop": false
   },
   {
     "name": "Raise Up Your Bat",
@@ -8928,7 +9761,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "raiseupyourbat"
+    "id": "raiseupyourbat",
+    "stopsAfterLoop": false
   },
   {
     "name": "Doom Board",
@@ -9264,7 +10098,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "doomboard"
+    "id": "doomboard",
+    "stopsAfterLoop": false
   },
   {
     "name": "Metaphysical Challenge",
@@ -9600,7 +10435,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "metaphysicalchallenge"
+    "id": "metaphysicalchallenge",
+    "stopsAfterLoop": false
   },
   {
     "name": "TV WORLD",
@@ -9975,7 +10811,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "tvworld"
+    "id": "tvworld",
+    "stopsAfterLoop": false
   },
   {
     "name": "It's TV Time!",
@@ -10537,7 +11374,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "itstvtime"
+    "id": "itstvtime",
+    "stopsAfterLoop": false
   },
   {
     "name": "Hall of Fame",
@@ -10663,7 +11501,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "halloffame"
+    "id": "halloffame",
+    "stopsAfterLoop": false
   },
   {
     "name": "Black Knife",
@@ -10770,7 +11609,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "blackknife"
+    "id": "blackknife",
+    "stopsAfterLoop": false
   },
   {
     "name": "Friends",
@@ -10841,7 +11681,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "friends"
+    "id": "friends",
+    "stopsAfterLoop": false
   },
   {
     "name": "Knock You Down !! (Rhythm Ver.)",
@@ -11562,7 +12403,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "knockyoudownrhythmver"
+    "id": "knockyoudownrhythmver",
+    "stopsAfterLoop": false
   },
   {
     "name": "Gingerbread House",
@@ -11633,7 +12475,8 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "gingerbreadhouse"
+    "id": "gingerbreadhouse",
+    "stopsAfterLoop": false
   },
   {
     "name": "Dark Sanctuary",
@@ -12311,7 +13154,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "darksanctuary"
+    "id": "darksanctuary",
+    "stopsAfterLoop": false
   },
   {
     "name": "From Now On",
@@ -12881,7 +13725,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "fromnowon"
+    "id": "fromnowon",
+    "stopsAfterLoop": false
   },
   {
     "name": "Gyaa Ha ha!",
@@ -13222,7 +14067,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "gyaahaha"
+    "id": "gyaahaha",
+    "stopsAfterLoop": false
   },
   {
     "name": "Fireplace",
@@ -13558,7 +14404,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "fireplace"
+    "id": "fireplace",
+    "stopsAfterLoop": false
   },
   {
     "name": "Ever Higher",
@@ -14092,7 +14939,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "everhigher"
+    "id": "everhigher",
+    "stopsAfterLoop": false
   },
   {
     "name": "Wise words",
@@ -14253,7 +15101,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "wisewords"
+    "id": "wisewords",
+    "stopsAfterLoop": false
   },
   {
     "name": "Hammer of Justice",
@@ -15193,7 +16042,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "hammerofjustice"
+    "id": "hammerofjustice",
+    "stopsAfterLoop": false
   },
   {
     "name": "The Second Sanctuary",
@@ -17491,7 +18341,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "thesecondsanctuary"
+    "id": "thesecondsanctuary",
+    "stopsAfterLoop": false
   },
   {
     "name": "The Third Sanctuary",
@@ -20473,7 +21324,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "thethirdsanctuary"
+    "id": "thethirdsanctuary",
+    "stopsAfterLoop": false
   },
   {
     "name": "Heavy Footsteps",
@@ -20580,7 +21432,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "heavyfootsteps"
+    "id": "heavyfootsteps",
+    "stopsAfterLoop": false
   },
   {
     "name": "Crumbling Tower",
@@ -21504,7 +22357,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "crumblingtower"
+    "id": "crumblingtower",
+    "stopsAfterLoop": false
   },
   {
     "name": "SPAWN",
@@ -21719,7 +22573,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "spawn"
+    "id": "spawn",
+    "stopsAfterLoop": false
   },
   {
     "name": "GUARDIAN",
@@ -22945,7 +23800,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "guardian"
+    "id": "guardian",
+    "stopsAfterLoop": false
   },
   {
     "name": "Need a hand!?",
@@ -23358,7 +24214,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "needahand"
+    "id": "needahand",
+    "stopsAfterLoop": false
   },
   {
     "name": "Catswing",
@@ -23881,7 +24738,8 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "catswing"
+    "id": "catswing",
+    "stopsAfterLoop": false
   },
   {
     "name": "Air Waves",
@@ -25393,6 +26251,7 @@
         "discord": "https://discord.com/users/315969740419891200"
       }
     ],
-    "id": "airwaves"
+    "id": "airwaves",
+    "stopsAfterLoop": false
   }
 ]
