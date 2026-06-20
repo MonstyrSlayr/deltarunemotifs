@@ -139,6 +139,111 @@
     "stopsAfterLoop": true
   },
   {
+    "name": "sans.",
+    "youtubeId": "b2UHoGnGyvE",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Sans",
+        "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#4782c933",
+        "id": "sans",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "sansUndertale",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Nyeh Heh Heh!",
+    "youtubeId": "-W6_6WHBm1Q",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Papyrus",
+        "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ff471133",
+        "id": "papyrus",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "nyehhehheh",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Bonetrousle",
+    "youtubeId": "AKAiUtWZ4xY",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Papyrus",
+        "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ff471133",
+        "id": "papyrus",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "bonetrousle",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Dummy!",
     "youtubeId": "FbtgN-lqRHA",
     "motifRefs": [
@@ -834,6 +939,89 @@
     ],
     "id": "spiderdance",
     "stopsAfterLoop": true
+  },
+  {
+    "name": "It's Raining Somewhere Else",
+    "youtubeId": "KtC-pl9P3kE",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Sans",
+        "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#4782c933",
+        "id": "sans",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "itsrainingsomewhereelse",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Song That Might Play When You Fight Sans",
+    "youtubeId": "47GvY9rOMUs",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Sans",
+        "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#4782c933",
+        "id": "sans",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Papyrus",
+        "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#ff471133",
+        "id": "papyrus",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "songthatmightplaywhenyoufightsans",
+    "stopsAfterLoop": false
   },
   {
     "name": "Mad Mew Mew",

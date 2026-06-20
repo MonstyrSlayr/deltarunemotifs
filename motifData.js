@@ -86,8 +86,8 @@ Motifs.MEGALOVANIA = new Motif("MEGALOVANIA");
 
 Motifs.FLOWEY = new Motif("Flowey", "", "#fff200", "#9bfd7133", MOTIFIMGLINK + "flowey.png", ["Your Best Friend"]);
 Motifs.TORIEL = new Motif("Toriel");
-Motifs.SANS = new Motif("Sans");
-Motifs.PAPYRUS = new Motif("Papyrus");
+Motifs.SANS = new Motif("Sans", "", "#ffffff", "#4782c933", MOTIFIMGLINK + "sans.png");
+Motifs.PAPYRUS = new Motif("Papyrus", "", "#ffffff", "#ff471133", MOTIFIMGLINK + "papyrus.png");
 Motifs.UNDYNE = new Motif("Undyne", "", "#6299c1", "#c9473e33", MOTIFIMGLINK + "undyne.png");
 Motifs.DUMMY = new Motif("Dummy!", "", "#ffbc3a", "#00000033", MOTIFIMGLINK + "madDummy.png");
 Motifs.ALPHYS = new Motif("Alphys", "", "#fdc748", "#ffffff33", MOTIFIMGLINK + "alphys.png");

@@ -270,6 +270,45 @@ const ghostFight = new Song("Ghost Fight",
     undefined, undefined, true
 );
 
+const sansUndertaleBPM = 128;
+const sansUndertale = new Song("sans.",
+    [Motifs.SANS],
+    "b2UHoGnGyvE",
+    [
+        new MotifReference(Motifs.SANS, 0, quickSec(sansUndertaleBPM, 16)),
+        new MotifReference(Motifs.SANS, quickSec(sansUndertaleBPM, 16), quickSec(sansUndertaleBPM, 32)),
+        new MotifReference(Motifs.SANS, quickSec(sansUndertaleBPM, 32), quickSec(sansUndertaleBPM, 48)),
+        new MotifReference(Motifs.SANS, quickSec(sansUndertaleBPM, 48), quickSec(sansUndertaleBPM, 64)),
+        new MotifReference(Motifs.SANS, quickSec(sansUndertaleBPM, 64), quickSec(sansUndertaleBPM, 80)),
+        new MotifReference(Motifs.SANS, quickSec(sansUndertaleBPM, 80), quickSec(sansUndertaleBPM, 96)),
+    ],
+    "sansUndertale", quickSec(sansUndertaleBPM, 104)
+);
+
+const nyehHehHehBPM = 150;
+const nyehHehHeh = new Song("Nyeh Heh Heh!",
+    [Motifs.PAPYRUS],
+    "-W6_6WHBm1Q",
+    [
+        new MotifReference(Motifs.PAPYRUS, quickSec(nyehHehHehBPM, 16), quickSec(nyehHehHehBPM, 48)),
+        new MotifReference(Motifs.PAPYRUS, quickSec(nyehHehHehBPM, 48), quickSec(nyehHehHehBPM, 80)),
+    ],
+    "", quickSec(nyehHehHehBPM, 80)
+);
+
+const bonetrousleBPM = 150;
+const bonetrousle = new Song("Bonetrousle",
+    [Motifs.PAPYRUS],
+    "AKAiUtWZ4xY",
+    [
+        new MotifReference(Motifs.PAPYRUS, quickSec(bonetrousleBPM, 16), quickSec(bonetrousleBPM, 48)),
+        new MotifReference(Motifs.PAPYRUS, quickSec(bonetrousleBPM, 48), quickSec(bonetrousleBPM, 80)),
+        new MotifReference(Motifs.PAPYRUS, quickSec(bonetrousleBPM, 80), quickSec(bonetrousleBPM, 112)),
+        new MotifReference(Motifs.PAPYRUS, quickSec(bonetrousleBPM, 112), quickSec(bonetrousleBPM, 144)),
+    ],
+    "", quickSec(bonetrousleBPM, 144)
+);
+
 const dummyBPM = 125;
 const dummy = new Song("Dummy!",
     [Motifs.GHOSTFIGHTA, Motifs.DUMMY],
@@ -351,6 +390,35 @@ const spiderDance = new Song("Spider Dance",
         new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 16), quickSec(spiderDanceBPM, 32)),
     ],
     "", quickSec(spiderDanceBPM, 128 + 64),
+    undefined, undefined, true
+);
+
+const itsRainingSomewhereElseBPM = 96;
+const itsRainingSomewhereElse = new Song("It's Raining Somewhere Else",
+    [Motifs.SANS],
+    "KtC-pl9P3kE",
+    [
+        new MotifReference(Motifs.SANS, quickSec(itsRainingSomewhereElseBPM, 32), quickSec(itsRainingSomewhereElseBPM, 64)),
+        new MotifReference(Motifs.SANS, quickSec(itsRainingSomewhereElseBPM, 64), quickSec(itsRainingSomewhereElseBPM, 96)),
+        new MotifReference(Motifs.SANS, quickSec(itsRainingSomewhereElseBPM, 96), quickSec(itsRainingSomewhereElseBPM, 128)),
+
+        new MotifReference(Motifs.SANS, quickSec(itsRainingSomewhereElseBPM, 96 + 96), quickSec(itsRainingSomewhereElseBPM, 128 + 96)),
+        new MotifReference(Motifs.SANS, quickSec(itsRainingSomewhereElseBPM, 96 + 128), quickSec(itsRainingSomewhereElseBPM, 128 + 128)),
+    ],
+    "", quickSec(itsRainingSomewhereElseBPM, 128 + 128 + 8)
+);
+
+const songThatMightPlayWhenYouFightSansBPM = 120;
+const songThatMightPlayWhenYouFightSans = new Song("Song That Might Play When You Fight Sans",
+    [Motifs.SANS, Motifs.PAPYRUS],
+    "47GvY9rOMUs",
+    [
+        new MotifReference(Motifs.SANS, quickSec(songThatMightPlayWhenYouFightSansBPM, 4), quickSec(songThatMightPlayWhenYouFightSansBPM, 20)),
+        new MotifReference(Motifs.SANS, quickSec(songThatMightPlayWhenYouFightSansBPM, 4 + 32), quickSec(songThatMightPlayWhenYouFightSansBPM, 20 + 32)),
+
+        new MotifReference(Motifs.PAPYRUS, quickSec(songThatMightPlayWhenYouFightSansBPM, 4 + 80), quickSec(songThatMightPlayWhenYouFightSansBPM, 36 + 80)),
+    ],
+    "", quickSec(songThatMightPlayWhenYouFightSansBPM, 36 + 80),
     undefined, undefined, true
 );
 
