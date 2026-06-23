@@ -831,6 +831,11 @@ a.motifMainDiv:hover
     {
         font-size: 14px;
     }
+
+    .audioCard
+    {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px)
@@ -848,11 +853,6 @@ a.motifMainDiv:hover
     h3
     {
         font-size: 24px;
-    }
-
-    .audioCard
-    {
-        width: 90%;
     }
 
     .motifMainDiv
