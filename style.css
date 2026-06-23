@@ -633,9 +633,9 @@ a.motifMainDiv:hover
         filter: blur(15px);
         background: linear-gradient(
             to left,
-            #e0e555,
-            #6d6ebf,
-            #e0e555
+            #e0e55533,
+            #6d6ebf33,
+            #e0e55533
         );
         background-size: 200% 200%;
         animation: animateGlow 1.25s linear infinite;
