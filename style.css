@@ -4,8 +4,15 @@
     --cool-border: 8px solid white;
 }
 
+@font-face
+{
+    font-family: "UndertaleFont";
+    src: url("./undertaleFont.otf");
+}
+
 body
 {
+    font-family: "UndertaleFont";
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,6 +235,7 @@ input[type="checkbox"]
 
 .timeLabels
 {
+    font-family: "UndertaleFont";
     font-size: 12px;
     color: white;
     display: flex;
@@ -460,7 +468,7 @@ a.motifMainDiv:hover
 
 .motifMainDiv.playing > div:last-child > div
 {
-    opacity: 50%;
+    opacity: 25%;
 }
 
 .motifMainDiv.playing > div:last-child > div.playing
@@ -495,8 +503,8 @@ a.motifMainDiv:hover
 
 .bigLink
 {
-    border: 2px solid cyan;
-    padding: 1em;
+    border: 8px solid cyan;
+    padding: 1.25em;
     border-radius: 0.5em;
     margin: 0.5em;
 }
@@ -504,6 +512,9 @@ a.motifMainDiv:hover
 .bigLink:hover
 {
     scale: 1.05;
+    text-decoration: none;
+    border-width: 16px;
+    padding: calc(1.25em - 8px);
 }
 
 #blackScreen

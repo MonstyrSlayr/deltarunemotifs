@@ -151,6 +151,7 @@ Motifs.SANCTUARY = new Motif("Dark Sanctuary", "", "#1c5ba4", "#93599833", MOTIF
 Motifs.FROMNOWON = new Motif("From Now On", "", "#6ad4f5", "#ffffff33", MOTIFIMGLINK + "mizzleTired.gif");
 Motifs.FROMNOWON.imagePlaying = MOTIFIMGLINK + "mizzleIdle.gif";
 Motifs.EVERHIGHER = new Motif("Ever Higher", "", "#ff3651", "#f8c85133", MOTIFIMGLINK + "cuptain.png");
+Motifs.EVERHIGHER.imagePlaying = MOTIFIMGLINK + "cuptain.gif";
 Motifs.SUBSANC = new Motif("Second Sanctuary", "", "#4f378f", "#2d193e33", MOTIFIMGLINK + "subsequentsanctuary.jpg");
 
 Motifs.MIKE = new Motif("Mike", "", "#69be60", "#ff0e0033", MOTIFIMGLINK + "mike.png");
