@@ -760,6 +760,14 @@ a.motifMainDiv:hover
     }
 }
 
+@media screen and (max-width: 950px)
+{
+    .songDiv > h3
+    {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 800px)
 {
     .motifRefDiv
@@ -775,10 +783,12 @@ a.motifMainDiv:hover
     #sortInput
     {
         max-width: 51%;
+        font-size: 16px;
+        text-wrap: wrap;
     }
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 750px)
 {
     header
     {
@@ -792,6 +802,39 @@ a.motifMainDiv:hover
         display: none;
     }
 
+    .bigLink
+    {
+        border-width: 4px;
+        padding: 0.75em;
+        font-size: 16px;
+    }
+
+    .bigLink:hover
+    {
+        border-width: 8px;
+        padding: calc(0.75em - 4px);
+    }
+
+    .songDiv
+    {
+        padding: 0.5em;
+        border-width: 4px;
+    }
+
+    a.songDiv:hover
+    {
+        border-width: 8px;
+        padding: calc(0.5em - 4px);
+    }
+
+    .songDiv > h3
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
     h1
     {
         font-size: 36px;
@@ -815,12 +858,12 @@ a.motifMainDiv:hover
     .motifMainDiv
     {
         flex-direction: column;
+        width: 45%;
         height: 16em;
     }
 
     .motifMainDiv > div:first-child
     {
-        flex-direction: row;
         height: 60%;
     }
 
