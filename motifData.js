@@ -1,4 +1,4 @@
-import { IMGLINK, normalizeAndTrim } from "./data.js";
+import { IMGLINK, isLiveServer, normalizeAndTrim } from "./data.js";
 
 export const allMotifs = [];
 
@@ -161,8 +161,34 @@ Motifs.TITAN = new Motif("Titan", "", "#ffffff", "#00000033", MOTIFIMGLINK + "ti
 Motifs.TITAN.imagePlaying = MOTIFIMGLINK + "titan.gif";
 
 Motifs.FLOWERY = new Motif("Flowery", "", "#fee502", "#fff06f33", MOTIFIMGLINK + "flowery.png");
-Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#55ffff", "#ed1c2433", MOTIFIMGLINK + "aqua.png");
-Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "aquaBattle.gif";
+
+const flower = isLiveServer() ? 0 : Math.floor(Math.random() * 6);
+switch (flower)
+{
+    case 0: default:
+        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#55ffff", "#ed1c2433", MOTIFIMGLINK + "aqua.png");
+        Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "aquaBattle.gif";
+        break;
+    case 1:
+        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#a349a4", "#cd8fcd33", MOTIFIMGLINK + "seth.png");
+        break;
+    case 2:
+        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#a4f85f", "#79dd7b33", MOTIFIMGLINK + "green.png");
+        break;
+    case 3:
+        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#ffff44", "#d9820033", MOTIFIMGLINK + "yellow.png");
+        Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "yellowBattle.gif";
+        break;
+    case 4:
+        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#5060eb", "#b7d2ff33", MOTIFIMGLINK + "blue.png");
+        Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "blueBattle.gif";
+        break;
+    case 5:
+        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#ffad33", "#f9784d33", MOTIFIMGLINK + "orangeBattle.gif");
+        // Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "orangeBattle.gif";
+        break;
+}
+
 Motifs.PINK = new Motif("Pink", "", "#ff8a90", "#ffe84e33", MOTIFIMGLINK + "pink.gif");
 
 export function getMotifById(id)
