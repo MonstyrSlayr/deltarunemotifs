@@ -174,7 +174,7 @@ function onReady()
                 {
                     if (activePlayer == playerNum)
                     {
-                        const duration = daSong.loopPoint == null ? event.target.getDuration() : daSong.loopPoint;
+                        const duration = daSong.loopPoint == null ? event.target.getDuration() : (daSong.loopPoint > event.target.getDuration() ? event.target.getDuration() : daSong.loopPoint);
                         durationLabel.textContent = formatTime(duration);
 
                         const motifList = document.getElementById("motifList");
@@ -264,7 +264,7 @@ function onReady()
                             updateIntervals[playerId] = setInterval(() =>
                             {
                                 const current = players[playerId].getCurrentTime();
-                                const duration = daSong.loopPoint == null ? players[playerId].getDuration() : daSong.loopPoint;
+                                const duration = daSong.loopPoint == null ? players[playerId].getDuration() : (daSong.loopPoint > players[playerId].getDuration() ? players[playerId].getDuration() : daSong.loopPoint);
 
                                 if (daSong.loopPoint != null)
                                 {
@@ -569,7 +569,7 @@ function seekVideo(e)
     const rect = timebarContainer.getBoundingClientRect();
     const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
     const percent = clickX / rect.width;
-    const duration = daSong.loopPoint == null ? players[activePlayerId].getDuration() : daSong.loopPoint;
+    const duration = daSong.loopPoint == null ? players[activePlayerId].getDuration() : (daSong.loopPoint > players[activePlayerId].getDuration() ? players[activePlayerId].getDuration() : daSong.loopPoint);
     players[activePlayerId].seekTo(duration * percent, true);
     trueSeek = duration * percent;
     players[activePlayerId].playVideo();

@@ -1117,5 +1117,44 @@
     "letterDiv": null,
     "variationDiv": null,
     "aliases": []
+  },
+  {
+    "name": "Flowery",
+    "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+    "imagePlaying": null,
+    "color": "#fee502",
+    "color2": "#fff06f33",
+    "id": "flowery",
+    "letter": "",
+    "mainDiv": null,
+    "letterDiv": null,
+    "variationDiv": null,
+    "aliases": []
+  },
+  {
+    "name": "Six Flowers",
+    "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+    "imagePlaying": "http://127.0.0.1:5500/img/motifs/aqua.png",
+    "color": "#55ffff",
+    "color2": "#ed1c2433",
+    "id": "sixflowers",
+    "letter": "",
+    "mainDiv": null,
+    "letterDiv": null,
+    "variationDiv": null,
+    "aliases": []
+  },
+  {
+    "name": "Pink",
+    "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+    "imagePlaying": null,
+    "color": "#ff8a90",
+    "color2": "#ffe84e33",
+    "id": "pink",
+    "letter": "",
+    "mainDiv": null,
+    "letterDiv": null,
+    "variationDiv": null,
+    "aliases": []
   }
 ]

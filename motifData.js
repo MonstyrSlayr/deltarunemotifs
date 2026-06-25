@@ -160,6 +160,11 @@ Motifs.GERSON = new Motif("Gerson", "", "#64a926", "#fe73fe33", MOTIFIMGLINK + "
 Motifs.TITAN = new Motif("Titan", "", "#ffffff", "#00000033", MOTIFIMGLINK + "titan.png");
 Motifs.TITAN.imagePlaying = MOTIFIMGLINK + "titan.gif";
 
+Motifs.FLOWERY = new Motif("Flowery", "", "#fee502", "#fff06f33", MOTIFIMGLINK + "flowery.png");
+Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#55ffff", "#ed1c2433", MOTIFIMGLINK + "aqua.png");
+Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "aquaBattle.gif";
+Motifs.PINK = new Motif("Pink", "", "#ff8a90", "#ffe84e33", MOTIFIMGLINK + "pink.gif");
+
 export function getMotifById(id)
 {
     return allMotifs.find(motif => id == motif.id);

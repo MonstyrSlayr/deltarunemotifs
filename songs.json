@@ -2806,8 +2806,243 @@
   {
     "name": "Checker Dance",
     "youtubeId": "j54JPLQWdyQ",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 6
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6,
+        "endTime": 12
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 12,
+        "endTime": 18
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 18,
+        "endTime": 24
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 24,
+        "endTime": 30
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 30,
+        "endTime": 36
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 36,
+        "endTime": 42
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 42,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 48,
+        "endTime": 54
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 54,
+        "endTime": 60
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 60,
+        "endTime": 66
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 66,
+        "endTime": 72
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 72,
+        "endTime": 78
+      }
+    ],
+    "loopPoint": 78,
     "mainMotifs": [
       {
         "name": "Checker Dance",
@@ -4713,7 +4948,8 @@
         },
         "startTime": 0,
         "endTime": 11.076923076923077,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -4723,7 +4959,8 @@
         },
         "startTime": 29.53846153846154,
         "endTime": 88.61538461538461,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -4734,7 +4971,8 @@
         },
         "startTime": 29.53846153846154,
         "endTime": 88.61538461538461,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       }
     ],
     "contributors": [
@@ -22931,7 +23169,8 @@
         },
         "startTime": 139.30434782608694,
         "endTime": 140.08695652173913,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       }
     ],
     "contributors": [
@@ -24288,7 +24527,8 @@
         },
         "startTime": 54.857142857142854,
         "endTime": 58.285714285714285,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24299,7 +24539,8 @@
         },
         "startTime": 58.285714285714285,
         "endTime": 60,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24310,7 +24551,8 @@
         },
         "startTime": 140.57142857142856,
         "endTime": 144,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24321,7 +24563,8 @@
         },
         "startTime": 144,
         "endTime": 145.7142857142857,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24332,7 +24575,8 @@
         },
         "startTime": 0,
         "endTime": 3.4285714285714284,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24342,7 +24586,8 @@
         },
         "startTime": 58.285714285714285,
         "endTime": 85.71428571428571,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24353,7 +24598,8 @@
         },
         "startTime": 85.71428571428571,
         "endTime": 89.14285714285714,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24363,7 +24609,8 @@
         },
         "startTime": 144,
         "endTime": 171.42857142857142,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       },
       {
         "type": {
@@ -24374,7 +24621,8 @@
         },
         "startTime": 171.42857142857142,
         "endTime": 174.85714285714286,
-        "t": 0
+        "t": 0,
+        "form": "normal"
       }
     ],
     "contributors": [
@@ -26845,8 +27093,377 @@
   {
     "name": "Inappropriate Recycling",
     "youtubeId": "lYWldRgI9fo",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 6
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6,
+        "endTime": 12
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 12,
+        "endTime": 18
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 18,
+        "endTime": 24
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 24,
+        "endTime": 30
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "THE WORLD REVOLVING"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 24,
+        "endTime": 30
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 30,
+        "endTime": 36
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "THE WORLD REVOLVING"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 30,
+        "endTime": 36
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 36,
+        "endTime": 42
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 42,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 48,
+        "endTime": 54
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 54,
+        "endTime": 60
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 60,
+        "endTime": 66
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 66,
+        "endTime": 72
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 72,
+        "endTime": 78
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 78,
+        "endTime": 84
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 84,
+        "endTime": 90
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "THE WORLD REVOLVING"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 84,
+        "endTime": 90
+      },
+      {
+        "motif": {
+          "name": "Checker Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+          "imagePlaying": null,
+          "color": "#ff294d",
+          "color2": "#ffdb0033",
+          "id": "checkerdance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 90,
+        "endTime": 96
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "THE WORLD REVOLVING"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 90,
+        "endTime": 96
+      }
+    ],
+    "loopPoint": 96,
     "mainMotifs": [
       {
         "name": "Checker Dance",
@@ -26877,7 +27494,35 @@
         ]
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "THE WORLD REVOLVING"
+          ]
+        },
+        "t": 0,
+        "form": "motif",
+        "playOnce": true,
+        "hasPlayed": false
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -26890,6 +27535,229 @@
       }
     ],
     "id": "inappropriaterecycling",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Who might you be?",
+    "youtubeId": "RQsr0_RUMJU",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Six Flowers",
+        "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "color": "#55ffff",
+        "color2": "#ed1c2433",
+        "id": "sixflowers",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "whomightyoube",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Petal Dance",
+    "youtubeId": "49LSlSEPrXU",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Six Flowers",
+        "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "color": "#55ffff",
+        "color2": "#ed1c2433",
+        "id": "sixflowers",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "petaldance",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "I'm Telling!",
+    "youtubeId": "yTildYnivTA",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Six Flowers",
+        "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "color": "#55ffff",
+        "color2": "#ed1c2433",
+        "id": "sixflowers",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "imtelling",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Stop, Criminell!",
+    "youtubeId": "e4JYklUQU3w",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Six Flowers",
+        "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "color": "#55ffff",
+        "color2": "#ed1c2433",
+        "id": "sixflowers",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "stopcriminell",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Loving Steps",
+    "youtubeId": "tLAxahP5scs",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Six Flowers",
+        "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "color": "#55ffff",
+        "color2": "#ed1c2433",
+        "id": "sixflowers",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "lovingsteps",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Flower Man",
+    "youtubeId": "GWf9_qSrnOM",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Flowery",
+        "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+        "imagePlaying": null,
+        "color": "#fee502",
+        "color2": "#fff06f33",
+        "id": "flowery",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Six Flowers",
+        "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "color": "#55ffff",
+        "color2": "#ed1c2433",
+        "id": "sixflowers",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "flowerman",
     "stopsAfterLoop": false
   }
 ]
