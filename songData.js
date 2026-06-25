@@ -2520,6 +2520,17 @@ const inappropriateRecycling = new Song("Inappropriate Recycling",
     ]
 );
 
+const yourDadsBestFriendBPM = 135;
+const yourDadsBestFriend = new Song("Your Dad's Best Friend",
+    [Motifs.FLOWERY],
+    "v5Vp7J-OxHo",
+    [
+        new MotifReference(Motifs.FLOWERY, 0, quickSec(yourDadsBestFriendBPM, 32)),
+        new MotifReference(Motifs.FLOWERY, quickSec(yourDadsBestFriendBPM, 32), quickSec(yourDadsBestFriendBPM, 64)),
+    ],
+    "", quickSec(yourDadsBestFriendBPM, 64)
+);
+
 const whoMightYouBeBPM = 120;
 const whoMightYouBe = new Song("Who might you be?",
     [Motifs.SIXFLOWERS],
@@ -2555,6 +2566,17 @@ const petalDance = new Song("Petal Dance",
     "", quickSec(petalDanceBPM, 128 + 96)
 );
 
+const sunsetOfSevenSunsBPM = 120;
+const sunsetOfSevenSuns = new Song("Sunset of Seven Suns",
+    [Motifs.FLOWERY],
+    "L4pNR0UJBnk",
+    [
+        new MotifReference(Motifs.FLOWERY, quickSec(sunsetOfSevenSunsBPM, 128), quickSec(sunsetOfSevenSunsBPM, 128 + 32)),
+        new MotifReference(Motifs.FLOWERY, quickSec(sunsetOfSevenSunsBPM, 128 + 32), quickSec(sunsetOfSevenSunsBPM, 128 + 64)),
+    ],
+    "", quickSec(sunsetOfSevenSunsBPM, 128 + 64)
+);
+
 const imTellingBPM = 95;
 const imTelling = new Song("I'm Telling!",
     [Motifs.SIXFLOWERS],
@@ -2588,6 +2610,16 @@ const lovingSteps = new Song("Loving Steps",
     "", quickSec(lovingStepsBPM, 36 + 96 + 24 - 3)
 );
 
+const beautifulBathtimeBPM = 150;
+const beautifulBathtime = new Song("Beautiful Bathtime",
+    [Motifs.FLOWERY],
+    "e8Vx4qDDNks",
+    [
+        new MotifReference(Motifs.FLOWERY, 0, quickSec(beautifulBathtimeBPM, 48)),
+    ],
+    "", quickSec(beautifulBathtimeBPM, 48)
+);
+
 const flowerManBPM = 160;
 const flowerMan = new Song("Flower Man",
     [Motifs.FLOWERY, Motifs.SIXFLOWERS],
@@ -2609,4 +2641,36 @@ const flowerMan = new Song("Flower Man",
         new MotifReference(Motifs.DONTFORGET, quickSec(flowerManBPM, 144 + 144 + 144 + 64 - 2), quickSec(flowerManBPM, 144 + 144 + 144 + 80), true),
     ],
     "", quickSec(flowerManBPM, 144 + 144 + 144 + 80)
+);
+
+const dreamwatchersBPM = 102;
+const dreamwatchers = new Song("Dreamwatchers",
+    [Motifs.FLOWERY],
+    "JpXp593ZM-o",
+    [
+        new MotifReference(Motifs.FLOWERY, 0, quickSec(dreamwatchersBPM, 64)),
+        new MotifReference(Motifs.FLOWERY, quickSec(dreamwatchersBPM, 64), quickSec(dreamwatchersBPM, 128), true),
+    ],
+    "", quickSec(dreamwatchersBPM, 128)
+);
+
+const weakFlowersBPM = 115;
+const weakFlowers = new Song("Weak Flowers",
+    [Motifs.FLOWERY],
+    "622yf1n1iY4",
+    [
+        new MotifReference(Motifs.FLOWERY, 0, quickSec(weakFlowersBPM, 64)),
+        new MotifReference(Motifs.FLOWERY, quickSec(weakFlowersBPM, 64), quickSec(weakFlowersBPM, 128)),
+    ],
+    "", quickSec(weakFlowersBPM, 128 + 64)
+);
+
+const goodnightSweetPrinceBPM = 132;
+const goodnightSweetPrince = new Song("Goodnight, Sweet Prince",
+    [Motifs.FLOWERY],
+    "_420aek7ksc",
+    [
+        new MotifReference(Motifs.FLOWERY, 0, quickSec(goodnightSweetPrinceBPM, 64)),
+    ],
+    "", quickSec(goodnightSweetPrinceBPM, 64)
 );
