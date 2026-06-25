@@ -27540,8 +27540,45 @@
   {
     "name": "Your Dad's Best Friend",
     "youtubeId": "v5Vp7J-OxHo",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 14.222222222222221
+      },
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 14.222222222222221,
+        "endTime": 28.444444444444443
+      }
+    ],
+    "loopPoint": 28.444444444444443,
     "mainMotifs": [
       {
         "name": "Flowery",
@@ -27935,8 +27972,45 @@
   {
     "name": "Sunset of Seven Suns",
     "youtubeId": "L4pNR0UJBnk",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 64,
+        "endTime": 80
+      },
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 80,
+        "endTime": 96
+      }
+    ],
+    "loopPoint": 96,
     "mainMotifs": [
       {
         "name": "Flowery",
@@ -28186,8 +28260,27 @@
   {
     "name": "Beautiful Bathtime",
     "youtubeId": "e8Vx4qDDNks",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 19.200000000000003
+      }
+    ],
+    "loopPoint": 19.200000000000003,
     "mainMotifs": [
       {
         "name": "Flowery",
@@ -28216,6 +28309,76 @@
       }
     ],
     "id": "beautifulbathtime",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Pink",
+    "youtubeId": "WFEO_1zVCuA",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Pink",
+        "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+        "imagePlaying": null,
+        "color": "#ff8a90",
+        "color2": "#ffe84e33",
+        "id": "pink",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "pink",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Cutie Mew Mew Magic",
+    "youtubeId": "tlFnfEWZCtQ",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Pink",
+        "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+        "imagePlaying": null,
+        "color": "#ff8a90",
+        "color2": "#ffe84e33",
+        "id": "pink",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "cutiemewmewmagic",
     "stopsAfterLoop": false
   },
   {
@@ -28434,8 +28597,45 @@
   {
     "name": "Dreamwatchers",
     "youtubeId": "JpXp593ZM-o",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 37.64705882352941
+      },
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 37.64705882352941,
+        "endTime": 75.29411764705883
+      }
+    ],
+    "loopPoint": 75.29411764705883,
     "mainMotifs": [
       {
         "name": "Flowery",
@@ -28469,8 +28669,45 @@
   {
     "name": "Weak Flowers",
     "youtubeId": "622yf1n1iY4",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 33.391304347826086
+      },
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 33.391304347826086,
+        "endTime": 66.78260869565217
+      }
+    ],
+    "loopPoint": 100.17391304347825,
     "mainMotifs": [
       {
         "name": "Flowery",
@@ -28504,8 +28741,27 @@
   {
     "name": "Goodnight, Sweet Prince",
     "youtubeId": "_420aek7ksc",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Flowery",
+          "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
+          "imagePlaying": null,
+          "color": "#fee502",
+          "color2": "#fff06f33",
+          "id": "flowery",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 29.09090909090909
+      }
+    ],
+    "loopPoint": 29.09090909090909,
     "mainMotifs": [
       {
         "name": "Flowery",

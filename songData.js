@@ -2620,6 +2620,40 @@ const beautifulBathtime = new Song("Beautiful Bathtime",
     "", quickSec(beautifulBathtimeBPM, 48)
 );
 
+const pinkBPM = 130;
+const pink = new Song("Pink",
+    [Motifs.PINK],
+    "WFEO_1zVCuA",
+    [
+        new MotifReference(Motifs.PINK, 0, quickSec(pinkBPM, 32)),
+    ],
+    "", quickSec(pinkBPM, 128 + 32)
+);
+
+const cutieMewMewMagicBPM = 180;
+const cutieMewMewMagic = new Song("Cutie Mew Mew Magic",
+    [Motifs.PINK, Motifs.FREEDOM],
+    "tlFnfEWZCtQ",
+    [
+        new MotifReference(Motifs.PINK, 0, quickSec(cutieMewMewMagicBPM, 32)),
+
+        new MotifReference(Motifs.DONTFORGET, quickSec(cutieMewMewMagicBPM, 96 - 2), quickSec(cutieMewMewMagicBPM, 107), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(cutieMewMewMagicBPM, 107), quickSec(cutieMewMewMagicBPM, 115)),
+
+        new MotifReference(Motifs.PINK, quickSec(cutieMewMewMagicBPM, 128 + 88), quickSec(cutieMewMewMagicBPM, 128 + 88 + 16)),
+
+        new MotifReference(Motifs.DONTFORGET, quickSec(cutieMewMewMagicBPM, 128 + 72 + 96 - 2), quickSec(cutieMewMewMagicBPM, 128 + 72 + 107), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(cutieMewMewMagicBPM, 128 + 72 + 107), quickSec(cutieMewMewMagicBPM, 128 + 72 + 115)),
+
+        new MotifReference(Motifs.FREEDOM, quickSec(cutieMewMewMagicBPM, 128 + 128 + 104), quickSec(cutieMewMewMagicBPM, 128 + 128 + 104 + 32)),
+
+        new MotifReference(Motifs.SPOOKTUNE, quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 116), quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 124)),
+
+        new MotifReference(Motifs.PINK, quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 122), quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 122 + 32)),
+    ],
+    "", quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 122 + 32 + 16)
+);
+
 const flowerManBPM = 160;
 const flowerMan = new Song("Flower Man",
     [Motifs.FLOWERY, Motifs.SIXFLOWERS],
