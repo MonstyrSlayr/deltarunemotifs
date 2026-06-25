@@ -2,7 +2,7 @@ import { IMGLINK, normalizeAndTrim } from "./data.js";
 
 export const allMotifs = [];
 
-const MOTIFIMGLINK = IMGLINK + "motifs/";
+export const MOTIFIMGLINK = IMGLINK + "motifs/";
 
 class Motif
 {
@@ -108,6 +108,7 @@ Motifs.RUDEBUSTERB = new Motif("Rude Buster", "B", "#e24dfd", "#3ee9c233");
 Motifs.FIELDOFHOPESANDDREAMS = new Motif("Field of Hopes and Dreams", "", "#ffffff", "#234a3d33", MOTIFIMGLINK + "rudinn.webp");
 Motifs.FANFARE = new Motif("Fanfare", "", "#fadf39", "#4de3e333", MOTIFIMGLINK + "torielDarkWorld.png");
 Motifs.QUIETAUTUMN = new Motif("Quiet Autumn", "", "#f055c0", "#22b14c33", MOTIFIMGLINK + "hathyBakeSale.webp");
+Motifs.CHECKERDANCE = new Motif("Checker Dance", "", "#ff294d", "#ffdb0033", MOTIFIMGLINK + "kround.gif");
 Motifs.DARKNESSFALLS = new Motif("Darkness Falls", "");
 Motifs.HIPSHOP = new Motif("Hip Shop", "", "#ffffff", "#b6497233", MOTIFIMGLINK + "hipshop.png");
 Motifs.FREEDOM = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", MOTIFIMGLINK + "jevil.webp", ["THE WORLD REVOLVING"]);

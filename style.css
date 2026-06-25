@@ -184,6 +184,11 @@ input[type="checkbox"]
     cursor: pointer;
 }
 
+.controls button:hover, .controlsSmall button:hover
+{
+    scale: 1.2;
+}
+
 .timebarContainer
 {
     margin-top: 1em;
@@ -202,6 +207,7 @@ input[type="checkbox"]
     width: 0%;
     background-color: white;
     display: inline-block;
+    border-radius: 4px;
 }
 
 .timebarProgress.variation
@@ -227,10 +233,17 @@ input[type="checkbox"]
     transition: none;
 }
 
+.timebarProgress:hover
+{
+    transform: scale(1, 2);
+    border-radius: 0;
+}
+
 .motifTime:has(.timebarProgress:hover)
 {
     cursor: pointer;
-    transform: scale(1, 1.5);
+    transform: scale(1, 2);
+    padding: 0.33% 0;
 }
 
 .timeLabels

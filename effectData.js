@@ -1,4 +1,5 @@
 import { IMGLINK } from "./data.js";
+import { MOTIFIMGLINK } from "./motifData.js";
 
 class SongEffect
 {
@@ -10,7 +11,7 @@ class SongEffect
     isOneshot = false;
     interval = null;
 
-    constructor(onLoad, onActive, onDeactive = null, deactivateOnPause = true, onIntermediate = null, isOneshot = false)
+    constructor(onLoad, onActive, onDeactive = () => {}, deactivateOnPause = true, onIntermediate = null, isOneshot = false)
     {
         this.onLoad = onLoad;
         this.onActive = onActive;
@@ -27,6 +28,58 @@ function easeOutCubic(x)
 }
 
 export const Effects = {};
+
+Effects.INAPPROPRIATERECYCLING = new SongEffect(
+    () =>
+    {
+        const freedomDiv = document.getElementsByClassName("mfreedom")[0];
+        const daHeader = freedomDiv.getElementsByTagName("h3")[0];
+        daHeader.textContent = "Freedom?";
+
+        const freedomLabel = document.getElementsByClassName("tfreedom")[0].nextElementSibling;
+        freedomLabel.textContent = "Freedom?";
+    },
+    () =>
+    {
+        const freedomDiv = document.getElementsByClassName("mfreedom")[0];
+        freedomDiv.classList.remove("mfreedom");
+        freedomDiv.classList.add("mbattat");
+
+        const colorA = "#64bc5b";
+        const colorB = "#0000ff33";
+
+        freedomDiv.style.borderColor = colorA;
+        freedomDiv.getElementsByTagName("div")[0].style.backgroundColor = colorB;
+
+        const daHeader = freedomDiv.getElementsByTagName("h3")[0];
+        daHeader.textContent = "BATTAT Motif";
+        daHeader.style.color = colorA;
+
+        const freedomLabel = document.getElementsByClassName("tfreedom")[0].nextElementSibling;
+        freedomLabel.textContent = "BATTAT Motif";
+
+        const daTimebar = document.getElementsByClassName("tfreedom")[0];
+        daTimebar.style.backgroundColor = colorB;
+
+        for (const daBar of daTimebar.getElementsByClassName("timebarProgress"))
+        {
+            daBar.style.backgroundColor = colorA;
+        }
+
+        const daSongDiv = document.getElementsByClassName("sinappropriaterecycling")[0];
+        daSongDiv.style.borderRightColor = colorA;
+        daSongDiv.style.borderBottomColor = colorA;
+
+        const daCoverArt = document.getElementsByClassName("coverArt")[0];
+        daCoverArt.style.borderRightColor = colorA;
+        daCoverArt.style.borderBottomColor = colorA;
+
+        for (const daImg of freedomDiv.getElementsByTagName("img"))
+        {
+            daImg.src = MOTIFIMGLINK + "battat.gif";
+        }
+    }
+)
 
 Effects.BLACKSCREEN = new SongEffect(
     () =>
@@ -199,11 +252,31 @@ export class EffectRef
     startTime = 0; // seconds
     endTime = 0; // seconds
     t = 0; // for intermediate oneshots
+    form = "normal";
 
     constructor(type, startTime, endTime)
     {
         this.type = type;
         this.startTime = startTime;
         this.endTime = endTime;
+    }
+}
+
+export class EffectOnMotifRef
+{
+    // fun stuff
+    type;
+    motif;
+    t = 0; // for intermediate oneshots
+    form = "motif";
+
+    playOnce = false; // otherwise, play every time
+    hasPlayed = false;
+
+    constructor(type, motif, playOnce = false)
+    {
+        this.type = type;
+        this.motif = motif;
+        this.playOnce = playOnce;
     }
 }

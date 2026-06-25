@@ -141,8 +141,117 @@
   {
     "name": "sans.",
     "youtubeId": "b2UHoGnGyvE",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 7.5
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.5,
+        "endTime": 15
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 15,
+        "endTime": 22.5
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 22.5,
+        "endTime": 30
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 30,
+        "endTime": 37.5
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 37.5,
+        "endTime": 45
+      }
+    ],
+    "loopPoint": 48.75,
     "mainMotifs": [
       {
         "name": "Sans",
@@ -176,8 +285,45 @@
   {
     "name": "Nyeh Heh Heh!",
     "youtubeId": "-W6_6WHBm1Q",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Papyrus",
+          "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ff471133",
+          "id": "papyrus",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.4,
+        "endTime": 19.200000000000003
+      },
+      {
+        "motif": {
+          "name": "Papyrus",
+          "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ff471133",
+          "id": "papyrus",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 19.200000000000003,
+        "endTime": 32
+      }
+    ],
+    "loopPoint": 32,
     "mainMotifs": [
       {
         "name": "Papyrus",
@@ -211,8 +357,81 @@
   {
     "name": "Bonetrousle",
     "youtubeId": "AKAiUtWZ4xY",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Papyrus",
+          "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ff471133",
+          "id": "papyrus",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.4,
+        "endTime": 19.200000000000003
+      },
+      {
+        "motif": {
+          "name": "Papyrus",
+          "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ff471133",
+          "id": "papyrus",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 19.200000000000003,
+        "endTime": 32
+      },
+      {
+        "motif": {
+          "name": "Papyrus",
+          "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ff471133",
+          "id": "papyrus",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 32,
+        "endTime": 44.800000000000004
+      },
+      {
+        "motif": {
+          "name": "Papyrus",
+          "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ff471133",
+          "id": "papyrus",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 44.800000000000004,
+        "endTime": 57.6
+      }
+    ],
+    "loopPoint": 57.6,
     "mainMotifs": [
       {
         "name": "Papyrus",
@@ -943,8 +1162,99 @@
   {
     "name": "It's Raining Somewhere Else",
     "youtubeId": "KtC-pl9P3kE",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 20,
+        "endTime": 40
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 40,
+        "endTime": 60
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 60,
+        "endTime": 80
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 120,
+        "endTime": 140
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 140,
+        "endTime": 160
+      }
+    ],
+    "loopPoint": 165,
     "mainMotifs": [
       {
         "name": "Sans",
@@ -978,8 +1288,63 @@
   {
     "name": "Song That Might Play When You Fight Sans",
     "youtubeId": "47GvY9rOMUs",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 2,
+        "endTime": 10
+      },
+      {
+        "motif": {
+          "name": "Sans",
+          "image": "http://127.0.0.1:5500/img/motifs/sans.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#4782c933",
+          "id": "sans",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 18,
+        "endTime": 26
+      },
+      {
+        "motif": {
+          "name": "Papyrus",
+          "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ff471133",
+          "id": "papyrus",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 42,
+        "endTime": 58
+      }
+    ],
+    "loopPoint": 58,
     "mainMotifs": [
       {
         "name": "Sans",
@@ -1021,7 +1386,7 @@
       }
     ],
     "id": "songthatmightplaywhenyoufightsans",
-    "stopsAfterLoop": false
+    "stopsAfterLoop": true
   },
   {
     "name": "Mad Mew Mew",
@@ -2436,6 +2801,41 @@
       }
     ],
     "id": "lantern",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Checker Dance",
+    "youtubeId": "j54JPLQWdyQ",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Checker Dance",
+        "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+        "imagePlaying": null,
+        "color": "#ff294d",
+        "color2": "#ffdb0033",
+        "id": "checkerdance",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "checkerdance",
     "stopsAfterLoop": false
   },
   {
@@ -14693,7 +15093,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -14711,7 +15111,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -14783,7 +15183,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -14801,7 +15201,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -14873,7 +15273,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -14891,7 +15291,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -15053,7 +15453,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -15071,7 +15471,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -15104,7 +15504,7 @@
       {
         "name": "Ever Higher",
         "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-        "imagePlaying": null,
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
         "color": "#ff3651",
         "color2": "#f8c85133",
         "id": "everhigher",
@@ -22081,7 +22481,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22099,7 +22499,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22117,7 +22517,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22135,7 +22535,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22189,7 +22589,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22207,7 +22607,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22225,7 +22625,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22243,7 +22643,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22297,7 +22697,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22315,7 +22715,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22333,7 +22733,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22351,7 +22751,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22405,7 +22805,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22423,7 +22823,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22441,7 +22841,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -22459,7 +22859,7 @@
         "motif": {
           "name": "Ever Higher",
           "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-          "imagePlaying": null,
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
           "color": "#ff3651",
           "color2": "#f8c85133",
           "id": "everhigher",
@@ -26440,6 +26840,56 @@
       }
     ],
     "id": "airwaves",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Inappropriate Recycling",
+    "youtubeId": "lYWldRgI9fo",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Checker Dance",
+        "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+        "imagePlaying": null,
+        "color": "#ff294d",
+        "color2": "#ffdb0033",
+        "id": "checkerdance",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Freedom",
+        "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+        "color": "#6d6ebf",
+        "color2": "#fbfd0133",
+        "id": "freedom",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": [
+          "THE WORLD REVOLVING"
+        ]
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "inappropriaterecycling",
     "stopsAfterLoop": false
   }
 ]

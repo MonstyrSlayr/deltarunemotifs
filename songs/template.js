@@ -192,6 +192,7 @@ function onReady()
                             const motifbarContainer = document.createElement("div");
                             motifbarContainer.classList.add("timebarContainer");
                             motifbarContainer.classList.add("motifTime");
+                            motifbarContainer.classList.add("t" + motif.id);
                             motifbarContainer.style.backgroundColor = motif.color2;
                             card.appendChild(motifbarContainer);
 
@@ -322,15 +323,23 @@ function onReady()
                                             }
                                         }
 
-                                        if (motif.letterDiv)
+                                        if (playing)
                                         {
-                                            if (playing)
+                                            if (motif.letterDiv) motif.letterDiv.classList.add("playing");
+
+                                            for (const effectRef of daSong.effectRefs.filter(ref => ref.motif == motif && ref.form == "motif" && (!ref.playOnce || (ref.playOnce && !ref.hasPlayed))))
                                             {
-                                                motif.letterDiv.classList.add("playing");
+                                                effectRef.hasPlayed = true;
+                                                effectRef.type.onActive();
                                             }
-                                            else
+                                        }
+                                        else
+                                        {
+                                            if (motif.letterDiv) motif.letterDiv.classList.remove("playing");
+
+                                            for (const effectRef of daSong.effectRefs.filter(ref => ref.motif == motif && ref.form == "motif" && (!ref.playOnce || (ref.playOnce && !ref.hasPlayed))))
                                             {
-                                                motif.letterDiv.classList.remove("playing");
+                                                effectRef.type.onDeactive();
                                             }
                                         }
 
@@ -366,7 +375,7 @@ function onReady()
                                     }
                                 });
 
-                                [...allEffects].filter(effect => !effect.isOneshot).forEach(effect =>
+                                [...allEffects].filter(effect => !effect.isOneshot && effect.form == "normal").forEach(effect =>
                                 {
                                     let playing = false;
 
@@ -393,7 +402,7 @@ function onReady()
                                     }
                                 });
 
-                                [...allEffects].filter(effect => effect.isOneshot).forEach(effect =>
+                                [...allEffects].filter(effect => effect.isOneshot && effect.form == "normal").forEach(effect =>
                                 {
                                     for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
                                     {

@@ -1,7 +1,7 @@
 import { LINK, normalizeAndTrim } from "./data.js";
 import { Motifs, MotifReference, getMotifsById } from "./motifData.js";
 import { Contributors } from "./contribData.js";
-import { Effects, EffectRef } from "./effectData.js";
+import { Effects, EffectRef, EffectOnMotifRef } from "./effectData.js";
 
 export const allAlbums = [];
 export const allSongs = [];
@@ -23,6 +23,7 @@ const undertale10Album = new Album("UNDERTALE 10th Anniversary");
 const deltarune1Album = new Album("DELTARUNE Chapter 1");
 const deltarune2Album = new Album("DELTARUNE Chapter 2");
 const deltarune34Album = new Album("DELTARUNE Chapters 3+4");
+const deltarune5Album = new Album("DELTARUNE Chapter 5");
 
 let currentAlbum;
 
@@ -602,6 +603,28 @@ const lantern = new Song("Lantern",
         new MotifReference(Motifs.RUDEBUSTERB, quickSec(lanternBPM, 98), quickSec(lanternBPM, 96 + 48)),
     ],
     "", quickSec(lanternBPM, 96 + 48 + 12)
+);
+
+const checkerDanceBPM = 160;
+const checkerDance = new Song("Checker Dance",
+    [Motifs.CHECKERDANCE],
+    "j54JPLQWdyQ",
+    [
+        new MotifReference(Motifs.CHECKERDANCE, 0, quickSec(checkerDanceBPM, 16)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 16), quickSec(checkerDanceBPM, 32)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 32), quickSec(checkerDanceBPM, 48)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 48), quickSec(checkerDanceBPM, 64)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 64), quickSec(checkerDanceBPM, 80)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 80), quickSec(checkerDanceBPM, 96)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 96), quickSec(checkerDanceBPM, 112)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 112), quickSec(checkerDanceBPM, 128)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 128), quickSec(checkerDanceBPM, 144)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 144), quickSec(checkerDanceBPM, 144 + 16)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 144 + 16), quickSec(checkerDanceBPM, 144 + 32)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 144 + 32), quickSec(checkerDanceBPM, 144 + 48)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 144 + 48), quickSec(checkerDanceBPM, 144 + 64)),
+    ],
+    "", quickSec(checkerDanceBPM, 144 + 64)
 );
 
 const quietAutumnBPM = 135;
@@ -2461,3 +2484,38 @@ const airWaves = new Song("Air Waves",
 );
 
 //#endregion
+
+currentAlbum = deltarune5Album;
+
+const inappropriateRecyclingBPM = 160;
+const inappropriateRecycling = new Song("Inappropriate Recycling",
+    [Motifs.CHECKERDANCE, Motifs.FREEDOM],
+    "lYWldRgI9fo",
+    [
+        new MotifReference(Motifs.CHECKERDANCE, 0, quickSec(inappropriateRecyclingBPM, 16)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 16), quickSec(inappropriateRecyclingBPM, 32)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 32), quickSec(inappropriateRecyclingBPM, 48)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 48), quickSec(inappropriateRecyclingBPM, 64)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 64), quickSec(inappropriateRecyclingBPM, 80)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 80), quickSec(inappropriateRecyclingBPM, 96)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 96), quickSec(inappropriateRecyclingBPM, 112)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 112), quickSec(inappropriateRecyclingBPM, 128)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 128), quickSec(inappropriateRecyclingBPM, 144)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 144), quickSec(inappropriateRecyclingBPM, 144 + 16)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 144 + 16), quickSec(inappropriateRecyclingBPM, 144 + 32)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 144 + 32), quickSec(inappropriateRecyclingBPM, 144 + 48)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 144 + 48), quickSec(inappropriateRecyclingBPM, 144 + 64)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 144 + 64), quickSec(inappropriateRecyclingBPM, 144 + 80)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 144 + 80), quickSec(inappropriateRecyclingBPM, 144 + 96)),
+        new MotifReference(Motifs.CHECKERDANCE, quickSec(inappropriateRecyclingBPM, 144 + 96), quickSec(inappropriateRecyclingBPM, 144 + 112)),
+
+        new MotifReference(Motifs.FREEDOM, quickSec(inappropriateRecyclingBPM, 64), quickSec(inappropriateRecyclingBPM, 80)),
+        new MotifReference(Motifs.FREEDOM, quickSec(inappropriateRecyclingBPM, 80), quickSec(inappropriateRecyclingBPM, 96)),
+        new MotifReference(Motifs.FREEDOM, quickSec(inappropriateRecyclingBPM, 144 + 80), quickSec(inappropriateRecyclingBPM, 144 + 96)),
+        new MotifReference(Motifs.FREEDOM, quickSec(inappropriateRecyclingBPM, 144 + 96), quickSec(inappropriateRecyclingBPM, 144 + 112)),
+    ],
+    "", quickSec(inappropriateRecyclingBPM, 144 + 112),
+    [
+        new EffectOnMotifRef(Effects.INAPPROPRIATERECYCLING, Motifs.FREEDOM, true),
+    ]
+);

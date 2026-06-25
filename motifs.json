@@ -604,6 +604,19 @@
     "aliases": []
   },
   {
+    "name": "Checker Dance",
+    "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
+    "imagePlaying": null,
+    "color": "#ff294d",
+    "color2": "#ffdb0033",
+    "id": "checkerdance",
+    "letter": "",
+    "mainDiv": null,
+    "letterDiv": null,
+    "variationDiv": null,
+    "aliases": []
+  },
+  {
     "name": "Darkness Falls",
     "image": null,
     "imagePlaying": null,
@@ -1043,7 +1056,7 @@
   {
     "name": "Ever Higher",
     "image": "http://127.0.0.1:5500/img/motifs/cuptain.png",
-    "imagePlaying": null,
+    "imagePlaying": "http://127.0.0.1:5500/img/motifs/cuptain.gif",
     "color": "#ff3651",
     "color2": "#f8c85133",
     "id": "everhigher",
