@@ -105,7 +105,14 @@ Motifs.THEDOOR = new Motif("The Door", "", "#ffffff", "#00000033", MOTIFIMGLINK 
 Motifs.THECHASE = new Motif("The Chase", "", "#4a2430", "#00000033", MOTIFIMGLINK + "rudinnranger.webp");
 Motifs.RUDEBUSTERA = new Motif("Rude Buster", "A", "#3ee9c2", "#e24dfd33", MOTIFIMGLINK + "rudeBuster.png");
 Motifs.RUDEBUSTERB = new Motif("Rude Buster", "B", "#e24dfd", "#3ee9c233");
+
 Motifs.FIELDOFHOPESANDDREAMS = new Motif("Field of Hopes and Dreams", "", "#ffffff", "#234a3d33", MOTIFIMGLINK + "rudinn.webp");
+const dieldChance = isLiveServer() ? 0 : 0.02;
+if (Math.random() < dieldChance)
+{
+    Motifs.FIELDOFHOPESANDDREAMS.name = "Dield of Hopes and Dreams";
+}
+
 Motifs.FANFARE = new Motif("Fanfare", "", "#fadf39", "#4de3e333", MOTIFIMGLINK + "torielDarkWorld.png");
 Motifs.QUIETAUTUMN = new Motif("Quiet Autumn", "", "#f055c0", "#22b14c33", MOTIFIMGLINK + "hathyBakeSale.webp");
 Motifs.CHECKERDANCE = new Motif("Checker Dance", "", "#ff294d", "#ffdb0033", MOTIFIMGLINK + "kround.gif");

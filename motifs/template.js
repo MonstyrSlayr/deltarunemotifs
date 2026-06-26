@@ -236,7 +236,7 @@ function createMotifRefDiv(daSong, daMotifs)
                                             players[nextPlayerId].seekTo(0, true);
                                             players[nextPlayerId].mute();
 
-                                            if (current >= daSong.loopPoint)
+                                            if (current >= duration)
                                             {
                                                 if (daSong.stopsAfterLoop)
                                                 {

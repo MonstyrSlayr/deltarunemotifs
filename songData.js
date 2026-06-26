@@ -288,7 +288,7 @@ const sansUndertale = new Song("sans.",
         new MotifReference(Motifs.SANS, quickSec(sansUndertaleBPM, 64), quickSec(sansUndertaleBPM, 80)),
         new MotifReference(Motifs.SANS, quickSec(sansUndertaleBPM, 80), quickSec(sansUndertaleBPM, 96)),
     ],
-    "sansUndertale", quickSec(sansUndertaleBPM, 104)
+    "sansundertale", quickSec(sansUndertaleBPM, 104)
 );
 
 const nyehHehHehBPM = 150;
@@ -547,7 +547,7 @@ const rudeBuster = new Song("Rude Buster",
         new MotifReference(Motifs.RUDEBUSTERB, quickSec(rudeBusterBPM, 64.75), quickSec(rudeBusterBPM, 96)),
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(rudeBusterBPM, 144.75 + 16), quickSec(rudeBusterBPM, 144 + 16 + 4)),
     ],
-    "", quickSec(rudeBusterBPM, 144 + 31.9)
+    "", quickSec(rudeBusterBPM, 144 + 32)
 );
 
 const emptyTownBPM = 138;
@@ -2491,6 +2491,8 @@ const airWaves = new Song("Air Waves",
 
 currentAlbum = deltarune5Album;
 
+//#region CHAPTER 5
+
 const inappropriateRecyclingBPM = 160;
 const inappropriateRecycling = new Song("Inappropriate Recycling",
     [Motifs.CHECKERDANCE, Motifs.FREEDOM],
@@ -2533,6 +2535,41 @@ const yourDadsBestFriend = new Song("Your Dad's Best Friend",
         new MotifReference(Motifs.FLOWERY, quickSec(yourDadsBestFriendBPM, 32), quickSec(yourDadsBestFriendBPM, 64)),
     ],
     "", quickSec(yourDadsBestFriendBPM, 64)
+);
+
+const gardenOfHopesAndDreamsBPM = 125;
+const gardenOfHopesAndDreams = new Song("Garden of Hopes and Dreams",
+    [Motifs.FIELDOFHOPESANDDREAMS, Motifs.DONTFORGET],
+    "MzEHcwoNlbE",
+    [
+        new MotifReference(Motifs.FIELDOFHOPESANDDREAMS, quickSec(gardenOfHopesAndDreamsBPM, 96 + 40), quickSec(gardenOfHopesAndDreamsBPM, 111 + 40)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 111 + 40), quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 16)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 16), quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 46), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48), quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48 + 30.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48 + 30.5), quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48 + 30.5 + 4)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48 + 30.5 + 4), quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48 + 30.5 + 8)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48 + 30.5 + 8), quickSec(gardenOfHopesAndDreamsBPM, 111 + 40 + 48 + 30 + 11), true),
+
+        new MotifReference(Motifs.FIELDOFHOPESANDDREAMS, quickSec(gardenOfHopesAndDreamsBPM, 270 + 42), quickSec(gardenOfHopesAndDreamsBPM, 287 + 40)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 287 + 40), quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 16)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 16), quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 48)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 48), quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 56)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 56), quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 72)),
+    ],
+    "", quickSec(gardenOfHopesAndDreamsBPM, 287 + 40 + 96)
+);
+
+const rakuichiBusterBPM = 140;
+const rakuichiBuster = new Song("Rakuichi Buster",
+    [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
+    "QvoQVCBqegU",
+    [
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(rakuichiBusterBPM, 32.75 + 16), quickSec(rakuichiBusterBPM, 48 + 16)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(rakuichiBusterBPM, 48.75 + 16), quickSec(rakuichiBusterBPM, 64 + 16)),
+        new MotifReference(Motifs.RUDEBUSTERB, quickSec(rakuichiBusterBPM, 64.75 + 16), quickSec(rakuichiBusterBPM, 96 + 16)),
+        new MotifReference(Motifs.RUDEBUSTERA, quickSec(rakuichiBusterBPM, 144.75 + 16 + 16), quickSec(rakuichiBusterBPM, 144 + 16 + 4 + 16)),
+    ],
+    "", quickSec(rakuichiBusterBPM, 144 + 112)
 );
 
 const whoMightYouBeBPM = 120;
@@ -2712,3 +2749,5 @@ const goodnightSweetPrince = new Song("Goodnight, Sweet Prince",
     ],
     "", quickSec(goodnightSweetPrinceBPM, 64)
 );
+
+//#endregion

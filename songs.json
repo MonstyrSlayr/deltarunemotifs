@@ -92,6 +92,78 @@
         "isVariation": false,
         "startTime": 17.066666666666666,
         "endTime": 34.13333333333333
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 17.066666666666666,
+        "endTime": 21.333333333333332
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 21.333333333333332,
+        "endTime": 23.466666666666665
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 25.6,
+        "endTime": 29.866666666666667
+      },
+      {
+        "motif": {
+          "name": "Ghost Fight",
+          "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "ghostfight",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 29.866666666666667,
+        "endTime": 32
       }
     ],
     "loopPoint": 51.2,
@@ -279,7 +351,7 @@
         "discord": "https://discord.com/users/434840883637125121"
       }
     ],
-    "id": "sansUndertale",
+    "id": "sansundertale",
     "stopsAfterLoop": false
   },
   {
@@ -1036,24 +1108,6 @@
         "isVariation": false,
         "startTime": 0,
         "endTime": 8.347826086956522
-      },
-      {
-        "motif": {
-          "name": "Ghost Fight",
-          "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
-          "imagePlaying": null,
-          "color": "#b1b7f0",
-          "color2": "#a6504d33",
-          "id": "ghostfight",
-          "letter": "B",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 8.347826086956522,
-        "endTime": 16.695652173913043
       },
       {
         "motif": {
@@ -27610,6 +27664,89 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Garden of Hopes and Dreams",
+    "youtubeId": "MzEHcwoNlbE",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Field of Hopes and Dreams",
+        "image": "http://127.0.0.1:5500/img/motifs/rudinn.webp",
+        "imagePlaying": null,
+        "color": "#ffffff",
+        "color2": "#234a3d33",
+        "id": "fieldofhopesanddreams",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "gardenofhopesanddreams",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Rakuichi Buster",
+    "youtubeId": "QvoQVCBqegU",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Rude Buster",
+        "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+        "imagePlaying": null,
+        "color": "#3ee9c2",
+        "color2": "#e24dfd33",
+        "id": "rudebuster",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Rude Buster",
+        "image": null,
+        "imagePlaying": null,
+        "color": "#e24dfd",
+        "color2": "#3ee9c233",
+        "id": "rudebuster",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "rakuichibuster",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Who might you be?",
     "youtubeId": "RQsr0_RUMJU",
     "motifRefs": [
@@ -28314,8 +28451,27 @@
   {
     "name": "Pink",
     "youtubeId": "WFEO_1zVCuA",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 14.76923076923077
+      }
+    ],
+    "loopPoint": 73.84615384615385,
     "mainMotifs": [
       {
         "name": "Pink",
@@ -28349,8 +28505,173 @@
   {
     "name": "Cutie Mew Mew Magic",
     "youtubeId": "tlFnfEWZCtQ",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 10.666666666666666
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 31.333333333333332,
+        "endTime": 35.666666666666664
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 35.666666666666664,
+        "endTime": 38.33333333333333
+      },
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 72,
+        "endTime": 77.33333333333333
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 98,
+        "endTime": 102.33333333333333
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 102.33333333333333,
+        "endTime": 105
+      },
+      {
+        "motif": {
+          "name": "Freedom",
+          "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+          "color": "#6d6ebf",
+          "color2": "#fbfd0133",
+          "id": "freedom",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "THE WORLD REVOLVING"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 120,
+        "endTime": 130.66666666666666
+      },
+      {
+        "motif": {
+          "name": "Spooktune",
+          "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
+          "imagePlaying": null,
+          "color": "#ff9c53",
+          "color2": "#e8e6ce33",
+          "id": "spooktune",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 166.66666666666666,
+        "endTime": 169.33333333333331
+      },
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 168.66666666666666,
+        "endTime": 179.33333333333331
+      }
+    ],
+    "loopPoint": 184.66666666666666,
     "mainMotifs": [
       {
         "name": "Pink",
@@ -28364,6 +28685,21 @@
         "letterDiv": null,
         "variationDiv": null,
         "aliases": []
+      },
+      {
+        "name": "Freedom",
+        "image": "http://127.0.0.1:5500/img/motifs/jevil.webp",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/jevilDance.webp",
+        "color": "#6d6ebf",
+        "color2": "#fbfd0133",
+        "id": "freedom",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": [
+          "THE WORLD REVOLVING"
+        ]
       }
     ],
     "effectRefs": [],
