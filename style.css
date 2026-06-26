@@ -849,25 +849,12 @@ a.motifMainDiv:hover
     {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 500px)
-{
-    h1
+    #motifSep > div
     {
-        font-size: 36px;
+        width: 100%;
     }
-
-    h2
-    {
-        font-size: 30px;
-    }
-
-    h3
-    {
-        font-size: 24px;
-    }
-
+    
     .motifMainDiv
     {
         flex-direction: column;
@@ -912,6 +899,11 @@ a.motifMainDiv:hover
     .motifMainDiv > div:last-child > div:has(+ div.playing)
     {
         border-right: none;
+    }
+
+    h3
+    {
+        font-size: 16px;
     }
 
     @keyframes tiredEffect
@@ -980,5 +972,23 @@ a.motifMainDiv:hover
             top: calc(25% - 10px);
             opacity: 0%;
         }
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    h1
+    {
+        font-size: 36px;
+    }
+
+    h2
+    {
+        font-size: 30px;
+    }
+
+    .motifMainDiv > div:first-child
+    {
+        height: 75%;
     }
 }

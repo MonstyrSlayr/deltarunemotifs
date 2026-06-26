@@ -148,7 +148,7 @@ function createMotifRefDiv(daSong, daMotifs)
                         {
                             if (daMotifPlayer.activePlayer == playerNum)
                             {
-                                const duration = daSong.loopPoint == null ? event.target.getDuration() : daSong.loopPoint;
+                                const duration = daSong.loopPoint == null ? event.target.getDuration() : (daSong.loopPoint > event.target.getDuration() ? event.target.getDuration() : daSong.loopPoint);
                                 durationLabel.textContent = formatTime(duration);
 
                                 daMotifs.forEach(motif =>
@@ -225,7 +225,7 @@ function createMotifRefDiv(daSong, daMotifs)
                                     updateIntervals[playerId] = setInterval(() =>
                                     {
                                         const current = players[playerId].getCurrentTime();
-                                        const duration = daSong.loopPoint == null ? players[playerId].getDuration() : daSong.loopPoint;
+                                        const duration = daSong.loopPoint == null ? players[playerId].getDuration() : (daSong.loopPoint > players[playerId].getDuration() ? players[playerId].getDuration() : daSong.loopPoint);
 
                                         if (daSong.loopPoint != null)
                                         {
@@ -238,6 +238,12 @@ function createMotifRefDiv(daSong, daMotifs)
 
                                             if (current >= daSong.loopPoint)
                                             {
+                                                if (daSong.stopsAfterLoop)
+                                                {
+                                                    players[playerId].mute();
+                                                    players[playerId].pauseVideo();
+                                                }
+                                                
                                                 daMotifPlayer.activePlayer = nextPlayer;
 
                                                 players[nextPlayerId].unMute();
@@ -274,10 +280,14 @@ function createMotifRefDiv(daSong, daMotifs)
                                             if (playing)
                                             {
                                                 // motif.letterDiv.classList.add("playing");
+                                                timebarContainer.style.backgroundColor = motif.color2;
+                                                timebarProgress.style.backgroundColor = motif.color;
                                             }
                                             else
                                             {
                                                 // motif.letterDiv.classList.remove("playing");
+                                                timebarContainer.style.backgroundColor = "";
+                                                timebarProgress.style.backgroundColor = "";
                                             }
 
                                             if (variation)
@@ -373,7 +383,7 @@ function createMotifRefDiv(daSong, daMotifs)
             const rect = timebarContainer.getBoundingClientRect();
             const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
             const percent = clickX / rect.width;
-            const duration = daSong.loopPoint == null ? players[man].getDuration() : daSong.loopPoint;
+            const duration = daSong.loopPoint == null ? players[man].getDuration() : (daSong.loopPoint > players[man].getDuration() ? players[man].getDuration() : daSong.loopPoint);
             players[man].seekTo(duration * percent, true);
             players[man].playVideo();
             pauseAllExcept(daMotifPlayer);

@@ -266,6 +266,11 @@ const ghostFight = new Song("Ghost Fight",
         new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 24), quickSec(ghostFightBPM, 28)),
 
         new MotifReference(Motifs.GHOSTFIGHTB, quickSec(ghostFightBPM, 32), quickSec(ghostFightBPM, 64)),
+
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 16 + 16), quickSec(ghostFightBPM, 24 + 16)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 24 + 16), quickSec(ghostFightBPM, 28 + 16)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 16 + 32), quickSec(ghostFightBPM, 24 + 32)),
+        new MotifReference(Motifs.GHOSTFIGHTA, quickSec(ghostFightBPM, 24 + 32), quickSec(ghostFightBPM, 28 + 32)),
     ],
     "", quickSec(ghostFightBPM, 96),
     undefined, undefined, true
@@ -388,7 +393,6 @@ const spiderDance = new Song("Spider Dance",
         new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 48), quickSec(spiderDanceBPM, 96)),
 
         new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 96), quickSec(spiderDanceBPM, 128)),
-        new MotifReference(Motifs.GHOSTFIGHTB, quickSec(spiderDanceBPM, 16), quickSec(spiderDanceBPM, 32)),
     ],
     "", quickSec(spiderDanceBPM, 128 + 64),
     undefined, undefined, true
