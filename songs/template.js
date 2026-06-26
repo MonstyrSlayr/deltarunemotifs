@@ -375,11 +375,11 @@ function onReady()
                                     }
                                 });
 
-                                [...allEffects].filter(effect => !effect.isOneshot && effect.form == "normal").forEach(effect =>
+                                [...allEffects].filter(effect => !effect.isOneshot).forEach(effect =>
                                 {
                                     let playing = false;
 
-                                    for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
+                                    for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect && ref.form == "normal"))
                                     {
                                         if (current >= effectRef.startTime && current < effectRef.endTime)
                                         {
@@ -402,9 +402,9 @@ function onReady()
                                     }
                                 });
 
-                                [...allEffects].filter(effect => effect.isOneshot && effect.form == "normal").forEach(effect =>
+                                [...allEffects].filter(effect => effect.isOneshot).forEach(effect =>
                                 {
-                                    for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect))
+                                    for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect && ref.form == "normal"))
                                     {
                                         if ((trueSeek == null && prev!= null && current > effectRef.startTime && prev <= effectRef.startTime)
                                         || trueSeek == effectRef.startTime)
