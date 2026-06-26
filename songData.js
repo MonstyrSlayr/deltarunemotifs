@@ -1268,6 +1268,88 @@ const featurePresentation = new Song("Feature Presentation",
     ]
 );
 
+const andNowForTodaysSponsorsBPM = 145;
+const andNowForTodaysSponsors = new Song("And Now For Today's Sponsors…!",
+    [Motifs.TENNA],
+    "rwLySw0T4t8",
+    [
+        new MotifReference(Motifs.TENNA, quickSec(andNowForTodaysSponsorsBPM, 8.5), quickSec(andNowForTodaysSponsorsBPM, 24)),
+        new MotifReference(Motifs.TENNA, quickSec(andNowForTodaysSponsorsBPM, 24.5), quickSec(andNowForTodaysSponsorsBPM, 24 + 16)),
+    ],
+    "", quickSec(andNowForTodaysSponsorsBPM, 24 + 48 + 4)
+);
+
+const mikeTheBoardPleaseBPM = 95;
+const mikeTheBoardPlease = new Song("MIKE, the BOARD, please!",
+    [Motifs.TENNA],
+    "_iQ6fgFcPwM",
+    [
+        new MotifReference(Motifs.TENNA, quickSec(mikeTheBoardPleaseBPM, 0.5), quickSec(mikeTheBoardPleaseBPM, 16)),
+        new MotifReference(Motifs.TENNA, quickSec(mikeTheBoardPleaseBPM, 16.5), quickSec(mikeTheBoardPleaseBPM, 32)),
+    ],
+    "", quickSec(mikeTheBoardPleaseBPM, 52)
+);
+
+const sandyBoardBPM = 147;
+const sandyBoard = new Song("Sandy Board",
+    [Motifs.TENNA],
+    "0q9wnNLprhg",
+    [
+        
+    ],
+    ""
+);
+
+const adventureBoardBPM = 170;
+const adventureBoard = new Song("Adventure Board",
+    [Motifs.TENNA],
+    "Bw6v9U0JCUk",
+    [
+        
+    ],
+    ""
+);
+
+const queryBPM = 156;
+const query = new Song("Query?",
+    [Motifs.TENNA],
+    "VYjRD39c1bk",
+    [
+        new MotifReference(Motifs.TENNA, 0, quickSec(queryBPM, 8)),
+        new MotifReference(Motifs.TENNA, quickSec(queryBPM, 8), quickSec(queryBPM, 16)),
+        new MotifReference(Motifs.TENNA, quickSec(queryBPM, 16), quickSec(queryBPM, 24)),
+        new MotifReference(Motifs.TENNA, quickSec(queryBPM, 32), quickSec(queryBPM, 40)),
+        new MotifReference(Motifs.TENNA, quickSec(queryBPM, 40), quickSec(queryBPM, 48)),
+        new MotifReference(Motifs.TENNA, quickSec(queryBPM, 48), quickSec(queryBPM, 56)),
+    ],
+    "", quickSec(queryBPM, 64)
+);
+
+const quizBPM = 175;
+const quiz = new Song("Quiz!",
+    [Motifs.TENNA],
+    "J-qqRdp1L28",
+    [
+        new MotifReference(Motifs.TENNA, quickSec(quizBPM, 33), quickSec(quizBPM, 64)),
+        new MotifReference(Motifs.TENNA, quickSec(quizBPM, 65), quickSec(quizBPM, 96)),
+        new MotifReference(Motifs.TENNA, quickSec(quizBPM, 65 + 32), quickSec(quizBPM, 96 + 32)),
+        new MotifReference(Motifs.TENNA, quickSec(quizBPM, 65 + 64), quickSec(quizBPM, 96 + 64)),
+        new MotifReference(Motifs.TENNA, quickSec(quizBPM, 96 + 64 + 17), quickSec(quizBPM, 96 + 64 + 26.5), true),
+        new MotifReference(Motifs.TENNA, quickSec(quizBPM, 96 + 64 + 17 + 32), quickSec(quizBPM, 96 + 64 + 26.5 + 32), true),
+    ],
+    "", quickSec(quizBPM, 96 + 64 + 64)
+);
+
+const digDigToTheCenterOfTheEarthBPM = 134;
+const digDigToTheCenterOfTheEarth = new Song("Dig! Dig! To The Center of the Earth!",
+    [Motifs.LANCERA],
+    "oqVuzXQqFIE",
+    [
+        new MotifReference(Motifs.LANCERA, 0, quickSec(digDigToTheCenterOfTheEarthBPM, 9)),
+    ],
+    "", quickSec(digDigToTheCenterOfTheEarthBPM, 16)
+);
+
 const ruderBusterBPM = 130;
 const ruderBuster = new Song("Ruder Buster",
     [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
@@ -1310,6 +1392,27 @@ const ruderBuster = new Song("Ruder Buster",
     "", quickSec(ruderBusterBPM, 144 + 64 + 16)
 );
 
+const physicalChallengeBPM = 148;
+const physicalChallenge = new Song("Physical Challenge",
+    [Motifs.TENNA],
+    "erfbzUnWBg4",
+    [
+        
+    ],
+    ""
+);
+
+const boardClearBPM = 138;
+const boardClear = new Song("Board Clear!",
+    [Motifs.TENNA],
+    "bKtnO1pQKb8",
+    [
+        new MotifReference(Motifs.TENNA, quickSec(boardClearBPM, 17), quickSec(boardClearBPM, 24)),
+        new MotifReference(Motifs.TENNA, quickSec(boardClearBPM, 33), quickSec(boardClearBPM, 40)),
+    ],
+    "", quickSec(boardClearBPM, 80)
+);
+
 const vaporBusterBPM = 100;
 const vaporBuster = new Song("Vapor Buster",
     [Motifs.RUDEBUSTERA, Motifs.RUDEBUSTERB],
@@ -1321,6 +1424,26 @@ const vaporBuster = new Song("Vapor Buster",
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(vaporBusterBPM, 144.75 + 32), quickSec(vaporBusterBPM, 144 + 32 + 4)),
     ],
     "", quickSec(vaporBusterBPM, 144 + 32 + 16)
+);
+
+const paradiseParadiseBPM = 70;
+const paradiseParadise = new Song("Paradise, Paradise",
+    [Motifs.TENNA],
+    "ulaTvZ1gSL0",
+    [
+        
+    ],
+    ""
+);
+
+const raftRideBPM = 166;
+const raftRide = new Song("Raft Ride",
+    [Motifs.TENNA],
+    "pXv5VP5Lxwo",
+    [
+        
+    ],
+    ""
 );
 
 const raiseUpYourBatBPM = 115;
@@ -1346,6 +1469,34 @@ const raiseUpYourBat = new Song("Raise Up Your Bat",
     "", quickSec(raiseUpYourBatBPM, 144 + 110),
     [],
     [Contributors.MONSTYRSLAYR, Contributors.KARMA]
+);
+
+const kingOfRolypolyBPM = 119;
+const kingOfRolypoly = new Song("KING OF ROLYPOLY",
+    [Motifs.TVTIME],
+    "XCE4Ci-IuO0",
+    [
+        new MotifReference(Motifs.TVTIME, 0, quickSec(kingOfRolypolyBPM, 3.5)),
+        new MotifReference(Motifs.TVTIME, quickSec(kingOfRolypolyBPM, 8), quickSec(kingOfRolypolyBPM, 8 + 3.5)),
+        new MotifReference(Motifs.TVTIME, quickSec(kingOfRolypolyBPM, 16), quickSec(kingOfRolypolyBPM, 16 + 3.5)),
+        new MotifReference(Motifs.TVTIME, quickSec(kingOfRolypolyBPM, 24), quickSec(kingOfRolypolyBPM, 24 + 3.5)),
+
+        new MotifReference(Motifs.TVTIME, quickSec(kingOfRolypolyBPM, 48), quickSec(kingOfRolypolyBPM, 48 + 3.5)),
+        new MotifReference(Motifs.TVTIME, quickSec(kingOfRolypolyBPM, 56), quickSec(kingOfRolypolyBPM, 56 + 3.5)),
+        new MotifReference(Motifs.TVTIME, quickSec(kingOfRolypolyBPM, 64), quickSec(kingOfRolypolyBPM, 64 + 3.5)),
+        new MotifReference(Motifs.TVTIME, quickSec(kingOfRolypolyBPM, 72), quickSec(kingOfRolypolyBPM, 72 + 3.5)),
+    ],
+    "", quickSec(kingOfRolypolyBPM, 96)
+);
+
+const bigCityBoardBPM = 145;
+const bigCityBoard = new Song("Big City Board",
+    [Motifs.TENNA],
+    "lu4YYiqxNIY",
+    [
+        
+    ],
+    ""
 );
 
 const doomBoardBPM = 129 / 2;
@@ -1691,7 +1842,16 @@ const fireplace = new Song("Fireplace",
         new MotifReference(Motifs.UNDYNE, quickSec(fireplaceBPM, 89 + 96 + 128), quickSec(fireplaceBPM, 96 + 96 + 128)),
     ],
     "", quickSec(fireplaceBPM, 96 + 96 + 128 + 8)
-)
+);
+
+const aDarkZoneBPM = 200;
+const aDarkZone = new Song("A DARK ZONE",
+    [Motifs.SPOOKTUNE],
+    "K-ifukvnICY",
+    [
+    ],
+    ""
+);
 
 const everHigherBPM = 110;
 const everHigher = new Song("Ever Higher",

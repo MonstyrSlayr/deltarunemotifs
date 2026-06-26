@@ -2301,7 +2301,7 @@
         "endTime": 70.28571428571428
       }
     ],
-    "loopPoint": 75.38571428571429,
+    "loopPoint": 75.42857142857143,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -9674,6 +9674,251 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "And Now For Today's Sponsors…!",
+    "youtubeId": "rwLySw0T4t8",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "andnowfortodayssponsors",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "MIKE, the BOARD, please!",
+    "youtubeId": "_iQ6fgFcPwM",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "miketheboardplease",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Sandy Board",
+    "youtubeId": "0q9wnNLprhg",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "sandyboard",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Adventure Board",
+    "youtubeId": "Bw6v9U0JCUk",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "adventureboard",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Query?",
+    "youtubeId": "VYjRD39c1bk",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "query",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Quiz!",
+    "youtubeId": "J-qqRdp1L28",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "quiz",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Dig! Dig! To The Center of the Earth!",
+    "youtubeId": "cUxGD-aNcsY",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Lancer",
+        "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
+        "imagePlaying": null,
+        "color": "#5585bd",
+        "color2": "#32323233",
+        "id": "lancer",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "digdigtothecenteroftheearth",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Ruder Buster",
     "youtubeId": "_A8SQAQ_yRo",
     "motifRefs": [
@@ -10245,6 +10490,76 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Physical Challenge",
+    "youtubeId": "erfbzUnWBg4",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "physicalchallenge",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Board Clear!",
+    "youtubeId": "bKtnO1pQKb8",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "boardclear",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Vapor Buster",
     "youtubeId": "3vh8LYSuOvA",
     "motifRefs": [
@@ -10363,6 +10678,76 @@
       }
     ],
     "id": "vaporbuster",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Paradise, Paradise",
+    "youtubeId": "ulaTvZ1gSL0",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "paradiseparadise",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Raft Ride",
+    "youtubeId": "pXv5VP5Lxwo",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "raftride",
     "stopsAfterLoop": false
   },
   {
@@ -10642,6 +11027,78 @@
       }
     ],
     "id": "raiseupyourbat",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "KING OF ROLYPOLY",
+    "youtubeId": "XCE4Ci-IuO0",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "TV Time!",
+        "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+        "imagePlaying": null,
+        "color": "#fbe63b",
+        "color2": "#ff342b33",
+        "id": "tvtime",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": [
+          "HEY EVERY !"
+        ]
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "kingofrolypoly",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Big City Board",
+    "youtubeId": "lu4YYiqxNIY",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Tenna",
+        "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+        "imagePlaying": null,
+        "color": "#db1f53",
+        "color2": "#fffb5b33",
+        "id": "tenna",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "bigcityboard",
     "stopsAfterLoop": false
   },
   {
@@ -15285,6 +15742,41 @@
       }
     ],
     "id": "fireplace",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "A DARK ZONE",
+    "youtubeId": "K-ifukvnICY",
+    "motifRefs": [],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Spooktune",
+        "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
+        "imagePlaying": null,
+        "color": "#ff9c53",
+        "color2": "#e8e6ce33",
+        "id": "spooktune",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "adarkzone",
     "stopsAfterLoop": false
   },
   {
@@ -27666,8 +28158,225 @@
   {
     "name": "Garden of Hopes and Dreams",
     "youtubeId": "MzEHcwoNlbE",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Field of Hopes and Dreams",
+          "image": "http://127.0.0.1:5500/img/motifs/rudinn.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#234a3d33",
+          "id": "fieldofhopesanddreams",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 65.28,
+        "endTime": 72.48
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 72.48,
+        "endTime": 80.16
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 80.16,
+        "endTime": 94.56
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 95.52,
+        "endTime": 110.16
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 110.16,
+        "endTime": 112.08
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 112.08,
+        "endTime": 114
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 114,
+        "endTime": 115.19999999999999
+      },
+      {
+        "motif": {
+          "name": "Field of Hopes and Dreams",
+          "image": "http://127.0.0.1:5500/img/motifs/rudinn.webp",
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#234a3d33",
+          "id": "fieldofhopesanddreams",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 149.76,
+        "endTime": 156.96
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 156.96,
+        "endTime": 164.64
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 164.64,
+        "endTime": 180
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 180,
+        "endTime": 183.84
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "imagePlaying": null,
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 183.84,
+        "endTime": 191.51999999999998
+      }
+    ],
+    "loopPoint": 203.04,
     "mainMotifs": [
       {
         "name": "Field of Hopes and Dreams",
@@ -27676,6 +28385,19 @@
         "color": "#ffffff",
         "color2": "#234a3d33",
         "id": "fieldofhopesanddreams",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "imagePlaying": null,
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
         "letter": "",
         "mainDiv": null,
         "letterDiv": null,
@@ -27701,8 +28423,81 @@
   {
     "name": "Rakuichi Buster",
     "youtubeId": "QvoQVCBqegU",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 20.892857142857142,
+        "endTime": 27.428571428571427
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 27.75,
+        "endTime": 34.285714285714285
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#e24dfd",
+          "color2": "#3ee9c233",
+          "id": "rudebuster",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 34.607142857142854,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Rude Buster",
+          "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
+          "imagePlaying": null,
+          "color": "#3ee9c2",
+          "color2": "#e24dfd33",
+          "id": "rudebuster",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 75.75,
+        "endTime": 77.14285714285714
+      }
+    ],
+    "loopPoint": 109.71428571428571,
     "mainMotifs": [
       {
         "name": "Rude Buster",
@@ -27766,24 +28561,6 @@
         },
         "isVariation": false,
         "startTime": 0,
-        "endTime": 8
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 8,
         "endTime": 16
       },
       {
@@ -27802,24 +28579,6 @@
         },
         "isVariation": false,
         "startTime": 32,
-        "endTime": 40
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 40,
         "endTime": 48
       }
     ],
@@ -27874,24 +28633,6 @@
         },
         "isVariation": false,
         "startTime": 0,
-        "endTime": 3.310344827586207
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 3.310344827586207,
         "endTime": 6.620689655172414
       },
       {
@@ -27910,24 +28651,6 @@
         },
         "isVariation": false,
         "startTime": 6.620689655172414,
-        "endTime": 9.931034482758621
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 9.931034482758621,
         "endTime": 13.241379310344827
       },
       {
@@ -27946,24 +28669,6 @@
         },
         "isVariation": false,
         "startTime": 13.241379310344827,
-        "endTime": 16.551724137931036
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 16.551724137931036,
         "endTime": 19.862068965517242
       },
       {
@@ -27982,24 +28687,6 @@
         },
         "isVariation": false,
         "startTime": 19.862068965517242,
-        "endTime": 23.17241379310345
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 23.17241379310345,
         "endTime": 26.482758620689655
       },
       {
@@ -28018,24 +28705,6 @@
         },
         "isVariation": false,
         "startTime": 26.482758620689655,
-        "endTime": 29.79310344827586
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 29.79310344827586,
         "endTime": 33.10344827586207
       },
       {
@@ -28054,24 +28723,6 @@
         },
         "isVariation": false,
         "startTime": 33.10344827586207,
-        "endTime": 36.41379310344828
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 36.41379310344828,
         "endTime": 39.724137931034484
       }
     ],
@@ -28198,24 +28849,6 @@
         },
         "isVariation": false,
         "startTime": 0,
-        "endTime": 10.105263157894736
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 10.105263157894736,
         "endTime": 20.210526315789473
       }
     ],
@@ -28268,26 +28901,8 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
-        "startTime": 0,
-        "endTime": 11.294117647058824
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
         "isVariation": true,
-        "startTime": 11.294117647058824,
+        "startTime": 0,
         "endTime": 22.58823529411765
       }
     ],
@@ -28342,24 +28957,6 @@
         },
         "isVariation": false,
         "startTime": 30.857142857142854,
-        "endTime": 51.42857142857142
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 51.42857142857142,
         "endTime": 72
       }
     ],
@@ -28773,24 +29370,6 @@
         },
         "isVariation": false,
         "startTime": 24,
-        "endTime": 36
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 36,
         "endTime": 48
       },
       {
@@ -28847,24 +29426,6 @@
         },
         "isVariation": false,
         "startTime": 144,
-        "endTime": 156
-      },
-      {
-        "motif": {
-          "name": "Six Flowers",
-          "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
-          "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
-          "color": "#55ffff",
-          "color2": "#ed1c2433",
-          "id": "sixflowers",
-          "letter": "",
-          "mainDiv": null,
-          "letterDiv": null,
-          "variationDiv": null,
-          "aliases": []
-        },
-        "isVariation": false,
-        "startTime": 156,
         "endTime": 168
       },
       {

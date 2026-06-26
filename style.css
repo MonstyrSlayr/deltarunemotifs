@@ -307,7 +307,7 @@ input[type="checkbox"]
 
 .motifList, .songList, #motifList, #songList, #contribList, .contribList
 {
-    width: 50%;
+    width: 75%;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -342,11 +342,6 @@ input[type="checkbox"]
     display: flex;
     flex-direction: row;
     gap: 1em;
-}
-
-.motifList, .songList, .contribList
-{
-    width: 100%;
 }
 
 .albumTitleDiv
