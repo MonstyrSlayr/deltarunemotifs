@@ -344,6 +344,11 @@ input[type="checkbox"]
     gap: 1em;
 }
 
+.motifList, .songList, .contribList
+{
+    width: 100%;
+}
+
 .albumTitleDiv
 {
     width: 100%;
