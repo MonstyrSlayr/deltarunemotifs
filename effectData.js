@@ -243,7 +243,25 @@ Effects.STATIC = new SongEffect(
         const staticWrapper = document.getElementById("staticWrapper");
         staticWrapper.classList.add("gone");
     }
-)
+);
+
+Effects.BATTLE = new SongEffect(
+    () =>
+    {
+        const gridDark = document.createElement("div");
+        gridDark.id = "gridDark";
+        gridDark.style.backgroundImage = `url("${IMGLINK + "gridDark.png"}")`;
+        document.body.appendChild(gridDark);
+
+        const gridLight = document.createElement("div");
+        gridLight.id = "gridLight";
+        gridLight.style.backgroundImage = `url("${IMGLINK + "gridLight.png"}")`;
+        document.body.appendChild(gridLight);
+    },
+    () =>
+    {
+    }
+);
 
 export class EffectRef
 {

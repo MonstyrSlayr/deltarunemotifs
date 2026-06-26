@@ -547,7 +547,10 @@ const rudeBuster = new Song("Rude Buster",
         new MotifReference(Motifs.RUDEBUSTERB, quickSec(rudeBusterBPM, 64.75), quickSec(rudeBusterBPM, 96)),
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(rudeBusterBPM, 144.75 + 16), quickSec(rudeBusterBPM, 144 + 16 + 4)),
     ],
-    "", quickSec(rudeBusterBPM, 144 + 32)
+    "", quickSec(rudeBusterBPM, 144 + 32),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const emptyTownBPM = 138;
@@ -628,7 +631,10 @@ const checkerDance = new Song("Checker Dance",
         new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 144 + 32), quickSec(checkerDanceBPM, 144 + 48)),
         new MotifReference(Motifs.CHECKERDANCE, quickSec(checkerDanceBPM, 144 + 48), quickSec(checkerDanceBPM, 144 + 64)),
     ],
-    "", quickSec(checkerDanceBPM, 144 + 64)
+    "", quickSec(checkerDanceBPM, 144 + 64),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const quietAutumnBPM = 135;
@@ -943,7 +949,10 @@ const smartRace = new Song("Smart Race",
         new MotifReference(Motifs.BERDLYB, quickSec(smartRaceBPM, 96), quickSec(smartRaceBPM, 128)),
         new MotifReference(Motifs.BERDLYB, quickSec(smartRaceBPM, 128), quickSec(smartRaceBPM, 128 + 32)),
     ],
-    "", quickSec(smartRaceBPM, 128 + 32)
+    "", quickSec(smartRaceBPM, 128 + 32),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const welcomeToTheCityBPM = 149.5;
@@ -1022,7 +1031,10 @@ const nowsYourChanceToBeA = new Song("NOW'S YOUR CHANCE TO BE A",
         new MotifReference(Motifs.SPAMTONB, quickSec(nowsYourChanceToBeABPM, 112), quickSec(nowsYourChanceToBeABPM, 112 + 16)),
         new MotifReference(Motifs.SPAMTONB, quickSec(nowsYourChanceToBeABPM, 112 + 16), quickSec(nowsYourChanceToBeABPM, 112 + 32)),
     ],
-    "", quickSec(nowsYourChanceToBeABPM, 112 + 32)
+    "", quickSec(nowsYourChanceToBeABPM, 112 + 32),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 )
 
 const elegantEntranceBPM = 100;
@@ -1389,7 +1401,10 @@ const ruderBuster = new Song("Ruder Buster",
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 17.5 + 32), quickSec(ruderBusterBPM, 144 + 19 + 32)),
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(ruderBusterBPM, 144 + 19 + 32), quickSec(ruderBusterBPM, 144 + 20.5 + 32)),
     ],
-    "", quickSec(ruderBusterBPM, 144 + 64 + 16)
+    "", quickSec(ruderBusterBPM, 144 + 64 + 16),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const physicalChallengeBPM = 148;
@@ -1423,7 +1438,10 @@ const vaporBuster = new Song("Vapor Buster",
         new MotifReference(Motifs.RUDEBUSTERB, quickSec(vaporBusterBPM, 80.75), quickSec(vaporBusterBPM, 112)),
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(vaporBusterBPM, 144.75 + 32), quickSec(vaporBusterBPM, 144 + 32 + 4)),
     ],
-    "", quickSec(vaporBusterBPM, 144 + 32 + 16)
+    "", quickSec(vaporBusterBPM, 144 + 32 + 16),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const paradiseParadiseBPM = 70;
@@ -1784,7 +1802,10 @@ const fromNowOn = new Song("From Now On",
         new MotifReference(Motifs.DONTFORGET, quickSec(fromNowOnBPM, 16 + 128 + 64 + 3 + 8), quickSec(fromNowOnBPM, 16 + 128 + 64 + 3 + 16), true),
         new MotifReference(Motifs.DONTFORGET, quickSec(fromNowOnBPM, 16 + 128 + 64 + 3 + 24), quickSec(fromNowOnBPM, 16 + 128 + 64 + 8 + 24)),
     ],
-    "", quickSec(fromNowOnBPM, 16 + 128 + 64 + 8 + 24)
+    "", quickSec(fromNowOnBPM, 16 + 128 + 64 + 8 + 24),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const gyaaHaHaBPM = 125;
@@ -2385,7 +2406,10 @@ const spawn = new Song("SPAWN",
         new MotifReference(Motifs.TITAN, quickSec(spawnBPM, 64), quickSec(spawnBPM, 80)), new MotifReference(Motifs.SANCTUARY, quickSec(spawnBPM, 64), quickSec(spawnBPM, 72)),
         new MotifReference(Motifs.TITAN, quickSec(spawnBPM, 80), quickSec(spawnBPM, 96)), new MotifReference(Motifs.SANCTUARY, quickSec(spawnBPM, 80), quickSec(spawnBPM, 88)),
     ],
-    "", quickSec(spawnBPM, 128 + 32)
+    "", quickSec(spawnBPM, 128 + 32),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const guardianBPM = 140;
@@ -2545,7 +2569,10 @@ const catswing = new Song("Catswing",
         new MotifReference(Motifs.TVTIME, quickSec(catswingBPM, 112 + 112), quickSec(catswingBPM, 114 + 112)),
         new MotifReference(Motifs.SPAMTONB, quickSec(catswingBPM, 128 + 112), quickSec(catswingBPM, 144 + 112)),
     ],
-    "", quickSec(catswingBPM, 144 + 112)
+    "", quickSec(catswingBPM, 144 + 112),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const airWavesBPM = 140;
@@ -2683,6 +2710,7 @@ const inappropriateRecycling = new Song("Inappropriate Recycling",
     "", quickSec(inappropriateRecyclingBPM, 144 + 112),
     [
         new EffectOnMotifRef(Effects.INAPPROPRIATERECYCLING, Motifs.FREEDOM, true),
+        new EffectRef(Effects.BATTLE, 0, 0)
     ]
 );
 
@@ -2729,7 +2757,10 @@ const rakuichiBuster = new Song("Rakuichi Buster",
         new MotifReference(Motifs.RUDEBUSTERB, quickSec(rakuichiBusterBPM, 64.75 + 16), quickSec(rakuichiBusterBPM, 96 + 16)),
         new MotifReference(Motifs.RUDEBUSTERA, quickSec(rakuichiBusterBPM, 144.75 + 16 + 16), quickSec(rakuichiBusterBPM, 144 + 16 + 4 + 16)),
     ],
-    "", quickSec(rakuichiBusterBPM, 144 + 112)
+    "", quickSec(rakuichiBusterBPM, 144 + 112),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const whoMightYouBeBPM = 120;
@@ -2756,7 +2787,10 @@ const petalDance = new Song("Petal Dance",
         new MotifReference(Motifs.SIXFLOWERS, quickSec(petalDanceBPM, 64), quickSec(petalDanceBPM, 80)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(petalDanceBPM, 80), quickSec(petalDanceBPM, 96)),
     ],
-    "", quickSec(petalDanceBPM, 128 + 96)
+    "", quickSec(petalDanceBPM, 128 + 96),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const sunsetOfSevenSunsBPM = 120;
