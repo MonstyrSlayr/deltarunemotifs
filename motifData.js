@@ -178,9 +178,11 @@ switch (flower)
         break;
     case 1:
         Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#a349a4", "#cd8fcd33", MOTIFIMGLINK + "seth.png");
+        Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "sethBattle.gif";
         break;
     case 2:
         Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#a4f85f", "#79dd7b33", MOTIFIMGLINK + "green.png");
+        Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "greenBattle.gif";
         break;
     case 3:
         Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#ffff44", "#d9820033", MOTIFIMGLINK + "yellow.png");
@@ -191,8 +193,8 @@ switch (flower)
         Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "blueBattle.gif";
         break;
     case 5:
-        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#ffad33", "#f9784d33", MOTIFIMGLINK + "orangeBattle.gif");
-        // Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "orangeBattle.gif";
+        Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#ffad33", "#f9784d33", MOTIFIMGLINK + "orange.gif");
+        Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "orangeBattle.gif";
         break;
 }
 
