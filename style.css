@@ -413,6 +413,7 @@ a.motifMainDiv:hover
 {
     padding: 1em;
     flex-grow: 1;
+    min-width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;

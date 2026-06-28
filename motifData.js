@@ -196,7 +196,11 @@ switch (flower)
         break;
 }
 
-Motifs.PINK = new Motif("Pink", "", "#ff8a90", "#ffe84e33", MOTIFIMGLINK + "pink.gif");
+Motifs.PINKA = new Motif("Pink", "A", "#ff8a90", "#ffe84e33", MOTIFIMGLINK + "pink.gif");
+Motifs.PINKB = new Motif("Pink", "B", "#ff8a90", "#ffe84e33", MOTIFIMGLINK + "pink.gif");
+
+Motifs.PETALDANCE = new Motif("Petal Dance", "", "#55ffff", "#40a0ff33", MOTIFIMGLINK + "faqua.gif");
+Motifs.PETALDANCE.imagePlaying = MOTIFIMGLINK + "faquaSpin.gif";
 
 export function getMotifById(id)
 {

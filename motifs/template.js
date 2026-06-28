@@ -426,7 +426,7 @@ window.addEventListener('keydown', function(keyevent)
 
     switch (keyevent.code)
     {
-        case 'Space': case 'KeyK':
+        case 'Space': case 'KeyK': case 'KeyP':
             playOrPause(activePlayer);
             break;
         

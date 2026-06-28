@@ -2330,7 +2330,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -3112,7 +3125,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -6101,7 +6127,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -6883,7 +6922,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -9676,8 +9728,45 @@
   {
     "name": "And Now For Today's Sponsors…!",
     "youtubeId": "rwLySw0T4t8",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 3.5172413793103448,
+        "endTime": 9.931034482758621
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 10.137931034482758,
+        "endTime": 16.551724137931036
+      }
+    ],
+    "loopPoint": 31.448275862068964,
     "mainMotifs": [
       {
         "name": "Tenna",
@@ -9711,8 +9800,45 @@
   {
     "name": "MIKE, the BOARD, please!",
     "youtubeId": "_iQ6fgFcPwM",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0.3157894736842105,
+        "endTime": 10.105263157894736
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 10.421052631578947,
+        "endTime": 20.210526315789473
+      }
+    ],
+    "loopPoint": 32.84210526315789,
     "mainMotifs": [
       {
         "name": "Tenna",
@@ -9816,8 +9942,117 @@
   {
     "name": "Query?",
     "youtubeId": "VYjRD39c1bk",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 3.076923076923077
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 3.076923076923077,
+        "endTime": 6.153846153846154
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.153846153846154,
+        "endTime": 9.230769230769232
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 12.307692307692308,
+        "endTime": 15.384615384615385
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 15.384615384615385,
+        "endTime": 18.461538461538463
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 18.461538461538463,
+        "endTime": 21.53846153846154
+      }
+    ],
+    "loopPoint": 24.615384615384617,
     "mainMotifs": [
       {
         "name": "Tenna",
@@ -9851,8 +10086,117 @@
   {
     "name": "Quiz!",
     "youtubeId": "J-qqRdp1L28",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 11.314285714285715,
+        "endTime": 21.942857142857143
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 22.285714285714285,
+        "endTime": 32.91428571428571
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 33.25714285714286,
+        "endTime": 43.885714285714286
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 44.22857142857143,
+        "endTime": 54.85714285714286
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 60.68571428571428,
+        "endTime": 63.94285714285714
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 71.65714285714286,
+        "endTime": 74.91428571428571
+      }
+    ],
+    "loopPoint": 76.8,
     "mainMotifs": [
       {
         "name": "Tenna",
@@ -9885,9 +10229,28 @@
   },
   {
     "name": "Dig! Dig! To The Center of the Earth!",
-    "youtubeId": "cUxGD-aNcsY",
-    "motifRefs": [],
-    "loopPoint": null,
+    "youtubeId": "oqVuzXQqFIE",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Lancer",
+          "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
+          "imagePlaying": null,
+          "color": "#5585bd",
+          "color2": "#32323233",
+          "id": "lancer",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 4.029850746268657
+      }
+    ],
+    "loopPoint": 7.164179104477612,
     "mainMotifs": [
       {
         "name": "Lancer",
@@ -10474,7 +10837,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -10527,8 +10903,45 @@
   {
     "name": "Board Clear!",
     "youtubeId": "bKtnO1pQKb8",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.391304347826087,
+        "endTime": 10.434782608695652
+      },
+      {
+        "motif": {
+          "name": "Tenna",
+          "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
+          "imagePlaying": null,
+          "color": "#db1f53",
+          "color2": "#fffb5b33",
+          "id": "tenna",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 14.347826086956522,
+        "endTime": 17.391304347826086
+      }
+    ],
+    "loopPoint": 34.78260869565217,
     "mainMotifs": [
       {
         "name": "Tenna",
@@ -10665,7 +11078,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -11032,8 +11458,169 @@
   {
     "name": "KING OF ROLYPOLY",
     "youtubeId": "XCE4Ci-IuO0",
-    "motifRefs": [],
-    "loopPoint": null,
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 1.7647058823529411
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 4.033613445378151,
+        "endTime": 5.798319327731092
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 8.067226890756302,
+        "endTime": 9.831932773109244
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 12.100840336134453,
+        "endTime": 13.865546218487395
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 24.201680672268907,
+        "endTime": 25.96638655462185
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 28.235294117647058,
+        "endTime": 30
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 32.26890756302521,
+        "endTime": 34.03361344537815
+      },
+      {
+        "motif": {
+          "name": "TV Time!",
+          "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
+          "imagePlaying": null,
+          "color": "#fbe63b",
+          "color2": "#ff342b33",
+          "id": "tvtime",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "HEY EVERY !"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 36.30252100840336,
+        "endTime": 38.0672268907563
+      }
+    ],
+    "loopPoint": 48.403361344537814,
     "mainMotifs": [
       {
         "name": "TV Time!",
@@ -15050,7 +15637,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -23934,7 +24534,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -26108,7 +26721,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -28067,6 +28693,18 @@
         "form": "motif",
         "playOnce": true,
         "hasPlayed": false
+      },
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
       }
     ],
     "contributors": [
@@ -28526,7 +29164,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -28673,6 +29324,24 @@
       },
       {
         "motif": {
+          "name": "Petal Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/faqua.gif",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/faquaSpin.gif",
+          "color": "#55ffff",
+          "color2": "#40a0ff33",
+          "id": "petaldance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 13.241379310344827,
+        "endTime": 26.482758620689655
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -28709,6 +29378,24 @@
       },
       {
         "motif": {
+          "name": "Petal Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/faqua.gif",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/faquaSpin.gif",
+          "color": "#55ffff",
+          "color2": "#40a0ff33",
+          "id": "petaldance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 26.482758620689655,
+        "endTime": 39.724137931034484
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -28740,9 +29427,35 @@
         "letterDiv": null,
         "variationDiv": null,
         "aliases": []
+      },
+      {
+        "name": "Petal Dance",
+        "image": "http://127.0.0.1:5500/img/motifs/faqua.gif",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/faquaSpin.gif",
+        "color": "#55ffff",
+        "color2": "#40a0ff33",
+        "id": "petaldance",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -29057,7 +29770,7 @@
           "color": "#ff8a90",
           "color2": "#ffe84e33",
           "id": "pink",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -29066,6 +29779,42 @@
         "isVariation": false,
         "startTime": 0,
         "endTime": 14.76923076923077
+      },
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 14.307692307692308,
+        "endTime": 29.53846153846154
+      },
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 43.84615384615385,
+        "endTime": 59.07692307692308
       }
     ],
     "loopPoint": 73.84615384615385,
@@ -29077,7 +29826,20 @@
         "color": "#ff8a90",
         "color2": "#ffe84e33",
         "id": "pink",
-        "letter": "",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Pink",
+        "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+        "imagePlaying": null,
+        "color": "#ff8a90",
+        "color2": "#ffe84e33",
+        "id": "pink",
+        "letter": "B",
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null,
@@ -29111,7 +29873,7 @@
           "color": "#ff8a90",
           "color2": "#ffe84e33",
           "id": "pink",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -29165,7 +29927,43 @@
           "color": "#ff8a90",
           "color2": "#ffe84e33",
           "id": "pink",
-          "letter": "",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 42,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 53,
+        "endTime": 58.666666666666664
+      },
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -29233,6 +30031,42 @@
       },
       {
         "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 136.66666666666666,
+        "endTime": 142.66666666666666
+      },
+      {
+        "motif": {
+          "name": "Pink",
+          "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
+          "imagePlaying": null,
+          "color": "#ff8a90",
+          "color2": "#ffe84e33",
+          "id": "pink",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 147.66666666666666,
+        "endTime": 153.33333333333331
+      },
+      {
+        "motif": {
           "name": "Spooktune",
           "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
           "imagePlaying": null,
@@ -29257,7 +30091,7 @@
           "color": "#ff8a90",
           "color2": "#ffe84e33",
           "id": "pink",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -29277,7 +30111,7 @@
         "color": "#ff8a90",
         "color2": "#ffe84e33",
         "id": "pink",
-        "letter": "",
+        "letter": "A",
         "mainDiv": null,
         "letterDiv": null,
         "variationDiv": null,
@@ -29409,6 +30243,78 @@
         "isVariation": true,
         "startTime": 84,
         "endTime": 90
+      },
+      {
+        "motif": {
+          "name": "Petal Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/faqua.gif",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/faquaSpin.gif",
+          "color": "#55ffff",
+          "color2": "#40a0ff33",
+          "id": "petaldance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 96,
+        "endTime": 108
+      },
+      {
+        "motif": {
+          "name": "Petal Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/faqua.gif",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/faquaSpin.gif",
+          "color": "#55ffff",
+          "color2": "#40a0ff33",
+          "id": "petaldance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 108,
+        "endTime": 120
+      },
+      {
+        "motif": {
+          "name": "Petal Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/faqua.gif",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/faquaSpin.gif",
+          "color": "#55ffff",
+          "color2": "#40a0ff33",
+          "id": "petaldance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 120,
+        "endTime": 132
+      },
+      {
+        "motif": {
+          "name": "Petal Dance",
+          "image": "http://127.0.0.1:5500/img/motifs/faqua.gif",
+          "imagePlaying": "http://127.0.0.1:5500/img/motifs/faquaSpin.gif",
+          "color": "#55ffff",
+          "color2": "#40a0ff33",
+          "id": "petaldance",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 132,
+        "endTime": 144
       },
       {
         "motif": {
