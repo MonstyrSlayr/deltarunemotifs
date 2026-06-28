@@ -289,11 +289,19 @@ function onReady()
 
 function startPlaying(playerId)
 {
+    console.log("DOO PLAY " + playerId);
+
     playBtn.classList.add("gone");
     pauseBtn.classList.remove("gone");
 
     players[playerId].realTime = players[playerId].getCurrentTime();
     players[playerId].lastPoll = performance.now();
+
+    if (players[playerId].updateInterval != null)
+    {
+        clearInterval(players[playerId].updateInterval);
+        players[playerId].updateInterval = null;
+    }
 
     players[playerId].updateInterval = setInterval(() =>
     {
@@ -321,6 +329,8 @@ function startPlaying(playerId)
 
                 players[nextPlayerId].unMute();
                 players[nextPlayerId].playVideo();
+
+                startPlaying(nextPlayerId);
 
                 clearInterval(players[playerId].updateInterval);
             }
@@ -450,6 +460,8 @@ function startPlaying(playerId)
         trueSeek = null;
         prev = current;
     }, 15);
+
+    console.log("DONE PLAY");
 }
 
 // If API ready, init now, else defer

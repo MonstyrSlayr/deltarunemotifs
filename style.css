@@ -595,44 +595,53 @@ a.motifMainDiv:hover
     image-rendering: -webkit-optimize-contrast;
 }
 
-#gridLight
+#gridLight, #gridDark
 {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    overflow: hidden;
+    width: 200%;
     height: 100%;
+    z-index: -1;
+}
+
+#gridLight > img
+{
+    position: absolute;
+    left: 0%;
+    top: -50%;
+    width: 300%;
+    height: 300%;
     background-repeat: repeat;
     background-size: 1300px 1000px;
     animation: slideBackgroundUpLeft 27s linear infinite;
-    z-index: -1;
-    will-change: background-position;
+    will-change: transform;
 }
 
 @keyframes slideBackgroundUpLeft
 {
     0%
     {
-        background-position: 0 0;
+        transform: translate(0, 0);
     }
     100%
     {
-        background-position: -1300px -1000px;
+        transform: translate(-1300px, -1000px);
     }
 }
 
-#gridDark
+#gridDark > img
 {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: 0%;
+    top: -50%;
+    width: 300%;
+    height: 300%;
     background-repeat: repeat;
     background-size: 1300px 1000px;
     animation: slideBackgroundDownRight 27s linear infinite;
-    z-index: -1;
-    will-change: background-position;
+    will-change: transform;
 }
 
 @keyframes slideBackgroundDownRight

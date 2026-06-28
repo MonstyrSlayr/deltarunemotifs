@@ -250,13 +250,19 @@ Effects.BATTLE = new SongEffect(
     {
         const gridDark = document.createElement("div");
         gridDark.id = "gridDark";
-        gridDark.style.backgroundImage = `url("${IMGLINK + "gridDark.png"}")`;
         document.body.appendChild(gridDark);
+
+            const gridDarkImg = document.createElement("img");
+            gridDarkImg.style.backgroundImage = `url("${IMGLINK + "gridDark.png"}")`;
+            gridDark.appendChild(gridDarkImg);
 
         const gridLight = document.createElement("div");
         gridLight.id = "gridLight";
-        gridLight.style.backgroundImage = `url("${IMGLINK + "gridLight.png"}")`;
         document.body.appendChild(gridLight);
+
+            const gridLightImg = document.createElement("img");
+            gridLightImg.style.backgroundImage = `url("${IMGLINK + "gridLight.png"}")`;
+            gridLight.appendChild(gridLightImg);
     },
     () =>
     {
