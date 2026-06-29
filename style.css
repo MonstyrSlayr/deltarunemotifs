@@ -443,6 +443,7 @@ a.motifMainDiv:hover
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 /* right side */
@@ -603,6 +604,7 @@ a.motifMainDiv:hover
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 #gridLight, #gridDark
