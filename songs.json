@@ -11431,7 +11431,1434 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "startTime": 0,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      },
+      {
+        "startTime": 16.17391304347826,
+        "form": "lyrics",
+        "lyricsArray": [
+          "WHEN",
+          "THE",
+          "DEMON",
+          "HEART",
+          "IS",
+          "CRYING"
+        ],
+        "karaokeArray": [
+          "WHEN",
+          "THE",
+          "HAPPY",
+          "HEART",
+          "IS",
+          "SMILING"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 16.17391304347826,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 16.304347826086957,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 16.565217391304348,
+        "duration": 0.6521739130434783
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 17.217391304347824,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 17.47826086956522,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 17.73913043478261,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 18.26086956521739,
+        "form": "lyrics",
+        "lyricsArray": [
+          "AND",
+          "THE",
+          "BLOOD",
+          "IS",
+          "GUSHING",
+          "BRIGHT"
+        ],
+        "karaokeArray": [
+          "AND",
+          "THE",
+          "SUN",
+          "IS",
+          "SHINING",
+          "BRIGHT"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 18.26086956521739,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 18.391304347826086,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 18.652173913043477,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 19.043478260869566,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 19.304347826086957,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 19.695652173913043,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 21,
+        "form": "lyrics",
+        "lyricsArray": [
+          "RAISE",
+          "UP",
+          "YOUR",
+          "BAT",
+          "FOR",
+          "THE",
+          "BURNING",
+          "FIGHT"
+        ],
+        "karaokeArray": [
+          "RAISE",
+          "UP",
+          "YOUR",
+          "HAT",
+          "FOR",
+          "A",
+          "FUNNY",
+          "SIGHT"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 21,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 21.391304347826086,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 21.52173913043478,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 21.782608695652172,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 22.043478260869566,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 22.17391304347826,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 22.304347826086957,
+        "duration": 0.6521739130434783
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 22.956521739130434,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 24.52173913043478,
+        "form": "lyrics",
+        "lyricsArray": [
+          "WHEN",
+          "YOUR",
+          "HOPE",
+          "IS",
+          "SLOWLY",
+          "DYING"
+        ],
+        "karaokeArray": [
+          "WHEN",
+          "YOUR",
+          "CAT",
+          "IS",
+          "SLOWLY",
+          "SIGHING"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.52173913043478,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.652173913043477,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.913043478260867,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 25.304347826086957,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 25.565217391304348,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 26.08695652173913,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 26.608695652173914,
+        "form": "lyrics",
+        "lyricsArray": [
+          "AND",
+          "YOUR",
+          "FUTURE'S",
+          "LOST ITS",
+          "RIGHTS"
+        ],
+        "karaokeArray": [
+          "AND",
+          "ITS",
+          "FUR IS",
+          "LOOKING",
+          "WHITE"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 26.608695652173914,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 26.73913043478261,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 27,
+        "duration": 0.6521739130434783
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 27.652173913043477,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 28.043478260869563,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 29.34782608695652,
+        "form": "lyrics",
+        "lyricsArray": [
+          "RAISE",
+          "UP",
+          "YOUR",
+          "BAT",
+          "AND",
+          "FACE",
+          "THE",
+          "FRIGHT"
+        ],
+        "karaokeArray": [
+          "MAKE",
+          "SURE",
+          "TO",
+          "CHECK",
+          "YOUR",
+          "MAT",
+          "FOR",
+          "MITES"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 29.34782608695652,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 29.73913043478261,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 29.869565217391305,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 30.130434782608695,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 30.391304347826086,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 30.782608695652172,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 30.913043478260867,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 31.17391304347826,
+        "duration": 0.6521739130434783
+      },
+      {
+        "startTime": 33.52173913043478,
+        "form": "lyrics",
+        "lyricsArray": [
+          "LET'S",
+          "KNOCK",
+          "EM",
+          "DEAD",
+          "INTO",
+          "THE",
+          "NIGHT"
+        ],
+        "karaokeArray": [
+          "LET'S",
+          "GET",
+          "YOUR",
+          "FRIENDS",
+          "AND FLY",
+          "A",
+          "KITE"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 33.52173913043478,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 33.91304347826087,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 34.04347826086956,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 34.30434782608695,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 34.565217391304344,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 35.08695652173913,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 35.34782608695652,
+        "duration": 0.6521739130434783
+      },
+      {
+        "startTime": 37.565217391304344,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      },
+      {
+        "startTime": 58.69565217391304,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Come",
+          "follow",
+          "me",
+          "into",
+          "the",
+          "dark"
+        ],
+        "karaokeArray": [
+          "Come",
+          "follow",
+          "me",
+          "into",
+          "the",
+          "dark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 58.69565217391304,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 58.95652173913043,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 59.47826086956522,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 59.73913043478261,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 60.26086956521739,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 60.52173913043478,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 61.04347826086956,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "the",
+          "ark"
+        ],
+        "karaokeArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "the",
+          "ark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 61.04347826086956,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 61.30434782608695,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 61.565217391304344,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 62.086956521739125,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 62.34782608695652,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 62.608695652173914,
+        "duration": 0.3913043478260869
+      },
+      {
+        "startTime": 63,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Which",
+          "shall",
+          "shine",
+          "you",
+          "the",
+          "way"
+        ],
+        "karaokeArray": [
+          "Which",
+          "shall",
+          "shine",
+          "you",
+          "the",
+          "way"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 63,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 63.391304347826086,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 63.65217391304348,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 64.04347826086956,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 64.43478260869566,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 64.69565217391305,
+        "duration": 1.0434782608695652
+      },
+      {
+        "startTime": 67.04347826086956,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Because",
+          "I'm",
+          "with",
+          "you",
+          "in",
+          "the",
+          "dark"
+        ],
+        "karaokeArray": [
+          "Because",
+          "I'm",
+          "with",
+          "you",
+          "in",
+          "the",
+          "dark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 67.04347826086956,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 67.56521739130434,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 67.82608695652173,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 68.08695652173913,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 68.34782608695652,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 68.6086956521739,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 68.8695652173913,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 69.39130434782608,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "my",
+          "mark"
+        ],
+        "karaokeArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "my",
+          "mark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 69.39130434782608,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 69.65217391304347,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 69.91304347826087,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 70.43478260869566,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 70.69565217391305,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 70.95652173913044,
+        "duration": 0.3913043478260869
+      },
+      {
+        "startTime": 71.34782608695652,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Which",
+          "shall",
+          "guide",
+          "you",
+          "the",
+          "way,"
+        ],
+        "karaokeArray": [
+          "Which",
+          "shall",
+          "guide",
+          "you",
+          "the",
+          "way,"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 71.34782608695652,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 71.73913043478261,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 72,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 72.39130434782608,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 72.78260869565217,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 73.04347826086956,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 73.82608695652173,
+        "form": "lyrics",
+        "lyricsArray": [
+          "through",
+          "the",
+          "waves"
+        ],
+        "karaokeArray": [
+          "through",
+          "the",
+          "waves"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 73.82608695652173,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 73.95652173913044,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 74.08695652173913,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 75.39130434782608,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Come",
+          "follow",
+          "me",
+          "into",
+          "the",
+          "dark"
+        ],
+        "karaokeArray": [
+          "Come",
+          "follow",
+          "me",
+          "into",
+          "the",
+          "dark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 75.39130434782608,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 75.65217391304347,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 76.17391304347827,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 76.43478260869566,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 76.95652173913044,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 77.21739130434783,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 77.73913043478261,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "the",
+          "ark"
+        ],
+        "karaokeArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "the",
+          "ark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 77.73913043478261,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 78,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 78.26086956521739,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 78.78260869565217,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 79.04347826086956,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 79.30434782608695,
+        "duration": 0.3913043478260869
+      },
+      {
+        "startTime": 79.69565217391305,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Which",
+          "shall",
+          "shine",
+          "you",
+          "the",
+          "way"
+        ],
+        "karaokeArray": [
+          "Which",
+          "shall",
+          "shine",
+          "you",
+          "the",
+          "way"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 79.69565217391305,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 80.08695652173913,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 80.34782608695652,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 80.73913043478261,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 81.13043478260869,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 81.39130434782608,
+        "duration": 1.0434782608695652
+      },
+      {
+        "startTime": 83.73913043478261,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Because",
+          "I'm",
+          "with",
+          "you",
+          "in",
+          "the",
+          "dark"
+        ],
+        "karaokeArray": [
+          "Because",
+          "I'm",
+          "with",
+          "you",
+          "in",
+          "the",
+          "dark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 83.73913043478261,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 84.26086956521739,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 84.52173913043478,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 84.78260869565217,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 85.04347826086956,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 85.30434782608695,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 85.56521739130434,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 86.08695652173913,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "my",
+          "mark"
+        ],
+        "karaokeArray": [
+          "With",
+          "your",
+          "heart",
+          "as",
+          "my",
+          "mark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 86.08695652173913,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 86.34782608695652,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 86.6086956521739,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 87.13043478260869,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 87.39130434782608,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 87.65217391304347,
+        "duration": 0.3913043478260869
+      },
+      {
+        "startTime": 88.04347826086956,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Which",
+          "shall",
+          "guide",
+          "you",
+          "the",
+          "way,"
+        ],
+        "karaokeArray": [
+          "Which",
+          "shall",
+          "guide",
+          "you",
+          "the",
+          "way,"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 88.04347826086956,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 88.43478260869566,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 88.69565217391305,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 89.08695652173913,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 89.47826086956522,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 89.73913043478261,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 90.52173913043478,
+        "form": "lyrics",
+        "lyricsArray": [
+          "through",
+          "the",
+          "waves"
+        ],
+        "karaokeArray": [
+          "through",
+          "the",
+          "waves"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 90.52173913043478,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 90.65217391304347,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 90.78260869565217,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 91.82608695652173,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      },
+      {
+        "startTime": 108,
+        "form": "lyrics",
+        "lyricsArray": [
+          "WHEN",
+          "THE",
+          "DEMON",
+          "HEART",
+          "IS",
+          "CRYING"
+        ],
+        "karaokeArray": [
+          "WHEN",
+          "THE",
+          "SLEEPY",
+          "DUCK",
+          "IS",
+          "CRYING"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 108,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 108.13043478260869,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 108.39130434782608,
+        "duration": 0.6521739130434783
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 109.04347826086956,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 109.30434782608695,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 109.56521739130434,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 110.08695652173913,
+        "form": "lyrics",
+        "lyricsArray": [
+          "AND",
+          "THE",
+          "BLOOD",
+          "IS",
+          "GUSHING BRIGHT"
+        ],
+        "karaokeArray": [
+          "AND",
+          "THE",
+          "MOM",
+          "IS",
+          "KISS GOODNIGHT"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 110.08695652173913,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 110.21739130434783,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 110.47826086956522,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 110.8695652173913,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 111.13043478260869,
+        "duration": 0.9130434782608695
+      },
+      {
+        "startTime": 112.82608695652173,
+        "form": "lyrics",
+        "lyricsArray": [
+          "RAISE",
+          "UP",
+          "YOUR",
+          "BAT",
+          "FOR",
+          "THE BURNING FIGHT"
+        ],
+        "karaokeArray": [
+          "RAISE",
+          "UP",
+          "YOUR",
+          "BAT",
+          "FOR",
+          "BASEBALL DELIGHT"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 112.82608695652173,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 113.21739130434783,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 113.34782608695652,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 113.6086956521739,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 113.8695652173913,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 114,
+        "duration": 1.3043478260869565
+      },
+      {
+        "startTime": 116.34782608695652,
+        "form": "lyrics",
+        "lyricsArray": [
+          "WHEN",
+          "YOUR",
+          "HOPE IS",
+          "SLOWLY",
+          "DYING"
+        ],
+        "karaokeArray": [
+          "WHEN",
+          "YOUR",
+          "PANCAKE'S",
+          "SLOWLY",
+          "FRYING"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 116.34782608695652,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 116.47826086956522,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 116.73913043478261,
+        "duration": 0.6521739130434783
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 117.39130434782608,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 117.91304347826086,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 118.43478260869566,
+        "form": "lyrics",
+        "lyricsArray": [
+          "AND",
+          "YOUR",
+          "FUTURE'S",
+          "LOST ITS",
+          "RIGHTS"
+        ],
+        "karaokeArray": [
+          "AND",
+          "YOUR",
+          "FUTURE'S",
+          "REALLY",
+          "BRIGHT"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 118.43478260869566,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 118.56521739130434,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 118.82608695652173,
+        "duration": 0.6521739130434783
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 119.47826086956522,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 119.8695652173913,
+        "duration": 0.5217391304347826
+      },
+      {
+        "startTime": 121.17391304347825,
+        "form": "lyrics",
+        "lyricsArray": [
+          "RAISE",
+          "UP YOUR",
+          "BAT",
+          "AND",
+          "FACE",
+          "THE FRIGHT"
+        ],
+        "karaokeArray": [
+          "BRING",
+          "EXTRA",
+          "SMORES",
+          "TO",
+          "THE",
+          "CAMPSITE"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 121.17391304347825,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 121.56521739130434,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 121.95652173913044,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 122.21739130434783,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 122.6086956521739,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 122.73913043478261,
+        "duration": 0.9130434782608695
+      },
+      {
+        "startTime": 125.34782608695652,
+        "form": "lyrics",
+        "lyricsArray": [
+          "LET'S",
+          "KNOCK",
+          "EM",
+          "DEAD",
+          "INTO",
+          "THE",
+          "NIGHT"
+        ],
+        "karaokeArray": [
+          "I",
+          "BET",
+          "MY",
+          "FRIENDS",
+          "STILL WANT",
+          "A",
+          "BITE"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 125.34782608695652,
+        "duration": 0.3913043478260869
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 125.73913043478261,
+        "duration": 0.13043478260869565
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 125.8695652173913,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 126.13043478260869,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 126.39130434782608,
+        "duration": 0.5217391304347826
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 126.91304347826086,
+        "duration": 0.2608695652173913
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 127.17391304347825,
+        "duration": 0.6521739130434783
+      },
+      {
+        "startTime": 130.43478260869566,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -24516,6 +25943,42 @@
         "isVariation": false,
         "startTime": 35.55555555555556,
         "endTime": 39.11111111111111
+      },
+      {
+        "motif": {
+          "name": "Unknown Motif",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "unknownmotif",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 42.666666666666664,
+        "endTime": 56.888888888888886
+      },
+      {
+        "motif": {
+          "name": "Unknown Motif",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "unknownmotif",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 56.888888888888886,
+        "endTime": 71.11111111111111
       }
     ],
     "loopPoint": 71.11111111111111,
@@ -28799,6 +30262,24 @@
     "motifRefs": [
       {
         "motif": {
+          "name": "Once Upon a Time",
+          "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
+          "imagePlaying": null,
+          "color": "#c18127",
+          "color2": "#00000033",
+          "id": "onceuponatime",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.68,
+        "endTime": 23.04
+      },
+      {
+        "motif": {
           "name": "Field of Hopes and Dreams",
           "image": "http://127.0.0.1:5500/img/motifs/rudinn.webp",
           "imagePlaying": null,
@@ -29411,6 +30892,42 @@
         "isVariation": false,
         "startTime": 33.10344827586207,
         "endTime": 39.724137931034484
+      },
+      {
+        "motif": {
+          "name": "Unknown Motif",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "unknownmotif",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 66.20689655172414,
+        "endTime": 79.44827586206897
+      },
+      {
+        "motif": {
+          "name": "Unknown Motif",
+          "image": null,
+          "imagePlaying": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "unknownmotif",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 79.44827586206897,
+        "endTime": 92.6896551724138
       }
     ],
     "loopPoint": 92.6896551724138,
@@ -30312,7 +31829,7 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
+        "isVariation": true,
         "startTime": 132,
         "endTime": 144
       },
@@ -30382,7 +31899,1607 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "startTime": 0,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      },
+      {
+        "startTime": 24,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Ten",
+          "feet",
+          "twenty",
+          "the",
+          "Flower",
+          "Man"
+        ],
+        "karaokeArray": [
+          "Ten",
+          "feet",
+          "twenty",
+          "the",
+          "Flower",
+          "Man"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.75,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 25.3125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 25.5,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 26.25,
+        "duration": 0.375
+      },
+      {
+        "startTime": 27.375,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Is",
+          "waiting",
+          "for",
+          "the",
+          "touch",
+          "of",
+          "his",
+          "hand"
+        ],
+        "karaokeArray": [
+          "Is",
+          "waiting",
+          "for",
+          "the",
+          "touch",
+          "of",
+          "his",
+          "hand"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 27.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 27.75,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 28.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 28.875,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 29.0625,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 29.625,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 29.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 30,
+        "duration": 0.375
+      },
+      {
+        "startTime": 30.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Straightening",
+          "petals",
+          "out",
+          "without",
+          "a",
+          "plan"
+        ],
+        "karaokeArray": [
+          "Straightening",
+          "petals",
+          "out",
+          "without",
+          "a",
+          "plan"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 30.75,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 31.5,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 32.0625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 32.4375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 32.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 33,
+        "duration": 0.375
+      },
+      {
+        "startTime": 33.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Like",
+          "the",
+          "every",
+          "daily"
+        ],
+        "karaokeArray": [
+          "Like",
+          "the",
+          "every",
+          "daily"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 33.75,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 34.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 34.5,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 35.25,
+        "duration": 0.75
+      },
+      {
+        "startTime": 36,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Wish",
+          "that",
+          "bothers",
+          "the",
+          "Flower",
+          "Man"
+        ],
+        "karaokeArray": [
+          "Wish",
+          "that",
+          "bothers",
+          "the",
+          "Flower",
+          "Man"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 36,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 36.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 36.75,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 37.3125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 37.5,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 38.25,
+        "duration": 0.375
+      },
+      {
+        "startTime": 39.375,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Could",
+          "I",
+          "do",
+          "something",
+          "to",
+          "make",
+          "him",
+          "laugh"
+        ],
+        "karaokeArray": [
+          "Could",
+          "I",
+          "do",
+          "something",
+          "to",
+          "make",
+          "him",
+          "laugh"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 39.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 39.75,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 40.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 40.5,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 41.0625,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 41.625,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 41.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 42,
+        "duration": 0.375
+      },
+      {
+        "startTime": 42.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Inside",
+          "my",
+          "little",
+          "chamber",
+          "made",
+          "of",
+          "glass"
+        ],
+        "karaokeArray": [
+          "Inside",
+          "my",
+          "little",
+          "chamber",
+          "made",
+          "of",
+          "glass"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 42.75,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 43.3125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 43.5,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 44.0625,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 44.625,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 44.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 45,
+        "duration": 0.375
+      },
+      {
+        "startTime": 45.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "So",
+          "he",
+          "lived",
+          "the"
+        ],
+        "karaokeArray": [
+          "So",
+          "he",
+          "lived",
+          "the"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 45.75,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 46.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 46.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 46.875,
+        "duration": 0.375
+      },
+      {
+        "startTime": 47.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Flower",
+          "Man,",
+          "Flower",
+          "Man"
+        ],
+        "karaokeArray": [
+          "Flower",
+          "Man,",
+          "Flower",
+          "Man"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 47.25,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 48,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 48.75,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 49.5,
+        "duration": 0.375
+      },
+      {
+        "startTime": 50.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "his",
+          "heart",
+          "in",
+          "the",
+          "sand"
+        ],
+        "karaokeArray": [
+          "With",
+          "his",
+          "heart",
+          "in",
+          "the",
+          "sand"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 50.25,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 50.53125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 50.8125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 51.75,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 52.03125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 52.3125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 53.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "So",
+          "he",
+          "stands"
+        ],
+        "karaokeArray": [
+          "So",
+          "he",
+          "stands"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 53.25,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 53.625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 54,
+        "duration": 0.375
+      },
+      {
+        "startTime": 55.125,
+        "form": "lyrics",
+        "lyricsArray": [
+          "To",
+          "watch",
+          "the",
+          "whole",
+          "wide",
+          "world"
+        ],
+        "karaokeArray": [
+          "To",
+          "watch",
+          "the",
+          "whole",
+          "wide",
+          "world"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 55.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 55.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 55.875,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 56.25,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 56.53125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 56.8125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 57.9375,
+        "form": "lyrics",
+        "lyricsArray": [
+          "From",
+          "a",
+          "can"
+        ],
+        "karaokeArray": [
+          "From",
+          "a",
+          "can"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 57.9375,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 58.125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 58.3125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 59.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Way",
+          "up",
+          "high",
+          "in",
+          "the",
+          "sky"
+        ],
+        "karaokeArray": [
+          "Way",
+          "up",
+          "high",
+          "in",
+          "the",
+          "sky"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 59.25,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 59.625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 60,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 60.75,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 61.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 61.5,
+        "duration": 0.375
+      },
+      {
+        "startTime": 62.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "the",
+          "sun",
+          "in",
+          "his",
+          "eyes"
+        ],
+        "karaokeArray": [
+          "With",
+          "the",
+          "sun",
+          "in",
+          "his",
+          "eyes"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 62.25,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 62.53125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 62.8125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 63.75,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 64.03125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 64.3125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 65.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Ain't",
+          "it",
+          "nice"
+        ],
+        "karaokeArray": [
+          "Ain't",
+          "it",
+          "nice"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 65.25,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 65.625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 66,
+        "duration": 0.375
+      },
+      {
+        "startTime": 67.125,
+        "form": "lyrics",
+        "lyricsArray": [
+          "The",
+          "life",
+          "forever",
+          "for"
+        ],
+        "karaokeArray": [
+          "The",
+          "life",
+          "forever",
+          "for"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 67.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 67.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 67.875,
+        "duration": 1.125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 69,
+        "duration": 0.375
+      },
+      {
+        "startTime": 70.5,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Flowers"
+        ],
+        "karaokeArray": [
+          "Flowers"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 70.5,
+        "duration": 1.5
+      },
+      {
+        "startTime": 72,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      },
+      {
+        "startTime": 144,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Ten",
+          "feet",
+          "twenty",
+          "the",
+          "Flower",
+          "Man"
+        ],
+        "karaokeArray": [
+          "Ten",
+          "feet",
+          "twenty",
+          "the",
+          "Flower",
+          "Man"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 144,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 144.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 144.75,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 145.3125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 145.5,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 146.25,
+        "duration": 0.375
+      },
+      {
+        "startTime": 147.375,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Is",
+          "waiting",
+          "for",
+          "the",
+          "touch",
+          "of",
+          "his",
+          "hand"
+        ],
+        "karaokeArray": [
+          "Is",
+          "waiting",
+          "for",
+          "the",
+          "touch",
+          "of",
+          "his",
+          "hand"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 147.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 147.75,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 148.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 148.875,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 149.0625,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 149.625,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 149.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 150,
+        "duration": 0.375
+      },
+      {
+        "startTime": 150.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Fallen",
+          "to",
+          "pieces",
+          "still",
+          "without",
+          "a",
+          "plan"
+        ],
+        "karaokeArray": [
+          "Fallen",
+          "to",
+          "pieces",
+          "still",
+          "without",
+          "a",
+          "plan"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 150.75,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 151.3125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 151.5,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 152.0625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 152.4375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 152.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 153,
+        "duration": 0.375
+      },
+      {
+        "startTime": 153.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Yet",
+          "the",
+          "every",
+          "daily"
+        ],
+        "karaokeArray": [
+          "Yet",
+          "the",
+          "every",
+          "daily"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 153.75,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 154.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 154.5,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 155.25,
+        "duration": 0.75
+      },
+      {
+        "startTime": 156,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Hope",
+          "that",
+          "powered",
+          "the",
+          "Flower",
+          "Man"
+        ],
+        "karaokeArray": [
+          "Hope",
+          "that",
+          "powered",
+          "the",
+          "Flower",
+          "Man"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 156,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 156.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 156.75,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 157.3125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 157.5,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 158.25,
+        "duration": 0.375
+      },
+      {
+        "startTime": 159.375,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Would",
+          "never",
+          "cower",
+          "off",
+          "of",
+          "its",
+          "path"
+        ],
+        "karaokeArray": [
+          "Would",
+          "never",
+          "cower",
+          "off",
+          "of",
+          "its",
+          "path"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 159.375,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 159.75,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 160.5,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 161.0625,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 161.625,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 161.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 162,
+        "duration": 0.375
+      },
+      {
+        "startTime": 162.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Even",
+          "if",
+          "broken",
+          "I",
+          "am",
+          "more",
+          "than",
+          "glass"
+        ],
+        "karaokeArray": [
+          "Even",
+          "if",
+          "broken",
+          "I",
+          "am",
+          "more",
+          "than",
+          "glass"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 162.75,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 163.3125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 163.5,
+        "duration": 0.5625
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 164.0625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 164.4375,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 164.625,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 164.8125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 165,
+        "duration": 0.375
+      },
+      {
+        "startTime": 165.75,
+        "form": "lyrics",
+        "lyricsArray": [
+          "So",
+          "he",
+          "lived",
+          "the"
+        ],
+        "karaokeArray": [
+          "So",
+          "he",
+          "lived",
+          "the"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 165.75,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 166.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 166.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 166.875,
+        "duration": 0.375
+      },
+      {
+        "startTime": 167.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Flower",
+          "Man,",
+          "Flower",
+          "Man"
+        ],
+        "karaokeArray": [
+          "Flower",
+          "Man,",
+          "Flower",
+          "Man"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 167.25,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 168,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 168.75,
+        "duration": 0.75
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 169.5,
+        "duration": 0.375
+      },
+      {
+        "startTime": 170.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "his",
+          "heart",
+          "in",
+          "the",
+          "sand"
+        ],
+        "karaokeArray": [
+          "With",
+          "his",
+          "heart",
+          "in",
+          "the",
+          "sand"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 170.25,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 170.53125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 170.8125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 171.75,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 172.03125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 172.3125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 173.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "So",
+          "he",
+          "stands"
+        ],
+        "karaokeArray": [
+          "So",
+          "he",
+          "stands"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 173.25,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 173.625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 174,
+        "duration": 0.375
+      },
+      {
+        "startTime": 175.125,
+        "form": "lyrics",
+        "lyricsArray": [
+          "To",
+          "watch",
+          "the",
+          "whole",
+          "wide",
+          "world"
+        ],
+        "karaokeArray": [
+          "To",
+          "watch",
+          "the",
+          "whole",
+          "wide",
+          "world"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 175.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 175.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 175.875,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 176.25,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 176.53125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 176.8125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 177.9375,
+        "form": "lyrics",
+        "lyricsArray": [
+          "From",
+          "a",
+          "can"
+        ],
+        "karaokeArray": [
+          "From",
+          "a",
+          "can"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 177.9375,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 178.125,
+        "duration": 0.1875
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 178.3125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 179.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Way",
+          "up",
+          "high",
+          "in",
+          "the",
+          "sky"
+        ],
+        "karaokeArray": [
+          "Way",
+          "up",
+          "high",
+          "in",
+          "the",
+          "sky"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 179.25,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 179.625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 180,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 180.75,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 181.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 181.5,
+        "duration": 0.375
+      },
+      {
+        "startTime": 182.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "the",
+          "sun",
+          "in",
+          "your",
+          "eyes"
+        ],
+        "karaokeArray": [
+          "With",
+          "the",
+          "sun",
+          "in",
+          "your",
+          "eyes"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 182.25,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 182.53125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 182.8125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 183.75,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 184.03125,
+        "duration": 0.28125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 184.3125,
+        "duration": 0.375
+      },
+      {
+        "startTime": 185.25,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Ain't",
+          "it",
+          "nice"
+        ],
+        "karaokeArray": [
+          "Ain't",
+          "it",
+          "nice"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 185.25,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 185.625,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 186,
+        "duration": 0.375
+      },
+      {
+        "startTime": 187.125,
+        "form": "lyrics",
+        "lyricsArray": [
+          "The",
+          "life",
+          "forever",
+          "for"
+        ],
+        "karaokeArray": [
+          "The",
+          "life",
+          "forever",
+          "for"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 187.125,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 187.5,
+        "duration": 0.375
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 187.875,
+        "duration": 1.125
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 189,
+        "duration": 0.375
+      },
+      {
+        "startTime": 190.5,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Flowers"
+        ],
+        "karaokeArray": [
+          "Flowers"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 190.5,
+        "duration": 1.5
+      },
+      {
+        "startTime": 192,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",

@@ -2649,6 +2649,9 @@ const spawn = new Song("SPAWN",
         new MotifReference(Motifs.SANCTUARY, quickSec(spawnBPM, 48), quickSec(spawnBPM, 56)), new MotifReference(Motifs.SANCTUARY, quickSec(spawnBPM, 56), quickSec(spawnBPM, 64)),
         new MotifReference(Motifs.TITAN, quickSec(spawnBPM, 64), quickSec(spawnBPM, 80)), new MotifReference(Motifs.SANCTUARY, quickSec(spawnBPM, 64), quickSec(spawnBPM, 72)),
         new MotifReference(Motifs.TITAN, quickSec(spawnBPM, 80), quickSec(spawnBPM, 96)), new MotifReference(Motifs.SANCTUARY, quickSec(spawnBPM, 80), quickSec(spawnBPM, 88)),
+
+        new MotifReference(Motifs.SPAWN, quickSec(spawnBPM, 128 - 32), quickSec(spawnBPM, 128)),
+        new MotifReference(Motifs.SPAWN, quickSec(spawnBPM, 128), quickSec(spawnBPM, 128 + 32)),
     ],
     "", quickSec(spawnBPM, 128 + 32),
     [
@@ -3034,6 +3037,9 @@ const petalDance = new Song("Petal Dance",
 
         new MotifReference(Motifs.PETALDANCE, quickSec(petalDanceBPM, 32), quickSec(petalDanceBPM, 64)),
         new MotifReference(Motifs.PETALDANCE, quickSec(petalDanceBPM, 64), quickSec(petalDanceBPM, 96)),
+
+        new MotifReference(Motifs.SPAWN, quickSec(petalDanceBPM, 128 + 32), quickSec(petalDanceBPM, 128 + 64)),
+        new MotifReference(Motifs.SPAWN, quickSec(petalDanceBPM, 128 + 64), quickSec(petalDanceBPM, 128 + 96)),
     ],
     "", quickSec(petalDanceBPM, 128 + 96),
     [

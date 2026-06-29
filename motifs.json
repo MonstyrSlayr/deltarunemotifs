@@ -1080,6 +1080,19 @@
     "aliases": []
   },
   {
+    "name": "Unknown Motif",
+    "image": null,
+    "imagePlaying": null,
+    "color": "#ffffff",
+    "color2": "#ffffff33",
+    "id": "unknownmotif",
+    "letter": "",
+    "mainDiv": null,
+    "letterDiv": null,
+    "variationDiv": null,
+    "aliases": []
+  },
+  {
     "name": "Mike",
     "image": "http://127.0.0.1:5500/img/motifs/mike.png",
     "imagePlaying": null,
