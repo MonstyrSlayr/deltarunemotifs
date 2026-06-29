@@ -1196,4 +1196,9 @@ a.motifMainDiv:hover
     {
         height: 75%;
     }
+
+    .contribDiv
+    {
+        overflow: hidden;
+    }
 }
