@@ -78,7 +78,8 @@ h4
     color: white;
     margin: 0.5em;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
+    text-wrap: nowrap;
 }
 
 a
@@ -670,7 +671,7 @@ a.motifMainDiv:hover
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.75em;
+    gap: 1.5em;
     justify-content: center;
     align-items: center;
     margin: 1em;
@@ -684,11 +685,49 @@ a.motifMainDiv:hover
     overflow: visible;
 }
 
+#lyrics > div > .miku
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 200%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#lyrics > div > .miku > h4
+{
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transform-origin: left center;
+    transition: all 0s;
+}
+
 #lyrics > div > .lyric
 {
     padding: 0;
     margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 200%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#lyrics > div > .lyric > h4
+{
+    padding: 0;
+    margin: 0;
     color: yellow;
+    transform-origin: right center;
+    transition: all 0s;
+    position: absolute;
+    top: 0;
+    right: 0;
 
     text-shadow:    calc(1em/12) 0 0 black,
                     calc(-1em/12) 0 0 black,
@@ -696,11 +735,22 @@ a.motifMainDiv:hover
                     0 calc(-1em/12) 0 black;
 }
 
+@keyframes lyricContract
+{
+    0%
+    {
+        width: 100%;
+    }
+    100%
+    {
+        width: 0;
+    }
+}
+
 #lyrics > div > .karaoke
 {
     padding: 0;
     margin: 0;
-    color: green;
     position: absolute;
     left: 0;
     top: 0;
@@ -708,6 +758,7 @@ a.motifMainDiv:hover
     height: 200%;
     overflow-x: hidden;
     overflow-y: visible;
+    transition: all 0s;
 }
 
 #lyrics > div > .karaoke > h4
@@ -715,6 +766,11 @@ a.motifMainDiv:hover
     padding: 0;
     margin: 0;
     color: green;
+    transform-origin: left center;
+    transition: all 0s;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     text-shadow:    calc(1em/12) 0 0 white,
                     calc(-1em/12) 0 0 white,
@@ -732,6 +788,12 @@ a.motifMainDiv:hover
     {
         width: 100%;
     }
+}
+
+#dummyLyrics
+{
+    height: 1px;
+    opacity: 0;
 }
 
 .mFreedom > div > img

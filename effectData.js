@@ -313,6 +313,21 @@ export class SetLyrics
     constructor(lyricsString, startTime)
     {
         this.lyricsArray = lyricsString.split(" ");
+        this.karaokeArray = this.lyricsArray;
+
+        this.startTime = startTime;
+    }
+}
+
+export class SetFakeLyrics
+{
+    startTime;
+    form = "lyrics";
+
+    constructor(lyricsArray, karaokeArray, startTime)
+    {
+        this.lyricsArray = lyricsArray;
+        this.karaokeArray = karaokeArray;
 
         this.startTime = startTime;
     }

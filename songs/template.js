@@ -36,7 +36,9 @@ const songDiv = createSongDiv(daSong, false);
 songList.appendChild(songDiv);
 
 const lyricDiv = document.getElementById("lyrics");
+const dummyLyricDiv = document.getElementById("dummyLyrics");
 let karaokeTexts = [];
+let lyricTexts = [];
 let karaokePointer = 0;
 
 const container = document.getElementById("mainMusicContainer");
@@ -496,6 +498,7 @@ function startPlaying(playerId)
             || trueSeek == advanceRef.startTime)
             {
                 karaokeTexts[karaokePointer].style.animation = `karaokeExpand ${advanceRef.duration}s linear forwards`;
+                lyricTexts[karaokePointer].style.animation = `lyricContract ${advanceRef.duration}s linear forwards`;
                 karaokePointer++;
 
                 break;
@@ -512,17 +515,34 @@ function setLyricsDivByRef(lyricRef)
     lyricDiv.classList.remove("gone");
     lyricDiv.innerHTML = "";
     karaokeTexts = [];
+    lyricTexts = [];
     karaokePointer = 0;
 
-    for (const lyric of lyricRef.lyricsArray)
+    for (let i = 0; i < lyricRef.lyricsArray.length; i++)
     {
+        const lyric = lyricRef.lyricsArray[i];
+        const karaoke = lyricRef.karaokeArray[i];
+        dummyLyricDiv.innerHTML = "";
+
         const lilLyricDiv = document.createElement("div");
         lyricDiv.appendChild(lilLyricDiv);
 
-            const lyricText = document.createElement("h4");
-            lyricText.textContent = lyric;
-            lyricText.classList.add("lyric");
-            lilLyricDiv.appendChild(lyricText);
+            const mikuDiv = document.createElement("div");
+            mikuDiv.classList.add("miku");
+            lilLyricDiv.appendChild(mikuDiv);
+
+                const mikuText = document.createElement("h4");
+                mikuText.textContent = lyric;
+                mikuDiv.appendChild(mikuText);
+
+            const daLyricDiv = document.createElement("div");
+            daLyricDiv.classList.add("lyric");
+            lilLyricDiv.appendChild(daLyricDiv);
+            lyricTexts.push(daLyricDiv);
+
+                const lyricText = document.createElement("h4");
+                lyricText.textContent = lyric;
+                daLyricDiv.appendChild(lyricText);
 
             const karaokeDiv = document.createElement("div");
             karaokeDiv.classList.add("karaoke");
@@ -530,8 +550,18 @@ function setLyricsDivByRef(lyricRef)
             karaokeTexts.push(karaokeDiv);
 
                 const karaokeText = document.createElement("h4");
-                karaokeText.textContent = lyric;
+                karaokeText.textContent = karaoke;
                 karaokeDiv.appendChild(karaokeText);
+
+                // scale text to make ralsei funny shenani
+                const divWidth = daLyricDiv.offsetWidth;
+
+                const dummyLyric = document.createElement("h4");
+                dummyLyric.textContent = karaoke;
+                dummyLyricDiv.appendChild(dummyLyric);
+                const textWidth = dummyLyric.offsetWidth;
+
+                karaokeText.style.transform = `scaleX(${divWidth / textWidth})`;
     }
 }
 
@@ -548,6 +578,7 @@ function updateLyricsForTime(daTime)
     {
         const daDuration = Math.max(0, advanceRef.duration - daTime - advanceRef.startTime);
         karaokeTexts[karaokePointer].style.animation = `karaokeExpand ${daDuration}s linear forwards`;
+        lyricTexts[karaokePointer].style.animation = `lyricContract ${daDuration}s linear forwards`;
         karaokePointer++;
     }
 }
