@@ -19,6 +19,7 @@ body
     align-items: center;
     background-color: black;
     position: relative;
+    overflow-x: hidden;
 }
 
 body.hero

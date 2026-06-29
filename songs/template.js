@@ -140,7 +140,7 @@ container.appendChild(card);
     const allEffectsSet = new Set();
     for (const effect of daSong.effectRefs)
     {
-        allEffectsSet.add(effect.type);
+        if (effect.type != undefined) allEffectsSet.add(effect.type);
     }
 
     const allEffects = [...allEffectsSet];
@@ -289,8 +289,6 @@ function onReady()
 
 function startPlaying(playerId)
 {
-    console.log("DOO PLAY " + playerId);
-
     playBtn.classList.add("gone");
     pauseBtn.classList.remove("gone");
 
@@ -460,8 +458,6 @@ function startPlaying(playerId)
         trueSeek = null;
         prev = current;
     }, 15);
-
-    console.log("DONE PLAY");
 }
 
 // If API ready, init now, else defer

@@ -1,7 +1,7 @@
 import { LINK, normalizeAndTrim } from "./data.js";
 import { Motifs, MotifReference, getMotifsById } from "./motifData.js";
 import { Contributors } from "./contribData.js";
-import { Effects, EffectRef, EffectOnMotifRef } from "./effectData.js";
+import { Effects, EffectRef, EffectOnMotifRef, SetLyrics } from "./effectData.js";
 
 export const allAlbums = [];
 export const allSongs = [];
@@ -2912,7 +2912,10 @@ const flowerMan = new Song("Flower Man",
 
         new MotifReference(Motifs.DONTFORGET, quickSec(flowerManBPM, 144 + 144 + 144 + 64 - 2), quickSec(flowerManBPM, 144 + 144 + 144 + 80), true),
     ],
-    "", quickSec(flowerManBPM, 144 + 144 + 144 + 80)
+    "", quickSec(flowerManBPM, 144 + 144 + 144 + 80),
+    [
+        new SetLyrics(["Ten", " ", "feet", " ", "twen", "ty", " ", "the", " ", "Flo", "wer", " ", "Man"], quickSec(flowerManBPM, 64))
+    ]
 );
 
 const dreamwatchersBPM = 102;

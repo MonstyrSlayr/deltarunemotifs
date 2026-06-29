@@ -304,3 +304,16 @@ export class EffectOnMotifRef
         this.playOnce = playOnce;
     }
 }
+
+export class SetLyrics
+{
+    lyricsArray; // format: ["Flo", "wer", " ", "Man"] ("Flower Man")
+    startTime;
+    form = "lyrics";
+
+    constructor(lyricsArray, startTime)
+    {
+        this.lyricsArray = lyricsArray;
+        this.startTime = startTime;
+    }
+}
