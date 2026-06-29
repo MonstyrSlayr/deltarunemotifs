@@ -73,6 +73,14 @@ h3
     font-size: 24px;
 }
 
+h4
+{
+    color: white;
+    margin: 0.5em;
+    text-align: center;
+    font-size: 24px;
+}
+
 a
 {
     color: cyan;
@@ -654,6 +662,75 @@ a.motifMainDiv:hover
     100%
     {
         background-position: 1300px 1000px;
+    }
+}
+
+#lyrics
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+#lyrics > div
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: visible;
+}
+
+#lyrics > div > .lyric
+{
+    padding: 0;
+    margin: 0;
+    color: yellow;
+
+    text-shadow:    calc(1em/12) 0 0 black,
+                    calc(-1em/12) 0 0 black,
+                    0 calc(1em/12) 0 black,
+                    0 calc(-1em/12) 0 black;
+}
+
+#lyrics > div > .karaoke
+{
+    padding: 0;
+    margin: 0;
+    color: green;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 200%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#lyrics > div > .karaoke > h4
+{
+    padding: 0;
+    margin: 0;
+    color: green;
+
+    text-shadow:    calc(1em/12) 0 0 white,
+                    calc(-1em/12) 0 0 white,
+                    0 calc(1em/12) 0 white,
+                    0 calc(-1em/12) 0 white;
+}
+
+@keyframes karaokeExpand
+{
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 100%;
     }
 }
 

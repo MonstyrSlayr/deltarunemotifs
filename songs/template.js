@@ -35,6 +35,10 @@ const songList = document.getElementById("songList");
 const songDiv = createSongDiv(daSong, false);
 songList.appendChild(songDiv);
 
+const lyricDiv = document.getElementById("lyrics");
+let karaokeTexts = [];
+let karaokePointer = 0;
+
 const container = document.getElementById("mainMusicContainer");
 
 const loadingDiv = document.createElement("div");
@@ -138,10 +142,28 @@ container.appendChild(card);
     }
 
     const allEffectsSet = new Set();
+    const effectRefs = {
+        "normal": [],
+        "motif": [],
+        "lyrics": [],
+        "advanceLyrics": [],
+    }; // split them like this to reduce cpu power ?????????
     for (const effect of daSong.effectRefs)
     {
-        if (effect.type != undefined) allEffectsSet.add(effect.type);
+        if (effect.type != undefined)
+        {
+            allEffectsSet.add(effect.type);
+        }
+
+        if (effectRefs[effect.form] == undefined)
+        {
+            effectRefs[effect.form] = [];
+        }
+        effectRefs[effect.form].push(effect);
     }
+
+    effectRefs["lyrics"].sort((a, b) => a.startTime - b.startTime);
+    effectRefs["advanceLyrics"].sort((a, b) => a.startTime - b.startTime);
 
     const allEffects = [...allEffectsSet];
 
@@ -237,6 +259,7 @@ function onReady()
                                     players[activePlayerId].seekTo(motifRef.startTime, true);
                                     players[activePlayerId].playVideo();
                                     trueSeek = motifRef.startTime;
+                                    updateLyricsForTime(trueSeek)
                                 });
                             }
 
@@ -329,6 +352,7 @@ function startPlaying(playerId)
                 players[nextPlayerId].playVideo();
 
                 startPlaying(nextPlayerId);
+                updateLyricsForTime(0);
 
                 clearInterval(players[playerId].updateInterval);
             }
@@ -367,7 +391,7 @@ function startPlaying(playerId)
                 {
                     if (motif.letterDiv) motif.letterDiv.classList.add("playing");
 
-                    for (const effectRef of daSong.effectRefs.filter(ref => ref.motif == motif && ref.form == "motif" && (!ref.playOnce || (ref.playOnce && !ref.hasPlayed))))
+                    for (const effectRef of effectRefs["motif"].filter(ref => ref.motif == motif && (!ref.playOnce || (ref.playOnce && !ref.hasPlayed))))
                     {
                         effectRef.hasPlayed = true;
                         effectRef.type.onActive();
@@ -419,7 +443,7 @@ function startPlaying(playerId)
         {
             let playing = false;
 
-            for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect && ref.form == "normal"))
+            for (const effectRef of effectRefs["normal"].filter(ref => ref.type == effect))
             {
                 if (current >= effectRef.startTime && current < effectRef.endTime)
                 {
@@ -444,9 +468,9 @@ function startPlaying(playerId)
 
         [...allEffects].filter(effect => effect.isOneshot).forEach(effect =>
         {
-            for (const effectRef of daSong.effectRefs.filter(ref => ref.type == effect && ref.form == "normal"))
+            for (const effectRef of effectRefs["normal"].filter(ref => ref.type == effect))
             {
-                if ((trueSeek == null && prev!= null && current > effectRef.startTime && prev <= effectRef.startTime)
+                if ((trueSeek == null && prev != null && current > effectRef.startTime && prev <= effectRef.startTime)
                 || trueSeek == effectRef.startTime)
                 {
                     effect.onDeactive();
@@ -455,9 +479,77 @@ function startPlaying(playerId)
             }
         });
 
+        for (const lyricRef of effectRefs["lyrics"])
+        {
+            if ((trueSeek == null && prev != null && current > lyricRef.startTime && prev <= lyricRef.startTime)
+            || trueSeek == lyricRef.startTime)
+            {
+                setLyricsDivByRef(lyricRef);
+
+                break;
+            }
+        }
+
+        for (const advanceRef of effectRefs["advanceLyrics"])
+        {
+            if ((trueSeek == null && prev != null && current > advanceRef.startTime && prev <= advanceRef.startTime)
+            || trueSeek == advanceRef.startTime)
+            {
+                karaokeTexts[karaokePointer].style.animation = `karaokeExpand ${advanceRef.duration}s linear forwards`;
+                karaokePointer++;
+
+                break;
+            }
+        }
+
         trueSeek = null;
         prev = current;
     }, 15);
+}
+
+function setLyricsDivByRef(lyricRef)
+{
+    lyricDiv.classList.remove("gone");
+    lyricDiv.innerHTML = "";
+    karaokeTexts = [];
+    karaokePointer = 0;
+
+    for (const lyric of lyricRef.lyricsArray)
+    {
+        const lilLyricDiv = document.createElement("div");
+        lyricDiv.appendChild(lilLyricDiv);
+
+            const lyricText = document.createElement("h4");
+            lyricText.textContent = lyric;
+            lyricText.classList.add("lyric");
+            lilLyricDiv.appendChild(lyricText);
+
+            const karaokeDiv = document.createElement("div");
+            karaokeDiv.classList.add("karaoke");
+            lilLyricDiv.appendChild(karaokeDiv);
+            karaokeTexts.push(karaokeDiv);
+
+                const karaokeText = document.createElement("h4");
+                karaokeText.textContent = lyric;
+                karaokeDiv.appendChild(karaokeText);
+    }
+}
+
+function updateLyricsForTime(daTime)
+{
+    if (effectRefs["lyrics"].length == 0) return;
+
+    const prevLyricRefs = effectRefs["lyrics"].filter(ref => ref.startTime <= daTime);
+    const daLyricRef = prevLyricRefs[prevLyricRefs.length - 1];
+    setLyricsDivByRef(daLyricRef);
+
+    const relevantAdvanceRefs = effectRefs["advanceLyrics"].filter(ref => ref.startTime >= daLyricRef.startTime && ref.startTime < daTime);
+    for (const advanceRef of relevantAdvanceRefs)
+    {
+        const daDuration = Math.max(0, advanceRef.duration - daTime - advanceRef.startTime);
+        karaokeTexts[karaokePointer].style.animation = `karaokeExpand ${daDuration}s linear forwards`;
+        karaokePointer++;
+    }
 }
 
 // If API ready, init now, else defer
@@ -512,6 +604,8 @@ window.addEventListener('keydown', function(keyevent)
         keyevent.preventDefault();
     }
 
+    let newTime = null;
+
     switch (keyevent.code)
     {
         case 'Space': case 'KeyK': case 'KeyP':
@@ -519,28 +613,28 @@ window.addEventListener('keydown', function(keyevent)
             break;
         
         case 'ArrowLeft':
-            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() - 5, true);
-            players[activePlayerId].lastPoll = performance.now();
-            startPlaying(activePlayerId);
+            newTime = players[activePlayerId].getCurrentTime() - 5;
             break;
 
         case 'ArrowRight':
-            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() + 5, true);
-            players[activePlayerId].lastPoll = performance.now();
-            startPlaying(activePlayerId);
+            newTime = players[activePlayerId].getCurrentTime() + 5;
             break;
         
         case 'KeyJ':
-            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() - 10, true);
-            players[activePlayerId].lastPoll = performance.now();
-            startPlaying(activePlayerId);
+            newTime = players[activePlayerId].getCurrentTime() - 10;
             break;
 
-        case 'KeyL':    
-            players[activePlayerId].seekTo(players[activePlayerId].getCurrentTime() + 10, true);
-            players[activePlayerId].lastPoll = performance.now();
-            startPlaying(activePlayerId);
+        case 'KeyL':
+            newTime = players[activePlayerId].getCurrentTime() + 10;
             break;
+    }
+
+    if (newTime != null)
+    {
+        players[activePlayerId].seekTo(newTime, true);
+        updateLyricsForTime(newTime);
+        players[activePlayerId].lastPoll = performance.now();
+        startPlaying(activePlayerId);
     }
 });
 
@@ -600,8 +694,10 @@ function seekVideo(e)
     const rect = timebarContainer.getBoundingClientRect();
     const clickX = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
     const percent = clickX / rect.width;
-    players[activePlayerId].seekTo(players[activePlayerId].duration * percent, true);
-    trueSeek = players[activePlayerId].duration * percent;
+    const newTime = players[activePlayerId].duration * percent;
+    updateLyricsForTime(newTime);
+    players[activePlayerId].seekTo(newTime, true);
+    trueSeek = newTime;
     players[activePlayerId].playVideo();
 }
 
@@ -613,3 +709,5 @@ if (isLiveServer())
     spaceDiv.style.margin = "5em";
     document.body.appendChild(spaceDiv);
 }
+
+updateLyricsForTime(0);

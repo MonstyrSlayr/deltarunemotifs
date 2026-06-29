@@ -307,13 +307,26 @@ export class EffectOnMotifRef
 
 export class SetLyrics
 {
-    lyricsArray; // format: ["Flo", "wer", " ", "Man"] ("Flower Man")
     startTime;
     form = "lyrics";
 
-    constructor(lyricsArray, startTime)
+    constructor(lyricsString, startTime)
     {
-        this.lyricsArray = lyricsArray;
+        this.lyricsArray = lyricsString.split(" ");
+
         this.startTime = startTime;
+    }
+}
+
+export class AdvanceLyrics
+{
+    form = "advanceLyrics";
+    startTime;
+    duration;
+
+    constructor(startTime, duration)
+    {
+        this.startTime = startTime;
+        this.duration = duration;
     }
 }
