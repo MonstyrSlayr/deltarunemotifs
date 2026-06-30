@@ -20,6 +20,9 @@ class Motif
     variationDiv = null;
     aliases = [];
 
+    imagePlaying;
+    imageHover;
+
     constructor(name, letter = "", color = "#ffffff", color2 = "#ffffff33", image = null, aliases = [])
     {
         this.name = name;
@@ -184,6 +187,7 @@ switch (flower)
     case 2:
         Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#a4f85f", "#79dd7b33", MOTIFIMGLINK + "green.png");
         Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "greenBattle.gif";
+        Motifs.SIXFLOWERS.imageHover = MOTIFIMGLINK + "greenWave.gif";
         break;
     case 3:
         Motifs.SIXFLOWERS = new Motif("Six Flowers", "", "#ffff44", "#d9820033", MOTIFIMGLINK + "yellow.png");

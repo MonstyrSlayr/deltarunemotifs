@@ -421,22 +421,22 @@ function startPlaying(playerId)
 
             if (bigPlaying)
             {
+                motifsWithId[0].mainDiv.isPlaying = true;
                 motifsWithId[0].mainDiv.classList.add("playing");
 
-                if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
+                if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null && motifsWithId[0].mainDiv.isHovered == false)
                 {
-                    motifsWithId[0].mainDiv.image.classList.add("gone");
-                    motifsWithId[0].mainDiv.imagePlaying.classList.remove("gone");
+                    motifsWithId[0].mainDiv.setImage(motifsWithId[0].mainDiv.imagePlaying);
                 }
             }
             else
             {
+                motifsWithId[0].mainDiv.isPlaying = false;
                 motifsWithId[0].mainDiv.classList.remove("playing");
 
-                if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null)
+                if (motifsWithId[0].imagePlaying != null && motifsWithId[0].mainDiv.image != null && motifsWithId[0].mainDiv.isHovered == false)
                 {
-                    motifsWithId[0].mainDiv.image.classList.remove("gone");
-                    motifsWithId[0].mainDiv.imagePlaying.classList.add("gone");
+                    motifsWithId[0].mainDiv.setImage(motifsWithId[0].mainDiv.image);
                 }
             }
         });

@@ -104,8 +104,10 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
 
     const motifMainDiv = isLink ? document.createElement("a") : document.createElement("div");
     motifMainDiv.classList.add("motifMainDiv");
+
     if (isLink) motifMainDiv.href = LINK + "motifs/" + motifId;
     if (isPlaying && hasSongs) motifMainDiv.classList.add("playing");
+
     motifMainDiv.classList.add("m" + motifId);
     motifMainDiv.style.borderColor = motifsWithId[0].color;
     motifsWithId.forEach(motif => {
@@ -116,6 +118,7 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
         leftTime.style.backgroundColor = motifsWithId[0].color2;
         motifMainDiv.appendChild(leftTime);
 
+        motifMainDiv.imageElements = [];
         motifMainDiv.image = null;
         if (motifsWithId[0].image != null)
         {
@@ -127,6 +130,7 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
             leftTime.appendChild(notTempImg);
 
             motifMainDiv.image = notTempImg; // stupid
+            motifMainDiv.imageElements.push(notTempImg);
         }
 
         if (motifsWithId[0].imagePlaying != null)
@@ -139,6 +143,51 @@ export function createMotifDiv(motifId, isLink = true, isPlaying = false)
             leftTime.appendChild(notTempImgPlaying);
 
             motifMainDiv.imagePlaying = notTempImgPlaying; // stupid
+            motifMainDiv.imageElements.push(notTempImgPlaying);
+        }
+
+        motifMainDiv.isPlaying = isPlaying;
+        motifMainDiv.isHovered = false;
+
+        motifMainDiv.setImage = function(daImageElement)
+        {
+            for (const daImage of motifMainDiv.imageElements)
+            {
+                daImage.classList.add("gone");
+            }
+            daImageElement.classList.remove("gone");
+        }
+
+        if (motifsWithId[0].imageHover != null && isLink)
+        {
+            const notTempImgHover = document.createElement("img");
+            notTempImgHover.src = motifsWithId[0].imageHover;
+            notTempImgHover.alt = motifId + " image";
+            notTempImgHover.color = motifsWithId[0].color;
+            notTempImgHover.classList.add("gone");
+            leftTime.appendChild(notTempImgHover);
+
+            motifMainDiv.imageHover = notTempImgHover; // also stupid
+            motifMainDiv.imageElements.push(notTempImgHover);
+
+            motifMainDiv.addEventListener("mouseover", () =>
+            {
+                motifMainDiv.isHovered = true;
+                motifMainDiv.setImage(notTempImgHover);
+            });
+
+            motifMainDiv.addEventListener("mouseout", () =>
+            {
+                motifMainDiv.isHovered = false;
+                if (motifMainDiv.isPlaying)
+                {
+                    motifMainDiv.setImage(motifMainDiv.imagePlaying);
+                }
+                else
+                {
+                    motifMainDiv.setImage(motifMainDiv.image);
+                }
+            });
         }
 
         const otherChide = document.createElement("div");
