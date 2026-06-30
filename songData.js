@@ -646,7 +646,8 @@ const fanfare = new Song("Fanfare",
     "OmMdXpuscRY",
     [
         new MotifReference(Motifs.FANFARE, quickSec(fanfareBPM, 1), quickSec(fanfareBPM, 12))
-    ]
+    ],
+    "", quickSec(fanfareBPM, 28)
 );
 
 const lanternBPM = 136;
