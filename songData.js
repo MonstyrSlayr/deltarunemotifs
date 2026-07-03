@@ -538,6 +538,7 @@ const theDoor = new Song("The Door",
     [Motifs.THEDOOR],
     "iJtIX0sQn0o",
     [
+        new MotifReference(Motifs.YOURBESTNIGHTMARE, 0, quickSec(theDoorBPM, 16)),
         new MotifReference(Motifs.THEDOOR, quickSec(theDoorBPM, 16), quickSec(theDoorBPM, 48))
     ],
     "", quickSec(theDoorBPM, 48)
