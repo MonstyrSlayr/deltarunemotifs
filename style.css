@@ -119,6 +119,46 @@ select
     border-radius: 0.5em;
 }
 
+b
+{
+    color: yellow;
+}
+
+.homeDiv
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    gap: 1em;
+    margin: 1em;
+}
+
+.homeDiv.reverse
+{
+    flex-direction: row-reverse;
+}
+
+.homeDiv > .bigLink
+{
+    width: auto;
+    min-width: 20%;
+    width: 80em;
+}
+
+.homeDiv > div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.homeDiv > div > h3
+{
+    text-align: left;
+}
+
 input[type="checkbox"]
 {
     margin: 0px;
@@ -980,6 +1020,16 @@ a.motifMainDiv:hover
 
 @media screen and (max-width: 950px)
 {
+    .homeDiv
+    {
+        width: 95%;
+    }
+    
+    .homeDiv > .bigLink
+    {
+        padding: 0;
+    }
+
     .songDiv > h3
     {
         font-size: 16px;
@@ -1190,6 +1240,21 @@ a.motifMainDiv:hover
     h2
     {
         font-size: 30px;
+    }
+
+    .homeDiv
+    {
+        flex-direction: column;
+    }
+    
+    .homeDiv.reverse
+    {
+        flex-direction: column;
+    }
+
+    .homeDiv > .bigLink
+    {
+        width: 90%;
     }
 
     .motifMainDiv > div:first-child
