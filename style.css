@@ -87,6 +87,11 @@ a
     color: cyan;
 }
 
+a:hover
+{
+    color: cyan;
+}
+
 p
 {
     color: white;
