@@ -36,3 +36,7 @@ Contributors.KARMA = new Contributor("Karma", CONTRIBIMGLINK + "karma.jpg", "Mad
 Contributors.KARMA.github = "https://github.com/KarmFF";
 Contributors.KARMA.discord = "https://discord.com/users/315969740419891200";
 Contributors.KARMA.youtube = "https://www.youtube.com/@thatkarmaguy5356";
+
+Contributors.TERVIA = new Contributor("Tervia", null, "");
+Contributors.TERVIA.github = "https://github.com/Tervia"
+Contributors.TERVIA.discord = "https://discord.com/users/169656943122579456"

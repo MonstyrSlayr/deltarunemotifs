@@ -476,6 +476,19 @@ const songThatMightPlayWhenYouFightSans = new Song("Song That Might Play When Yo
     undefined, undefined, true
 );
 
+const bergentruckungOSTBPM = 113
+const bergentruckung = new Song("Bergentrückung",
+    [Motifs.ASGORE],
+    "AhnAielizjs",
+    [
+        new MotifReference(Motifs.ASGORE, quickSec(bergentruckungOSTBPM, 0), quickSec(bergentruckungOSTBPM, 16)),
+        new MotifReference(Motifs.ASGORE, quickSec(bergentruckungOSTBPM, 16), quickSec(bergentruckungOSTBPM, 32), true),
+    ],
+    "", quickSec(bergentruckungOSTBPM, 40),
+    [],
+    [Contributors.TERVIA]
+);
+
 const madMewMewBPM = 120;
 const madMewMew = new Song("Mad Mew Mew",
     [Motifs.GHOSTFIGHTB],
@@ -3109,6 +3122,21 @@ const sunsetOfSevenSuns = new Song("Sunset of Seven Suns",
     "", quickSec(sunsetOfSevenSunsBPM, 128 + 64)
 );
 
+const flowerKingBPM = 180;
+const flowerKing = new Song("Flower King",
+    [Motifs.ASGORE],
+    "GpvQ-jO3e4E",
+    [
+        new MotifReference(Motifs.ASGORE, quickSec(flowerKingBPM, 22), quickSec(flowerKingBPM, 36), true),
+        new MotifReference(Motifs.ASGORE, quickSec(flowerKingBPM, 46), quickSec(flowerKingBPM, 60), true),
+        new MotifReference(Motifs.ASGORE, quickSec(flowerKingBPM, 70), quickSec(flowerKingBPM, 82), true),
+        new MotifReference(Motifs.ASGORE, quickSec(flowerKingBPM, 82), quickSec(flowerKingBPM, 108), true),
+    ],
+    "", quickSec(flowerKingBPM, 120),
+    [],
+    [Contributors.TERVIA]
+);
+
 const imTellingBPM = 95;
 const imTelling = new Song("I'm Telling!",
     [Motifs.SIXFLOWERS],
@@ -3477,6 +3505,19 @@ const flowerMan = new Song("Flower Man",
 
         new SetLyrics("", quickSec(flowerManBPM, 192 + 192 + 128)),
     ]
+);
+
+const thatDayBPM = 132.5;
+const thatDay = new Song("That Day",
+    [Motifs.ASGORE],
+    "Kgxj0rE2pzU",
+    [
+        new MotifReference(Motifs.ASGORE, 0, quickSec(thatDayBPM, 48), true),
+        new MotifReference(Motifs.ASGORE, quickSec(thatDayBPM, 97), quickSec(thatDayBPM, 144), true),
+    ],
+    "", quickSec(thatDayBPM, 200),
+    [],
+    [Contributors.TERVIA]
 );
 
 const dreamwatchersBPM = 102;
