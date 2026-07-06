@@ -423,10 +423,10 @@
   },
   {
     "name": "Asgore",
-    "image": null,
+    "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
     "imagePlaying": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#e4ba00",
+    "color2": "#5e549233",
     "id": "asgore",
     "letter": "",
     "mainDiv": null,
