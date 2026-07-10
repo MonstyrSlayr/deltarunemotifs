@@ -3115,6 +3115,7 @@ const imTelling = new Song("I'm Telling!",
     "yTildYnivTA",
     [
         new MotifReference(Motifs.SIXFLOWERS, 0, quickSec(imTellingBPM, 32)),
+        new MotifReference(Motifs.PINKA, quickSec(imTellingBPM, 60.5), quickSec(imTellingBPM, 63)),
     ],
     "", quickSec(imTellingBPM, 64)
 );
