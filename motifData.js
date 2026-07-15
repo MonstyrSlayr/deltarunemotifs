@@ -96,7 +96,7 @@ Motifs.DUMMY = new Motif("Dummy!", "", "#ffbc3a", "#00000033", MOTIFIMGLINK + "m
 Motifs.ALPHYS = new Motif("Alphys", "", "#fdc748", "#ffffff33", MOTIFIMGLINK + "alphys.png");
 Motifs.METTATON = new Motif("Mettaton");
 Motifs.ASRIEL = new Motif("Asriel", "", "#9bfd71", "#fff20033", MOTIFIMGLINK + "asriel.png", ["His Theme"]);
-Motifs.ASGORE = new Motif("Asgore");
+Motifs.ASGORE = new Motif("Asgore", "", "#e4ba00", "#5e549233", MOTIFIMGLINK + "asgore.png");
 Motifs.GASTER = new Motif("Gaster");
 
 Motifs.DONTFORGET = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", MOTIFIMGLINK + "ralsei.png");

@@ -1443,6 +1443,58 @@
     "stopsAfterLoop": true
   },
   {
+    "name": "Bergentrückung",
+    "youtubeId": "AhnAielizjs",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Asgore",
+          "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+          "color": "#e4ba00",
+          "color2": "#5e549233",
+          "id": "asgore",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 16.991150442477878
+      }
+    ],
+    "loopPoint": 21.238938053097346,
+    "mainMotifs": [
+      {
+        "name": "Asgore",
+        "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+        "color": "#e4ba00",
+        "color2": "#5e549233",
+        "id": "asgore",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Tervia",
+        "image": null,
+        "credit": "",
+        "showSongs": true,
+        "youtube": null,
+        "github": "https://github.com/Tervia",
+        "discord": "https://discord.com/users/169656943122579456"
+      }
+    ],
+    "id": "bergentruckung",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Mad Mew Mew",
     "youtubeId": "aeM0EVs1ON8",
     "motifRefs": [
@@ -31060,6 +31112,109 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Flower King",
+    "youtubeId": "GpvQ-jO3e4E",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Asgore",
+          "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+          "color": "#e4ba00",
+          "color2": "#5e549233",
+          "id": "asgore",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 7.333333333333333,
+        "endTime": 12
+      },
+      {
+        "motif": {
+          "name": "Asgore",
+          "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+          "color": "#e4ba00",
+          "color2": "#5e549233",
+          "id": "asgore",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 15.333333333333332,
+        "endTime": 20
+      },
+      {
+        "motif": {
+          "name": "Asgore",
+          "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+          "color": "#e4ba00",
+          "color2": "#5e549233",
+          "id": "asgore",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 23.333333333333332,
+        "endTime": 27.333333333333332
+      },
+      {
+        "motif": {
+          "name": "Asgore",
+          "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+          "color": "#e4ba00",
+          "color2": "#5e549233",
+          "id": "asgore",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 27.333333333333332,
+        "endTime": 36
+      }
+    ],
+    "loopPoint": 40,
+    "mainMotifs": [
+      {
+        "name": "Asgore",
+        "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+        "color": "#e4ba00",
+        "color2": "#5e549233",
+        "id": "asgore",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Tervia",
+        "image": null,
+        "credit": "",
+        "showSongs": true,
+        "youtube": null,
+        "github": "https://github.com/Tervia",
+        "discord": "https://discord.com/users/169656943122579456"
+      }
+    ],
+    "id": "flowerking",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "I'm Telling!",
     "youtubeId": "yTildYnivTA",
     "motifRefs": [
@@ -33512,6 +33667,75 @@
       }
     ],
     "id": "flowerman",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "That Day",
+    "youtubeId": "Kgxj0rE2pzU",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Asgore",
+          "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+          "color": "#e4ba00",
+          "color2": "#5e549233",
+          "id": "asgore",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 0,
+        "endTime": 21.735849056603776
+      },
+      {
+        "motif": {
+          "name": "Asgore",
+          "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+          "color": "#e4ba00",
+          "color2": "#5e549233",
+          "id": "asgore",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 43.924528301886795,
+        "endTime": 65.20754716981132
+      }
+    ],
+    "loopPoint": 90.56603773584906,
+    "mainMotifs": [
+      {
+        "name": "Asgore",
+        "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
+        "color": "#e4ba00",
+        "color2": "#5e549233",
+        "id": "asgore",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Tervia",
+        "image": null,
+        "credit": "",
+        "showSongs": true,
+        "youtube": null,
+        "github": "https://github.com/Tervia",
+        "discord": "https://discord.com/users/169656943122579456"
+      }
+    ],
+    "id": "thatday",
     "stopsAfterLoop": false
   },
   {
