@@ -304,6 +304,18 @@ currentAlbum = undertaleAlbum;
 
 //#region UNDERTALE
 
+const yourBestFriendBPM = 124;
+const yourBestFriend = new Song("Your Best Friend",
+    [Motifs.FLOWEY],
+    "MacoenOy9Ss",
+    [
+        new MotifReference(Motifs.FLOWEY, 7.6, quickSec(yourBestFriendBPM, 48)),
+    ],
+    "", quickSec(yourBestFriendBPM, 48),
+    [],
+    [Contributors.KARMA]
+);
+
 const ghostFightBPM = 112.5;
 const ghostFight = new Song("Ghost Fight",
     [Motifs.GHOSTFIGHTA, Motifs.GHOSTFIGHTB],
@@ -362,6 +374,23 @@ const bonetrousle = new Song("Bonetrousle",
         new MotifReference(Motifs.PAPYRUS, quickSec(bonetrousleBPM, 112), quickSec(bonetrousleBPM, 144)),
     ],
     "", quickSec(bonetrousleBPM, 144)
+);
+
+const memoryBPM = 80
+const memory = new Song("Memory",
+    [Motifs.ASRIEL],
+    "rtb0N-JQ79k",
+    [
+        new MotifReference(Motifs.ASRIEL, quickSec(memoryBPM, 0), quickSec(memoryBPM, 16)),
+        new MotifReference(Motifs.ASRIEL, quickSec(memoryBPM, 16), quickSec(memoryBPM, 32)),
+        new MotifReference(Motifs.ASRIEL, quickSec(memoryBPM, 32), quickSec(memoryBPM, 48)),
+        new MotifReference(Motifs.ASRIEL, quickSec(memoryBPM, 48), quickSec(memoryBPM, 64)),
+        new MotifReference(Motifs.ASRIEL, quickSec(memoryBPM, 64), quickSec(memoryBPM, 80)),
+        new MotifReference(Motifs.ASRIEL, quickSec(memoryBPM, 80), quickSec(memoryBPM, 100)),
+    ],
+    "", quickSec(memoryBPM, 100),
+    [],
+    [Contributors.KARMA]
 );
 
 const dummyBPM = 125;
@@ -487,6 +516,43 @@ const bergentruckung = new Song("Bergentrückung",
     "", quickSec(bergentruckungOSTBPM, 40),
     [],
     [Contributors.TERVIA]
+);
+
+const finaleBPM = 190;
+const finale = new Song("Finale",
+    [Motifs.FLOWEY, Motifs.ASRIEL],
+    "CANW8s9Lt4g",
+    [
+        new MotifReference(Motifs.FLOWEY, 0, quickSec(finaleBPM, 32), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 32), quickSec(finaleBPM, 64), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 64), quickSec(finaleBPM, 96), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 96), quickSec(finaleBPM, 128), true),
+
+        new MotifReference(Motifs.ASRIEL, quickSec(finaleBPM, 128), quickSec(finaleBPM, 160), true),
+        new MotifReference(Motifs.ASRIEL, quickSec(finaleBPM, 160), quickSec(finaleBPM, 184), true),
+
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 184), quickSec(finaleBPM, 192), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 192), quickSec(finaleBPM, 208), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 212), quickSec(finaleBPM, 216), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 216), quickSec(finaleBPM, 224), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 224), quickSec(finaleBPM, 240), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 244), quickSec(finaleBPM, 248), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 248), quickSec(finaleBPM, 256), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 256), quickSec(finaleBPM, 272), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 276), quickSec(finaleBPM, 280), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 288), quickSec(finaleBPM, 304), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 308), quickSec(finaleBPM, 312), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 320), quickSec(finaleBPM, 336), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 340), quickSec(finaleBPM, 344), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(finaleBPM, 344), quickSec(finaleBPM, 352), true),
+    ],
+    "", quickSec(finaleBPM, 128 + 128 + 100),
+    [
+        new EffectRef(Effects.BLACKSCREEN, quickSec(finaleBPM, 184), quickSec(finaleBPM, 192)),
+        new EffectRef(Effects.HERO, quickSec(finaleBPM, 192), quickSec(finaleBPM, 356)),
+        new EffectRef(Effects.FLASH, quickSec(finaleBPM, 192), quickSec(finaleBPM, 196)),
+    ],
+    [Contributors.KARMA]
 );
 
 const madMewMewBPM = 120;
