@@ -2,7 +2,6 @@
   {
     "name": "Once Upon a Time",
     "image": "http://127.0.0.1:5500/img/motifs/onceUponATime.jpg",
-    "imagePlaying": null,
     "color": "#c18127",
     "color2": "#00000033",
     "id": "onceuponatime",
@@ -15,7 +14,6 @@
   {
     "name": "Once Upon a Time",
     "image": null,
-    "imagePlaying": null,
     "color": "#c18127",
     "color2": "#00000033",
     "id": "onceuponatime",
@@ -28,7 +26,6 @@
   {
     "name": "Once Upon a Time",
     "image": null,
-    "imagePlaying": null,
     "color": "#c18127",
     "color2": "#00000033",
     "id": "onceuponatime",
@@ -41,7 +38,6 @@
   {
     "name": "The Ruins",
     "image": "http://127.0.0.1:5500/img/motifs/ruins.png",
-    "imagePlaying": null,
     "color": "#815a98",
     "color2": "#42498833",
     "id": "theruins",
@@ -54,7 +50,6 @@
   {
     "name": "Uwa!!",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "uwa",
@@ -67,7 +62,6 @@
   {
     "name": "Home",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "home",
@@ -80,7 +74,6 @@
   {
     "name": "Enemy Approaching",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "enemyapproaching",
@@ -93,7 +86,6 @@
   {
     "name": "Enemy Approaching",
     "image": "",
-    "imagePlaying": null,
     "color": "",
     "color2": "",
     "id": "enemyapproaching",
@@ -108,7 +100,6 @@
   {
     "name": "Ghost Fight",
     "image": "http://127.0.0.1:5500/img/motifs/napstablook.png",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#00000033",
     "id": "ghostfight",
@@ -121,7 +112,6 @@
   {
     "name": "Ghost Fight",
     "image": "http://127.0.0.1:5500/img/motifs/muffet.png",
-    "imagePlaying": null,
     "color": "#b1b7f0",
     "color2": "#a6504d33",
     "id": "ghostfight",
@@ -134,7 +124,6 @@
   {
     "name": "Determination",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "determination",
@@ -147,7 +136,6 @@
   {
     "name": "Heartache",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "heartache",
@@ -160,7 +148,6 @@
   {
     "name": "Snowdin",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "snowdin",
@@ -173,7 +160,6 @@
   {
     "name": "Snowdin",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "snowdin",
@@ -186,7 +172,6 @@
   {
     "name": "Another Medium",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "anothermedium",
@@ -199,7 +184,6 @@
   {
     "name": "Showtime!",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "showtime",
@@ -212,7 +196,6 @@
   {
     "name": "Hotel",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "hotel",
@@ -225,7 +208,6 @@
   {
     "name": "Oh!",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "oh",
@@ -238,7 +220,6 @@
   {
     "name": "Spooktune",
     "image": "http://127.0.0.1:5500/img/motifs/jackenstein.png",
-    "imagePlaying": null,
     "color": "#ff9c53",
     "color2": "#e8e6ce33",
     "id": "spooktune",
@@ -251,7 +232,6 @@
   {
     "name": "Jingle Bells",
     "image": "http://127.0.0.1:5500/img/motifs/SSSSANTAAAA.png",
-    "imagePlaying": null,
     "color": "#e96142",
     "color2": "#ccdad833",
     "id": "jinglebells",
@@ -264,7 +244,6 @@
   {
     "name": "Your Best Nightmare",
     "image": "http://127.0.0.1:5500/img/motifs/yourBestNightmare.png",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#2c180833",
     "id": "yourbestnightmare",
@@ -277,7 +256,6 @@
   {
     "name": "Power of NEO",
     "image": "http://127.0.0.1:5500/img/motifs/mettatonNeo.png",
-    "imagePlaying": null,
     "color": "#fa0ef3",
     "color2": "#fef10033",
     "id": "powerofneo",
@@ -290,7 +268,6 @@
   {
     "name": "MEGALOVANIA",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "megalovania",
@@ -303,7 +280,6 @@
   {
     "name": "Flowey",
     "image": "http://127.0.0.1:5500/img/motifs/flowey.png",
-    "imagePlaying": null,
     "color": "#fff200",
     "color2": "#9bfd7133",
     "id": "flowey",
@@ -318,7 +294,6 @@
   {
     "name": "Toriel",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "toriel",
@@ -331,7 +306,6 @@
   {
     "name": "Sans",
     "image": "http://127.0.0.1:5500/img/motifs/sans.png",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#4782c933",
     "id": "sans",
@@ -344,7 +318,6 @@
   {
     "name": "Papyrus",
     "image": "http://127.0.0.1:5500/img/motifs/papyrus.png",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ff471133",
     "id": "papyrus",
@@ -357,7 +330,6 @@
   {
     "name": "Undyne",
     "image": "http://127.0.0.1:5500/img/motifs/undyne.png",
-    "imagePlaying": null,
     "color": "#6299c1",
     "color2": "#c9473e33",
     "id": "undyne",
@@ -370,7 +342,6 @@
   {
     "name": "Dummy!",
     "image": "http://127.0.0.1:5500/img/motifs/madDummy.png",
-    "imagePlaying": null,
     "color": "#ffbc3a",
     "color2": "#00000033",
     "id": "dummy",
@@ -383,7 +354,6 @@
   {
     "name": "Alphys",
     "image": "http://127.0.0.1:5500/img/motifs/alphys.png",
-    "imagePlaying": null,
     "color": "#fdc748",
     "color2": "#ffffff33",
     "id": "alphys",
@@ -396,7 +366,6 @@
   {
     "name": "Mettaton",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "mettaton",
@@ -409,7 +378,6 @@
   {
     "name": "Asriel",
     "image": "http://127.0.0.1:5500/img/motifs/asriel.png",
-    "imagePlaying": null,
     "color": "#9bfd71",
     "color2": "#fff20033",
     "id": "asriel",
@@ -424,7 +392,6 @@
   {
     "name": "Asgore",
     "image": "http://127.0.0.1:5500/img/motifs/asgore.png",
-    "imagePlaying": null,
     "color": "#e4ba00",
     "color2": "#5e549233",
     "id": "asgore",
@@ -437,7 +404,6 @@
   {
     "name": "Gaster",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "gaster",
@@ -450,7 +416,6 @@
   {
     "name": "Don't Forget",
     "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
-    "imagePlaying": null,
     "color": "#4dcc8e",
     "color2": "#f60e9733",
     "id": "dontforget",
@@ -463,7 +428,6 @@
   {
     "name": "Hometown",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "hometown",
@@ -476,7 +440,6 @@
   {
     "name": "The Legend",
     "image": "http://127.0.0.1:5500/img/motifs/thelegend.png",
-    "imagePlaying": null,
     "color": "#c08226",
     "color2": "#00000033",
     "id": "thelegend",
@@ -489,7 +452,6 @@
   {
     "name": "The Legend",
     "image": null,
-    "imagePlaying": null,
     "color": "#c08226",
     "color2": "#00000033",
     "id": "thelegend",
@@ -502,7 +464,6 @@
   {
     "name": "The Legend",
     "image": null,
-    "imagePlaying": null,
     "color": "#c08226",
     "color2": "#00000033",
     "id": "thelegend",
@@ -515,7 +476,6 @@
   {
     "name": "The Door",
     "image": "http://127.0.0.1:5500/img/motifs/thedoor.png",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#00000033",
     "id": "thedoor",
@@ -528,7 +488,6 @@
   {
     "name": "The Chase",
     "image": "http://127.0.0.1:5500/img/motifs/rudinnranger.webp",
-    "imagePlaying": null,
     "color": "#4a2430",
     "color2": "#00000033",
     "id": "thechase",
@@ -541,7 +500,6 @@
   {
     "name": "Rude Buster",
     "image": "http://127.0.0.1:5500/img/motifs/rudeBuster.png",
-    "imagePlaying": null,
     "color": "#3ee9c2",
     "color2": "#e24dfd33",
     "id": "rudebuster",
@@ -554,7 +512,6 @@
   {
     "name": "Rude Buster",
     "image": null,
-    "imagePlaying": null,
     "color": "#e24dfd",
     "color2": "#3ee9c233",
     "id": "rudebuster",
@@ -567,7 +524,6 @@
   {
     "name": "Field of Hopes and Dreams",
     "image": "http://127.0.0.1:5500/img/motifs/rudinn.webp",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#234a3d33",
     "id": "fieldofhopesanddreams",
@@ -580,7 +536,6 @@
   {
     "name": "Fanfare",
     "image": "http://127.0.0.1:5500/img/motifs/torielDarkWorld.png",
-    "imagePlaying": null,
     "color": "#fadf39",
     "color2": "#4de3e333",
     "id": "fanfare",
@@ -593,7 +548,6 @@
   {
     "name": "Quiet Autumn",
     "image": "http://127.0.0.1:5500/img/motifs/hathyBakeSale.webp",
-    "imagePlaying": null,
     "color": "#f055c0",
     "color2": "#22b14c33",
     "id": "quietautumn",
@@ -606,7 +560,6 @@
   {
     "name": "Checker Dance",
     "image": "http://127.0.0.1:5500/img/motifs/kround.gif",
-    "imagePlaying": null,
     "color": "#ff294d",
     "color2": "#ffdb0033",
     "id": "checkerdance",
@@ -619,7 +572,6 @@
   {
     "name": "Darkness Falls",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "darknessfalls",
@@ -632,7 +584,6 @@
   {
     "name": "Hip Shop",
     "image": "http://127.0.0.1:5500/img/motifs/hipshop.png",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#b6497233",
     "id": "hipshop",
@@ -660,7 +611,6 @@
   {
     "name": "THE HOLY",
     "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
-    "imagePlaying": null,
     "color": "#5496cd",
     "color2": "#00000033",
     "id": "theholy",
@@ -673,7 +623,6 @@
   {
     "name": "Susie",
     "image": "http://127.0.0.1:5500/img/motifs/susiegaster.png",
-    "imagePlaying": null,
     "color": "#ae67af",
     "color2": "#54468f33",
     "id": "susie",
@@ -686,7 +635,6 @@
   {
     "name": "Lancer",
     "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
-    "imagePlaying": null,
     "color": "#5585bd",
     "color2": "#32323233",
     "id": "lancer",
@@ -699,7 +647,6 @@
   {
     "name": "Lancer",
     "image": null,
-    "imagePlaying": null,
     "color": "#5585bd",
     "color2": "#ffffff33",
     "id": "lancer",
@@ -712,7 +659,6 @@
   {
     "name": "Rouxls Kaard",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "rouxlskaard",
@@ -740,7 +686,6 @@
   {
     "name": "man",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "man",
@@ -753,7 +698,6 @@
   {
     "name": "Cyber World",
     "image": "http://127.0.0.1:5500/img/motifs/cyberWorld.jpg",
-    "imagePlaying": null,
     "color": "#62ffba",
     "color2": "#313131",
     "id": "cyberworld",
@@ -766,7 +710,6 @@
   {
     "name": "Cyber World",
     "image": null,
-    "imagePlaying": null,
     "color": "#62ffba",
     "color2": "#313131",
     "id": "cyberworld",
@@ -779,7 +722,6 @@
   {
     "name": "Roots",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "roots",
@@ -792,7 +734,6 @@
   {
     "name": "Knock You Down !!",
     "image": "http://127.0.0.1:5500/img/motifs/gigaQueen.png",
-    "imagePlaying": null,
     "color": "#99e550",
     "color2": "#8eaaea33",
     "id": "knockyoudown",
@@ -807,7 +748,6 @@
   {
     "name": "Girl Next Door",
     "image": "http://127.0.0.1:5500/img/motifs/noelle.png",
-    "imagePlaying": null,
     "color": "#d87d50",
     "color2": "#21120c",
     "id": "girlnextdoor",
@@ -820,7 +760,6 @@
   {
     "name": "Queen",
     "image": "http://127.0.0.1:5500/img/motifs/queen.webp",
-    "imagePlaying": null,
     "color": "#6fd1ff",
     "color2": "#6d86e733",
     "id": "queen",
@@ -833,7 +772,6 @@
   {
     "name": "Queen",
     "image": null,
-    "imagePlaying": null,
     "color": "#6fd1ff",
     "color2": "#6d86e733",
     "id": "queen",
@@ -846,7 +784,6 @@
   {
     "name": "Queen",
     "image": null,
-    "imagePlaying": null,
     "color": "#6fd1ff",
     "color2": "#6d86e733",
     "id": "queen",
@@ -859,7 +796,6 @@
   {
     "name": "Queen",
     "image": null,
-    "imagePlaying": null,
     "color": "#6fd1ff",
     "color2": "#6d86e733",
     "id": "queen",
@@ -872,7 +808,6 @@
   {
     "name": "Sweet Cap'n Cakes",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "sweetcapncakes",
@@ -885,7 +820,6 @@
   {
     "name": "Sweet Cap'n Cakes",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "sweetcapncakes",
@@ -898,7 +832,6 @@
   {
     "name": "Berdly",
     "image": "http://127.0.0.1:5500/img/motifs/berdly.webp",
-    "imagePlaying": null,
     "color": "#46b3fc",
     "color2": "#30b18133",
     "id": "berdly",
@@ -911,7 +844,6 @@
   {
     "name": "Berdly",
     "image": null,
-    "imagePlaying": null,
     "color": "#46b3fc",
     "color2": "#30b18133",
     "id": "berdly",
@@ -924,7 +856,6 @@
   {
     "name": "Spamton",
     "image": "http://127.0.0.1:5500/img/motifs/spamton.png",
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffaec933",
     "id": "spamton",
@@ -937,7 +868,6 @@
   {
     "name": "Spamton",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#fff30133",
     "id": "spamton",
@@ -950,7 +880,6 @@
   {
     "name": "Lost Girl",
     "image": "http://127.0.0.1:5500/img/motifs/lostgirl.png",
-    "imagePlaying": null,
     "color": "#331d0a",
     "color2": "#332a3b33",
     "id": "lostgirl",
@@ -963,7 +892,6 @@
   {
     "name": "Lost Girl",
     "image": null,
-    "imagePlaying": null,
     "color": "#331d0a",
     "color2": "#332a3b33",
     "id": "lostgirl",
@@ -976,7 +904,6 @@
   {
     "name": "Feature Presentation",
     "image": "http://127.0.0.1:5500/img/motifs/featurePresentation.png",
-    "imagePlaying": null,
     "color": "#500d52",
     "color2": "#cac2b533",
     "id": "featurepresentation",
@@ -989,7 +916,6 @@
   {
     "name": "TV Time!",
     "image": "http://127.0.0.1:5500/img/motifs/tvtime.webp",
-    "imagePlaying": null,
     "color": "#fbe63b",
     "color2": "#ff342b33",
     "id": "tvtime",
@@ -1004,7 +930,6 @@
   {
     "name": "Doom Board",
     "image": "http://127.0.0.1:5500/img/motifs/doomboard.png",
-    "imagePlaying": null,
     "color": "#d02d86",
     "color2": "#511a8633",
     "id": "doomboard",
@@ -1017,7 +942,6 @@
   {
     "name": "Tenna",
     "image": "http://127.0.0.1:5500/img/motifs/tenna.webp",
-    "imagePlaying": null,
     "color": "#db1f53",
     "color2": "#fffb5b33",
     "id": "tenna",
@@ -1030,7 +954,6 @@
   {
     "name": "Dark Sanctuary",
     "image": "http://127.0.0.1:5500/img/motifs/darksanctuary.png",
-    "imagePlaying": null,
     "color": "#1c5ba4",
     "color2": "#93599833",
     "id": "darksanctuary",
@@ -1069,7 +992,6 @@
   {
     "name": "Second Sanctuary",
     "image": "http://127.0.0.1:5500/img/motifs/subsequentsanctuary.jpg",
-    "imagePlaying": null,
     "color": "#4f378f",
     "color2": "#2d193e33",
     "id": "secondsanctuary",
@@ -1082,7 +1004,6 @@
   {
     "name": "Unknown Motif",
     "image": null,
-    "imagePlaying": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
     "id": "unknownmotif",
@@ -1095,7 +1016,6 @@
   {
     "name": "Mike",
     "image": "http://127.0.0.1:5500/img/motifs/mike.png",
-    "imagePlaying": null,
     "color": "#69be60",
     "color2": "#ff0e0033",
     "id": "mike",
@@ -1108,7 +1028,6 @@
   {
     "name": "Gerson",
     "image": "http://127.0.0.1:5500/img/motifs/gerson.png",
-    "imagePlaying": null,
     "color": "#64a926",
     "color2": "#fe73fe33",
     "id": "gerson",
@@ -1134,7 +1053,6 @@
   {
     "name": "Flowery",
     "image": "http://127.0.0.1:5500/img/motifs/flowery.png",
-    "imagePlaying": null,
     "color": "#fee502",
     "color2": "#fff06f33",
     "id": "flowery",
@@ -1160,7 +1078,6 @@
   {
     "name": "Pink",
     "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
-    "imagePlaying": null,
     "color": "#ff8a90",
     "color2": "#ffe84e33",
     "id": "pink",
@@ -1173,7 +1090,6 @@
   {
     "name": "Pink",
     "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
-    "imagePlaying": null,
     "color": "#ff8a90",
     "color2": "#ffe84e33",
     "id": "pink",
