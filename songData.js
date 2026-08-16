@@ -304,6 +304,38 @@ currentAlbum = undertaleAlbum;
 
 //#region UNDERTALE
 
+const onceUponATimeBPM = 131;
+const onceUponATime = new Song("Once Upon a Time",
+    [Motifs.ONCEUPONATIMEA, Motifs.ONCEUPONATIMEB],
+    "3BR7-AzE2dQ",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(onceUponATimeBPM, 30)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(onceUponATimeBPM, 32), quickSec(onceUponATimeBPM, 62)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(onceUponATimeBPM, 64), quickSec(onceUponATimeBPM, 96)),
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(onceUponATimeBPM, 96), quickSec(onceUponATimeBPM, 128)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 128), quickSec(onceUponATimeBPM, 144)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 144), quickSec(onceUponATimeBPM, 160)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 160), quickSec(onceUponATimeBPM, 176)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 176), quickSec(onceUponATimeBPM, 192)),
+    ],
+    "", quickSec(onceUponATimeBPM, 193),
+    undefined, [Contributors.TERVIA], true
+);
+
+const startMenuBPM = 90;
+const startMenu = new Song("Start Menu",
+    [Motifs.ONCEUPONATIMEA],
+    "BGBWNOMmSm0",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(startMenuBPM, 15)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(startMenuBPM, 16), quickSec(startMenuBPM, 31)),
+    ],
+    "", quickSec(onceUponATimeBPM, 48),
+    undefined, [Contributors.TERVIA], true
+);
+
 const yourBestFriendBPM = 124;
 const yourBestFriend = new Song("Your Best Friend",
     [Motifs.FLOWEY],
