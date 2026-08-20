@@ -462,6 +462,122 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Snowy",
+    "youtubeId": "QZ1Jp-Wg7b0",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 23.360655737704917
+      }
+    ],
+    "loopPoint": 47.213114754098356,
+    "mainMotifs": [
+      {
+        "name": "Snowdin",
+        "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+        "color": "#70d0f5",
+        "color2": "#233832",
+        "id": "snowdin",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "snowy",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Snowdin Town",
+    "youtubeId": "LETChg7kPJo",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 9.117647058823529,
+        "endTime": 27.941176470588236
+      }
+    ],
+    "loopPoint": 56.470588235294116,
+    "mainMotifs": [
+      {
+        "name": "Snowdin",
+        "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+        "color": "#70d0f5",
+        "color2": "#233832",
+        "id": "snowdin",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Snowdin",
+        "image": null,
+        "color": "#70d0f5",
+        "color2": "#233832",
+        "id": "snowdin",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "snowdintown",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Bonetrousle",
     "youtubeId": "AKAiUtWZ4xY",
     "motifRefs": [
@@ -602,12 +718,88 @@
             "His Theme"
           ]
         },
-        "isVariation": true,
+        "isVariation": false,
         "startTime": 12,
         "endTime": 24
+      },
+      {
+        "motif": {
+          "name": "Asriel",
+          "image": "http://127.0.0.1:5500/img/motifs/asriel.png",
+          "color": "#9bfd71",
+          "color2": "#fff20033",
+          "id": "asriel",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "His Theme"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 24,
+        "endTime": 36
+      },
+      {
+        "motif": {
+          "name": "Asriel",
+          "image": "http://127.0.0.1:5500/img/motifs/asriel.png",
+          "color": "#9bfd71",
+          "color2": "#fff20033",
+          "id": "asriel",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "His Theme"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 36,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Asriel",
+          "image": "http://127.0.0.1:5500/img/motifs/asriel.png",
+          "color": "#9bfd71",
+          "color2": "#fff20033",
+          "id": "asriel",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "His Theme"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 48,
+        "endTime": 60
+      },
+      {
+        "motif": {
+          "name": "Asriel",
+          "image": "http://127.0.0.1:5500/img/motifs/asriel.png",
+          "color": "#9bfd71",
+          "color2": "#fff20033",
+          "id": "asriel",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": [
+            "His Theme"
+          ]
+        },
+        "isVariation": false,
+        "startTime": 60,
+        "endTime": 75
       }
     ],
-    "loopPoint": 30,
+    "loopPoint": 75,
     "mainMotifs": [
       {
         "name": "Asriel",
@@ -2290,6 +2482,189 @@
       }
     ],
     "id": "beginning",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "School",
+    "youtubeId": "5b2cW417WXg",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 14.222222222222221
+      },
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 14.222222222222221,
+        "endTime": 28.444444444444443
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 28.22222222222222,
+        "endTime": 31.777777777777775
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 31.777777777777775,
+        "endTime": 35.55555555555556
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 35.55555555555556,
+        "endTime": 38.888888888888886
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 38.888888888888886,
+        "endTime": 41.77777777777778
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": null,
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 44.666666666666664,
+        "endTime": 54.666666666666664
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": null,
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 58.888888888888886,
+        "endTime": 68.88888888888889
+      }
+    ],
+    "loopPoint": 80,
+    "mainMotifs": [
+      {
+        "name": "Hometown",
+        "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+        "color": "#ffb100",
+        "color2": "#766a3a",
+        "id": "hometown",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "school",
     "stopsAfterLoop": false
   },
   {
@@ -5012,6 +5387,70 @@
       }
     ],
     "id": "theworldrevolving",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "A Town Called Hometown",
+    "youtubeId": "2_1JGqBPziI",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.642857142857142,
+        "endTime": 20.357142857142858
+      }
+    ],
+    "loopPoint": 41.14285714285714,
+    "mainMotifs": [
+      {
+        "name": "Hometown",
+        "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+        "color": "#ffb100",
+        "color2": "#766a3a",
+        "id": "hometown",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "atowncalledhometown",
     "stopsAfterLoop": false
   },
   {
@@ -15004,6 +15443,70 @@
       }
     ],
     "id": "blackknife",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Another day in hometown",
+    "youtubeId": "zqWQaTovHU8",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.3809523809523805,
+        "endTime": 22.619047619047617
+      }
+    ],
+    "loopPoint": 45.71428571428571,
+    "mainMotifs": [
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Hometown",
+        "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+        "color": "#ffb100",
+        "color2": "#766a3a",
+        "id": "hometown",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "anotherdayinhometown",
     "stopsAfterLoop": false
   },
   {

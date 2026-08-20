@@ -363,6 +363,42 @@ const nyehHehHeh = new Song("Nyeh Heh Heh!",
     "", quickSec(nyehHehHehBPM, 80)
 );
 
+const snowyBPM = 122;
+const snowyTown = new Song("Snowy",
+    [Motifs.SNOWDINA],
+    "QZ1Jp-Wg7b0",
+    [
+        new MotifReference(Motifs.SNOWDINA, 0, quickSec(snowyBPM, 26)),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 32), quickSec(snowyBPM, 58), true),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 64), quickSec(snowyBPM, 96)),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 96), quickSec(snowyBPM, 128), true),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 128), quickSec(snowyBPM, 138), true),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 144), quickSec(snowyBPM, 154), true),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 163), quickSec(snowyBPM, 174), true),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 179), quickSec(snowyBPM, 187), true),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowyBPM, 187), quickSec(snowyBPM, 195), true),
+    ],
+    "", quickSec(snowyBPM, 192 + 16),
+    [],
+    [Contributors.KARMA]
+);
+
+const snowdinTownBPM = 101;
+const snowdinTown = new Song("Snowdin Town",
+    [Motifs.SNOWDINA, Motifs.SNOWDINB],
+    "LETChg7kPJo",
+    [
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowdinTownBPM, 32), quickSec(snowdinTownBPM, 48)),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowdinTownBPM, 48), quickSec(snowdinTownBPM, 64), true),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowdinTownBPM, 64), quickSec(snowdinTownBPM, 80)),
+        new MotifReference(Motifs.SNOWDINA, quickSec(snowdinTownBPM, 80), quickSec(snowdinTownBPM, 96), true),
+        new MotifReference(Motifs.SNOWDINB, quickSec(snowdinTownBPM, 96), quickSec(snowdinTownBPM, 128)),
+    ],
+    "", quickSec(snowdinTownBPM, 128),
+    [],
+    [Contributors.KARMA]
+);
+
 const bonetrousleBPM = 150;
 const bonetrousle = new Song("Bonetrousle",
     [Motifs.PAPYRUS],
@@ -596,6 +632,27 @@ const beginning = new Song("Beginning",
         new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(beginningBPM, 104), quickSec(beginningBPM, 128), true),
     ],
     "", quickSec(beginningBPM, 128),
+    [],
+    [Contributors.KARMA]
+);
+
+const schoolBPM = 135;
+const school = new Song("School",
+    [Motifs.HOMETOWN, Motifs.DONTFORGET],
+    "5b2cW417WXg",
+    [
+        new MotifReference(Motifs.HOMETOWN, 0, quickSec(schoolBPM, 32)),
+        new MotifReference(Motifs.HOMETOWN, quickSec(schoolBPM, 32), quickSec(schoolBPM, 64)),
+
+        new MotifReference(Motifs.DONTFORGET, quickSec(schoolBPM, 63.5), quickSec(schoolBPM, 71.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(schoolBPM, 71.5), quickSec(schoolBPM, 80), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(schoolBPM, 80), quickSec(schoolBPM, 87.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(schoolBPM, 87.5), quickSec(schoolBPM, 94), true),
+
+        new MotifReference(Motifs.SNOWDINB, quickSec(schoolBPM, 100.5), quickSec(schoolBPM, 123)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(schoolBPM, 132.5), quickSec(schoolBPM, 155)),
+    ],
+    "", quickSec(schoolBPM, 180),
     [],
     [Contributors.KARMA]
 );
@@ -914,6 +971,25 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
         new MotifReference(Motifs.DONTFORGET, quickSec(theWorldRevolvingBPM, 259 + 56), quickSec(theWorldRevolvingBPM, 264 + 56)),
     ],
     "", quickSec(theWorldRevolvingBPM, 264 + 56)
+);
+
+const aTownCalledHometownBPM = 140;
+const aTownCalledHometown = new Song("A Town Called Hometown",
+    [Motifs.HOMETOWN, Motifs.DONTFORGET],
+    "2_1JGqBPziI",
+    [
+        new MotifReference(Motifs.HOMETOWN, quickSec(aTownCalledHometownBPM, 48), quickSec(aTownCalledHometownBPM, 96)),
+        new MotifReference(Motifs.HOMETOWN, quickSec(aTownCalledHometownBPM, 96), quickSec(aTownCalledHometownBPM, 144), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(aTownCalledHometownBPM, 143), quickSec(aTownCalledHometownBPM, 151)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(aTownCalledHometownBPM, 155), quickSec(aTownCalledHometownBPM, 163)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(aTownCalledHometownBPM, 166), quickSec(aTownCalledHometownBPM, 175)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(aTownCalledHometownBPM, 179), quickSec(aTownCalledHometownBPM, 188)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(aTownCalledHometownBPM, 188), quickSec(aTownCalledHometownBPM, 194), true),
+        new MotifReference(Motifs.SNOWDINB, quickSec(aTownCalledHometownBPM, 205), quickSec(aTownCalledHometownBPM, 239)),
+    ],
+    "", quickSec(aTownCalledHometownBPM, 196 + 68),
+    [],
+    [Contributors.KARMA]
 );
 
 const youCanAlwaysComeHomeBPM = 100;
@@ -2023,6 +2099,37 @@ const blackKnife = new Song("Black Knife",
 //#endregion
 
 //#region CHAPTER 4
+
+const anotherDayInHometownBPM = 126;
+const anotherDayInHometown = new Song("Another day in hometown",
+    [Motifs.DONTFORGET, Motifs.HOMETOWN],
+    "zqWQaTovHU8",
+    [
+        new MotifReference(Motifs.HOMETOWN, quickSec(anotherDayInHometownBPM, 16.5), quickSec(anotherDayInHometownBPM, 48)),
+        new MotifReference(Motifs.HOMETOWN, quickSec(anotherDayInHometownBPM, 48.5), quickSec(anotherDayInHometownBPM, 80)),
+        new MotifReference(Motifs.HOMETOWN, quickSec(anotherDayInHometownBPM, 80), quickSec(anotherDayInHometownBPM, 88)),
+
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 87), quickSec(anotherDayInHometownBPM, 93)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 95), quickSec(anotherDayInHometownBPM, 101), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 104), quickSec(anotherDayInHometownBPM, 109.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 109.5), quickSec(anotherDayInHometownBPM, 113.5), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 113.5), quickSec(anotherDayInHometownBPM, 117), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 119), quickSec(anotherDayInHometownBPM, 125)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 127), quickSec(anotherDayInHometownBPM, 133), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 136), quickSec(anotherDayInHometownBPM, 141.5)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 141.5), quickSec(anotherDayInHometownBPM, 145.5), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(anotherDayInHometownBPM, 145.5), quickSec(anotherDayInHometownBPM, 149), true),
+
+        new MotifReference(Motifs.SNOWDINB, quickSec(anotherDayInHometownBPM, 152.5), quickSec(anotherDayInHometownBPM, 174)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(anotherDayInHometownBPM, 184.5), quickSec(anotherDayInHometownBPM, 206)),
+
+        new MotifReference(Motifs.HOMETOWN, quickSec(anotherDayInHometownBPM, 216.5), quickSec(anotherDayInHometownBPM, 248)),
+        new MotifReference(Motifs.HOMETOWN, quickSec(anotherDayInHometownBPM, 248), quickSec(anotherDayInHometownBPM, 255), true),
+    ],
+    "", quickSec(anotherDayInHometownBPM, 196 + 96),
+    [],
+    [Contributors.KARMA]
+);
 
 const friendsBPM = 90;
 const friends = new Song("Friends",
