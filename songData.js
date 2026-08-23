@@ -664,6 +664,43 @@ const hopesAndDreams = new Song("Hopes and Dreams",
     [Contributors.TERVIA]
 );
 
+const saveTheWorldBPM = 180
+const saveTheWorld = new Song("SAVE the World",
+    [Motifs.ONCEUPONATIMEA, Motifs.FLOWEY],
+    "LAn-JYzKm5M",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(saveTheWorldBPM, 16), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 16), quickSec(saveTheWorldBPM, 32), true),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(saveTheWorldBPM, 32), quickSec(saveTheWorldBPM, 48), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 48), quickSec(saveTheWorldBPM, 64), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 72), quickSec(saveTheWorldBPM, 80), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 80), quickSec(saveTheWorldBPM, 96), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 104), quickSec(saveTheWorldBPM, 112), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 112), quickSec(saveTheWorldBPM, 128), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 128), quickSec(saveTheWorldBPM, 144), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 144), quickSec(saveTheWorldBPM, 160), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 160), quickSec(saveTheWorldBPM, 176), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 176), quickSec(saveTheWorldBPM, 192), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 192), quickSec(saveTheWorldBPM, 208), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 208), quickSec(saveTheWorldBPM, 224), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 224), quickSec(saveTheWorldBPM, 240), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 240), quickSec(saveTheWorldBPM, 256), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 256), quickSec(saveTheWorldBPM, 272), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 272), quickSec(saveTheWorldBPM, 288), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 288), quickSec(saveTheWorldBPM, 304), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 288), quickSec(saveTheWorldBPM, 304), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 304), quickSec(saveTheWorldBPM, 320), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 304), quickSec(saveTheWorldBPM, 320), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(saveTheWorldBPM, 320), quickSec(saveTheWorldBPM, 332), true),
+    ],
+    "", quickSec(saveTheWorldBPM, 340),
+    [],
+    [Contributors.TERVIA]
+);
+
 const madMewMewBPM = 120;
 const madMewMew = new Song("Mad Mew Mew",
     [Motifs.GHOSTFIGHTB],
