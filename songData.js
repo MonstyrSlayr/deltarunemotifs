@@ -701,6 +701,41 @@ const saveTheWorld = new Song("SAVE the World",
     [Contributors.TERVIA]
 );
 
+const lastGoodbyeBPM = 180
+const lastGoodbyePianoBPM = 164
+// TSP - Tempo Switch Point
+const lastGoodbyeTSP1 = quickSec(lastGoodbyeBPM, 136)
+const lastGoodbyeTSP2 = lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 63)
+const lastGoodbyeTSP3 = lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 137)
+const lastGoodbye = new Song("Last Goodbye",
+    [Motifs.ONCEUPONATIMEA, Motifs.FLOWEY],
+    "oiaO05_ImsA",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(lastGoodbyeBPM, 8), quickSec(lastGoodbyeBPM, 40)),
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(lastGoodbyeBPM, 40), quickSec(lastGoodbyeBPM, 72), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(lastGoodbyeBPM, 72), quickSec(lastGoodbyeBPM, 88), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(lastGoodbyeBPM, 88), quickSec(lastGoodbyeBPM, 104), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(lastGoodbyeBPM, 112), quickSec(lastGoodbyeBPM, 120), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(lastGoodbyeBPM, 120), quickSec(lastGoodbyeBPM, 136), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEB, lastGoodbyeTSP1, lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 32), true),
+        new MotifReference(Motifs.ONCEUPONATIMEB, lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 32), lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 64), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 16), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 16), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 32), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 32), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 48), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 48), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 64), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 96), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 112), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, lastGoodbyeTSP3, lastGoodbyeTSP3 + quickSec(lastGoodbyePianoBPM, 25))
+    ],
+    "", 135.67,
+    [],
+    [Contributors.TERVIA]
+);
+
 const madMewMewBPM = 120;
 const madMewMew = new Song("Mad Mew Mew",
     [Motifs.GHOSTFIGHTB],
