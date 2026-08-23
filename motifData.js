@@ -97,7 +97,7 @@ Motifs.ALPHYS = new Motif("Alphys", "", "#fdc748", "#ffffff33", MOTIFIMGLINK + "
 Motifs.METTATON = new Motif("Mettaton");
 Motifs.ASRIEL = new Motif("Asriel", "", "#9bfd71", "#fff20033", MOTIFIMGLINK + "asriel.png", ["His Theme"]);
 Motifs.ASGORE = new Motif("Asgore", "", "#e4ba00", "#5e549233", MOTIFIMGLINK + "asgore.png");
-Motifs.GASTER = new Motif("Gaster");
+Motifs.GASTER = new Motif("Gaster", "", "#ffffff", "#00000033", MOTIFIMGLINK + "mysteryman.png");
 
 Motifs.DONTFORGET = new Motif("Don't Forget", "", "#4dcc8e", "#f60e9733", MOTIFIMGLINK + "ralsei.png");
 Motifs.HOMETOWN = new Motif("Hometown", "", "#ffb100", "#766a3a", MOTIFIMGLINK + "hometown.png")
@@ -119,16 +119,18 @@ if (Math.random() < dieldChance)
 Motifs.FANFARE = new Motif("Fanfare", "", "#fadf39", "#4de3e333", MOTIFIMGLINK + "torielDarkWorld.png");
 Motifs.QUIETAUTUMN = new Motif("Quiet Autumn", "", "#f055c0", "#22b14c33", MOTIFIMGLINK + "hathyBakeSale.webp");
 Motifs.CHECKERDANCE = new Motif("Checker Dance", "", "#ff294d", "#ffdb0033", MOTIFIMGLINK + "kround.gif");
-Motifs.DARKNESSFALLS = new Motif("Darkness Falls", "");
+Motifs.DARKNESSFALLS = new Motif("Darkness Falls", "", "#322e4f", "#00000033");
 Motifs.HIPSHOP = new Motif("Hip Shop", "", "#ffffff", "#b6497233", MOTIFIMGLINK + "hipshop.png");
 Motifs.FREEDOM = new Motif("Freedom", "", "#6d6ebf", "#fbfd0133", MOTIFIMGLINK + "jevil.webp", ["THE WORLD REVOLVING"]);
 Motifs.FREEDOM.imagePlaying = MOTIFIMGLINK + "jevilDance.webp";
-Motifs.THEHOLY = new Motif("THE HOLY", "", "#5496cd", "#00000033", MOTIFIMGLINK + "theholy.webp");
+Motifs.THEHOLYA = new Motif("THE HOLY", "A", "#5496cd", "#00000033", MOTIFIMGLINK + "theholy.webp");
+Motifs.THEHOLYB = new Motif("THE HOLY", "B", "#5496cd", "#00000033");
+Motifs.THEHOLYC = new Motif("THE HOLY", "C", "#5496cd", "#00000033");
 
 Motifs.SUSIE = new Motif("Susie", "", "#ae67af", "#54468f33", MOTIFIMGLINK + "susiegaster.png");
 Motifs.LANCERA = new Motif("Lancer", "A", "#5585bd", "#32323233", MOTIFIMGLINK + "lancer.png");
 Motifs.LANCERB = new Motif("Lancer", "B", "#5585bd", "#ffffff33");
-Motifs.ROUXLSKAARD = new Motif("Rouxls Kaard", "");
+Motifs.ROUXLSKAARD = new Motif("Rouxls Kaard", "", "#1a237e", "#32323233", MOTIFIMGLINK + "rouxls.webp");
 Motifs.KING = new Motif("King", "", "#004876", "#32323233", MOTIFIMGLINK + "king.png", ["Card Castle"]);
 Motifs.KING.imagePlaying = MOTIFIMGLINK + "kingIdle.gif";
 Motifs.MAN = new Motif("man", "");
