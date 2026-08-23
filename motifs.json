@@ -572,8 +572,8 @@
   {
     "name": "Darkness Falls",
     "image": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#322e4f",
+    "color2": "#00000033",
     "id": "darknessfalls",
     "letter": "",
     "mainDiv": null,

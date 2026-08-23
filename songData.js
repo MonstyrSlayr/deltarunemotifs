@@ -3732,6 +3732,18 @@ const lovingSteps = new Song("Loving Steps",
     "", quickSec(lovingStepsBPM, 36 + 96 + 24 - 3)
 );
 
+const onsenBPM = 140;
+const onsen = new Song("Onsen",
+    [Motifs.ONCEUPONATIMEA],
+    "o681RqsnRM0",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(onsenBPM, 70), quickSec(onsenBPM, 128)),
+    ],
+    "", quickSec(onsenBPM, 240),
+    [],
+    [Contributors.TERVIA]
+);
+
 const beautifulBathtimeBPM = 150;
 const beautifulBathtime = new Song("Beautiful Bathtime",
     [Motifs.FLOWERY],
