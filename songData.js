@@ -623,6 +623,47 @@ const finale = new Song("Finale",
     [Contributors.KARMA]
 );
 
+const hopesAndDreamsOSTBPM = 170.667
+const hopesAndDreams = new Song("Hopes and Dreams",
+    [Motifs.ONCEUPONATIMEA, Motifs.FLOWEY],
+    "HA3Ks8NLS-Y",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(hopesAndDreamsOSTBPM, 32)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(hopesAndDreamsOSTBPM, 32), quickSec(hopesAndDreamsOSTBPM, 60)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(hopesAndDreamsOSTBPM, 64), quickSec(hopesAndDreamsOSTBPM, 96)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(hopesAndDreamsOSTBPM, 96), quickSec(hopesAndDreamsOSTBPM, 128)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 128), quickSec(hopesAndDreamsOSTBPM, 144)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 144), quickSec(hopesAndDreamsOSTBPM, 160)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 160), quickSec(hopesAndDreamsOSTBPM, 176)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 176), quickSec(hopesAndDreamsOSTBPM, 192)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 192), quickSec(hopesAndDreamsOSTBPM, 208), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 208), quickSec(hopesAndDreamsOSTBPM, 224), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 224), quickSec(hopesAndDreamsOSTBPM, 240), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 224), quickSec(hopesAndDreamsOSTBPM, 240), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 240), quickSec(hopesAndDreamsOSTBPM, 256), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 240), quickSec(hopesAndDreamsOSTBPM, 256), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 256), quickSec(hopesAndDreamsOSTBPM, 272)),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 272), quickSec(hopesAndDreamsOSTBPM, 288), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 288), quickSec(hopesAndDreamsOSTBPM, 304)),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 304), quickSec(hopesAndDreamsOSTBPM, 320), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 320), quickSec(hopesAndDreamsOSTBPM, 336), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 336), quickSec(hopesAndDreamsOSTBPM, 352), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 352), quickSec(hopesAndDreamsOSTBPM, 368), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 368), quickSec(hopesAndDreamsOSTBPM, 384), true),
+
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 384), quickSec(hopesAndDreamsOSTBPM, 416)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 416), quickSec(hopesAndDreamsOSTBPM, 448)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 448), quickSec(hopesAndDreamsOSTBPM, 480)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 480), quickSec(hopesAndDreamsOSTBPM, 492), true)
+    ],
+    "", quickSec(hopesAndDreamsOSTBPM, 512),
+    [],
+    [Contributors.TERVIA]
+);
+
 const madMewMewBPM = 120;
 const madMewMew = new Song("Mad Mew Mew",
     [Motifs.GHOSTFIGHTB],
