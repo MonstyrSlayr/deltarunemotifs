@@ -620,6 +620,27 @@ currentAlbum = deltarune1Album;
 
 //#region CHAPTER 1
 
+const anotherHimBPM = 110;
+const anotherHim = new Song("ANOTHER HIM",
+    [Motifs.GASTER],
+    "mHOkkDmsTvo",
+    [
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 17), quickSec(anotherHimBPM, 23), true),
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 25), quickSec(anotherHimBPM, 31), true),
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 33), quickSec(anotherHimBPM, 39), true),
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 41), quickSec(anotherHimBPM, 47), true),
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 49), quickSec(anotherHimBPM, 55), true),
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 57), quickSec(anotherHimBPM, 63), true),
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 65), quickSec(anotherHimBPM, 71), true),
+        new MotifReference(Motifs.GASTER, quickSec(anotherHimBPM, 73), quickSec(anotherHimBPM, 79), true)
+    ],
+    "", quickSec(anotherHimBPM, 88),
+    [
+        new EffectRef(Effects.DEPTHS, 0, 0)
+    ],
+    [Contributors.KARMA]
+);
+
 const beginningBPM = 138;
 const beginning = new Song("Beginning",
     [Motifs.DONTFORGET, Motifs.ONCEUPONATIMEC],
@@ -799,6 +820,18 @@ const lantern = new Song("Lantern",
     "", quickSec(lanternBPM, 96 + 48 + 12)
 );
 
+const imVeryBadBPM = 70;
+const imVeryBad = new Song("Im Very Bad",
+    [Motifs.LANCERA],
+    "r34vSTUpcgs",
+    [
+        new MotifReference(Motifs.LANCERA, quickSec(imVeryBadBPM, 0.5), quickSec(imVeryBadBPM, 15)),
+    ],
+    "", quickSec(imVeryBadBPM, 16),
+    [],
+    [Contributors.KARMA]
+);
+
 const checkerDanceBPM = 160;
 const checkerDance = new Song("Checker Dance",
     [Motifs.CHECKERDANCE],
@@ -864,6 +897,21 @@ const scarletForest = new Song("Scarlet Forest",
     [Contributors.KARMA]
 );
 
+const thrashMachineBPM = 140;
+const thrashMachine = new Song("Thrash Machine",
+    [Motifs.LANCERA, Motifs.LANCERB],
+    "yRgljhRlqkg",
+    [
+        new MotifReference(Motifs.LANCERA, quickSec(thrashMachineBPM, 2.5), quickSec(thrashMachineBPM, 17), true),
+        new MotifReference(Motifs.LANCERA, quickSec(thrashMachineBPM, 34.5), quickSec(thrashMachineBPM, 49), true),
+        new MotifReference(Motifs.LANCERB, quickSec(thrashMachineBPM, 65), quickSec(thrashMachineBPM, 98.5), true),
+        new MotifReference(Motifs.LANCERB, quickSec(thrashMachineBPM, 98.5), quickSec(thrashMachineBPM, 116), true),
+    ],
+    "", quickSec(thrashMachineBPM, 128),
+    [],
+    [Contributors.KARMA]
+);
+
 const vsLancerBPM = 177;
 const vsLancer = new Song("Vs. Lancer",
     [Motifs.LANCERA, Motifs.LANCERB],
@@ -874,7 +922,10 @@ const vsLancer = new Song("Vs. Lancer",
         new MotifReference(Motifs.LANCERB, quickSec(vsLancerBPM, 64.75), quickSec(vsLancerBPM, 64.25 + 32)),
         new MotifReference(Motifs.LANCERB, quickSec(vsLancerBPM, 64.25 + 32), quickSec(vsLancerBPM, 123)),
     ],
-    "", quickSec(vsLancerBPM, 123)
+    "", quickSec(vsLancerBPM, 123),
+    [
+        new EffectRef(Effects.BATTLE, 0, 0)
+    ]
 );
 
 const basementBPM = 73;
@@ -935,6 +986,19 @@ const cardCastle = new Song("Card Castle",
     "", quickSec(cardCastleBPM, 128)
 );
 
+const rouxlsKaardBPM = 101;
+const rouxlsKaard = new Song("Rouxls Kaard",
+    [Motifs.ROUXLSKAARD],
+    "tpRCZDNCZkQ",
+    [
+        new MotifReference(Motifs.ROUXLSKAARD, 0, quickSec(rouxlsKaardBPM, 16)),
+        new MotifReference(Motifs.ROUXLSKAARD, quickSec(rouxlsKaardBPM, 16), quickSec(rouxlsKaardBPM, 32)),
+    ],
+    "", quickSec(rouxlsKaardBPM, 32),
+    [],
+    [Contributors.KARMA]
+);
+
 const chaosKingBPM = 147;
 const chaosKing = new Song("Chaos King",
     [Motifs.KING],
@@ -950,6 +1014,21 @@ const chaosKing = new Song("Chaos King",
         new MotifReference(Motifs.THELEGENDC, quickSec(chaosKingBPM, 40 + 96 + 92), quickSec(chaosKingBPM, 40 + 96 + 92 + 32), true),
     ],
     "", quickSec(chaosKingBPM, 40 + 96 + 92 + 32)
+);
+
+const darknessFallsBPM = 86;
+const darknessFalls = new Song("Darkness Falls",
+    [Motifs.DARKNESSFALLS],
+    "i6ZCzBhIRzo",
+    [
+        new MotifReference(Motifs.DARKNESSFALLS, quickSec(darknessFallsBPM, 48), quickSec(darknessFallsBPM, 72)),
+        new MotifReference(Motifs.DARKNESSFALLS, quickSec(darknessFallsBPM, 72), quickSec(darknessFallsBPM, 96)),
+    ],
+    "", quickSec(darknessFallsBPM, 96),
+    [
+        new EffectRef(Effects.DEPTHS, 0, 0)
+    ],
+    [Contributors.KARMA]
 );
 
 const theWorldRevolvingBPM = 190;
@@ -971,6 +1050,66 @@ const theWorldRevolving = new Song("THE WORLD REVOLVING",
         new MotifReference(Motifs.DONTFORGET, quickSec(theWorldRevolvingBPM, 259 + 56), quickSec(theWorldRevolvingBPM, 264 + 56)),
     ],
     "", quickSec(theWorldRevolvingBPM, 264 + 56)
+);
+
+const friendshipBPM = 80;
+const friendship = new Song("Friendship",
+    [Motifs.DONTFORGET],
+    "xrpCUeynpu0",
+    [
+        new MotifReference(Motifs.DONTFORGET, quickSec(friendshipBPM, 1.5), quickSec(friendshipBPM, 40), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(friendshipBPM, 41.5), quickSec(friendshipBPM, 74), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(friendshipBPM, 85.5), quickSec(friendshipBPM, 126), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(friendshipBPM, 139), quickSec(friendshipBPM, 146), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(friendshipBPM, 155), quickSec(friendshipBPM, 162), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(friendshipBPM, 185.5), quickSec(friendshipBPM, 202), true),
+    ],
+    "", quickSec(friendshipBPM, 196 + 18),
+    [],
+    [Contributors.KARMA]
+);
+
+const theHolyBPM = 70;
+const theHoly = new Song("THE HOLY",
+    [Motifs.THEHOLYA, Motifs.THEHOLYB],
+    "OfUhi8_a4Zg",
+    [
+        new MotifReference(Motifs.THEHOLYA, 0, quickSec(theHolyBPM, 4)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 4), quickSec(theHolyBPM, 8)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 8), quickSec(theHolyBPM, 12)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 12), quickSec(theHolyBPM, 16)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 16), quickSec(theHolyBPM, 20)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 20), quickSec(theHolyBPM, 24)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 24), quickSec(theHolyBPM, 28)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 28), quickSec(theHolyBPM, 32)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 32), quickSec(theHolyBPM, 36)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 36), quickSec(theHolyBPM, 40)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 40), quickSec(theHolyBPM, 44)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 44), quickSec(theHolyBPM, 48)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 48), quickSec(theHolyBPM, 52)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(theHolyBPM, 52), quickSec(theHolyBPM, 56)),
+
+        new MotifReference(Motifs.THEHOLYB, quickSec(theHolyBPM, 8), quickSec(theHolyBPM, 24)),
+        new MotifReference(Motifs.THEHOLYB, quickSec(theHolyBPM, 40), quickSec(theHolyBPM, 56)),
+
+        new MotifReference(Motifs.THEHOLYC, quickSec(theHolyBPM, 24.5), quickSec(theHolyBPM, 32)),
+        new MotifReference(Motifs.THEHOLYC, quickSec(theHolyBPM, 32.5), quickSec(theHolyBPM, 40)),
+    ],
+    "", quickSec(theHolyBPM, 56),
+    [],
+    [Contributors.KARMA]
+);
+
+const yourPowerBPM = 59;
+const yourPower = new Song("Your Power",
+    [Motifs.DONTFORGET],
+    "sb71Mz8Cbtw",
+    [
+        new MotifReference(Motifs.DONTFORGET, quickSec(yourPowerBPM, 1.5), quickSec(yourPowerBPM, 12)),
+    ],
+    "", quickSec(yourPowerBPM, 12),
+    [],
+    [Contributors.KARMA]
 );
 
 const aTownCalledHometownBPM = 140;
@@ -1017,6 +1156,95 @@ const youCanAlwaysComeHome = new Song("You Can Always Come Home",
     [Contributors.KARMA]
 );
 
+const dontForgetBPM = 78;
+const dontForget = new Song("Don't Forget",
+    [Motifs.DONTFORGET],
+    "bBHNnzPJLZA",
+    [
+        new MotifReference(Motifs.DONTFORGET, quickSec(dontForgetBPM, 2.5), quickSec(dontForgetBPM, 56.5)),
+    ],
+    "", quickSec(dontForgetBPM, 68),
+    [
+        new SetLyrics("", 0),
+
+        new SetLyrics("When the", quickSec(dontForgetBPM, 2.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 2.5), quickSec(dontForgetBPM, 1)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 3.5), quickSec(dontForgetBPM, 0.5)),
+
+        new SetLyrics("Light is running low", quickSec(dontForgetBPM, 4.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 4.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 5.5), quickSec(dontForgetBPM, 0.75)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 6.25), quickSec(dontForgetBPM, 0.5)),
+
+        new SetLyrics("And the shadows start to grow", quickSec(dontForgetBPM, 7.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 7.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 8), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 8.5), quickSec(dontForgetBPM, 1)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 9.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 10), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 10.5), quickSec(dontForgetBPM, 0.5)),
+
+        new SetLyrics("And the places that you know", quickSec(dontForgetBPM, 11.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 11.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 12), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 12.5), quickSec(dontForgetBPM, 1)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 13.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 14), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 14.5), quickSec(dontForgetBPM, 0.5)),
+
+        new SetLyrics("Seem like fantasy", quickSec(dontForgetBPM, 15.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 15.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 16), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 16.5), quickSec(dontForgetBPM, 2.25)),
+
+        new SetLyrics("", quickSec(dontForgetBPM, 20)),
+
+        new SetLyrics("There's a", quickSec(dontForgetBPM, 22.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 22.5), quickSec(dontForgetBPM, 1)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 23.5), quickSec(dontForgetBPM, 0.75)),
+
+        new SetLyrics("Light inside your soul", quickSec(dontForgetBPM, 24.75)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 24.75), quickSec(dontForgetBPM, 0.4)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 25.15), quickSec(dontForgetBPM, 0.85)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 26), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 26.5), quickSec(dontForgetBPM, 0.5)),
+
+        new SetLyrics("That's still shining in the cold", quickSec(dontForgetBPM, 27.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 27.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 28.0), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 28.5), quickSec(dontForgetBPM, 1)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 29.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 30), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 30.5), quickSec(dontForgetBPM, 0.5)),
+
+        new SetLyrics("With the truth", quickSec(dontForgetBPM, 31.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 31.5), quickSec(dontForgetBPM, 0.7)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 32.2), quickSec(dontForgetBPM, 0.25)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 32.45), quickSec(dontForgetBPM, 0.5)),
+    
+        new SetLyrics("The promise in our hearts", quickSec(dontForgetBPM, 34.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 34.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 35), quickSec(dontForgetBPM, 1)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 36), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 36.5), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 38), quickSec(dontForgetBPM, 4.5)),
+
+        new SetLyrics("Don't forget", quickSec(dontForgetBPM, 44.6)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 44.6), quickSec(dontForgetBPM, 0.3)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 44.9), quickSec(dontForgetBPM, 0.7)),
+
+        new SetLyrics("I'm with you in the dark", quickSec(dontForgetBPM, 47)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 47), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 47.5), quickSec(dontForgetBPM, 0.4)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 47.9), quickSec(dontForgetBPM, 0.25)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 48.25), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 49), quickSec(dontForgetBPM, 0.5)),
+        new AdvanceLyrics(quickSec(dontForgetBPM, 49.5), quickSec(dontForgetBPM, 7)),
+    ],
+    [Contributors.KARMA]
+);
+
 
 const beforeTheStoryBPM = 65;
 const beforeTheStory = new Song("Before the Story",
@@ -1028,13 +1256,13 @@ const beforeTheStory = new Song("Before the Story",
         new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(beforeTheStoryBPM, 64), quickSec(beforeTheStoryBPM, 80)),
         new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(beforeTheStoryBPM, 80), quickSec(beforeTheStoryBPM, 96)),
 
-        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 64.5), quickSec(beforeTheStoryBPM, 67)),
-        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 68.5), quickSec(beforeTheStoryBPM, 71)),
-        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 72.5), quickSec(beforeTheStoryBPM, 75)),
-        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 76.5), quickSec(beforeTheStoryBPM, 79), true),
-        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 80.5), quickSec(beforeTheStoryBPM, 83)),
-        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 84.5), quickSec(beforeTheStoryBPM, 87)),
-        new MotifReference(Motifs.THEHOLY, quickSec(beforeTheStoryBPM, 88.5), quickSec(beforeTheStoryBPM, 91)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(beforeTheStoryBPM, 64.5), quickSec(beforeTheStoryBPM, 67)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(beforeTheStoryBPM, 68.5), quickSec(beforeTheStoryBPM, 71)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(beforeTheStoryBPM, 72.5), quickSec(beforeTheStoryBPM, 75)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(beforeTheStoryBPM, 76.5), quickSec(beforeTheStoryBPM, 79), true),
+        new MotifReference(Motifs.THEHOLYA, quickSec(beforeTheStoryBPM, 80.5), quickSec(beforeTheStoryBPM, 83)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(beforeTheStoryBPM, 84.5), quickSec(beforeTheStoryBPM, 87)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(beforeTheStoryBPM, 88.5), quickSec(beforeTheStoryBPM, 91)),
     ],
     "", quickSec(beforeTheStoryBPM, 96),
     [
@@ -2381,14 +2609,14 @@ const everHigher = new Song("Ever Higher",
         new MotifReference(Motifs.EVERHIGHER, quickSec(everHigherBPM, 24 + 24 + 64), quickSec(everHigherBPM, 24 + 24 + 4 + 64)),
         new MotifReference(Motifs.EVERHIGHER, quickSec(everHigherBPM, 24 + 24 + 4 + 64), quickSec(everHigherBPM, 24 + 24 + 8 + 64), true),
 
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4)),
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 4)),
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 8), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 8), true),
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 12), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 12), true),
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 16), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 16)),
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 20), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 20)),
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 24), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 24)),
-        new MotifReference(Motifs.THEHOLY, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 28), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28), true),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 4)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 8), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 8), true),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 12), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 12), true),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 16), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 16)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 20), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 20)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 24), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 24)),
+        new MotifReference(Motifs.THEHOLYA, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 28), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28), true),
 
         new MotifReference(Motifs.EVERHIGHER, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28 + 4)),
         new MotifReference(Motifs.EVERHIGHER, quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28 + 4), quickSec(everHigherBPM, 24 + 24 + 8 + 64 + 4 + 28 + 8), true),

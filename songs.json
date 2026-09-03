@@ -480,10 +480,146 @@
         },
         "isVariation": false,
         "startTime": 0,
-        "endTime": 23.360655737704917
+        "endTime": 12.786885245901638
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 15.737704918032787,
+        "endTime": 28.524590163934427
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 31.475409836065573,
+        "endTime": 47.213114754098356
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 47.213114754098356,
+        "endTime": 62.950819672131146
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 62.950819672131146,
+        "endTime": 67.8688524590164
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 70.81967213114754,
+        "endTime": 75.73770491803279
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 80.1639344262295,
+        "endTime": 85.57377049180327
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 88.0327868852459,
+        "endTime": 91.9672131147541
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 91.9672131147541,
+        "endTime": 95.90163934426229
       }
     ],
-    "loopPoint": 47.213114754098356,
+    "loopPoint": 102.29508196721311,
     "mainMotifs": [
       {
         "name": "Snowdin",
@@ -531,11 +667,79 @@
           "aliases": []
         },
         "isVariation": false,
-        "startTime": 9.117647058823529,
-        "endTime": 27.941176470588236
+        "startTime": 19.00990099009901,
+        "endTime": 28.51485148514851
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 28.51485148514851,
+        "endTime": 38.01980198019802
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.01980198019802,
+        "endTime": 47.524752475247524
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": "http://127.0.0.1:5500/img/motifs/snowdin.png",
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 47.524752475247524,
+        "endTime": 57.02970297029702
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": null,
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 57.02970297029702,
+        "endTime": 76.03960396039604
       }
     ],
-    "loopPoint": 56.470588235294116,
+    "loopPoint": 76.03960396039604,
     "mainMotifs": [
       {
         "name": "Snowdin",
@@ -2370,6 +2574,71 @@
     "stopsAfterLoop": true
   },
   {
+    "name": "ANOTHER HIM",
+    "youtubeId": "mHOkkDmsTvo",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 9.272727272727272,
+        "endTime": 17.454545454545453
+      }
+    ],
+    "loopPoint": 52.36363636363636,
+    "mainMotifs": [
+      {
+        "name": "Gaster",
+        "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+        "color": "#ffffff",
+        "color2": "#00000033",
+        "id": "gaster",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "anotherhim",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Beginning",
     "youtubeId": "puOs1uy4t5M",
     "motifRefs": [
@@ -3793,6 +4062,58 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Im Very Bad",
+    "youtubeId": "r34vSTUpcgs",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Lancer",
+          "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
+          "color": "#5585bd",
+          "color2": "#32323233",
+          "id": "lancer",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 27.428571428571427
+      }
+    ],
+    "loopPoint": 84.85714285714285,
+    "mainMotifs": [
+      {
+        "name": "Lancer",
+        "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
+        "color": "#5585bd",
+        "color2": "#32323233",
+        "id": "lancer",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "imverybad",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Checker Dance",
     "youtubeId": "j54JPLQWdyQ",
     "motifRefs": [
@@ -4416,6 +4737,121 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Thrash Machine",
+    "youtubeId": "yRgljhRlqkg",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Lancer",
+          "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
+          "color": "#5585bd",
+          "color2": "#32323233",
+          "id": "lancer",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 10.568571428571428
+      },
+      {
+        "motif": {
+          "name": "Lancer",
+          "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
+          "color": "#5585bd",
+          "color2": "#32323233",
+          "id": "lancer",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 10.568571428571428,
+        "endTime": 20.854285714285712
+      },
+      {
+        "motif": {
+          "name": "Lancer",
+          "image": null,
+          "color": "#5585bd",
+          "color2": "#ffffff33",
+          "id": "lancer",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 21,
+        "endTime": 31.427142857142854
+      },
+      {
+        "motif": {
+          "name": "Lancer",
+          "image": null,
+          "color": "#5585bd",
+          "color2": "#ffffff33",
+          "id": "lancer",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 31.427142857142854,
+        "endTime": 40.714285714285715
+      }
+    ],
+    "loopPoint": 42.42857142857142,
+    "mainMotifs": [
+      {
+        "name": "Lancer",
+        "image": "http://127.0.0.1:5500/img/motifs/lancer.png",
+        "color": "#5585bd",
+        "color2": "#32323233",
+        "id": "lancer",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "Lancer",
+        "image": null,
+        "color": "#5585bd",
+        "color2": "#ffffff33",
+        "id": "lancer",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "thrashmachine",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Vs. Lancer",
     "youtubeId": "Ce-gU8G6Vik",
     "motifRefs": [
@@ -4515,7 +4951,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "MonstyrSlayr",
@@ -4953,6 +5402,58 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Rouxls Kaard",
+    "youtubeId": "tpRCZDNCZkQ",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Rouxls Kaard",
+          "image": "http://127.0.0.1:5500/img/motifs/rouxls.webp",
+          "color": "#1a237e",
+          "color2": "#32323233",
+          "id": "rouxlskaard",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 10.568571428571428
+      }
+    ],
+    "loopPoint": 42.42857142857142,
+    "mainMotifs": [
+      {
+        "name": "Rouxls Kaard",
+        "image": "http://127.0.0.1:5500/img/motifs/rouxls.webp",
+        "color": "#1a237e",
+        "color2": "#32323233",
+        "id": "rouxlskaard",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "rouxlskaard",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Chaos King",
     "youtubeId": "tPwzoZ-e664",
     "motifRefs": [
@@ -5133,6 +5634,58 @@
       }
     ],
     "id": "chaosking",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Darkness Falls",
+    "youtubeId": "i6ZCzBhIRzo",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Darkness Falls",
+          "image": null,
+          "color": "#ffffff",
+          "color2": "#ffffff33",
+          "id": "darknessfalls",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 22.325581395348838
+      }
+    ],
+    "loopPoint": 69.06976744186046,
+    "mainMotifs": [
+      {
+        "name": "Darkness Falls",
+        "image": null,
+        "color": "#ffffff",
+        "color2": "#ffffff33",
+        "id": "darknessfalls",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "darknessfalls",
     "stopsAfterLoop": false
   },
   {
@@ -5390,8 +5943,8 @@
     "stopsAfterLoop": false
   },
   {
-    "name": "A Town Called Hometown",
-    "youtubeId": "2_1JGqBPziI",
+    "name": "Friendship",
+    "youtubeId": "xrpCUeynpu0",
     "motifRefs": [
       {
         "motif": {
@@ -5407,11 +5960,298 @@
           "aliases": []
         },
         "isVariation": false,
-        "startTime": 6.642857142857142,
-        "endTime": 20.357142857142858
+        "startTime": 0,
+        "endTime": 24
       }
     ],
-    "loopPoint": 41.14285714285714,
+    "loopPoint": 74.25,
+    "mainMotifs": [
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "friendship",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "THE HOLY",
+    "youtubeId": "OfUhi8_a4Zg",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 27.428571428571427
+      }
+    ],
+    "loopPoint": 84.85714285714285,
+    "mainMotifs": [
+      {
+        "name": "THE HOLY",
+        "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+        "color": "#5496cd",
+        "color2": "#00000033",
+        "id": "theholy",
+        "letter": "A",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      },
+      {
+        "name": "THE HOLY",
+        "image": null,
+        "color": "#5496cd",
+        "color2": "#00000033",
+        "id": "theholy",
+        "letter": "B",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "theholy",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Your Power",
+    "youtubeId": "sb71Mz8Cbtw",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 32.54237288135593
+      }
+    ],
+    "loopPoint": 100.6779661016949,
+    "mainMotifs": [
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "yourpower",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "A Town Called Hometown",
+    "youtubeId": "2_1JGqBPziI",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 20.57142857142857,
+        "endTime": 41.14285714285714
+      },
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 41.14285714285714,
+        "endTime": 61.71428571428571
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 61.285714285714285,
+        "endTime": 64.71428571428571
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 66.42857142857143,
+        "endTime": 69.85714285714285
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 71.14285714285714,
+        "endTime": 75
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 76.71428571428571,
+        "endTime": 80.57142857142857
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 80.57142857142857,
+        "endTime": 83.14285714285714
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": null,
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 87.85714285714285,
+        "endTime": 102.42857142857142
+      }
+    ],
+    "loopPoint": 113.14285714285714,
     "mainMotifs": [
       {
         "name": "Hometown",
@@ -5705,6 +6545,58 @@
     "stopsAfterLoop": false
   },
   {
+    "name": "Don't Forget",
+    "youtubeId": "bBHNnzPJLZA",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 0,
+        "endTime": 24.615384615384617
+      }
+    ],
+    "loopPoint": 76.15384615384616,
+    "mainMotifs": [
+      {
+        "name": "Don't Forget",
+        "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+        "color": "#4dcc8e",
+        "color2": "#f60e9733",
+        "id": "dontforget",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "Karma",
+        "image": "http://127.0.0.1:5500/img/contributors/karma.jpg",
+        "credit": "Made and contributed to motif guides for many songs.",
+        "showSongs": true,
+        "youtube": "https://www.youtube.com/@thatkarmaguy5356",
+        "github": "https://github.com/KarmFF",
+        "discord": "https://discord.com/users/315969740419891200"
+      }
+    ],
+    "id": "dontforget",
+    "stopsAfterLoop": false
+  },
+  {
     "name": "Before the Story",
     "youtubeId": "r9shwL1h-qA",
     "motifRefs": [
@@ -5766,7 +6658,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -5783,7 +6675,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -5800,7 +6692,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -5817,7 +6709,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -5851,7 +6743,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -5868,7 +6760,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -5885,7 +6777,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -15451,6 +16343,57 @@
     "motifRefs": [
       {
         "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 7.857142857142857,
+        "endTime": 22.857142857142854
+      },
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 23.095238095238095,
+        "endTime": 38.095238095238095
+      },
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.095238095238095,
+        "endTime": 41.904761904761905
+      },
+      {
+        "motif": {
           "name": "Don't Forget",
           "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
           "color": "#4dcc8e",
@@ -15463,11 +16406,232 @@
           "aliases": []
         },
         "isVariation": false,
-        "startTime": 7.3809523809523805,
-        "endTime": 22.619047619047617
+        "startTime": 41.42857142857142,
+        "endTime": 44.285714285714285
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 45.238095238095234,
+        "endTime": 48.095238095238095
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 49.52380952380952,
+        "endTime": 52.14285714285714
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 52.14285714285714,
+        "endTime": 54.047619047619044
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 54.047619047619044,
+        "endTime": 55.71428571428571
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 56.666666666666664,
+        "endTime": 59.52380952380952
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 60.476190476190474,
+        "endTime": 63.33333333333333
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 64.76190476190476,
+        "endTime": 67.38095238095238
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 67.38095238095238,
+        "endTime": 69.28571428571428
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 69.28571428571428,
+        "endTime": 70.95238095238095
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": null,
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 72.61904761904762,
+        "endTime": 82.85714285714285
+      },
+      {
+        "motif": {
+          "name": "Snowdin",
+          "image": null,
+          "color": "#70d0f5",
+          "color2": "#233832",
+          "id": "snowdin",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 87.85714285714285,
+        "endTime": 98.09523809523809
+      },
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 103.09523809523809,
+        "endTime": 118.09523809523809
+      },
+      {
+        "motif": {
+          "name": "Hometown",
+          "image": "http://127.0.0.1:5500/img/motifs/hometown.png",
+          "color": "#ffb100",
+          "color2": "#766a3a",
+          "id": "hometown",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 118.09523809523809,
+        "endTime": 121.42857142857142
       }
     ],
-    "loopPoint": 45.71428571428571,
+    "loopPoint": 139.04761904761904,
     "mainMotifs": [
       {
         "name": "Don't Forget",
@@ -18516,7 +19680,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -18533,7 +19697,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -18550,7 +19714,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -18567,7 +19731,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -18584,7 +19748,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -18601,7 +19765,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -18618,7 +19782,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,
@@ -18635,7 +19799,7 @@
           "color": "#5496cd",
           "color2": "#00000033",
           "id": "theholy",
-          "letter": "",
+          "letter": "A",
           "mainDiv": null,
           "letterDiv": null,
           "variationDiv": null,

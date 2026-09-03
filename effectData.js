@@ -269,6 +269,22 @@ Effects.BATTLE = new SongEffect(
     }
 );
 
+Effects.DEPTHS = new SongEffect(
+    () =>
+    {
+        const depths = document.createElement("div");
+        depths.id = "depths";
+        document.body.appendChild(depths);
+
+            const depthsImg = document.createElement("img");
+            depthsImg.style.backgroundImage = `url("${IMGLINK + "depths.gif"}")`;
+            depths.appendChild(depthsImg);
+    },
+    () =>
+    {
+    }
+);
+
 export class EffectRef
 {
     // fun stuff
