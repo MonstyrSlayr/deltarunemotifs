@@ -304,6 +304,38 @@ currentAlbum = undertaleAlbum;
 
 //#region UNDERTALE
 
+const onceUponATimeBPM = 131;
+const onceUponATime = new Song("Once Upon a Time",
+    [Motifs.ONCEUPONATIMEA, Motifs.ONCEUPONATIMEB],
+    "3BR7-AzE2dQ",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(onceUponATimeBPM, 30)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(onceUponATimeBPM, 32), quickSec(onceUponATimeBPM, 62)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(onceUponATimeBPM, 64), quickSec(onceUponATimeBPM, 96)),
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(onceUponATimeBPM, 96), quickSec(onceUponATimeBPM, 128)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 128), quickSec(onceUponATimeBPM, 144)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 144), quickSec(onceUponATimeBPM, 160)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 160), quickSec(onceUponATimeBPM, 176)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(onceUponATimeBPM, 176), quickSec(onceUponATimeBPM, 192)),
+    ],
+    "", quickSec(onceUponATimeBPM, 193),
+    undefined, [Contributors.TERVIA], true
+);
+
+const startMenuBPM = 90;
+const startMenu = new Song("Start Menu",
+    [Motifs.ONCEUPONATIMEA],
+    "BGBWNOMmSm0",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(startMenuBPM, 15)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(startMenuBPM, 16), quickSec(startMenuBPM, 31)),
+    ],
+    "", quickSec(onceUponATimeBPM, 48),
+    undefined, [Contributors.TERVIA], true
+);
+
 const yourBestFriendBPM = 124;
 const yourBestFriend = new Song("Your Best Friend",
     [Motifs.FLOWEY],
@@ -589,6 +621,119 @@ const finale = new Song("Finale",
         new EffectRef(Effects.FLASH, quickSec(finaleBPM, 192), quickSec(finaleBPM, 196)),
     ],
     [Contributors.KARMA]
+);
+
+const hopesAndDreamsOSTBPM = 170.667
+const hopesAndDreams = new Song("Hopes and Dreams",
+    [Motifs.ONCEUPONATIMEA, Motifs.FLOWEY],
+    "HA3Ks8NLS-Y",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(hopesAndDreamsOSTBPM, 32)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(hopesAndDreamsOSTBPM, 32), quickSec(hopesAndDreamsOSTBPM, 60)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(hopesAndDreamsOSTBPM, 64), quickSec(hopesAndDreamsOSTBPM, 96)),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(hopesAndDreamsOSTBPM, 96), quickSec(hopesAndDreamsOSTBPM, 128)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 128), quickSec(hopesAndDreamsOSTBPM, 144)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 144), quickSec(hopesAndDreamsOSTBPM, 160)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 160), quickSec(hopesAndDreamsOSTBPM, 176)),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 176), quickSec(hopesAndDreamsOSTBPM, 192)),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 192), quickSec(hopesAndDreamsOSTBPM, 208), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 208), quickSec(hopesAndDreamsOSTBPM, 224), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 224), quickSec(hopesAndDreamsOSTBPM, 240), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 224), quickSec(hopesAndDreamsOSTBPM, 240), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 240), quickSec(hopesAndDreamsOSTBPM, 256), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 240), quickSec(hopesAndDreamsOSTBPM, 256), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 256), quickSec(hopesAndDreamsOSTBPM, 272)),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 272), quickSec(hopesAndDreamsOSTBPM, 288), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 288), quickSec(hopesAndDreamsOSTBPM, 304)),
+        new MotifReference(Motifs.FLOWEY, quickSec(hopesAndDreamsOSTBPM, 304), quickSec(hopesAndDreamsOSTBPM, 320), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 320), quickSec(hopesAndDreamsOSTBPM, 336), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 336), quickSec(hopesAndDreamsOSTBPM, 352), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 352), quickSec(hopesAndDreamsOSTBPM, 368), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(hopesAndDreamsOSTBPM, 368), quickSec(hopesAndDreamsOSTBPM, 384), true),
+
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 384), quickSec(hopesAndDreamsOSTBPM, 416)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 416), quickSec(hopesAndDreamsOSTBPM, 448)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 448), quickSec(hopesAndDreamsOSTBPM, 480)),
+        new MotifReference(Motifs.SNOWDINB, quickSec(hopesAndDreamsOSTBPM, 480), quickSec(hopesAndDreamsOSTBPM, 492), true)
+    ],
+    "", quickSec(hopesAndDreamsOSTBPM, 512),
+    [],
+    [Contributors.TERVIA]
+);
+
+const saveTheWorldBPM = 180
+const saveTheWorld = new Song("SAVE the World",
+    [Motifs.ONCEUPONATIMEA, Motifs.FLOWEY],
+    "LAn-JYzKm5M",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, 0, quickSec(saveTheWorldBPM, 16), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 16), quickSec(saveTheWorldBPM, 32), true),
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(saveTheWorldBPM, 32), quickSec(saveTheWorldBPM, 48), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 48), quickSec(saveTheWorldBPM, 64), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 72), quickSec(saveTheWorldBPM, 80), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 80), quickSec(saveTheWorldBPM, 96), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 104), quickSec(saveTheWorldBPM, 112), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 112), quickSec(saveTheWorldBPM, 128), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 128), quickSec(saveTheWorldBPM, 144), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 144), quickSec(saveTheWorldBPM, 160), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 160), quickSec(saveTheWorldBPM, 176), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 176), quickSec(saveTheWorldBPM, 192), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 192), quickSec(saveTheWorldBPM, 208), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 208), quickSec(saveTheWorldBPM, 224), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 224), quickSec(saveTheWorldBPM, 240), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 240), quickSec(saveTheWorldBPM, 256), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 256), quickSec(saveTheWorldBPM, 272), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 272), quickSec(saveTheWorldBPM, 288), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 288), quickSec(saveTheWorldBPM, 304), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 288), quickSec(saveTheWorldBPM, 304), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(saveTheWorldBPM, 304), quickSec(saveTheWorldBPM, 320), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(saveTheWorldBPM, 304), quickSec(saveTheWorldBPM, 320), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(saveTheWorldBPM, 320), quickSec(saveTheWorldBPM, 332), true),
+    ],
+    "", quickSec(saveTheWorldBPM, 340),
+    [],
+    [Contributors.TERVIA]
+);
+
+const lastGoodbyeBPM = 180
+const lastGoodbyePianoBPM = 164
+// TSP - Tempo Switch Point
+const lastGoodbyeTSP1 = quickSec(lastGoodbyeBPM, 136)
+const lastGoodbyeTSP2 = lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 63)
+const lastGoodbyeTSP3 = lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 137)
+const lastGoodbye = new Song("Last Goodbye",
+    [Motifs.ONCEUPONATIMEA, Motifs.FLOWEY],
+    "oiaO05_ImsA",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(lastGoodbyeBPM, 8), quickSec(lastGoodbyeBPM, 40)),
+        new MotifReference(Motifs.ONCEUPONATIMEB, quickSec(lastGoodbyeBPM, 40), quickSec(lastGoodbyeBPM, 72), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(lastGoodbyeBPM, 72), quickSec(lastGoodbyeBPM, 88), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(lastGoodbyeBPM, 88), quickSec(lastGoodbyeBPM, 104), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, quickSec(lastGoodbyeBPM, 112), quickSec(lastGoodbyeBPM, 120), true),
+        new MotifReference(Motifs.FLOWEY, quickSec(lastGoodbyeBPM, 120), quickSec(lastGoodbyeBPM, 136), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEB, lastGoodbyeTSP1, lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 32), true),
+        new MotifReference(Motifs.ONCEUPONATIMEB, lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 32), lastGoodbyeTSP1 + quickSec(lastGoodbyePianoBPM, 64), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 16), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 16), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 32), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 32), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 48), true),
+        new MotifReference(Motifs.ONCEUPONATIMEC, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 48), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 64), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 96), lastGoodbyeTSP2 + quickSec(lastGoodbyeBPM, 112), true),
+
+        new MotifReference(Motifs.ONCEUPONATIMEA, lastGoodbyeTSP3, lastGoodbyeTSP3 + quickSec(lastGoodbyePianoBPM, 25))
+    ],
+    "", 135.67,
+    [],
+    [Contributors.TERVIA]
 );
 
 const madMewMewBPM = 120;
@@ -3585,6 +3730,18 @@ const lovingSteps = new Song("Loving Steps",
         new MotifReference(Motifs.SIXFLOWERS, quickSec(lovingStepsBPM, 36), quickSec(lovingStepsBPM, 36 + 48)),
     ],
     "", quickSec(lovingStepsBPM, 36 + 96 + 24 - 3)
+);
+
+const onsenBPM = 140;
+const onsen = new Song("Onsen",
+    [Motifs.ONCEUPONATIMEA],
+    "o681RqsnRM0",
+    [
+        new MotifReference(Motifs.ONCEUPONATIMEA, quickSec(onsenBPM, 70), quickSec(onsenBPM, 128)),
+    ],
+    "", quickSec(onsenBPM, 240),
+    [],
+    [Contributors.TERVIA]
 );
 
 const beautifulBathtimeBPM = 150;
