@@ -12,7 +12,7 @@
 
 body
 {
-    font-family: "UndertaleFont";
+    font-family: "UndertaleFont", "Helvetica", sans-serif, monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -409,11 +409,34 @@ input[type="checkbox"]
 {
     width: 100%;
     border-bottom: solid white 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.albumTitleDiv:hover
+{
+    cursor: pointer;
 }
 
 .albumTitleDiv > h2
 {
     text-align: left;
+}
+
+.albumTitleDiv > span
+{
+    text-align: right;
+    color: white;
+    font-size: 64px;
+    translate: -50% -25%;
+    transition: 0s;
+}
+
+.albumTitleDiv.collapsed > span
+{
+    translate: -40% 0%;
+    rotate: 180deg;
 }
 
 .songDiv

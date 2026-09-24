@@ -4,19 +4,76 @@ const allSongsDiv = document.getElementById("songList");
 const sortInput = document.getElementById("sortInput");
 const sortDesc = document.getElementById("isDescending");
 
+function getSiblingsAfter(element)
+{
+    const siblingsAfter = [];
+    let current = element.nextElementSibling;
+    
+    while (current)
+    {
+        siblingsAfter.push(current);
+        current = current.nextElementSibling;
+    }
+    
+    return siblingsAfter;
+}
+
+function createAlbumTitleDiv(albumTitle)
+{
+    const albumTitleDiv = document.createElement("div");
+    albumTitleDiv.classList.add("albumTitleDiv");
+    allSongsDiv.appendChild(albumTitleDiv);
+
+        const albumTitleHeading = document.createElement("h2");
+        albumTitleHeading.textContent = albumTitle;
+        albumTitleDiv.appendChild(albumTitleHeading);
+
+        const albumTitleArrow = document.createElement("span");
+        albumTitleArrow.textContent = "⌄";
+        albumTitleDiv.appendChild(albumTitleArrow);
+    
+    albumTitleDiv.addEventListener("click", () =>
+    {
+        let daAfterSib = albumTitleDiv.nextElementSibling;
+        if (daAfterSib == null) return;
+
+        const goneMode = !daAfterSib.classList.contains("gone");
+
+        if (goneMode)
+        {
+            albumTitleDiv.classList.add("collapsed");
+        }
+        else
+        {
+            albumTitleDiv.classList.remove("collapsed");
+        }
+
+        while (daAfterSib != null && !daAfterSib.classList.contains("albumTitleDiv"))
+        {
+            if (goneMode)
+            {
+                daAfterSib.classList.add("gone");
+            }
+            else
+            {
+                daAfterSib.classList.remove("gone");
+            }
+
+            daAfterSib = daAfterSib.nextElementSibling;
+        }
+    })
+    
+    return albumTitleDiv;
+}
+
 function sortBySoundtrack(desc = false)
 {
     const daAlbums = desc ? [...allAlbums].reverse() : allAlbums;
 
     daAlbums.forEach(album =>
     {
-        const albumTitleDiv = document.createElement("div");
-        albumTitleDiv.classList.add("albumTitleDiv");
+        const albumTitleDiv = createAlbumTitleDiv(album.name);
         allSongsDiv.appendChild(albumTitleDiv);
-
-            const albumTitle = document.createElement("h2");
-            albumTitle.textContent = album.name;
-            albumTitleDiv.appendChild(albumTitle);
 
         const daArr = desc ? [...album.songs].reverse() : album.songs;
 
@@ -72,13 +129,8 @@ function sortMotifCount(desc = false)
         {
             currentCount = daMotifs.size;
 
-            const albumTitleDiv = document.createElement("div");
-            albumTitleDiv.classList.add("albumTitleDiv");
+            const albumTitleDiv = createAlbumTitleDiv("Individual Motif Count: " + currentCount);
             allSongsDiv.appendChild(albumTitleDiv);
-
-                const albumTitle = document.createElement("h2");
-                albumTitle.textContent = "Individual Motif Count: " + currentCount;
-                albumTitleDiv.appendChild(albumTitle);
         }
 
         const songDiv = createSongDiv(song, true);
@@ -116,13 +168,8 @@ function sortMotifIdCount(desc = false)
         {
             currentCount = daMotifs.size;
 
-            const albumTitleDiv = document.createElement("div");
-            albumTitleDiv.classList.add("albumTitleDiv");
+            const albumTitleDiv = createAlbumTitleDiv("Encompassing Motif Count: " + currentCount);
             allSongsDiv.appendChild(albumTitleDiv);
-
-                const albumTitle = document.createElement("h2");
-                albumTitle.textContent = "Encompassing Motif Count: " + currentCount;
-                albumTitleDiv.appendChild(albumTitle);
         }
 
         const songDiv = createSongDiv(song, true);
