@@ -2590,12 +2590,131 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
+        "isVariation": true,
         "startTime": 9.272727272727272,
-        "endTime": 17.454545454545453
+        "endTime": 12.545454545454545
+      },
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 13.636363636363635,
+        "endTime": 16.909090909090907
+      },
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 18,
+        "endTime": 21.27272727272727
+      },
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 22.363636363636363,
+        "endTime": 25.636363636363633
+      },
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 26.727272727272727,
+        "endTime": 29.999999999999996
+      },
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 31.09090909090909,
+        "endTime": 34.36363636363636
+      },
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 35.45454545454545,
+        "endTime": 38.72727272727273
+      },
+      {
+        "motif": {
+          "name": "Gaster",
+          "image": "http://127.0.0.1:5500/img/motifs/mysteryman.png",
+          "color": "#ffffff",
+          "color2": "#00000033",
+          "id": "gaster",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 39.81818181818181,
+        "endTime": 43.090909090909086
       }
     ],
-    "loopPoint": 52.36363636363636,
+    "loopPoint": 48,
     "mainMotifs": [
       {
         "name": "Gaster",
@@ -4079,11 +4198,11 @@
           "aliases": []
         },
         "isVariation": false,
-        "startTime": 0,
-        "endTime": 27.428571428571427
+        "startTime": 0.42857142857142855,
+        "endTime": 12.857142857142856
       }
     ],
-    "loopPoint": 84.85714285714285,
+    "loopPoint": 13.714285714285714,
     "mainMotifs": [
       {
         "name": "Lancer",
@@ -4753,9 +4872,9 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
-        "startTime": 0,
-        "endTime": 10.568571428571428
+        "isVariation": true,
+        "startTime": 1.0714285714285714,
+        "endTime": 7.285714285714286
       },
       {
         "motif": {
@@ -4770,9 +4889,9 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
-        "startTime": 10.568571428571428,
-        "endTime": 20.854285714285712
+        "isVariation": true,
+        "startTime": 14.785714285714285,
+        "endTime": 21
       },
       {
         "motif": {
@@ -4787,9 +4906,9 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
-        "startTime": 21,
-        "endTime": 31.427142857142854
+        "isVariation": true,
+        "startTime": 27.857142857142854,
+        "endTime": 42.214285714285715
       },
       {
         "motif": {
@@ -4804,12 +4923,12 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
-        "startTime": 31.427142857142854,
-        "endTime": 40.714285714285715
+        "isVariation": true,
+        "startTime": 42.214285714285715,
+        "endTime": 49.71428571428571
       }
     ],
-    "loopPoint": 42.42857142857142,
+    "loopPoint": 54.857142857142854,
     "mainMotifs": [
       {
         "name": "Lancer",
@@ -5420,10 +5539,27 @@
         },
         "isVariation": false,
         "startTime": 0,
-        "endTime": 10.568571428571428
+        "endTime": 9.504950495049505
+      },
+      {
+        "motif": {
+          "name": "Rouxls Kaard",
+          "image": "http://127.0.0.1:5500/img/motifs/rouxls.webp",
+          "color": "#1a237e",
+          "color2": "#32323233",
+          "id": "rouxlskaard",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 9.504950495049505,
+        "endTime": 19.00990099009901
       }
     ],
-    "loopPoint": 42.42857142857142,
+    "loopPoint": 19.00990099009901,
     "mainMotifs": [
       {
         "name": "Rouxls Kaard",
@@ -5644,8 +5780,8 @@
         "motif": {
           "name": "Darkness Falls",
           "image": null,
-          "color": "#ffffff",
-          "color2": "#ffffff33",
+          "color": "#322e4f",
+          "color2": "#00000033",
           "id": "darknessfalls",
           "letter": "",
           "mainDiv": null,
@@ -5654,17 +5790,34 @@
           "aliases": []
         },
         "isVariation": false,
-        "startTime": 0,
-        "endTime": 22.325581395348838
+        "startTime": 33.48837209302326,
+        "endTime": 50.23255813953489
+      },
+      {
+        "motif": {
+          "name": "Darkness Falls",
+          "image": null,
+          "color": "#322e4f",
+          "color2": "#00000033",
+          "id": "darknessfalls",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 50.23255813953489,
+        "endTime": 66.97674418604652
       }
     ],
-    "loopPoint": 69.06976744186046,
+    "loopPoint": 66.97674418604652,
     "mainMotifs": [
       {
         "name": "Darkness Falls",
         "image": null,
-        "color": "#ffffff",
-        "color2": "#ffffff33",
+        "color": "#322e4f",
+        "color2": "#00000033",
         "id": "darknessfalls",
         "letter": "",
         "mainDiv": null,
@@ -5673,7 +5826,20 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "type": {
+          "deactivateOnPause": true,
+          "onIntermediate": null,
+          "isOneshot": false,
+          "interval": null
+        },
+        "startTime": 0,
+        "endTime": 0,
+        "t": 0,
+        "form": "normal"
+      }
+    ],
     "contributors": [
       {
         "name": "Karma",
@@ -5959,12 +6125,97 @@
           "variationDiv": null,
           "aliases": []
         },
-        "isVariation": false,
-        "startTime": 0,
-        "endTime": 24
+        "isVariation": true,
+        "startTime": 1.125,
+        "endTime": 30
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 31.125,
+        "endTime": 55.5
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 64.125,
+        "endTime": 94.5
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 104.25,
+        "endTime": 109.5
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 116.25,
+        "endTime": 121.5
+      },
+      {
+        "motif": {
+          "name": "Don't Forget",
+          "image": "http://127.0.0.1:5500/img/motifs/ralsei.png",
+          "color": "#4dcc8e",
+          "color2": "#f60e9733",
+          "id": "dontforget",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 139.125,
+        "endTime": 151.5
       }
     ],
-    "loopPoint": 74.25,
+    "loopPoint": 160.5,
     "mainMotifs": [
       {
         "name": "Don't Forget",
@@ -6013,10 +6264,299 @@
         },
         "isVariation": false,
         "startTime": 0,
+        "endTime": 3.4285714285714284
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 3.4285714285714284,
+        "endTime": 6.857142857142857
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.857142857142857,
+        "endTime": 10.285714285714285
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 6.857142857142857,
+        "endTime": 20.57142857142857
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 10.285714285714285,
+        "endTime": 13.714285714285714
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 13.714285714285714,
+        "endTime": 17.142857142857142
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 17.142857142857142,
+        "endTime": 20.57142857142857
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 20.57142857142857,
+        "endTime": 24
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 21,
         "endTime": 27.428571428571427
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 24,
+        "endTime": 27.428571428571427
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 27.428571428571427,
+        "endTime": 30.857142857142854
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "C",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 27.857142857142854,
+        "endTime": 34.285714285714285
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 30.857142857142854,
+        "endTime": 34.285714285714285
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 34.285714285714285,
+        "endTime": 37.714285714285715
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": null,
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "B",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 34.285714285714285,
+        "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 37.714285714285715,
+        "endTime": 41.14285714285714
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 41.14285714285714,
+        "endTime": 44.57142857142857
+      },
+      {
+        "motif": {
+          "name": "THE HOLY",
+          "image": "http://127.0.0.1:5500/img/motifs/theholy.webp",
+          "color": "#5496cd",
+          "color2": "#00000033",
+          "id": "theholy",
+          "letter": "A",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 44.57142857142857,
+        "endTime": 48
       }
     ],
-    "loopPoint": 84.85714285714285,
+    "loopPoint": 48,
     "mainMotifs": [
       {
         "name": "THE HOLY",
@@ -6076,11 +6616,11 @@
           "aliases": []
         },
         "isVariation": false,
-        "startTime": 0,
-        "endTime": 32.54237288135593
+        "startTime": 1.5254237288135593,
+        "endTime": 12.203389830508474
       }
     ],
-    "loopPoint": 100.6779661016949,
+    "loopPoint": 12.203389830508474,
     "mainMotifs": [
       {
         "name": "Don't Forget",
@@ -6562,11 +7102,11 @@
           "aliases": []
         },
         "isVariation": false,
-        "startTime": 0,
-        "endTime": 24.615384615384617
+        "startTime": 1.9230769230769231,
+        "endTime": 43.46153846153847
       }
     ],
-    "loopPoint": 76.15384615384616,
+    "loopPoint": 52.307692307692314,
     "mainMotifs": [
       {
         "name": "Don't Forget",
@@ -6581,7 +7121,467 @@
         "aliases": []
       }
     ],
-    "effectRefs": [],
+    "effectRefs": [
+      {
+        "startTime": 0,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      },
+      {
+        "startTime": 1.9230769230769231,
+        "form": "lyrics",
+        "lyricsArray": [
+          "When",
+          "the"
+        ],
+        "karaokeArray": [
+          "When",
+          "the"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 1.9230769230769231,
+        "duration": 0.7692307692307693
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 2.6923076923076925,
+        "duration": 0.38461538461538464
+      },
+      {
+        "startTime": 3.4615384615384617,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Light",
+          "is",
+          "running",
+          "low"
+        ],
+        "karaokeArray": [
+          "Light",
+          "is",
+          "running",
+          "low"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 3.4615384615384617,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 3.8461538461538463,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 4.230769230769231,
+        "duration": 0.576923076923077
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 4.807692307692308,
+        "duration": 0.38461538461538464
+      },
+      {
+        "startTime": 5.769230769230769,
+        "form": "lyrics",
+        "lyricsArray": [
+          "And",
+          "the",
+          "shadows",
+          "start",
+          "to",
+          "grow"
+        ],
+        "karaokeArray": [
+          "And",
+          "the",
+          "shadows",
+          "start",
+          "to",
+          "grow"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 5.769230769230769,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 6.153846153846154,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 6.538461538461539,
+        "duration": 0.7692307692307693
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 7.307692307692308,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 7.6923076923076925,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 8.076923076923077,
+        "duration": 0.38461538461538464
+      },
+      {
+        "startTime": 8.846153846153847,
+        "form": "lyrics",
+        "lyricsArray": [
+          "And",
+          "the",
+          "places",
+          "that",
+          "you",
+          "know"
+        ],
+        "karaokeArray": [
+          "And",
+          "the",
+          "places",
+          "that",
+          "you",
+          "know"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 8.846153846153847,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 9.230769230769232,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 9.615384615384617,
+        "duration": 0.7692307692307693
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 10.384615384615385,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 10.76923076923077,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 11.153846153846155,
+        "duration": 0.38461538461538464
+      },
+      {
+        "startTime": 11.923076923076923,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Seem",
+          "like",
+          "fantasy"
+        ],
+        "karaokeArray": [
+          "Seem",
+          "like",
+          "fantasy"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 11.923076923076923,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 12.307692307692308,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 12.692307692307693,
+        "duration": 1.7307692307692308
+      },
+      {
+        "startTime": 15.384615384615385,
+        "form": "lyrics",
+        "lyricsArray": [
+          ""
+        ],
+        "karaokeArray": [
+          ""
+        ]
+      },
+      {
+        "startTime": 17.30769230769231,
+        "form": "lyrics",
+        "lyricsArray": [
+          "There's",
+          "a"
+        ],
+        "karaokeArray": [
+          "There's",
+          "a"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 17.30769230769231,
+        "duration": 0.7692307692307693
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 18.076923076923077,
+        "duration": 0.576923076923077
+      },
+      {
+        "startTime": 19.03846153846154,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Light",
+          "inside",
+          "your",
+          "soul"
+        ],
+        "karaokeArray": [
+          "Light",
+          "inside",
+          "your",
+          "soul"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 19.03846153846154,
+        "duration": 0.3076923076923077
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 19.346153846153847,
+        "duration": 0.6538461538461539
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 20,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 20.384615384615387,
+        "duration": 0.38461538461538464
+      },
+      {
+        "startTime": 21.153846153846153,
+        "form": "lyrics",
+        "lyricsArray": [
+          "That's",
+          "still",
+          "shining",
+          "in",
+          "the",
+          "cold"
+        ],
+        "karaokeArray": [
+          "That's",
+          "still",
+          "shining",
+          "in",
+          "the",
+          "cold"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 21.153846153846153,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 21.53846153846154,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 21.923076923076923,
+        "duration": 0.7692307692307693
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 22.692307692307693,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 23.076923076923077,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 23.461538461538463,
+        "duration": 0.38461538461538464
+      },
+      {
+        "startTime": 24.230769230769234,
+        "form": "lyrics",
+        "lyricsArray": [
+          "With",
+          "the",
+          "truth"
+        ],
+        "karaokeArray": [
+          "With",
+          "the",
+          "truth"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.230769230769234,
+        "duration": 0.5384615384615384
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.769230769230774,
+        "duration": 0.19230769230769232
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 24.961538461538463,
+        "duration": 0.38461538461538464
+      },
+      {
+        "startTime": 26.53846153846154,
+        "form": "lyrics",
+        "lyricsArray": [
+          "The",
+          "promise",
+          "in",
+          "our",
+          "hearts"
+        ],
+        "karaokeArray": [
+          "The",
+          "promise",
+          "in",
+          "our",
+          "hearts"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 26.53846153846154,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 26.923076923076923,
+        "duration": 0.7692307692307693
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 27.692307692307693,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 28.07692307692308,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 29.230769230769234,
+        "duration": 3.4615384615384617
+      },
+      {
+        "startTime": 34.307692307692314,
+        "form": "lyrics",
+        "lyricsArray": [
+          "Don't",
+          "forget"
+        ],
+        "karaokeArray": [
+          "Don't",
+          "forget"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 34.307692307692314,
+        "duration": 0.23076923076923078
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 34.53846153846154,
+        "duration": 0.5384615384615384
+      },
+      {
+        "startTime": 36.15384615384615,
+        "form": "lyrics",
+        "lyricsArray": [
+          "I'm",
+          "with",
+          "you",
+          "in",
+          "the",
+          "dark"
+        ],
+        "karaokeArray": [
+          "I'm",
+          "with",
+          "you",
+          "in",
+          "the",
+          "dark"
+        ]
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 36.15384615384615,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 36.53846153846154,
+        "duration": 0.3076923076923077
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 36.84615384615385,
+        "duration": 0.19230769230769232
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 37.11538461538462,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 37.69230769230769,
+        "duration": 0.38461538461538464
+      },
+      {
+        "form": "advanceLyrics",
+        "startTime": 38.07692307692308,
+        "duration": 5.384615384615385
+      }
+    ],
     "contributors": [
       {
         "name": "Karma",
@@ -27117,7 +28117,7 @@
       },
       {
         "motif": {
-          "name": "Unknown Motif",
+          "name": "Unknown Motif?",
           "image": null,
           "color": "#ffffff",
           "color2": "#ffffff33",
@@ -27134,7 +28134,7 @@
       },
       {
         "motif": {
-          "name": "Unknown Motif",
+          "name": "Unknown Motif?",
           "image": null,
           "color": "#ffffff",
           "color2": "#ffffff33",
@@ -31669,6 +32669,40 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 18,
+        "endTime": 19
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 26,
+        "endTime": 27
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -31684,6 +32718,40 @@
         "isVariation": false,
         "startTime": 32,
         "endTime": 48
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 50,
+        "endTime": 51
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 58,
+        "endTime": 59
       }
     ],
     "loopPoint": 64,
@@ -31795,6 +32863,40 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 15.724137931034482,
+        "endTime": 16.551724137931036
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 19.03448275862069,
+        "endTime": 19.862068965517242
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -31809,6 +32911,40 @@
         },
         "isVariation": false,
         "startTime": 19.862068965517242,
+        "endTime": 26.482758620689655
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 22.344827586206897,
+        "endTime": 23.17241379310345
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 25.655172413793103,
         "endTime": 26.482758620689655
       },
       {
@@ -31849,6 +32985,40 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 28.96551724137931,
+        "endTime": 29.79310344827586
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 32.275862068965516,
+        "endTime": 33.10344827586207
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -31867,7 +33037,109 @@
       },
       {
         "motif": {
-          "name": "Unknown Motif",
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 35.58620689655172,
+        "endTime": 36.41379310344828
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 38.89655172413793,
+        "endTime": 39.724137931034484
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 45.51724137931034,
+        "endTime": 46.3448275862069
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 58.758620689655174,
+        "endTime": 59.58620689655172
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 62.06896551724138,
+        "endTime": 62.89655172413793
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": true,
+        "startTime": 65.37931034482759,
+        "endTime": 66.20689655172414
+      },
+      {
+        "motif": {
+          "name": "Unknown Motif?",
           "image": null,
           "color": "#ffffff",
           "color2": "#ffffff33",
@@ -31884,7 +33156,7 @@
       },
       {
         "motif": {
-          "name": "Unknown Motif",
+          "name": "Unknown Motif?",
           "image": null,
           "color": "#ffffff",
           "color2": "#ffffff33",
@@ -31981,6 +33253,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 1,
+        "endTime": 2
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -31999,6 +33288,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 3,
+        "endTime": 4
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -32013,6 +33319,23 @@
         },
         "isVariation": true,
         "startTime": 4,
+        "endTime": 6
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 5,
         "endTime": 6
       },
       {
@@ -32053,6 +33376,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 9,
+        "endTime": 10
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -32071,6 +33411,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 11,
+        "endTime": 12
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -32085,6 +33442,23 @@
         },
         "isVariation": true,
         "startTime": 12,
+        "endTime": 14
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 13,
         "endTime": 14
       },
       {
@@ -32125,6 +33499,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 49,
+        "endTime": 50
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -32143,6 +33534,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 51,
+        "endTime": 52
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -32157,6 +33565,23 @@
         },
         "isVariation": true,
         "startTime": 52,
+        "endTime": 54
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 53,
         "endTime": 54
       },
       {
@@ -32197,6 +33622,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 57,
+        "endTime": 58
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -32215,6 +33657,23 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 59,
+        "endTime": 60
+      },
+      {
+        "motif": {
           "name": "Six Flowers",
           "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
           "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
@@ -32229,6 +33688,23 @@
         },
         "isVariation": true,
         "startTime": 60,
+        "endTime": 62
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 61,
         "endTime": 62
       },
       {
@@ -32441,6 +33917,40 @@
       },
       {
         "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 22.736842105263158,
+        "endTime": 24
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 32.84210526315789,
+        "endTime": 34.10526315789473
+      },
+      {
+        "motif": {
           "name": "Pink",
           "image": "http://127.0.0.1:5500/img/motifs/pink.gif",
           "color": "#ff8a90",
@@ -32509,6 +34019,40 @@
         "isVariation": true,
         "startTime": 0,
         "endTime": 22.58823529411765
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 25.411764705882355,
+        "endTime": 26.823529411764707
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 36.70588235294118,
+        "endTime": 38.11764705882353
       }
     ],
     "loopPoint": 45.1764705882353,
@@ -32563,6 +34107,40 @@
         "isVariation": false,
         "startTime": 30.857142857142854,
         "endTime": 72
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 77.14285714285714,
+        "endTime": 79.71428571428571
+      },
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 97.71428571428571,
+        "endTime": 100.28571428571428
       }
     ],
     "loopPoint": 131.14285714285714,
@@ -33018,6 +34596,59 @@
       }
     ],
     "id": "cutiemewmewmagic",
+    "stopsAfterLoop": false
+  },
+  {
+    "name": "Running Sky",
+    "youtubeId": "1kGmc1BOyPY",
+    "motifRefs": [
+      {
+        "motif": {
+          "name": "Petal Feather",
+          "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+          "color": "#ffffff",
+          "color2": "#b0a3aa33",
+          "id": "petalfeather",
+          "letter": "",
+          "mainDiv": null,
+          "letterDiv": null,
+          "variationDiv": null,
+          "aliases": []
+        },
+        "isVariation": false,
+        "startTime": 1.1785714285714286,
+        "endTime": 2.571428571428571
+      }
+    ],
+    "loopPoint": null,
+    "mainMotifs": [
+      {
+        "name": "Six Flowers",
+        "image": "http://127.0.0.1:5500/img/motifs/aqua.png",
+        "imagePlaying": "http://127.0.0.1:5500/img/motifs/aquaBattle.gif",
+        "color": "#55ffff",
+        "color2": "#ed1c2433",
+        "id": "sixflowers",
+        "letter": "",
+        "mainDiv": null,
+        "letterDiv": null,
+        "variationDiv": null,
+        "aliases": []
+      }
+    ],
+    "effectRefs": [],
+    "contributors": [
+      {
+        "name": "MonstyrSlayr",
+        "image": "http://127.0.0.1:5500/img/contributors/monstyrslayr.jpg",
+        "credit": "Created the website and implemented most of the songs and motifs.",
+        "showSongs": false,
+        "youtube": "https://youtube.com/@MonstyrSlayr",
+        "github": "https://github.com/MonstyrSlayr",
+        "discord": "https://discord.com/users/434840883637125121"
+      }
+    ],
+    "id": "runningsky",
     "stopsAfterLoop": false
   },
   {

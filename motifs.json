@@ -572,8 +572,8 @@
   {
     "name": "Darkness Falls",
     "image": null,
-    "color": "#ffffff",
-    "color2": "#ffffff33",
+    "color": "#322e4f",
+    "color2": "#00000033",
     "id": "darknessfalls",
     "letter": "",
     "mainDiv": null,
@@ -1026,7 +1026,7 @@
     "aliases": []
   },
   {
-    "name": "Unknown Motif",
+    "name": "Unknown Motif?",
     "image": null,
     "color": "#ffffff",
     "color2": "#ffffff33",
@@ -1093,6 +1093,18 @@
     "color": "#55ffff",
     "color2": "#ed1c2433",
     "id": "sixflowers",
+    "letter": "",
+    "mainDiv": null,
+    "letterDiv": null,
+    "variationDiv": null,
+    "aliases": []
+  },
+  {
+    "name": "Petal Feather",
+    "image": "http://127.0.0.1:5500/img/motifs/petalFeather.png",
+    "color": "#ffffff",
+    "color2": "#b0a3aa33",
+    "id": "petalfeather",
     "letter": "",
     "mainDiv": null,
     "letterDiv": null,

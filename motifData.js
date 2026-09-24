@@ -166,7 +166,7 @@ Motifs.FROMNOWON.imagePlaying = MOTIFIMGLINK + "mizzleIdle.gif";
 Motifs.EVERHIGHER = new Motif("Ever Higher", "", "#ff3651", "#f8c85133", MOTIFIMGLINK + "cuptain.png");
 Motifs.EVERHIGHER.imagePlaying = MOTIFIMGLINK + "cuptain.gif";
 Motifs.SUBSANC = new Motif("Second Sanctuary", "", "#4f378f", "#2d193e33", MOTIFIMGLINK + "subsequentsanctuary.jpg");
-Motifs.SPAWN = new Motif("Unknown Motif", "", undefined, undefined, null);
+Motifs.SPAWN = new Motif("Unknown Motif?", "", undefined, undefined, null);
 
 Motifs.MIKE = new Motif("Mike", "", "#69be60", "#ff0e0033", MOTIFIMGLINK + "mike.png");
 Motifs.GERSON = new Motif("Gerson", "", "#64a926", "#fe73fe33", MOTIFIMGLINK + "gerson.png");
@@ -204,6 +204,8 @@ switch (flower)
         Motifs.SIXFLOWERS.imagePlaying = MOTIFIMGLINK + "orangeBattle.gif";
         break;
 }
+
+Motifs.PETALFEATHER = new Motif("Petal Feather", "", "#ffffff", "#b0a3aa33", MOTIFIMGLINK + "petalFeather.png");
 
 Motifs.PINKA = new Motif("Pink", "A", "#ff8a90", "#ffe84e33", MOTIFIMGLINK + "pink.gif");
 Motifs.PINKB = new Motif("Pink", "B", "#ff8a90", "#ffe84e33", MOTIFIMGLINK + "pink.gif");

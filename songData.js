@@ -3482,7 +3482,11 @@ const whoMightYouBe = new Song("Who might you be?",
     "RQsr0_RUMJU",
     [
         new MotifReference(Motifs.SIXFLOWERS, 0, quickSec(whoMightYouBeBPM, 32)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(whoMightYouBeBPM, 36), quickSec(whoMightYouBeBPM, 38)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(whoMightYouBeBPM, 36 + 16), quickSec(whoMightYouBeBPM, 38 + 16)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(whoMightYouBeBPM, 64), quickSec(whoMightYouBeBPM, 96)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(whoMightYouBeBPM, 36 + 64), quickSec(whoMightYouBeBPM, 38 + 64)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(whoMightYouBeBPM, 36 + 80), quickSec(whoMightYouBeBPM, 38 + 80)),
     ],
     "", quickSec(whoMightYouBeBPM, 128)
 );
@@ -3503,6 +3507,20 @@ const petalDance = new Song("Petal Dance",
         new MotifReference(Motifs.PETALDANCE, quickSec(petalDanceBPM, 32), quickSec(petalDanceBPM, 64)),
         new MotifReference(Motifs.PETALDANCE, quickSec(petalDanceBPM, 64), quickSec(petalDanceBPM, 96)),
 
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38), quickSec(petalDanceBPM, 40)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 8), quickSec(petalDanceBPM, 40 + 8)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 16), quickSec(petalDanceBPM, 40 + 16)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 24), quickSec(petalDanceBPM, 40 + 24)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 32), quickSec(petalDanceBPM, 40 + 32)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 40), quickSec(petalDanceBPM, 40 + 40)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 48), quickSec(petalDanceBPM, 40 + 48)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 56), quickSec(petalDanceBPM, 40 + 56)),
+
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 72), quickSec(petalDanceBPM, 40 + 72), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 72 + 32), quickSec(petalDanceBPM, 40 + 72 + 32), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 72 + 32 + 8), quickSec(petalDanceBPM, 40 + 72 + 32 + 8), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(petalDanceBPM, 38 + 72 + 32 + 16), quickSec(petalDanceBPM, 40 + 72 + 32 + 16), true),
+
         new MotifReference(Motifs.SPAWN, quickSec(petalDanceBPM, 128 + 32), quickSec(petalDanceBPM, 128 + 64)),
         new MotifReference(Motifs.SPAWN, quickSec(petalDanceBPM, 128 + 64), quickSec(petalDanceBPM, 128 + 96)),
     ],
@@ -3518,21 +3536,33 @@ const sunsetOfSevenSuns = new Song("Sunset of Seven Suns",
     "L4pNR0UJBnk",
     [
         new MotifReference(Motifs.SIXFLOWERS, 0, quickSec(sunsetOfSevenSunsBPM, 4), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 2), quickSec(sunsetOfSevenSunsBPM, 4)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 4), quickSec(sunsetOfSevenSunsBPM, 8), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 6), quickSec(sunsetOfSevenSunsBPM, 8)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 8), quickSec(sunsetOfSevenSunsBPM, 12), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 10), quickSec(sunsetOfSevenSunsBPM, 12)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 12), quickSec(sunsetOfSevenSunsBPM, 16)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 16), quickSec(sunsetOfSevenSunsBPM, 20), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 18), quickSec(sunsetOfSevenSunsBPM, 20)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 20), quickSec(sunsetOfSevenSunsBPM, 24), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 22), quickSec(sunsetOfSevenSunsBPM, 24)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 24), quickSec(sunsetOfSevenSunsBPM, 28), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 26), quickSec(sunsetOfSevenSunsBPM, 28)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 28), quickSec(sunsetOfSevenSunsBPM, 32)),
 
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 96), quickSec(sunsetOfSevenSunsBPM, 4 + 96), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 2 + 96), quickSec(sunsetOfSevenSunsBPM, 4 + 96)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 4 + 96), quickSec(sunsetOfSevenSunsBPM, 8 + 96), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 6 + 96), quickSec(sunsetOfSevenSunsBPM, 8 + 96)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 8 + 96), quickSec(sunsetOfSevenSunsBPM, 12 + 96), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 10 + 96), quickSec(sunsetOfSevenSunsBPM, 12 + 96)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 12 + 96), quickSec(sunsetOfSevenSunsBPM, 16 + 96)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 16 + 96), quickSec(sunsetOfSevenSunsBPM, 20 + 96), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 18 + 96), quickSec(sunsetOfSevenSunsBPM, 20 + 96)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 20 + 96), quickSec(sunsetOfSevenSunsBPM, 24 + 96), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 22 + 96), quickSec(sunsetOfSevenSunsBPM, 24 + 96)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 24 + 96), quickSec(sunsetOfSevenSunsBPM, 28 + 96), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(sunsetOfSevenSunsBPM, 26 + 96), quickSec(sunsetOfSevenSunsBPM, 28 + 96)),
         new MotifReference(Motifs.SIXFLOWERS, quickSec(sunsetOfSevenSunsBPM, 28 + 96), quickSec(sunsetOfSevenSunsBPM, 32 + 96)),
 
         new MotifReference(Motifs.FLOWERY, quickSec(sunsetOfSevenSunsBPM, 128), quickSec(sunsetOfSevenSunsBPM, 128 + 32)),
@@ -3562,6 +3592,8 @@ const imTelling = new Song("I'm Telling!",
     "yTildYnivTA",
     [
         new MotifReference(Motifs.SIXFLOWERS, 0, quickSec(imTellingBPM, 32)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(imTellingBPM, 36), quickSec(imTellingBPM, 38)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(imTellingBPM, 36 + 16), quickSec(imTellingBPM, 38 + 16)),
         new MotifReference(Motifs.PINKA, quickSec(imTellingBPM, 60.5), quickSec(imTellingBPM, 63)),
     ],
     "", quickSec(imTellingBPM, 64)
@@ -3573,6 +3605,8 @@ const stopCriminell = new Song("Stop, Criminell!",
     "e4JYklUQU3w",
     [
         new MotifReference(Motifs.SIXFLOWERS, 0, quickSec(stopCriminellBPM, 32), true),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(stopCriminellBPM, 36), quickSec(stopCriminellBPM, 38)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(stopCriminellBPM, 36 + 16), quickSec(stopCriminellBPM, 38 + 16)),
     ],
     "", quickSec(stopCriminellBPM, 64)
 );
@@ -3583,6 +3617,8 @@ const lovingSteps = new Song("Loving Steps",
     "tLAxahP5scs",
     [
         new MotifReference(Motifs.SIXFLOWERS, quickSec(lovingStepsBPM, 36), quickSec(lovingStepsBPM, 36 + 48)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(lovingStepsBPM, 36 + 48 + 6), quickSec(lovingStepsBPM, 36 + 48 + 9)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(lovingStepsBPM, 36 + 48 + 6 + 24), quickSec(lovingStepsBPM, 36 + 48 + 9 + 24)),
     ],
     "", quickSec(lovingStepsBPM, 36 + 96 + 24 - 3)
 );
@@ -3637,6 +3673,44 @@ const cutieMewMewMagic = new Song("Cutie Mew Mew Magic",
         new MotifReference(Motifs.PINKA, quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 122), quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 122 + 32)),
     ],
     "", quickSec(cutieMewMewMagicBPM, 128 + 128 + 128 + 122 + 32 + 16)
+);
+
+const runningSkyBPM = 140;
+const runningSky = new Song("Running Sky",
+    [Motifs.PETALFEATHER],
+    "1kGmc1BOyPY",
+    [
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75), quickSec(runningSkyBPM, 6)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 8), quickSec(runningSkyBPM, 4 + 8)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 16), quickSec(runningSkyBPM, 6 + 16)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 24), quickSec(runningSkyBPM, 4 + 24)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 32), quickSec(runningSkyBPM, 6 + 32)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 40), quickSec(runningSkyBPM, 4 + 40)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 48), quickSec(runningSkyBPM, 6 + 48)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 56), quickSec(runningSkyBPM, 4 + 56)),
+
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67), quickSec(runningSkyBPM, 67 + 16)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 16), quickSec(runningSkyBPM, 67 + 32), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 32), quickSec(runningSkyBPM, 67 + 48 - 4)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 48 - 4), quickSec(runningSkyBPM, 67 + 48 + 6), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 60), quickSec(runningSkyBPM, 67 + 60 + 13), true),
+
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 132), quickSec(runningSkyBPM, 6 + 132)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 8 + 132), quickSec(runningSkyBPM, 4 + 8 + 132)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 16 + 132), quickSec(runningSkyBPM, 6 + 16 + 132)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 24 + 132), quickSec(runningSkyBPM, 4 + 24 + 132)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 32 + 132), quickSec(runningSkyBPM, 6 + 32 + 132)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 40 + 132), quickSec(runningSkyBPM, 4 + 40 + 132)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 48 + 132), quickSec(runningSkyBPM, 6 + 48 + 132)),
+        new MotifReference(Motifs.PETALFEATHER, quickSec(runningSkyBPM, 1.75 + 56 + 132), quickSec(runningSkyBPM, 4 + 56 + 132)),
+
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 128 + 72), quickSec(runningSkyBPM, 67 + 16 + 128 + 72)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 16 + 128 + 72), quickSec(runningSkyBPM, 67 + 32 + 128 + 72), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 32 + 128 + 72), quickSec(runningSkyBPM, 67 + 48 - 4 + 128 + 72)),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 48 - 4 + 128 + 72), quickSec(runningSkyBPM, 67 + 48 + 4 + 128 + 72), true),
+        new MotifReference(Motifs.DONTFORGET, quickSec(runningSkyBPM, 67 + 48 + 4 + 128 + 72), quickSec(runningSkyBPM, 67 + 48 + 6 + 128 + 72 + 9), true),
+    ],
+    "", quickSec(runningSkyBPM, 67 + 48 + 6 + 128 + 72 + 9 + 2)
 );
 
 const flowerManBPM = 160;
