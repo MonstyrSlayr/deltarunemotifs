@@ -269,6 +269,20 @@ function onReady()
                             motifLabel.textContent = motif.toString();
                             motifLabel.classList.add("timeLabels");
                             card.appendChild(motifLabel);
+
+                            motif.solo = false;
+                            motif.playing = false;
+
+                                const soloButton = document.createElement("span");
+                                soloButton.textContent = "S";
+                                soloButton.classList.add("soloButton");
+                                motifLabel.appendChild(soloButton);
+
+                                soloButton.addEventListener("click", () =>
+                                {
+                                    soloButton.classList.toggle("active");
+                                    motif.solo = soloButton.classList.contains("active");
+                                });
                         });
 
                         allEffects.forEach(effect =>
@@ -367,6 +381,11 @@ function startPlaying(playerId)
         }
         currentTimeLabel.textContent = formatTime(current);
 
+        const motifRefInterval = current + SONG_OFFSET;
+
+        const motifRefsInPlay = daSong.motifRefs.filter(ref => ref.startTime < motifRefInterval && ref.endTime >= motifRefInterval);
+        const motifRefsInPlayReal = daSong.motifRefs.filter(ref => ref.startTime < current && ref.endTime + 0.3 >= current); // why
+
         allMotifIds.forEach(motifId =>
         {
             let bigPlaying = false;
@@ -375,22 +394,14 @@ function startPlaying(playerId)
 
             motifsWithId.forEach(motif =>
             {
-                let playing = false;
                 let variation = false;
 
-                for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
+                const myMotifsInPlay = motifRefsInPlay.filter(ref => ref.motif == motif);
+                if (myMotifsInPlay.length > 0)
                 {
-                    if (current >= motifRef.startTime - SONG_OFFSET && current < motifRef.endTime - SONG_OFFSET)
-                    {
-                        bigPlaying = true;
-                        playing = true;
-                        variation = motifRef.isVariation;
-                        break;
-                    }
-                }
+                    bigPlaying = true;
+                    variation = myMotifsInPlay[0].isVariation;
 
-                if (playing)
-                {
                     if (motif.letterDiv) motif.letterDiv.classList.add("playing");
 
                     for (const effectRef of effectRefs["motif"].filter(ref => ref.motif == motif && (!ref.playOnce || (ref.playOnce && !ref.hasPlayed))))
@@ -417,6 +428,9 @@ function startPlaying(playerId)
                 {
                     motif.variationDiv.classList.remove("playing");
                 }
+                
+                const myMotifsInPlayReal = motifRefsInPlayReal.filter(ref => ref.motif == motif);
+                motif.playing = myMotifsInPlayReal.length > 0;
             });
 
             if (bigPlaying)
@@ -440,6 +454,37 @@ function startPlaying(playerId)
                 }
             }
         });
+
+        const solotifs = [...allMotifs].filter(motif => motif.solo);
+        if (solotifs.length > 0)
+        {
+            let skipTime = true;
+            for (const motif of solotifs)
+            {
+                if (motif.playing)
+                {
+                    skipTime = false;
+                    break;
+                }
+            }
+
+            if (skipTime)
+            {
+                // skip to next solo motifref
+                let availableMotifRefs = daSong.motifRefs.filter(ref => solotifs.includes(ref.motif) && ref.startTime > current);
+
+                // loop around if none left in front
+                if (availableMotifRefs.length == 0)
+                {
+                    availableMotifRefs = daSong.motifRefs.filter(ref => solotifs.includes(ref.motif));
+                }
+
+                const skipToMeeee = availableMotifRefs[0];
+                players[playerId].seekTo(skipToMeeee.startTime, true);
+                trueSeek = newTime;
+                players[playerId].playVideo();
+            }
+        }
 
         [...allEffects].filter(effect => !effect.isOneshot).forEach(effect =>
         {
@@ -626,11 +671,11 @@ cover.addEventListener("click", function()
     playOrPause();
 });
 
-window.addEventListener('keydown', function(keyevent)
+window.addEventListener("keydown", function(keyevent)
 {
     const activePlayerId = videoId + activePlayer;
 
-    if (['Space', 'ArrowLeft', 'ArrowRight'].includes(keyevent.code))
+    if (["Space", "ArrowLeft", "ArrowRight"].includes(keyevent.code))
     {
         keyevent.preventDefault();
     }
@@ -639,23 +684,23 @@ window.addEventListener('keydown', function(keyevent)
 
     switch (keyevent.code)
     {
-        case 'Space': case 'KeyK': case 'KeyP':
+        case "Space": case "KeyK": case "KeyP":
             playOrPause();
             break;
         
-        case 'ArrowLeft':
+        case "ArrowLeft":
             newTime = players[activePlayerId].getCurrentTime() - 5;
             break;
 
-        case 'ArrowRight':
+        case "ArrowRight":
             newTime = players[activePlayerId].getCurrentTime() + 5;
             break;
         
-        case 'KeyJ':
+        case "KeyJ":
             newTime = players[activePlayerId].getCurrentTime() - 10;
             break;
 
-        case 'KeyL':
+        case "KeyL":
             newTime = players[activePlayerId].getCurrentTime() + 10;
             break;
     }

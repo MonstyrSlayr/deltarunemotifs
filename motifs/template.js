@@ -206,6 +206,20 @@ function createMotifRefDiv(daSong, daMotifs)
                                     motifLabel.textContent = motif.toString();
                                     motifLabel.classList.add("timeLabels");
                                     card.appendChild(motifLabel);
+
+                                    daSong.solo = false;
+                                    daSong.playing = false;
+
+                                        const soloButton = document.createElement("span");
+                                        soloButton.textContent = "S";
+                                        soloButton.classList.add("soloButton");
+                                        motifLabel.appendChild(soloButton);
+
+                                        soloButton.addEventListener("click", () =>
+                                        {
+                                            soloButton.classList.toggle("active");
+                                            daSong.solo = soloButton.classList.contains("active");
+                                        });
                                 });
 
                                 someDiv.style.display = "";
@@ -262,30 +276,26 @@ function createMotifRefDiv(daSong, daMotifs)
                                         }
                                         currentTimeLabel.textContent = formatTime(current);
 
+                                        const motifRefInterval = current + SONG_OFFSET;
+
+                                        const motifRefsInPlay = daSong.motifRefs.filter(ref => ref.startTime < motifRefInterval && ref.endTime >= motifRefInterval);
+                                        const motifRefsInPlayReal = daSong.motifRefs.filter(ref => ref.startTime < current && ref.endTime + 0.3 >= current); // why
+
                                         daMotifs.forEach(motif =>
                                         {
-                                            let playing = false;
                                             let variation = false;
 
-                                            for (const motifRef of daSong.motifRefs.filter(ref => ref.motif == motif))
+                                            const myMotifsInPlay = motifRefsInPlay.filter(ref => ref.motif == motif);
+                                            if (myMotifsInPlay.length > 0)
                                             {
-                                                if (current >= motifRef.startTime - SONG_OFFSET && current < motifRef.endTime - SONG_OFFSET)
-                                                {
-                                                    playing = true;
-                                                    variation = motifRef.isVariation;
-                                                    break;
-                                                }
-                                            }
-
-                                            if (playing)
-                                            {
-                                                // motif.letterDiv.classList.add("playing");
+                                                daSong.playing = true;
+                                                variation = motifRefsInPlay[0].isVariation;
                                                 timebarContainer.style.backgroundColor = motif.color2;
                                                 timebarProgress.style.backgroundColor = motif.color;
                                             }
                                             else
                                             {
-                                                // motif.letterDiv.classList.remove("playing");
+                                                daSong.playing = false;
                                                 timebarContainer.style.backgroundColor = "";
                                                 timebarProgress.style.backgroundColor = "";
                                             }
@@ -298,7 +308,31 @@ function createMotifRefDiv(daSong, daMotifs)
                                             {
                                                 // motif.variationDiv.classList.remove("playing");
                                             }
+                
+                                            const myMotifsInPlayReal = motifRefsInPlayReal.filter(ref => ref.motif == motif);
+                                            motif.playing = myMotifsInPlayReal.length > 0;
                                         });
+                                        
+                                        if (daSong.solo)
+                                        {
+                                            let skipTime = !daSong.playing;
+
+                                            if (skipTime)
+                                            {
+                                                // skip to next solo motifref
+                                                let availableMotifRefs = daSong.motifRefs.filter(ref => ref.motif == daMotifs[0] && ref.startTime > current);
+
+                                                // loop around if none left in front
+                                                if (availableMotifRefs.length == 0)
+                                                {
+                                                    availableMotifRefs = daSong.motifRefs.filter(ref => ref.motif == daMotifs[0]);
+                                                }
+
+                                                const skipToMeeee = availableMotifRefs[0];
+                                                players[playerId].seekTo(skipToMeeee.startTime, true);
+                                                players[playerId].playVideo();
+                                            }
+                                        }
                                     }, 15);
                                 }
                                 else

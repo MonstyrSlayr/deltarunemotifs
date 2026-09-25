@@ -312,6 +312,22 @@ input[type="checkbox"]
     width: 100%;
 }
 
+.soloButton
+{
+    color: gray;
+}
+
+.soloButton.active
+{
+    color: yellow;
+}
+
+.soloButton:hover
+{
+    cursor: pointer;
+    scale: 150%;
+}
+
 #motifSep
 {
     display: flex;
